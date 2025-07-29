@@ -1,6 +1,6 @@
 ---
 cloud: Experience Cloud
-solution: Experience Cloud,Experience Platform
+solution: Experience Cloud,Experience Platform,Real-Time Customer Data Platform
 product: experience cloud
 type: Documentation
 mini-toc-levels: 2
