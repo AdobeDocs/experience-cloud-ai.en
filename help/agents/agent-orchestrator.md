@@ -1,6 +1,8 @@
 ---
-title:
-description:
+title: Adobe Experience Platform Agent Orchestrator
+description: overview doc for agent orchestrator (WIP)
+hide: true
+hidefromtoc: true
 ---
 # Adobe Experience Platform Agent Orchestrator
 
