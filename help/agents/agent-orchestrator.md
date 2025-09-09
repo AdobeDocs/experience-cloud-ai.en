@@ -23,12 +23,17 @@ Agent Orchestrator is your intelligent assistant for Experience Cloud applicatio
 
 ### Reasoning engine
 
-1. Need brief overview/description
-2. Examples of reasoning in the UI and how to interpret them
+A reasoning engine is a computational system designed to process information, draw logical conclusions, and make decisions based on available data and rules.
+
+1. Examples of reasoning in the UI and how to interpret them
 
 ### Adobe Experience Platform agents
 
-1. One-line description for each agent and link to their respective doc pages.
+| Agent | Details |
+| --- | --- |
+| Audience Agent | |
+| Product Support Agent | |
+| Data Insights Agent | |
 
 ### Knowledge base
 
