@@ -6,9 +6,11 @@ hidefromtoc: true
 ---
 # Adobe Experience Platform Agent Orchestrator
 
+Agent Orchestrator & Agents is a multi-agent orchestration system, built to enable a new class of conversational experiences over Experience Cloud applications. Read this document to learn about Agent Orchestrator on Adobe Experience Platform.
+
 ## What is Agent Orchestrator?
 
-Agent Orchestrator is a multi-agent orchestration system built to enable conversational experiences over DX applications. Agent Orchestrator interprets a user's request, determines which specialized agents are needed, and orchestrates them to deliver the right response. It keeps track of context across multi-turn interactions, so users can build on prior queries naturally, and it synthesizes the outputs of multiple agents into a single clear response. This allows users to complete complex workflows in a simple conversational interface without needing to know which underlying agents are being called. The chain-of-thought reasoning and actions taking place under the hood can be explored by the user in the reasoning panel if required. 
+Agent Orchestrator is your intelligent assistant for Experience Cloud applications. When you ask a question or request help, Agent Orchestrator understands what you need and automatically calls upon the right specialized agents to get you the answer. It remembers your conversation history, so you can build on previous questions naturally without having to repeat context. Agent Orchestrator combines insights from multiple agents and presents you with a single, clear response. You can complete complex workflows through simple conversation without needing to know which agents are working behind the scenes. If you're curious about how it arrived at an answer, you can explore the reasoning panel to see the step-by-step thinking process. 
 
 ## Components of Agent Orchestrator
 
