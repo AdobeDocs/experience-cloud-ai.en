@@ -7,7 +7,10 @@ description: Learn how to use AI Assistant to create audiences, view audience ch
 
 >[!AVAILABILITY]
 >
->a
+>Audience agent is available for all customers who have access to AI Assistant. However, you will need the following permissions in order to fully use the audience agent features.
+>
+>**View Segments**: This permission lets you use the audience agent to view insights into the audiences directly in AI Assistant.
+>**Manage Segments**: To permission lets you use the audience agent to create new audiences directly in AI Assistant.
 
 Audience agent intro blurb here
 
@@ -117,3 +120,6 @@ What are my fastest growing audiences?
 
 +++
 
+## Next steps
+
+After reading this guide, 
