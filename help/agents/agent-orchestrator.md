@@ -6,7 +6,7 @@ hidefromtoc: true
 ---
 # Adobe Experience Platform Agent Orchestrator
 
-Agent Orchestrator & Agents is a multi-agent orchestration system, built to enable a new class of conversational experiences over Experience Cloud applications. Read this document to learn about Agent Orchestrator on Adobe Experience Platform.
+Agent Orchestrator & Agents is a multi-agent orchestration system, built to enable a new class of conversational experiences over Experience Cloud applications. Read this document to learn about Adobe Experience Platform Agent Orchestrator.
 
 ## What is Agent Orchestrator?
 
@@ -14,12 +14,13 @@ Agent Orchestrator is your intelligent assistant for Experience Cloud applicatio
 
 ## Components of Agent Orchestrator
 
-<!-- Insert marketing/architecture diagram here -->
+![The marketing architecture of Agent Orchestrator.](./images/agent-orchestrator/agentic-architecture.png)
 
 ### AI Assistant conversational interface
 
-1. Need brief overview/description
-2. Link to UI guide
+AI Assistant in Adobe Experience Platform is a conversational experience that you can use to accelerate your workflows in Adobe applications. You can use AI Assistant to better understand product knowledge, troubleshoot problems, or search through information and find operational insights. AI Assistant supports Experience Platform, Real-Time Customer Data Platform, Adobe Journey Optimizer and Customer Journey Analytics.
+
+For more information, read the [AI Assistant UI guide](ui-guide.md).
 
 ### Reasoning engine
 
