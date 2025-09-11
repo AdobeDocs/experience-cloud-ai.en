@@ -24,7 +24,7 @@ For more information, read the [AI Assistant UI guide](ui-guide.md).
 
 ### Reasoning engine
 
-A reasoning engine is a computational system designed to process information, draw logical conclusions, and make decisions based on available data and rules.
+The reasoning engine is the main decision-maker in Agent Orchestrator. It understands your goals, checks any limits or requirements, and creates step-by-step plans to help you reach your objectives. Unlike simple question-and-answer systems, it can adjust its plans as things change, and can go back and try different approaches if needed. The plans it creates are shown to you in the AI Assistant, so you can see and follow the process. 
 
 1. Examples of reasoning in the UI and how to interpret them
 
