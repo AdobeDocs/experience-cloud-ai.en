@@ -6,7 +6,7 @@ hidefromtoc: true
 ---
 # AI Assistant on Agent Orchestrator
 
-<!-- Overview here -->
+You can use the AI Assistant conversational interface to access Adobe Experience Platform and other AI capabilities.
 
 ## Access
 
@@ -16,9 +16,9 @@ hidefromtoc: true
 
 ## Navigating the interface
 
-1. Use the rail
-2. Use full screen
-3. Use split view
+1. Select objects
+2. Configure context
+3. Generate sample prompts
 
 ## Input features
 
