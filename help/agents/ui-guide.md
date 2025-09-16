@@ -40,13 +40,23 @@ The AI Assistant interface includes several key elements to help you interact ef
 
 1. **Conversations**: Select the **[!UICONTROL Conversations]** icon to start a new conversation and access recent conversations from your history. For more information, read the section on [conversations](#conversations).
 2. **Input box**: Select the input box to enter questions and prompts for AI Assistant. For more information, read the section on [input features](#input-features).
-3. **Object selection**: - Select the plus icon to use entity suggestion and autocomplete. When selected, you can use a pop-up window to select suggested entities. For more information, read the section on [entity autocomplete](#entity-autocomplete).
+3. **Entity autocomplete**: - Select the plus icon to use entity suggestion and autocomplete. When selected, you can use a pop-up window to select suggested entities. For more information, read the section on [entity autocomplete](#entity-autocomplete).
 4. **Context selection**: - Select the context selection icon to configure information sources for AI Assistant. You can use this tool to configure the application, sandbox, and dateview that AI Assistant references in order to answer your query. For more information, read the section on [context setting](#context-setting).
 5. **Discoverability prompts**: - Select **[!UICONTROL Learn]**, **[!UICONTROL Analyze]**, and **[!UICONTROL Optimize]** to view sample queries that you can use to get started. For more information, read the section on [discoverability prompts](#discoverability-prompts).
 
 ![The AI Assistant in full-screen.](./images/ai-assistant/ui-home.png)
 
 ### Rail view
+
+1. [!UICONTROL Chat]
+2. [!UICONTROL Discovery]
+3. [!UICONTROL What's New]
+4. **Conversations**
+5. **Full-screen view**
+6. **Entity autocomplete**
+7. **Context selection**
+
+![The AI Assistant in rail-view](./images/ai-assistant/rail-mode.png)
 
 ## Input features
 
