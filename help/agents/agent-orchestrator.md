@@ -35,7 +35,6 @@ The reasoning engine is the main decision-maker in Agent Orchestrator. It unders
 | Audience Agent | Audience Agent lets you view insights about audiences, including detecting significant audience size changes, detecting duplicate audiences, explore your audience inventory, and retrieve your audiences' size. |
 | Data Insights Agent | Data Insights Agent, accessible from the AI Assistant in Customer Journey Analytics, is a generative AI conversation agent that quickly and efficiently answers questions about your data. It builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data. |
 | Experimentation Agent | |
-| Field Discovery Agent | Field Discovery Agent helps users automatically discover and understand data fields within their schemas and datasets. This intelligent agent analyzes your data structure and provides insights about field usage, relationships, and recommendations for optimization. |
 | Product Support Agent | Product Support Agent is a self-serve debugging and troubleshooting capability that helps you troubleshoot Adobe Experience Platform features and applications without leaving your workflows. Support administrators can create customer support tickets with context from your AI Assistant interactions and you can check ticket updates through AI Assistant. |
 
 ### Knowledge base
