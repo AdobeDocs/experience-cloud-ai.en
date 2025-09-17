@@ -6,7 +6,7 @@ hidefromtoc: true
 ---
 # Adobe Experience Platform Agent Orchestrator
 
-Adobe Experience Platform Agent Orchestrator is your intelligent assistant for Experience Cloud applications. When you ask questions or request help, Agent Orchestrator automatically calls upon specialized agents to get you the right answers. Agent Orchestrator remembers your conversation history, enabling you to build on previous questions naturally without repeating context, and combines insights from multiple agents to present you with clear, unified responses.
+Adobe Experience Platform Agent Orchestrator is the intelligent layer powering AI Assistant. When you ask questions or request help, Agent Orchestrator automatically calls upon specialized agents to get you the right answers. Agent Orchestrator remembers your conversation history, enabling you to build on previous questions naturally without repeating context, and combines insights from multiple agents to present you with clear, unified responses.
 
 You can complete complex workflows through simple conversation without needing to know which agents are working behind the scenes. The system understands your goals, creates step-by-step plans, and can adjust its approach as needed. You can explore the reasoning panel to see the step-by-step thinking process and better understand how your requests are being handled.
 
@@ -24,16 +24,6 @@ AI Assistant in Adobe Experience Platform is a conversational experience that yo
 
 For more information, read the [AI Assistant UI guide](ui-guide.md).
 
-<!-- ### Functional agents
-
-Experience Platform Agent Orchestrator includes three (3) built-in functional agents: 
-
-| Agent | Description |
-| --- | --- |
-| **Product knowledge agent** | When you ask a question, the Product Knowledge Agent finds the most relevant Adobe product documentation for you, retrieves the necessary information, and provides a clear answer based on those documents. It also ensures that every response includes accurate source citations and is grounded in reliable information. |
-| **Operational insights agent** | If you need insights from your operational data, the Operational Insights Agent translates your question into a query against your specific data sources. It then delivers answers based on the results, explains how the answer was derived, and always respects your role-based and attribute-level access permissions. |
-| **Field discovery agent** | The Field Discovery Agent helps you quickly understand and organize your data fields. By using advanced techniques like metadata analysis, field-level embeddings, and vector similarity, it enables you to classify fields, detect identities, suggest mappings to the Experience Data Model (XDM), and identify relationships between fields—all through a simple conversational experience. | -->
-
 ### Reasoning engine
 
 The reasoning engine is the main decision-maker in Agent Orchestrator. It understands your goals, checks any limits or requirements, and creates step-by-step plans to help you reach your objectives. Unlike simple question-and-answer systems, it can adjust its plans as things change, and can go back and try different approaches if needed. The plans it creates are shown to you in the AI Assistant, so you can see and follow the process. 
@@ -42,9 +32,10 @@ The reasoning engine is the main decision-maker in Agent Orchestrator. It unders
 
 | Agent | Details |
 | --- | --- |
-| Audience Agent | |
+| Audience Agent | Audience Agent lets you view insights about audiences, including detecting significant audience size changes, detecting duplicate audiences, explore your audience inventory, and retrieve your audiences' size. |
 | Data Insights Agent | Data Insights Agent, accessible from the AI Assistant in Customer Journey Analytics, is a generative AI conversation agent that quickly and efficiently answers questions about your data. It builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data. |
-| Field Discovery Agent |  |
+| Experimentation Agent | |
+| Field Discovery Agent | Field Discovery Agent helps users automatically discover and understand data fields within their schemas and datasets. This intelligent agent analyzes your data structure and provides insights about field usage, relationships, and recommendations for optimization. |
 | Product Support Agent | Product Support Agent is a self-serve debugging and troubleshooting capability that helps you troubleshoot Adobe Experience Platform features and applications without leaving your workflows. Support administrators can create customer support tickets with context from your AI Assistant interactions and you can check ticket updates through AI Assistant. |
 
 ### Knowledge base
