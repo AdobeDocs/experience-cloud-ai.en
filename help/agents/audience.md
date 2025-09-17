@@ -1,6 +1,6 @@
 ---
 title: Audience Agent
-description: Learn how to use AI Assistant to create audiences, view audience changes, detect duplicate audiences, and view audience insights.
+description: Learn how to use the Audience Agent to create audiences, view audience changes, detect duplicate audiences, and view audience insights.
 ---
 
 # Audience Agent
@@ -125,7 +125,7 @@ Which audiences have increased in size by more than 20% in the last week?
 
 +++ Response
 
-working but need better data
+working
 
 +++
 
@@ -133,7 +133,7 @@ Which audiences have decreased in size by more than 15% in the last month?
 
 +++ Response
 
-working but need better data
+working
 
 +++
 
