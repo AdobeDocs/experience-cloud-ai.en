@@ -42,7 +42,7 @@ The AI Assistant interface includes several key elements to help you interact ef
 
 1. **[!UICONTROL Conversations]**: Select the **[!UICONTROL Conversations]** icon to start a new conversation and access recent conversations from your history. For more information, read the section on [conversations](#conversations).
 2. **Input box**: Select the input box to enter questions and prompts for AI Assistant. For more information, read the section on [input features](#input-features).
-3. **Entity autocomplete**: - Select the plus icon to use entity suggestion and autocomplete. When selected, you can use a pop-up window to select suggested entities. For more information, read the section on [entity autocomplete](#entity-autocomplete).
+3. **Data and object autocomplete**: - Select the plus icon to use data and object suggestion and autocomplete. When selected, you can use a pop-up window to select suggested entities. For more information, read the section on [data and object autocomplete](#autocomplete).
 4. **Context setting**: - Select the Context setting icon to configure information sources for AI Assistant. You can use this tool to configure the application, sandbox, and dataview that AI Assistant references in order to answer your query. For more information, read the section on [context setting](#context-setting).
 5. **Discovery**: - Select **[!UICONTROL Learn]**, **[!UICONTROL Analyze]**, and **[!UICONTROL Optimize]** to view sample queries that you can use to get started. For more information, read the section on [discoverability prompts](#discoverability-prompts).
 
@@ -57,7 +57,7 @@ The rail view provides quick access to chat, discovery prompts, updates, convers
 3. **[!UICONTROL What's New]**: Select **[!UICONTROL What's New]** to view a list of the latest updates available to AI Assistant.
 4. **[!UICONTROL Conversations]**: Select the **[!UICONTROL Conversations]** icon to start a new conversation and access recent conversations from your history. For more information, read the section on [conversations](#conversations).
 5. **Full screen view**: Select the **[!UICONTROL Full screen view]** icon to change your AI Assistant interface from the right rail to full screen mode.
-6. **Entity autocomplete**: Select the plus icon to use entity suggestion and autocomplete. When selected, you can use a pop-up window to select suggested entities. For more information, read the section on [entity autocomplete](#entity-autocomplete).
+6. **Data and object autocomplete**: Select the plus icon to use data and object suggestion and autocomplete. When selected, you can use a pop-up window to select suggested entities. For more information, read the section on [data and object autocomplete](#autocomplete).
 7. **Context setting**: Select the Context setting icon to configure information sources for AI Assistant. You can use this tool to configure the application, sandbox, and dataview that AI Assistant references in order to answer your query. For more information, read the section on [context setting](#context-setting).
 
 ![The AI Assistant in rail-view](./images/ai-assistant/rail-mode.png)
@@ -202,10 +202,14 @@ The *[!UICONTROL Answer from...]* pop-up window appears. Use this window to conf
 | --- | --- | --- |
 | App | The Experience Cloud application that your query pertains to. | Experience Platform, Journey Optimizer, Customer Journey Analytics, etc. |
 | Sandbox | The sandbox that contains the dataset(s) or information that your query pertains to. | Prod (VA7), Dev. |
-| Dataview | |
+| Dataview | When you're using AI Assistant with Customer Journey Analytics, the dataview setting helps the Data Insights Agent understand: <ul><li>Which datasets to query</li><li>What data components are available</li><li>How to structure responses about your data</li><li>Which visualizations to create in Analysis Workspace</li></ul> |
 
 ![The "Answer from" panel where information sources can be configured.](./images/ai-assistant/inputs/answer-from.png)
 
-## Entity autocomplete
+## Data and object autocomplete
 
 You can use the autocomplete function to receive a list of data objects that exist in your sandbox. To use autocomplete, input the plus symbol (+) in your query. As an alternative, you can also select the plus sign (+) located at the bottom of the text input box. A window appears with a list of recommended data objects from your sandbox.
+
+![The data and object autocomplete button selected.]
+
+## Configure data visualization
