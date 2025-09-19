@@ -18,24 +18,27 @@ The Audience Agent lets you view insights about audiences, including detecting s
 
 The Audience Agent within AI Assistant supports the following use cases:
 
-- Estimate the size of an audience during creation
 - Detect significant changes in audience size
 - Detect duplicate audiences
 - Find audiences based on full or partial attributes named
 - Find the size of your audiences
+- Discover XDM fields you can use to define an audience
 
 The Audience Agent currently does **not** support the following features:
 
 - Knowledge-based audience creation
   - Knowledge-based audience creation is creating an audience based on the given attributes and events
   - Support for this feature is coming soon
-- Goal-based audience creation
-  - Goal-based audience creation is creating an audience based off of another already existing audience
+- Goal-based audience exploration
+  - Goal-based audience exploration is creating a propensity model that 
+- Estimate the size of an audience to support audience creation
+
 
 Additionally, when using Audience Agent, you should keep the following constraints in mind:
 
 - Audience Agent needs at least 24 hours to process your data
   - For example, you **cannot** have a query that looks for data within the last 24 hours. You'll need to look within the last 48 hours, at a minimum.
+- Audience Agent only supports **people** based audiences that are created in Segment Builder
 
 ## Sample prompts
 
@@ -43,11 +46,11 @@ The following examples demonstrate sample prompts and responses for the Audience
 
 ### Conversation audience exploration
 
-What are the top 5 cities where my profiles live?
+Show me fields for affluent buyers.
 
 +++ Response
 
-not working atm
+![](./images/audience/affluent-buyers.png)
 
 +++
 
@@ -55,15 +58,15 @@ Which audiences have not been activated or used in any campaign in the last 30 d
 
 +++ Response
 
-working
+![](./images/audience/not-activated.png)
 
 +++
 
-List all the audiences that have been mapped to new destinations in the last 3 days.
+List all the audiences that have been mapped to new destinations in the last 3 months.
 
 +++ Response
 
-working
+![](./images/audience/new-destination.png)
 
 +++
 
@@ -73,7 +76,7 @@ Do I have any audiences with identical or similar descriptions?
 
 +++ Response
 
-working
+![](./images/audience/similar-descriptions.png)
 
 +++
 
@@ -81,7 +84,7 @@ Identify audiences that have the same rules but have different names.
 
 +++ Response
 
-working
+![](./images/audience/same-rules-different-names.png)
 
 +++
 
@@ -89,25 +92,17 @@ Show me all the audiences that have the same rules but different activation dest
 
 +++ Response
 
-working
+![](./images/audience/same-rules-different-destinations.png)
 
 +++
 
 ### Retrieve audience size
 
-What is the current size of my audience {NAME}?
+What is the current size of my audience "Gold-star Members in California_f153e1"?
 
 +++ Response
 
-working
-
-+++
-
-What would the size of an audience targeting users who visited our pricing page at least twice in the past week but haven't converted be?
-
-+++ Response
-
-not working
+![](./images/audience/current-size.png)
 
 +++
 
@@ -115,7 +110,7 @@ What is my biggest audience?
 
 +++ Response
 
-working
+![](./images/audience/largest-audience.png)
 
 +++
 
@@ -125,7 +120,7 @@ Which audiences have increased in size by more than 20% in the last week?
 
 +++ Response
 
-working
+![](./images/audience/increase-past-week.png)
 
 +++
 
@@ -133,21 +128,15 @@ Which audiences have decreased in size by more than 15% in the last month?
 
 +++ Response
 
-working
+![](./images/audience/decrease-month.png)
 
 +++
 
-Which audiences have dropped to zero at least once in the last week?
+What is my fastest growing audience?
 
 +++ Response
 
-working but need better data
-
-+++
-
-What are my fastest growing audiences?
-
-+++ Response
+![](./images/audience/fastest-growing.png)
 
 +++
 
