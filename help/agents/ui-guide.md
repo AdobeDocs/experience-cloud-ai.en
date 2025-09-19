@@ -62,7 +62,6 @@ The rail view provides quick access to chat, discovery prompts, updates, convers
 
 ![The AI Assistant in rail-view](./images/ai-assistant/rail-mode.png)
 
-## Input features
 
 ### Discovery prompts
 
@@ -99,12 +98,6 @@ Select a prompt to populate the input box. From here, you can edit the prompt to
 ## Interacting with responses
 
 ### Check for reasoning process {#reasoning}
-
-1. Rich response cards
-2. CSV export
-3. Object menu
-4. Sources and confidence scores
-5. Feedback
 
 AI Assistant then queries its knowledge base and computes an answer. After a few moments, AI Assistant returns an answer, including options to dive deeper into its reasoning process, related suggestions, information sources, and feedback tools.
 
@@ -174,7 +167,6 @@ If AI Assistant's response includes an image, you can select the path icon to la
 
 ![The split-view mode on AI Assistant.](./images/ai-assistant/inputs/split-view.png)
 
-
 ## Conversations
 
 You can use the *[!UICONTROL All conversations]* panel to reset and revisit conversations with AI Assistant. Select the **[!UICONTROL Conversations]** icon to view the *[!UICONTROL All conversations]* window.
@@ -188,7 +180,6 @@ To revisit a previous conversation, select the conversation topic from the list 
 To start a new conversation, select **[!UICONTROL New conversation]**.
 
 ![The "new conversation" option selected.](./images/ai-assistant/conversations/new-conversation.png)
-
 
 ## Context setting {#context-setting}
 
@@ -208,8 +199,54 @@ The *[!UICONTROL Answer from...]* pop-up window appears. Use this window to conf
 
 ## Data and object autocomplete
 
-You can use the autocomplete function to receive a list of data objects that exist in your sandbox. To use autocomplete, input the plus symbol (+) in your query. As an alternative, you can also select the plus sign (+) located at the bottom of the text input box. A window appears with a list of recommended data objects from your sandbox.
+You can use the autocomplete function to receive a list of data objects that exist in your sandbox. To use autocomplete, input the plus icon (+) in your query. As an alternative, you can also select the plus icon (+) located at the bottom of the text input box. A window appears with a list of recommended data objects from your sandbox.
 
-![The data and object autocomplete button selected.]
+![The data and object autocomplete button selected.](./images/ai-assistant/autocomplete/autocomplete.png)
+
+## Verify responses
+
+There are a number of ways that you can verify responses from AI Assistant. Select **[!UICONTROL Query Term Matched to Objects]** to view a summary of the terms in your query that were matched to specific objects in your organization.
+
+![The query terms matched with your response.](./images/ai-assistant/autocomplete/query-terms.png)
+
+Select **[!UICONTROL Here is how I got the results]** to see a detailed, step-by-step explanation of how AI Assistant arrived at its answer. Additionally, you can also view the SQL query that was executed to answer your question. This query is read-only and is not supported for use in Query Service.
+
+![The SQL verification tools on AI Assistant.](./images/ai-assistant/autocomplete/verifications.png)
 
 ## Configure data visualization
+
+You can use AI Assistant's data visualization capabilities to gain a better understanding of your data. You can also specify the type of graph that you want to use in your query. For example, submit a query that says: **"Show profit by product name for last month (bar)"** to receive a bar graph of profit in the last month, organized by product name.
+
+![A bar graph displayed on AI Assistant](./images/ai-assistant/visualization/graph.png)
+
+Next, select **[!UICONTROL Properties]** to change your graph type and configure values for your X and Y axis.
+
+>[!BEGINTABS]
+
+AI Assistant supports several graph types for data visualization. You can interact with all types of graph by hovering over the data.
+
+>[!TAB Line]
+
+To view a line graph, select **[!UICONTROL Properties]** and then select **[!UICONTROL Line]**.
+
+![A line graph on AI Assistant.](./images/ai-assistant/visualization/line.png)
+
+>[!TAB Area]
+
+To view an area graph, select **[!UICONTROL Properties]** and then select **[!UICONTROL Area]**.
+
+![An area graph on AI Assistant.](./images/ai-assistant/visualization/area.png)
+
+>[!TAB Scatter]
+
+To view a scatter graph, select **[!UICONTROL Properties]** and then select **[!UICONTROL Scatter]**.
+
+![A scatter graph on AI Assistant.](./images/ai-assistant/visualization/scatter.png)
+
+>[!TAB Donut]
+
+To view a donut graph, select **[!UICONTROL Properties]** and then select **[!UICONTROL Donut]**.
+
+![A donut graph on AI Assistant.](./images/ai-assistant/visualization/donut.png)
+
+>[!ENDTABS]
