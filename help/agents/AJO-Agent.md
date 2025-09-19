@@ -1,6 +1,6 @@
 ---
-title: Journey Agent Analyze Skill: Feature Overview and User Guide
-description: Comprehensive guide to the Journey Agent Analyze skill feature, enabling users to analyze marketing journeys, detect issues, uncover insights, and optimize customer engagement.
+title: Journey Agent Analyze Skill: Skill Overview and User Guide
+description: Comprehensive guide to the Journey Agent Analyze skill, enabling users to analyze marketing journeys, detect issues, uncover insights, and optimize customer engagement.
 solution: Journey Optimizer
 product: journey optimizer
 role: Marketing Strategist, Data Analyst, Journey Manager
@@ -39,7 +39,7 @@ The Journey Agent Analyze skill offers a range of functionalities that can be le
    - Prompt-based Journey Insights – Surface operational insights about journeys , i.e. “show me all live journeys.”
 
 
-## In Scope and Out of Scope Features
+## In Scope and Out of Scope Skills
 
 ### **In Scope**
 
