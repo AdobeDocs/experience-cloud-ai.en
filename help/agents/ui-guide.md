@@ -62,6 +62,7 @@ The rail view provides quick access to chat, discovery prompts, updates, convers
 
 ![The AI Assistant in rail-view](./images/ai-assistant/rail-mode.png)
 
+## AI Assistant UI guide
 
 ### Discovery prompts
 
