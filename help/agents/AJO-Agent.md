@@ -65,6 +65,7 @@ The following functionalities are currently not supported:
 Here are examples of valuable prompts users can leverage to explore, monitor, and troubleshoot their journeys.
 
 ### Journey Lifecycle Questions
+
 - “When was [Journey Name] published?”
 - “When was [Journey Name] stopped?”
 - “List all journeys currently in test mode”
