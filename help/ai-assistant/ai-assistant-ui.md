@@ -1,6 +1,6 @@
 ---
-title: UI Guide
-description: Learn how to use AI Assistant on Agent Orchestrator.
+title: AI Assistant UI Guide
+description: Learn how to access and use AI Assistant in the user interface.
 hide: true
 hidefromtoc: true
 ---
