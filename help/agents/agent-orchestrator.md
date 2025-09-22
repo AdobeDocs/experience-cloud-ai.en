@@ -6,7 +6,7 @@ hidefromtoc: true
 ---
 # Adobe Experience Platform Agent Orchestrator
 
-Adobe Experience Platform Agent Orchestrator is the intelligent layer that powers AI Assistant. When you ask questions or request help, Agent Orchestrator automatically calls upon specialized agents to get you the right answers. Agent Orchestrator remembers your conversation history, enabling you to build on previous questions naturally without repeating context, and combines insights from multiple agents to present you with clear, unified responses.
+ Adobe Experience Platform Agent Orchestrator is the intelligent layer that powers Adobe Experience Platform Agents available in Experience Cloud applications and new AI-first Applications. When you ask questions or request help, Agent Orchestrator automatically calls upon specialized agents to get you the right answers. Agent Orchestrator remembers your conversation history, enabling you to build on previous questions naturally without repeating context, and combines insights from multiple agents to present you with clear, unified responses.
 
 You can complete complex workflows through simple conversation without needing to know which agents are working behind the scenes. The system understands your goals, creates step-by-step plans, and can adjust its approach as needed. You can explore the reasoning panel to see the step-by-step thinking process and better understand how your requests are being handled. With Agent Orchestrator, you can use AI Assistant to tackle complex workflows and optimize strategies across Adobe Experience Cloud applications.
 
