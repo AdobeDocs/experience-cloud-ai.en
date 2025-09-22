@@ -3,7 +3,6 @@ title: Journey Agent Analyze Skill Overview and User Guide
 description: Comprehensive guide to the Journey Agent Analyze skill, enabling users to analyze marketing journeys, detect issues, uncover insights, and optimize customer engagement.
 solution: Journey Optimizer
 product: journey optimizer
-role: Marketing Strategist, Data Analyst, Journey Manager
 ---
 # Journey Agent Analyze: Skill Overview and User Guide
 
