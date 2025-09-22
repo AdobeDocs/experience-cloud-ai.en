@@ -9,4 +9,11 @@ role: Admin,User,Developer,Leader
 
 # AI in Experience Cloud {#experience-cloud-ai}
 
-+ [AI in Experience Cloud applications](home.md)
+- [AI in Experience Cloud applications](home.md)
+- Agents {#agents}
+  - [Agent Orchestrator](./agents/agent-orchestrator.md)
+  - [Journey Agent](./agents/AJO-Agent.md)
+- AI Assistant {#ai-assistant}
+  - [AI Assistant UI guide](./ai-assistant/ai-assistant-ui.md)
+  - [Privacy](./ai-assistant/privacy.md)
+  - [Legal Disclaimer](./ai-assistant/legal-disclaimer.md)

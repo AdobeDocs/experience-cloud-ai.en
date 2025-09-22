@@ -72,13 +72,7 @@ You can use AI Assistant's discovery feature to view a list of the general subje
 
 >[!TAB Use discovery from the full screen view]
 
-From the full screen view, discovery prompts are grouped into three categories:
-
-| Discovery | Description | Example prompts |
-| --- | --- | --- |
-| Learn | Select **[!UICONTROL Learn]** for prompts focused on product knowledge. |
-| Analyze | Select **[!UICONTROL Analyze]** for prompts focused on operational insights surrounding your datasets. |
-| Optimize | |
+From the full screen view, discovery prompts are grouped into three categories: **[!UICONTROL Learn]**, **[!UICONTROL Analyze]**, and **[!UICONTROL Optimize]**.
 
 To use discovery prompts to advance product knowledge, select **[!UICONTROL Learn]** and then select a prompt from the dropdown window that appears.
 
@@ -222,9 +216,9 @@ You can use AI Assistant's data visualization capabilities to gain a better unde
 
 Next, select **[!UICONTROL Properties]** to change your graph type and configure values for your X and Y axis.
 
->[!BEGINTABS]
-
 AI Assistant supports several graph types for data visualization. You can interact with all types of graph by hovering over the data.
+
+>[!BEGINTABS]
 
 >[!TAB Line]
 
