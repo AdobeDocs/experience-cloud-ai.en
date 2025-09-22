@@ -12,7 +12,7 @@ role: Admin,User,Developer,Leader
 - [AI in Experience Cloud applications](home.md)
 - Agents {#agents}
   - [Agent Orchestrator](./agents/agent-orchestrator.md)
-  - [Journey Agent](./agents/AJO-Agent.md)
+  - [Journey Agent](./agents/ajo-agent-bob.md)
 - AI Assistant {#ai-assistant}
   - [AI Assistant UI guide](./ai-assistant/ai-assistant-ui.md)
   - [Privacy](./ai-assistant/privacy.md)

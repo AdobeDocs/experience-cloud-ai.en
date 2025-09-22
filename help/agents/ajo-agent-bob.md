@@ -5,8 +5,6 @@ solution: Journey Optimizer
 product: journey optimizer
 role: Marketing Strategist, Data Analyst, Journey Manager
 ---
-
-
 # Journey Agent Analyze: Skill Overview and User Guide
 
 ## Overview
