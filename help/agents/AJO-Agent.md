@@ -61,6 +61,7 @@ The following functionalities are currently not supported:
 ## Sample Prompts / Example Prompts
 
 ### Common Prompts for Journey Analysis  
+
 Here are examples of valuable prompts users can leverage to explore, monitor, and troubleshoot their journeys.
 
 ### Journey Lifecycle Questions
@@ -69,14 +70,17 @@ Here are examples of valuable prompts users can leverage to explore, monitor, an
 - “List all journeys currently in test mode”
 
 ### Journey Resource Questions
+
 - “How many live journeys do I have?”
 - “Give me a list of all scheduled recurring journeys and their expected run times.”
 
 ### Audience and Journey Insights
+
 - “Which audiences are used in more than X journeys?”
 - “List all journeys using the [audience name] audience.”
 
 ### Conflict Analysis Prompts 
+
 Use these prompts to analyze potential conflicts between journeys, including scheduling and audience overlaps:
 
 - “Can you do a comprehensive analysis of conflicts for our journey [Journey Name] with conflict type (scheduling/audience) information with live/running journeys?”
