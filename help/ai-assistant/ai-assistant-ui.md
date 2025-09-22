@@ -64,6 +64,8 @@ The rail view provides quick access to chat, discovery prompts, updates, convers
 
 ## AI Assistant UI guide
 
+This section provides an overview of the main features and navigation options in the AI Assistant user interface. It explains how to access AI Assistant, describes the layout and controls in both full screen and rail views, and introduces key tools such as conversations, input features, autocomplete, context setting, and discovery prompts. The following sections offer detailed guidance on using these features to interact with AI Assistant and get the most out of your experience.
+
 ### Discovery prompts
 
 You can use AI Assistant's discovery feature to view a list of the general subjects, grouped into entities, that AI Assistant supports. Discovery prompts are different depending on your starting point.
@@ -162,7 +164,7 @@ If AI Assistant's response includes an image, you can select the path icon to la
 
 ![The split-view mode on AI Assistant.](./images/ai-assistant/inputs/split-view.png)
 
-## Conversations
+### Conversations
 
 You can use the *[!UICONTROL All conversations]* panel to reset and revisit conversations with AI Assistant. Select the **[!UICONTROL Conversations]** icon to view the *[!UICONTROL All conversations]* window.
 
@@ -176,7 +178,7 @@ To start a new conversation, select **[!UICONTROL New conversation]**.
 
 ![The "new conversation" option selected.](./images/ai-assistant/conversations/new-conversation.png)
 
-## Context setting {#context-setting}
+### Context setting {#context-setting}
 
 Use the context setting feature of AI Assistant to configure the **application**, **sandbox**, and **dataview** that AI Assistant references to answer your query. To access context setting, select the **[!UICONTROL Context setting]** icon from the input box.
 
@@ -192,13 +194,13 @@ The *[!UICONTROL Answer from...]* pop-up window appears. Use this window to conf
 
 ![The "Answer from" panel where information sources can be configured.](./images/ai-assistant/inputs/answer-from.png)
 
-## Data and object autocomplete
+### Data and object autocomplete
 
 You can use the autocomplete function to receive a list of data objects that exist in your sandbox. To use autocomplete, input the plus icon (+) in your query. As an alternative, you can also select the plus icon (+) located at the bottom of the text input box. A window appears with a list of recommended data objects from your sandbox.
 
 ![The data and object autocomplete button selected.](./images/ai-assistant/autocomplete/autocomplete.png)
 
-## Verify responses
+### Verify responses
 
 There are a number of ways that you can verify responses from AI Assistant. Select **[!UICONTROL Query Term Matched to Objects]** to view a summary of the terms in your query that were matched to specific objects in your organization.
 
@@ -208,7 +210,7 @@ Select **[!UICONTROL Here is how I got the results]** to see a detailed, step-by
 
 ![The SQL verification tools on AI Assistant.](./images/ai-assistant/autocomplete/verifications.png)
 
-## Configure data visualization
+### Configure data visualization
 
 You can use AI Assistant's data visualization capabilities to gain a better understanding of your data. You can also specify the type of graph that you want to use in your query. For example, submit a query that says: **"Show profit by product name for last month (bar)"** to receive a bar graph of profit in the last month, organized by product name.
 

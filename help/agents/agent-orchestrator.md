@@ -24,7 +24,7 @@ AI Assistant is a conversational experience that you can use to accelerate your 
 
 For more information, read the [AI Assistant UI guide](ui-guide.md).
 
-### Reasoning engine {#reasoning-angine}
+### Reasoning engine {#reasoning-engine}
 
 The reasoning engine is the main decision-maker in Agent Orchestrator. It understands your goals, checks any limits or requirements, and creates step-by-step plans to help you reach your objectives. Unlike simple question-and-answer systems, it can adjust its plans as things change, and can go back and try different approaches if needed. The plans it creates are shown to you in the AI Assistant, so you can see and follow the process. 
 
@@ -33,10 +33,10 @@ The reasoning engine is the main decision-maker in Agent Orchestrator. It unders
 | Agent | Details |
 | --- | --- |
 | Audience Agent | Audience Agent lets you view insights about audiences, including detecting significant audience size changes, detecting duplicate audiences, explore your audience inventory, and retrieve your audiences' size. |
-| Data Insights Agent | Data Insights Agent, accessible from the AI Assistant in Customer Journey Analytics, is a generative AI conversation agent that quickly and efficiently answers questions about your data. It builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data. |
-| Experimentation Agent | The Experimentation Agent is a specialized AI agent within Adobe Experience Platform's Agent Orchestrator that focuses on journey optimization and continuous improvement. It works alongside the Journey Agent to help teams design and enhance customer journeys that drive better conversions and engagement. |
-| Journey Agent | Journey Agent allows Adobe Journey Optimizer users to create, analyze, and optimize journeys using a natural language interface. With Journey Agent, you can quickly build journeys, detect and resolve schedule or audience conflicts, analyze performance and drop-off points, and identify top-performing journeys to replicate for future campaigns. It helps you make data-driven decisions, improve customer engagement, and streamline journey orchestration. |
-| Product Support Agent | Product Support Agent is a self-serve debugging and troubleshooting capability that helps you troubleshoot Adobe Experience Platform features and applications without leaving your workflows. Support administrators can create customer support tickets with context from your AI Assistant interactions and you can check ticket updates through AI Assistant. |
+| [Data Insights Agent](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai) | Data Insights Agent, accessible from the AI Assistant in Customer Journey Analytics, is a generative AI conversation agent that quickly and efficiently answers questions about your data. It builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data. |
+| Experimentation Agent | The Experimentation Agent helps teams learn faster by analyzing experiment results, predicting impact, and proposing new experiments. It centralizes past and active experiments so you can build on what you've already learned, spot gaps, and prioritize what to test next. |
+| [Journey Agent](./AJO-Agent.md) | Journey Agent allows Adobe Journey Optimizer users to create, analyze, and optimize journeys using a natural language interface. With Journey Agent, you can quickly build journeys, detect and resolve schedule or audience conflicts, analyze performance and drop-off points, and identify top-performing journeys to replicate for future campaigns. It helps you make data-driven decisions, improve customer engagement, and streamline journey orchestration. |
+| [Product Support Agent](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/new-features/customer-support) | Product Support Agent is a self-serve debugging and troubleshooting capability that helps you troubleshoot Adobe Experience Platform features and applications without leaving your workflows. Support administrators can create customer support tickets with context from your AI Assistant interactions and you can check ticket updates through AI Assistant. |
 
 ### Knowledge base {#knowledge-base}
 
