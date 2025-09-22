@@ -103,3 +103,6 @@ AI Assistant is built with privacy, security, and governance at the forefront:
 
 This guide provides everything you need to effectively use AI capabilities across your Experience Cloud applications, from basic interactions to advanced agent orchestration and specialized workflows.
 
+Continue using this page for AI Assistant home (landing), build it out as new AI content migrates to this repo.
+
+Test edit.

@@ -1,10 +1,9 @@
 ---
-title: Journey Agent Analyze Skill - Skill Overview and User Guide
+title: Journey Agent Analyze Skill Overview and User Guide
 description: Comprehensive guide to the Journey Agent Analyze skill, enabling users to analyze marketing journeys, detect issues, uncover insights, and optimize customer engagement.
 solution: Journey Optimizer
 product: journey optimizer
 role: Marketing Strategist, Data Analyst, Journey Manager
-level: Intermediate to Advanced, why not beginers?
 ---
 
 
@@ -62,22 +61,27 @@ The following functionalities are currently not supported:
 ## Sample Prompts / Example Prompts
 
 ### Common Prompts for Journey Analysis  
+
 Here are examples of valuable prompts users can leverage to explore, monitor, and troubleshoot their journeys.
 
 ### Journey Lifecycle Questions
+
 - "When was [Journey Name] published?"
 - "When was [Journey Name] stopped?"
 - "List all journeys currently in test mode"
 
 ### Journey Resource Questions
+
 - "How many live journeys do I have?"
 - "Give me a list of all scheduled recurring journeys and their expected run times."
 
 ### Audience and Journey Insights
+
 - "Which audiences are used in more than X journeys?"
 - "List all journeys using the [audience name] audience."
 
 ### Conflict Analysis Prompts 
+
 Use these prompts to analyze potential conflicts between journeys, including scheduling and audience overlaps:
 
 - "Can you do a comprehensive analysis of conflicts for our journey [Journey Name] with conflict type (scheduling/audience) information with live/running journeys?"
