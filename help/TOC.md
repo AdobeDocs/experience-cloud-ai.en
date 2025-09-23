@@ -13,7 +13,7 @@ role: Admin,User,Developer,Leader
 - Agents {#agents}
   - [Agent Orchestrator](./agents/agent-orchestrator.md)
   - [Audience Agent](./agents/audience.md)
-  - [Journey Agent](./agents/ajo-agent.md)
+  - [Journey Agent](./agents/ajo-agent-analyze.md)
 - AI Assistant {#ai-assistant}
   - [AI Assistant UI guide](./ai-assistant/ai-assistant-ui.md)
   - [Prompt Library](./ai-assistant/prompt-library.md)
