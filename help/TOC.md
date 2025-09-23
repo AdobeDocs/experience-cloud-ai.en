@@ -11,4 +11,4 @@ role: Admin,User,Developer,Leader
 
 + [AI in Experience Cloud applications](home.md)
 + Agents {#agents}
-  + [AJO Agent](agent/ajo-agent.md)
+  + [AJO Agent](agent/ajo-agent-analyze.md)
