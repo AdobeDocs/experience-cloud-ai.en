@@ -1,8 +1,6 @@
 ---
 title: AI Assistant Prompt Library
 description: Learn about the different kinds of prompts and prompt patterns that you can use when querying AI Assistant.
-hide: true
-hidefromtoc: true
 ---
 # AI Assistant Prompt Library
 

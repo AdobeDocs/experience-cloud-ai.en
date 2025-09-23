@@ -1,8 +1,6 @@
 ---
 title: AI Assistant UI Guide
 description: Learn how to access and use AI Assistant in the user interface.
-hide: true
-hidefromtoc: true
 ---
 # AI Assistant
 
@@ -90,7 +88,7 @@ Select **[!UICONTROL Discovery]** from the rail view to access an extensive list
 
 Select a prompt to populate the input box. From here, you can edit the prompt to fit your particular use case. When ready, select the send icon on the right to submit your query.
 
-![The discover prompt in the input box.](./images/ai-assistant/inputs/question-input.png).
+![The discover prompt in the input box.](./images/ai-assistant/inputs/question-input.png)
 
 ## Interacting with responses
 
@@ -114,7 +112,7 @@ Next, navigate down to the bottom of the response and select **[!UICONTROL Relat
 
 ### View sources
 
-To verify AI Assistant's response, select **[!UICONTROL Sources]** to view a list of information sources that AI Assistant referenced when calculating it's response.
+To verify AI Assistant's response, select **[!UICONTROL Sources]** to view a list of information sources that AI Assistant referenced when calculating its response.
 
 ![The list of sources referenced by AI Assistant.](./images/ai-assistant/inputs/sources.png)
 
@@ -138,7 +136,7 @@ Select **[!UICONTROL Thumbs up]** to provide positive feedback. You can optional
 
 You can also select **[!UICONTROL Detailed feedback]** to further elaborate on your feedback. When finished, select **[!UICONTROL Submit]**.
 
-![The detailed feedback window for thumbs up.](./images/ai-assistant/inputs/thumbs-up-detailed.png).
+![The detailed feedback window for thumbs up.](./images/ai-assistant/inputs/thumbs-up-detailed.png)
 
 +++
 
@@ -152,7 +150,7 @@ Select **[!UICONTROL Thumbs down]** to provide constructive feedback. You can op
 
 Similarly, you can also select **[!UICONTROL Detailed feedback]** to further elaborate on your feedback. When finished, select **[!UICONTROL Submit]**.
 
-![The detailed feedback window for thumbs down.](./images/ai-assistant/inputs/thumbs-down-detailed.png).
+![The detailed feedback window for thumbs down.](./images/ai-assistant/inputs/thumbs-down-detailed.png)
 
 +++
 
