@@ -18,11 +18,14 @@ The Audience Agent lets you view insights about audiences, including detecting s
 
 The Audience Agent within AI Assistant supports the following use cases:
 
-- Detect significant changes in audience size
+- Find your audience size and detect significant changes in audience size
+  - This lets you find audiences that have suddenly grown or shrunk, letting you better analyze potential market changes
 - Detect duplicate audiences
+  - This lets you reduce redundancies with your created audiences
 - Find audiences based on full or partial attributes named
-- Find the size of your audiences
+  - This lets you more easily navigate through your audience inventory
 - Discover XDM fields you can use to define an audience
+  - This lets you more easily create audiences that the profiles you want to target
 
 The Audience Agent currently does **not** support the following features:
 
@@ -30,9 +33,9 @@ The Audience Agent currently does **not** support the following features:
   - Knowledge-based audience creation is creating an audience based on the given attributes and events
   - Support for this feature is coming soon
 - Goal-based audience exploration
-  - Goal-based audience exploration is creating a propensity model that 
+  - Goal-based audience exploration is creating a propensity model that lets you create an audience that is similar to a pre-existing audience
 - Estimate the size of an audience to support audience creation
-
+  - Estimating the size prior to audience creation lets you better see if 
 
 Additionally, when using Audience Agent, you should keep the following constraints in mind:
 
@@ -50,7 +53,7 @@ Show me fields for affluent buyers.
 
 +++ Response
 
-![](./images/audience/affluent-buyers.png)
+![The AI Assistant shows a table displaying fields that are relevant to affluent buyers.](./images/audience/affluent-buyers.png)
 
 +++
 
@@ -58,7 +61,7 @@ Which audiences have not been activated or used in any campaign in the last 30 d
 
 +++ Response
 
-![](./images/audience/not-activated.png)
+![The AI Assistant shows a table that displays audiences that haven't been activated or used in campaigns in the last 30 days.](./images/audience/not-activated.png)
 
 +++
 
@@ -66,7 +69,7 @@ List all the audiences that have been mapped to new destinations in the last 3 m
 
 +++ Response
 
-![](./images/audience/new-destination.png)
+![The AI Assistant lists the one audience that has been mapped to a new destination in the last 3 months.](./images/audience/new-destination.png)
 
 +++
 
@@ -76,7 +79,7 @@ Do I have any audiences with identical or similar descriptions?
 
 +++ Response
 
-![](./images/audience/similar-descriptions.png)
+![The AI Assistant displays a table that contains the segment definition and the names of the audiences with the same segment definitions.](./images/audience/similar-descriptions.png)
 
 +++
 
@@ -84,7 +87,7 @@ Identify audiences that have the same rules but have different names.
 
 +++ Response
 
-![](./images/audience/same-rules-different-names.png)
+![The AI Assistant displays a table that contains the names of audiences that share the same audience rules.](./images/audience/same-rules-different-names.png)
 
 +++
 
@@ -92,7 +95,7 @@ Show me all the audiences that have the same rules but different activation dest
 
 +++ Response
 
-![](./images/audience/same-rules-different-destinations.png)
+![The AI Assistant shows that there are no duplicate segment definitions to different destinations.](./images/audience/same-rules-different-destinations.png)
 
 +++
 
@@ -102,7 +105,7 @@ What is the current size of my audience "Gold-star Members in California_f153e1"
 
 +++ Response
 
-![](./images/audience/current-size.png)
+![The AI Assistant states the current size of the audience that was asked about.](./images/audience/current-size.png)
 
 +++
 
@@ -110,7 +113,7 @@ What is my biggest audience?
 
 +++ Response
 
-![](./images/audience/largest-audience.png)
+![The AI Assistant gives information about the audience with the most profiles, including name and audience ID.](./images/audience/largest-audience.png)
 
 +++
 
@@ -120,15 +123,15 @@ Which audiences have increased in size by more than 20% in the last week?
 
 +++ Response
 
-![](./images/audience/increase-past-week.png)
+![The AI Assistant displays a table that lists the names of all the audiences that match the query. It also shows the percentage increase, the current audience size, as well as the former audience size.](./images/audience/increase-past-week.png)
 
 +++
 
-Which audiences have decreased in size by more than 15% in the last month?
+Which audiences have decreased in size by more than 10% in the last month?
 
 +++ Response
 
-![](./images/audience/decrease-month.png)
+![The AI Assistant displays a table that lists the names of all the audiences that match the query. It also shows the current audience size, the former audience size, as well as the date of the old audience size.](./images/audience/decrease-month.png)
 
 +++
 
@@ -136,7 +139,7 @@ What is my fastest growing audience?
 
 +++ Response
 
-![](./images/audience/fastest-growing.png)
+![The AI Assistant states the name of the fastest growing audience, as well as the current size and the percentage of growth.](./images/audience/fastest-growing.png)
 
 +++
 
