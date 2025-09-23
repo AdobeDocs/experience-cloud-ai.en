@@ -25,23 +25,22 @@ The Audience Agent within AI Assistant supports the following use cases:
 - Find audiences based on full or partial attributes named
   - This lets you more easily navigate through your audience inventory
 - Discover XDM fields you can use to define an audience
-  - This lets you more easily create audiences that the profiles you want to target
+  - This skill lets you more easily identify the right fields to use in your audience based on context and relevance
 
 The Audience Agent currently does **not** support the following features:
 
 - Knowledge-based audience creation
   - Knowledge-based audience creation is creating an audience based on the given attributes and events
+  - Additionally, you can estimate the potential size of the audience prior to audience creation. This lets you quickly iterate on the most effective audience before it's ready to activate
   - Support for this feature is coming soon
 - Goal-based audience exploration
-  - Goal-based audience exploration is creating a propensity model that lets you create an audience that is similar to a pre-existing audience
-- Estimate the size of an audience to support audience creation
-  - Estimating the size prior to audience creation lets you better see if 
+  - Goal-based audience exploration lets you discover relevant datasets and profiles aligned to a business goal by applying machine learning models such as propensity to buy or convert.
 
 Additionally, when using Audience Agent, you should keep the following constraints in mind:
 
 - Audience Agent needs at least 24 hours to process your data
   - For example, you **cannot** have a query that looks for data within the last 24 hours. You'll need to look within the last 48 hours, at a minimum.
-- Audience Agent only supports **people** based audiences that are created in Segment Builder
+- Audience Agent only supports **people** based audiences that are evaluated using batch segmentation
 
 ## Sample prompts
 
