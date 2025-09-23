@@ -8,7 +8,6 @@ hide: true
 hidefromtoc: true
 ---
 
-
 # Journey Agent Analyze: Skill Overview and User Guide
 
 ## Overview
@@ -135,4 +134,3 @@ To maximize the effectiveness of Journey Agent Analyze, follow these best practi
 - **Define Clear Objectives**: Before analyzing journeys, establish clear goals (e.g., improving retention, increasing conversions).
 - **Monitor Regularly**: Schedule regular reviews of journey performance to identify trends and anomalies.
 - **Optimize Segmentation**: Ensure audience segmentation is balanced to avoid fatigue and maximize engagement.
-
