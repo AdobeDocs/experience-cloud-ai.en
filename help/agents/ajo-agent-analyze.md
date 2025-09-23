@@ -3,7 +3,9 @@ title: Journey Agent Analyze Skill Overview and User Guide
 description: Comprehensive guide to the Journey Agent Analyze skill, enabling users to analyze marketing journeys, detect issues, uncover insights, and optimize customer engagement.
 solution: Journey Optimizer
 product: journey optimizer
-role: Marketing Strategist, Data Analyst, Journey Manager
+role: Admin,User,Developer,Leader
+hide: true
+hidefromtoc: true
 ---
 
 
@@ -12,6 +14,8 @@ role: Marketing Strategist, Data Analyst, Journey Manager
 ## Overview
 
 Journey Agent will enable Journey Optimizer users to create, analyze, and optimize journeys using a natural language interface. With Journey Agent, practitioners can quickly build journeys, detect and resolve schedule or audience conflicts, analyze performance and drop-off points, and identify top-performing journeys to replicate for future campaigns. It empowers practitionners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
+
+![Sample for AJO Agent](./images/ajo-agent/ajo-agent-sample.png)
 
 ## Use Cases
 
@@ -35,7 +39,7 @@ The Journey Agent Analyze skill offers a range of functionalities that can be le
    - Maximize audience impact by ensuring journeys run at optimal times.
 
 4. **Operational insights** 
-   - Prompt-based Journey Insights – Surface operational insights about journeys , i.e. “show me all live journeys.”
+   - Prompt-based Journey Insights – Surface operational insights about journeys , i.e. "show me all live journeys."
 
 
 ## In Scope and Out of Scope Skills
@@ -66,49 +70,49 @@ Here are examples of valuable prompts users can leverage to explore, monitor, an
 
 ### Journey Lifecycle Questions
 
-- “When was [Journey Name] published?”
-- “When was [Journey Name] stopped?”
-- “List all journeys currently in test mode”
+- "When was [Journey Name] published?"
+- "When was [Journey Name] stopped?"
+- "List all journeys currently in test mode"
 
 ### Journey Resource Questions
 
-- “How many live journeys do I have?”
-- “Give me a list of all scheduled recurring journeys and their expected run times.”
+- "How many live journeys do I have?"
+- "Give me a list of all scheduled recurring journeys and their expected run times."
 
 ### Audience and Journey Insights
 
-- “Which audiences are used in more than X journeys?”
-- “List all journeys using the [audience name] audience.”
+- "Which audiences are used in more than X journeys?"
+- "List all journeys using the [audience name] audience."
 
 ### Conflict Analysis Prompts 
 
 Use these prompts to analyze potential conflicts between journeys, including scheduling and audience overlaps:
 
-- “Can you do a comprehensive analysis of conflicts for our journey [Journey Name] with conflict type (scheduling/audience) information with live/running journeys?”
-- “Please do a scheduling conflict analysis for journey [Journey Name] with conflict type information.”
-- “Please do an audience overlap analysis for journey [Journey Name] with conflict type information.”
-- “Are there any scheduling conflicts for journey [Journey Name]?”
-- “Show me audience overlap conflicts for journey [Journey Name].”
-- “Analyze all conflicts for journey [Journey Name] with other live journeys.”
-- “What are the current conflicts for journey [Journey Name]?”
-- “Check if journey [Journey Name] has audience conflicts with other journeys.”
-- “Check for scheduling conflicts involving journey [Journey Name].”
-- “I want to know about all journey conflicts for [Journey Name].”
-- “Do any live journeys conflict with [Journey Name] by schedule or audience?”
-- “Identify conflict types for journey [Journey Name] compared to running journeys.”
-- “Show overlapping audiences for journey [Journey Name] and other journeys.”
-- “Highlight scheduling overlaps between journey [Journey Name] and live journeys.”
-- “Is journey [Journey Name] running in conflict with any other journey?”
-- “Please detect and list conflicts for [Journey Name].”
-- “Report all types of conflicts for journey [Journey Name].”
-- “Give me a conflict breakdown (scheduling and audience) for [Journey Name].”
-- “Does [Journey Name] have any conflicts that may impact performance?”
-- “Are there any active conflicts affecting [Journey Name]?”
-- “List journeys in conflict with [Journey Name] by schedule or audience.”
-- “Has journey [Journey Name] triggered any conflict alerts?”
-- “Find potential audience conflicts for journey [Journey Name].”
-- “Analyze conflict risk for journey [Journey Name].”
-- “Provide conflict diagnostics for [Journey Name].”
+- "Can you do a comprehensive analysis of conflicts for our journey [Journey Name] with conflict type (scheduling/audience) information with live/running journeys?"
+- "Please do a scheduling conflict analysis for journey [Journey Name] with conflict type information."
+- "Please do an audience overlap analysis for journey [Journey Name] with conflict type information."
+- "Are there any scheduling conflicts for journey [Journey Name]?"
+- "Show me audience overlap conflicts for journey [Journey Name]."
+- "Analyze all conflicts for journey [Journey Name] with other live journeys."
+- "What are the current conflicts for journey [Journey Name]?"
+- "Check if journey [Journey Name] has audience conflicts with other journeys."
+- "Check for scheduling conflicts involving journey [Journey Name]."
+- "I want to know about all journey conflicts for [Journey Name]."
+- "Do any live journeys conflict with [Journey Name] by schedule or audience?"
+- "Identify conflict types for journey [Journey Name] compared to running journeys."
+- "Show overlapping audiences for journey [Journey Name] and other journeys."
+- "Highlight scheduling overlaps between journey [Journey Name] and live journeys."
+- "Is journey [Journey Name] running in conflict with any other journey?"
+- "Please detect and list conflicts for [Journey Name]."
+- "Report all types of conflicts for journey [Journey Name]."
+- "Give me a conflict breakdown (scheduling and audience) for [Journey Name]."
+- "Does [Journey Name] have any conflicts that may impact performance?"
+- "Are there any active conflicts affecting [Journey Name]?"
+- "List journeys in conflict with [Journey Name] by schedule or audience."
+- "Has journey [Journey Name] triggered any conflict alerts?"
+- "Find potential audience conflicts for journey [Journey Name]."
+- "Analyze conflict risk for journey [Journey Name]."
+- "Provide conflict diagnostics for [Journey Name]."
 
 
 ## Best Practices
@@ -117,7 +121,7 @@ Use these prompts to analyze potential conflicts between journeys, including sch
 
 To maximize the effectiveness of Journey Agent Analyze, follow these best practices:
 
-1. **Be Specific**: Use clear and concise prompts to get targeted insights. For example, instead of asking “What are my journeys?“, specify “List all journeys created in the last month.”
+1. **Be Specific**: Use clear and concise prompts to get targeted insights. For example, instead of asking "What are my journeys?", specify "List all journeys created in the last month."
 2. **Combine Insights**: Integrate insights from Audience Agent and Data Insights Agent for a holistic view of journey performance.
 3. **Iterative Refinement**: Use fallout and overlap analysis to iteratively refine journey design and scheduling.
 
