@@ -7,3 +7,5 @@ description: Learn how Experience Cloud applications use generative AI (GenAI), 
 Move content from AI assistant landing to this page. 
 
 Continue using this page for AI Assistant home (landing), build it out as new AI content migrates to this repo.
+
+Test edit: 2025-09-23
