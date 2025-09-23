@@ -6,9 +6,9 @@ hidefromtoc: true
 ---
 # Adobe Experience Platform Agent Orchestrator
 
- Adobe Experience Platform Agent Orchestrator is the intelligent layer that powers Adobe Experience Platform Agents available in Experience Cloud applications and new AI-first Applications. When you ask questions or request help, Agent Orchestrator automatically calls upon specialized agents to get you the right answers. Agent Orchestrator remembers your conversation history, enabling you to build on previous questions naturally without repeating context, and combines insights from multiple agents to present you with clear, unified responses.
+Adobe Experience Platform Agent Orchestrator is the new agentic layer in Adobe Experience Platform. Designed to leverage the platform's rich data and customer knowledge, Experience Platform Agent Orchestrator powers the intelligence and reasoning behind purpose-built expert Adobe Experience Platform Agents, enabling them to execute complex decision-making and problem-solving tasks at speed and scale — all with human oversight. When you ask questions or request help via natural language in a conversational interface like AI Assistant, Agent Orchestrator automatically calls upon specialized agents to get you the right answers. Agent Orchestrator remembers your conversation history, enabling you to build on previous questions naturally without repeating context, and combines insights from multiple agents to present you with clear, unified responses.
 
-You can complete complex workflows through simple conversation without needing to know which agents are working behind the scenes. The system understands your goals, creates step-by-step plans, and can adjust its approach as needed. You can explore the reasoning panel to see the step-by-step thinking process and better understand how your requests are being handled. With Agent Orchestrator, you can use AI Assistant to tackle complex workflows and optimize strategies across Adobe Experience Cloud applications.
+You can complete complex end-to-end workflows through an intuitive conversational interface without needing to know which agents are working behind the scenes. The system understands your goals, creates step-by-step plans, and adjusts its approach as needed based on your feedback. You can explore the reasoning panel to see the step-by-step thinking process and better understand how your requests are being handled. With Agent Orchestrator, you can tackle complex workflows and optimize strategies across Adobe Experience Cloud applications.
 
 Read this document to learn about Agent Orchestrator.
 
@@ -26,9 +26,9 @@ For more information, read the [AI Assistant UI guide](../ai-assistant/ai-assist
 
 ### Reasoning engine {#reasoning-engine}
 
-The reasoning engine is the main decision-maker in Agent Orchestrator. It understands your goals, checks any limits or requirements, and creates step-by-step plans to help you reach your objectives. Unlike simple question-and-answer systems, it can adjust its plans as things change, and can go back and try different approaches if needed. The plans it creates are shown to you in the AI Assistant, so you can see and follow the process. 
+Reasoning engine interprets your goals based on your natural language prompts, checks any limits or requirements, and creates step-by-step plans to help you reach your objectives. Unlike simple question-and-answer systems, it can adjust its plans as things change, and can go back and try different approaches if needed. The plans it creates are shown to you in the AI Assistant conversational interface, so you can see and follow the process, as well as intervene if needed.
 
-### Adobe Experience Platform agents {#agents}
+### Adobe Experience Platform Agents {#agents}
 
 | Agent | Details | Supported applications |
 | --- | --- | --- |

@@ -10,7 +10,7 @@ Welcome to the comprehensive guide for AI capabilities across Adobe Experience C
 
 ### AI Assistant
 
-AI Assistant is a conversational experience that accelerates and optimizes workflows across Adobe Experience Cloud applications. You can use AI Assistant to access specialized agents, gain product knowledge, troubleshoot problems, and find operational insights through natural language interactions.
+AI Assistant is an intelligent conversational, generative AI tool that will boost productivity and redefine work in Adobe Experience Platform-based Applications. Users can gain product knowledge, troubleshoot problems, and find operational insights through natural language prompts. You can also use AI Assistant to access Adobe Experience Platform Agents and other AI capabilities.
 
 **Key features:**
 
@@ -22,7 +22,7 @@ AI Assistant is a conversational experience that accelerates and optimizes workf
 
 ### Agent Orchestrator
 
-Agent Orchestrator is the intelligent layer that powers AI Assistant, automatically calling upon specialized agents to provide the right answers. It remembers conversation history, combines insights from multiple agents, and presents unified responses.
+Adobe Experience Platform Agent Orchestrator is the new agentic layer in Adobe Experience Platform. Designed to leverage the platform's rich data and customer knowledge, Experience Platform Agent Orchestrator powers the intelligence and reasoning behind purpose-built expert Adobe Experience Platform Agents, enabling them to execute complex decision-making and problem-solving tasks at speed and scale — all with human oversight. When you ask questions or request help via natural language in a conversational interface like AI Assistant, Agent Orchestrator automatically calls upon specialized agents to get you the right answers. Agent Orchestrator remembers your conversation history, enabling you to build on previous questions naturally without repeating context, and combines insights from multiple agents to present you with clear, unified responses.
 
 **Core components:**
 

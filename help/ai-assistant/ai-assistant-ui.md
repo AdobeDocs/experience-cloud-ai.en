@@ -6,7 +6,7 @@ hidefromtoc: true
 ---
 # AI Assistant
 
-**AI Assistant** is a conversational experience that you can use to accelerate and optimize workflows across Adobe Experience Cloud applications. You can use AI Assistant to access Adobe Experience Platform Agents and other AI capabilities. 
+AI Assistant is an intelligent conversational, generative AI tool that will boost productivity and redefine work in Adobe Experience Platform-based Applications. You can use AI Assistant to access Adobe Experience Platform Agents and other AI capabilities.
 
 Read this guide to learn how you can use AI Assistant.
 
@@ -24,7 +24,7 @@ In the Experience Cloud home interface, select **[!UICONTROL AI Assistant]** fro
 
 +++
 
-You can also launch AI Assistant from the home pages of Experience Cloud applications such as Experience Platform, Adobe Journey Optimizer, and Customer Journey Analytics. Navigate to your product home page and then select the **AI Assistant icon** from the top header to launch the AI Assistant chat panel on the right rail..
+You can also launch AI Assistant from the home pages of Experience Cloud applications such as Experience Platform, Adobe Journey Optimizer, and Customer Journey Analytics. Navigate to your product home page and then select the **AI Assistant icon** from the top header to launch the AI Assistant chat panel on the right rail.
 
 +++Select to view
 
