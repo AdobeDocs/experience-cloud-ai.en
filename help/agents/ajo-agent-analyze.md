@@ -24,21 +24,25 @@ Journey Agent will enable Journey Optimizer users to create, analyze, and optimi
 The Journey Agent Analyze skill offers a range of functionalities that can be leveraged to optimize marketing efforts:
 
 1. **Journey Fallout Analysis**
+
    - Identify where and why customers drop off during a journey.
    - Detect patterns in customer behavior leading to disengagement.
    - Use insights to refine journey design and improve retention.
 
-2. **Journey Audience Overlap Analysis**
+1. **Journey Audience Overlap Analysis**
+
    - Analyze audience overlap across multiple journeys.
    - Prevent audience fatigue caused by over-targeting.
    - Optimize segmentation to ensure balanced engagement.
 
-3. **Journey Schedule Overlap Analysis**
+1. **Journey Schedule Overlap Analysis**
+
    - Detect timing conflicts between scheduled journeys targeting the same audience.
    - Avoid over-communication and improve scheduling efficiency.
    - Maximize audience impact by ensuring journeys run at optimal times.
 
-4. **Operational insights** 
+1. **Operational insights** 
+
    - Prompt-based Journey Insights – Surface operational insights about journeys , i.e. "show me all live journeys."
 
 
@@ -122,8 +126,8 @@ Use these prompts to analyze potential conflicts between journeys, including sch
 To maximize the effectiveness of Journey Agent Analyze, follow these best practices:
 
 1. **Be Specific**: Use clear and concise prompts to get targeted insights. For example, instead of asking "What are my journeys?", specify "List all journeys created in the last month."
-2. **Combine Insights**: Integrate insights from Audience Agent and Data Insights Agent for a holistic view of journey performance.
-3. **Iterative Refinement**: Use fallout and overlap analysis to iteratively refine journey design and scheduling.
+1. **Combine Insights**: Integrate insights from Audience Agent and Data Insights Agent for a holistic view of journey performance.
+1. **Iterative Refinement**: Use fallout and overlap analysis to iteratively refine journey design and scheduling.
 
 
 ### Setup Best Practices
@@ -131,23 +135,4 @@ To maximize the effectiveness of Journey Agent Analyze, follow these best practi
 - **Define Clear Objectives**: Before analyzing journeys, establish clear goals (e.g., improving retention, increasing conversions).
 - **Monitor Regularly**: Schedule regular reviews of journey performance to identify trends and anomalies.
 - **Optimize Segmentation**: Ensure audience segmentation is balanced to avoid fatigue and maximize engagement.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
