@@ -99,7 +99,10 @@ Here are examples of valuable prompts users can leverage to explore, monitor, an
 
 ### Fallout analysis
 
-
+- "I want to analyze the fallout by node for journey Fourth of July Campaign."
+- "Perform a fallout analysis for journey Fourth of July Campaign."
+- "What is profile loss over the course of journey Fourth of July Campaign?"
+- "Show where users are dropping off in journey Fourth of July Campaign."
 
 ### Conflict Analysis Prompts 
 
