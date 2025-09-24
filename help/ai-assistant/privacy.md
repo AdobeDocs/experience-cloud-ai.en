@@ -12,7 +12,7 @@ Read this document to learn about the customer trust-focused capabilities that y
 * AI Assistant is unaware of consumer data.
 * All existing [access control](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) policies will be honored by AI Assistant.
 
-  * Any new attribute-based access control policies are reflected in AI Assistant after a maximum of 24 hours*
+  * Any new attribute-based access control policies are reflected in AI Assistant after a maximum of 24 hours\*
 
 * You must be granted explicit permission to interact with AI Assistant.
 
@@ -24,4 +24,4 @@ Read this document to learn about the customer trust-focused capabilities that y
 * AI Assistant is grounded in sandbox-specific data and public Adobe documentation when answering to user prompts. Data is not shared across sandboxes.
 * Prompts that you provide to AI Assistant are not shared to other customers.
 
-**This implies that if any new labels are added to fields and objects or any new policies are created, then it will take AI Assistant up to 24 hours to honor them. During those 24 hours, users with newly restricted access can still access those fields and objects.*
+\* *This implies that if any new labels are added to fields and objects or any new policies are created, then it will take AI Assistant up to 24 hours to honor them. During those 24 hours, users with newly restricted access can still access those fields and objects.*
