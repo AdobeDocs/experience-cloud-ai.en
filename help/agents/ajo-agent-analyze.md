@@ -14,11 +14,12 @@ Journey Agent will enable Journey Optimizer users to analyze, and optimize journ
 
 >[!AVAILABILITY]
 >
->The Audience Agent is available for all customers who have access to AI Assistant. However, you will need the following permissions in order to fully use the Audience Agent features.
+>The Journey Agent is available for all customers who have access to AI Assistant. However, you will need the following permissions in order to fully use the Journey Agent features.
 >
->**View Segments**: This permission lets you use the Audience Agent to view insights into the audiences directly in AI Assistant.
->**Manage Segments**: To permission lets you use the Audience Agent to create new audiences directly in AI Assistant.
-
+>**View Journeys**: This permission lets you use the Journey Agent to view insights into the journey directly in AI Assistant.
+>**Manage Journeys**: To permission lets you use the Journey Agent to create new journeys directly in AI Assistant.
+>**View Segments**: This permission lets you use the Journey Agent to view insights into the audiences directly in AI Assistant.
+>**Manage Segments**: To permission lets you use the Journey Agent to create new audiences directly in AI Assistant.
 
 ![Sample for AJO Agent](./images/ajo-agent/ajo-agent-sample.png)
 
