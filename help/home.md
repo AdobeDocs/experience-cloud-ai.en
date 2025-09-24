@@ -53,10 +53,9 @@ Available in Customer Journey Analytics, this agent:
 
 Enables Journey Optimizer users to:
 
-- Create, analyze, and optimize journeys using natural language
+- Analyze, and optimize journeys using natural language
 - Detect and resolve schedule or audience conflicts
 - Analyze performance and drop-off points
-- Identify top-performing journeys for replication
 
 #### Product Support Agent
 
