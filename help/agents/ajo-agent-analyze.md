@@ -1,18 +1,24 @@
 ---
-title: Journey Agent Analyze Skill Overview and User Guide
+title: Journey Analyze Agent Skill Overview and User Guide
 description: Comprehensive guide to the Journey Agent Analyze skill, enabling users to analyze marketing journeys, detect issues, uncover insights, and optimize customer engagement.
 solution: Journey Optimizer
 product: journey optimizer
 role: Admin,User,Developer,Leader
-hide: true
-hidefromtoc: true
 ---
 
-# Journey Agent Analyze: Skill Overview and User Guide
+# Journey Analyze Agent: Skill Overview and User Guide
 
 ## Overview
 
-Journey Agent will enable Journey Optimizer users to create, analyze, and optimize journeys using a natural language interface. With Journey Agent, practitioners can quickly build journeys, detect and resolve schedule or audience conflicts, analyze performance and drop-off points, and identify top-performing journeys to replicate for future campaigns. It empowers practitionners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
+Journey Agent will enable Journey Optimizer users to analyze, and optimize journeys using a natural language interface. With Journey Agent, practitioners can quickly identify and resolve schedule and/or audience conflicts, detect points of user abandonment in a journey and provide insights or recommendations. It empowers practitionners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
+
+>[!AVAILABILITY]
+>
+>The Audience Agent is available for all customers who have access to AI Assistant. However, you will need the following permissions in order to fully use the Audience Agent features.
+>
+>**View Segments**: This permission lets you use the Audience Agent to view insights into the audiences directly in AI Assistant.
+>**Manage Segments**: To permission lets you use the Audience Agent to create new audiences directly in AI Assistant.
+
 
 ![Sample for AJO Agent](./images/ajo-agent/ajo-agent-sample.png)
 
@@ -44,6 +50,8 @@ The Journey Agent Analyze skill offers a range of functionalities that can be le
 
    - Prompt-based Journey Insights – Surface operational insights about journeys , i.e. "show me all live journeys."
 
+For each of these analyses, the agent not only detects issues but also provides **actionable recommendations to resolve them**.
+
 
 ## In Scope and Out of Scope Skills
 
@@ -53,6 +61,7 @@ The following capabilities are supported by Journey Agent Analyze:
 
 - **Reactive Queries**: Allows users to ask specific questions about journey performance, audience usage, and scheduling conflicts.
 - **Integration with Other Agents**: Collaborates with Audience Agent and Data Insights Agent for deeper analysis.
+- **Agent response structuration**: reasoning (explain the logic), analysis summary (highlight key points), issue details (describe the problem), and recommendation (propose next steps).
 
 ### **Out of Scope**
 
@@ -86,6 +95,10 @@ Here are examples of valuable prompts users can leverage to explore, monitor, an
 
 - "Which audiences are used in more than X journeys?"
 - "List all journeys using the [audience name] audience."
+
+### Fallout analysis
+
+
 
 ### Conflict Analysis Prompts 
 
