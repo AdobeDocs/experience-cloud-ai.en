@@ -27,7 +27,7 @@ The Audience Agent within AI Assistant supports the following use cases:
 - Discover XDM fields you can use to define an audience
   - This skill lets you more easily identify the right fields to use in your audience based on context and relevance
 
-The Audience Agent currently does **not** support the following features:
+The Audience Agent does not **currently** support the following features:
 
 - Knowledge-based audience creation
   - Knowledge-based audience creation is creating an audience based on the given attributes and events
