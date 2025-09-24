@@ -52,7 +52,7 @@ Show me fields for affluent buyers.
 
 +++ Response
 
-![The AI Assistant shows a table displaying fields that are relevant to affluent buyers.](./images/affluent-buyers.png)
+![The AI Assistant shows a table displaying fields that are relevant to affluent buyers.](./images/audience/affluent-buyers.png)
 
 +++
 
@@ -68,7 +68,7 @@ List all the audiences that have been mapped to new destinations in the last 3 m
 
 +++ Response
 
-![The AI Assistant lists the one audience that has been mapped to a new destination in the last 3 months.](./images/new-destination.png)
+![The AI Assistant lists the one audience that has been mapped to a new destination in the last 3 months.](./images/audience/new-destination.png)
 
 +++
 
