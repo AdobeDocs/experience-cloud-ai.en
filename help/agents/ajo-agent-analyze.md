@@ -17,8 +17,11 @@ Journey Agent will enable Journey Optimizer users to analyze, and optimize journ
 >The Journey Agent is available for all customers who have access to AI Assistant. However, you will need the following permissions in order to fully use the Journey Agent features.
 >
 >**View Journeys**: This permission lets you use the Journey Agent to view insights into the journey directly in AI Assistant.
+>
 >**Manage Journeys**: To permission lets you use the Journey Agent to create new journeys directly in AI Assistant.
+>
 >**View Segments**: This permission lets you use the Journey Agent to view insights into the audiences directly in AI Assistant.
+>
 >**Manage Segments**: To permission lets you use the Journey Agent to create new audiences directly in AI Assistant.
 
 ![Sample for AJO Agent](./images/ajo-agent/ajo-agent-sample.png)
@@ -134,7 +137,6 @@ Use these prompts to analyze potential conflicts between journeys, including sch
 - "Analyze conflict risk for journey [Journey Name]."
 - "Provide conflict diagnostics for [Journey Name]."
 
-
 ## Best Practices
 
 ### Prompting Best Practices
@@ -144,7 +146,6 @@ To maximize the effectiveness of Journey Agent Analyze, follow these best practi
 1. **Be Specific**: Use clear and concise prompts to get targeted insights. For example, instead of asking "What are my journeys?", specify "List all journeys created in the last month."
 1. **Combine Insights**: Integrate insights from Audience Agent and Data Insights Agent for a holistic view of journey performance.
 1. **Iterative Refinement**: Use fallout and overlap analysis to iteratively refine journey design and scheduling.
-
 
 ### Setup Best Practices
 

@@ -10,6 +10,7 @@ description: Learn how to use the Audience Agent to create audiences, view audie
 >The Audience Agent is available for all customers who have access to AI Assistant. However, you will need the following permissions in order to fully use the Audience Agent features.
 >
 >**View Segments**: This permission lets you use the Audience Agent to view insights into the audiences directly in AI Assistant.
+>
 >**Manage Segments**: To permission lets you use the Audience Agent to create new audiences directly in AI Assistant.
 
 The Audience Agent lets you view insights about audiences, including detecting significant audience size changes, detecting duplicate audiences, exploring your audience inventory, and retrieving your audiences' size.
@@ -19,27 +20,39 @@ The Audience Agent lets you view insights about audiences, including detecting s
 The Audience Agent within AI Assistant supports the following use cases:
 
 - Find your audience size and detect significant changes in audience size
+
   - This lets you find audiences that have suddenly grown or shrunk, letting you better analyze potential market changes
+
 - Detect duplicate audiences
+
   - This lets you reduce redundancies with your created audiences
+
 - Find audiences based on full or partial attributes named
+
   - This lets you more easily navigate through your audience inventory
+
 - Discover XDM fields you can use to define an audience
+
   - This skill lets you more easily identify the right fields to use in your audience based on context and relevance
 
 The Audience Agent does not **currently** support the following features:
 
 - Knowledge-based audience creation
+
   - Knowledge-based audience creation is creating an audience based on the given attributes and events
   - Additionally, you can estimate the potential size of the audience prior to audience creation. This lets you quickly iterate on the most effective audience before it's ready to activate
   - Support for this feature is coming soon
+
 - Goal-based audience exploration
+
   - Goal-based audience exploration lets you discover relevant datasets and profiles aligned to a business goal by applying machine learning models such as propensity to buy or convert.
 
 Additionally, when using Audience Agent, you should keep the following constraints in mind:
 
 - Audience Agent needs at least 24 hours to process your data
+
   - For example, you **cannot** have a query that looks for data within the last 24 hours. You'll need to look within the last 48 hours, at a minimum.
+
 - Audience Agent only supports **people** based audiences that are evaluated using batch segmentation
 
 ## Sample prompts

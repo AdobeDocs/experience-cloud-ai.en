@@ -55,5 +55,3 @@ To get access to the AI Assistant conversational interface and use one or more E
 >Operational insights questions are not available for Customer Journey Analytics; therefore, no additional permissions apply.
 
 * **Adobe Experience Manager**: Your administrator must grant you the permission to access AI Assistant through the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html).
-
-
