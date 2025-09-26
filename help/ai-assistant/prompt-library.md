@@ -127,3 +127,4 @@ The Product Support Agent helps you troubleshoot issues, create support cases, a
 
 - "What is the latest on my case E-12345?"
 - "What's the update on ticket E-67890?"
+

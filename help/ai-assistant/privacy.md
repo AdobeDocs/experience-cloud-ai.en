@@ -25,4 +25,3 @@ Read this document to learn about the customer trust-focused capabilities that y
 * Prompts that you provide to AI Assistant are not shared to other customers.
 
 &ast; *This implies that if any new labels are added to fields and objects or any new policies are created, then it will take AI Assistant up to 24 hours to honor them. During those 24 hours, users with newly restricted access can still access those fields and objects.*
-

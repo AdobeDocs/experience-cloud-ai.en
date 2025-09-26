@@ -19,3 +19,4 @@ AI Assistant is currently supported in English only. Non-English inputs may prod
 ## Verifying Responses {#verifying-responses}
 
 It is important to check your answers, as language models can make mistakes. Always verify the sources to ensure that SQL logic is correct and that the appropriate documentation was referenced for your use case. Review the reasoning steps and explanations provided by AI Assistant to understand how it arrived at its answer. If something does not look right, please submit feedback.
+
