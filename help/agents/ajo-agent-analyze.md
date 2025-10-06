@@ -12,17 +12,19 @@ role: Admin,User,Developer,Leader
 
 Journey Agent will enable Journey Optimizer users to analyze, and optimize journeys using a natural language interface. With Journey Agent, practitioners can quickly identify and resolve schedule and/or audience conflicts, detect points of user abandonment in a journey and provide insights or recommendations. It empowers practitionners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
 
+Learn more and discover the agent at a glance in this [overview](https://experienceleague.adobe.com/en/slides/journey-agent-overview).
+
 >[!AVAILABILITY]
 >
->The Journey Agent is available for all customers who have access to AI Assistant. However, you will need the following permissions in order to fully use the Journey Agent features.
+>The Journey Agent is available for all customers who have access to AI Assistant. However, you will need the following permissions in order to fully use the Journey Agent features:
 >
->**View Journeys**: This permission lets you use the Journey Agent to view insights into the journey directly in AI Assistant.
+>**View Journeys**: This permission lets you view insights into the journey directly in AI Assistant.
 >
->**Manage Journeys**: To permission lets you use the Journey Agent to create new journeys directly in AI Assistant.
+>**Manage Journeys**: To permission lets you create new journeys directly in AI Assistant.
 >
->**View Segments**: This permission lets you use the Journey Agent to view insights into the audiences directly in AI Assistant.
+>**View Segments**: This permission lets you view insights into the audiences directly in AI Assistant.
 >
->**Manage Segments**: To permission lets you use the Journey Agent to create new audiences directly in AI Assistant.
+>**Manage Segments**: To permission lets you create new audiences directly in AI Assistant.
 
 ![Sample for AJO Agent](./images/ajo-agent/ajo-agent-sample.png)
 
