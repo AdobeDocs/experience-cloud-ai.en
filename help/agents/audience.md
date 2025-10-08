@@ -35,13 +35,12 @@ The Audience Agent within AI Assistant supports the following use cases:
 
   - This skill lets you more easily identify the right fields to use in your audience based on context and relevance
 
+- Knowledge-based audience creation 
+
+    - This skill lets you create an audience based on the given attributes and events
+    - Additionally, this skill lets you estimate the potential size of an audience prior to creating the audience, letting you quickly iterate on the most effective audience before it's ready to activate
+
 The Audience Agent does not **currently** support the following features:
-
-- Knowledge-based audience creation
-
-  - Knowledge-based audience creation is creating an audience based on the given attributes and events
-  - Additionally, you can estimate the potential size of the audience prior to audience creation. This lets you quickly iterate on the most effective audience before it's ready to activate
-  - Support for this feature is coming soon
 
 - Goal-based audience exploration
 
