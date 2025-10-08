@@ -40,7 +40,7 @@ The Audience Agent within AI Assistant supports the following use cases:
     - This skill lets you create an audience based on the given attributes and events
     - Additionally, this skill lets you estimate the potential size of an audience prior to creating the audience, letting you quickly iterate on the most effective audience before it's ready to activate
 
-The Audience Agent does not **currently** support the following features:
+The Audience Agent does not **currently** support the following feature:
 
 - Goal-based audience exploration
 
