@@ -79,7 +79,6 @@ List all the audiences that have been mapped to new destinations in the last 3 m
 
 Which account audience has the largest audience size and what is that size?
 
-
 +++ Response
 
 ![The AI Assistant shows a table that displays the largest account audiences.](./images/audience/largest-account-audience.png)
