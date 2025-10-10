@@ -19,14 +19,22 @@ The Audience Agent lets you view insights about audiences, including detecting s
 
 The Audience Agent within AI Assistant supports the following use cases:
 
-- Find your audience size and detect significant changes in audience size
+- Conversationally explore your audience
+  - Find audience sizes of existing audiences
+  - Look for audiences based on full or partial attributes named
+  - Detect duplicate audiences
+  - Discover XDM fields you can use to define an audience
+- Detect significant changes in audience size
+  - This lets you find audiences that have suddenly grown or shrunk, letting you better analyze potential market changes
+
+<!-- - Find your audience size and detect significant changes in audience size
   - This lets you find audiences that have suddenly grown or shrunk, letting you better analyze potential market changes
 - Detect duplicate audiences
   - This lets you reduce redundancies with your created audiences
 - Find audiences based on full or partial attributes named
   - This lets you more easily navigate through your audience inventory
 - Discover XDM fields you can use to define an audience
-  - This skill lets you more easily identify the right fields to use in your audience based on context and relevance
+  - This skill lets you more easily identify the right fields to use in your audience based on context and relevance -->
 
 The Audience Agent does not **currently** support the following features:
 
