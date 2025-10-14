@@ -18,5 +18,6 @@ role: Admin,User,Developer,Leader
 - Agents {#agents}
   - [Agent Orchestrator](./agents/agent-orchestrator.md)
   - [Audience Agent](./agents/audience.md)
+  - [Experiment Agent](./agents/agent-experiment.md)
   - [Journey Agent](./agents/ajo-agent-analyze.md)
 
