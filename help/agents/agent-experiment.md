@@ -1,18 +1,16 @@
 ---
 title: Experimentation Agent
 description: Learn how to use Experimentation Agent
-hide: true
-hidefromtoc: true
 ---
 # Experimentation Agent
 
 >[!AVAILABILITY]
 >
->The Experimentation Agent is available for all customers who have access to AI Assistant. However, you will need the following permissions in order to fully use the Experimentation Agent features.
+>The Experimentation Agent is available for all customers who have access to AI Assistant. However, you need the following permissions in order to fully use the Experimentation Agent features.
 >
 >**View View Experiments**: This permission lets you use the Experimentation Agent to view insights into the experiment directly in AI Assistant.
 >
->**Manage Experiment Metada**: To permission lets you use the Experimentation Agent to create new experiments directly in AI Assistant.
+>**Manage Experiment Metada**: This permission lets you use the Experimentation Agent to create new experiments directly in AI Assistant.
 
 ## Overview  
 
