@@ -50,8 +50,8 @@ Additionally, when using Audience Agent, you should keep the following constrain
 - Audience Agent needs at least 24 hours to process your data
   - For example, you **cannot** have a query that looks for data within the last 24 hours. You'll need to look within the last 48 hours, at a minimum.
 - Audience Agent only supports the following audience types:
-    - **People** based audiences that are evaluated using batch segmentation
-    - **Account** based audiences for the following use cases:
+    - **People-based** audiences that are evaluated using batch segmentation
+    - **Account-based** audiences for the following use cases:
       - Conversational audience exploration
       - Duplicate audience detection
 
