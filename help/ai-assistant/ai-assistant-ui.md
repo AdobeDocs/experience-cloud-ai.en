@@ -10,6 +10,8 @@ Read this guide to learn how you can use AI Assistant.
 
 ![The AI Assistant home interface in full-screen.](./images/ai-assistant/blank-home.png)
 
+>[!SLIDE](agent-orchestrator-ui)
+
 ## Access AI Assistant
 
 There are several ways to access AI Assistant.
