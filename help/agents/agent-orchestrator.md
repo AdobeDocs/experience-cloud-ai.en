@@ -8,6 +8,8 @@ Adobe Experience Platform Agent Orchestrator is the new agentic layer in Adobe E
 
 You can complete complex end-to-end workflows through an intuitive conversational interface without needing to know which agents are working behind the scenes. The system understands your goals, creates step-by-step plans, and adjusts its approach as needed based on your feedback. Within your conversation in AI Assistant, you can explore the Agent Orchestrator reasoning panel to see the step-by-step thinking process and better understand how your requests are being handled.
 
+>[!SLIDE](agent-orchestrator-overview)
+
 Read this document to learn about Agent Orchestrator.
 
 ## Components of Agent Orchestrator {#components}

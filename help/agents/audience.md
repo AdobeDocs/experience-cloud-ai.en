@@ -15,6 +15,8 @@ description: Learn how to use the Audience Agent to create audiences, view audie
 
 The Audience Agent lets you view insights about audiences, including detecting significant audience size changes, detecting duplicate audiences, exploring your audience inventory, and retrieving your audiences' size.
 
+>[!SLIDE](audience-agent-overview)
+
 ## Supported use cases
 
 The Audience Agent within AI Assistant supports the following use cases:

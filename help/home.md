@@ -14,11 +14,12 @@ Welcome to the comprehensive guide for AI capabilities across Adobe Experience C
 
 **Key features:**
 
-- **Conversational Interface**: Full-screen and rail view options for different workflow preferences
-- **Discovery Prompts**: Pre-configured prompts organized by category (Learn, Analyze, Optimize)
-- **Context Setting**: Configure application, sandbox, and dataview settings for targeted responses
-- **Data Visualization**: Interactive charts and graphs for data insights
-- **Response Verification**: Source citations, reasoning explanations, and feedback mechanisms
+- **Conversational Interface**: You can choose between a full-screen and a rail view interface to suit your workflow preferences.
+- **Discovery Prompts**: AI Assistant provides pre-configured prompts that are organized by categories such as Learn, Analyze, and Optimize.
+- **Context Setting**: You are able to configure the application, sandbox, and dataview settings to receive responses that are tailored to your needs.
+- **Data Visualization**: The tool delivers interactive charts and graphs, enabling you to gain insights from your data.
+- **Response Verification**: All responses include source citations, explanations of AI reasoning, and mechanisms for providing feedback.
+
 
 ### Agent Orchestrator
 
@@ -34,36 +35,36 @@ Welcome to the comprehensive guide for AI capabilities across Adobe Experience C
 
 #### Audience Agent
 
-Provides insights about audiences including:
+The Audience Agent provides insights about audiences including:
 
-- Detecting significant audience size changes
-- Identifying duplicate audiences
-- Exploring audience inventory
-- Retrieving audience sizes
+- Detecting significant audience size changes.
+- Identifying duplicate audiences.
+- Exploring audience inventory.
+- Retrieving audience sizes.
 
 #### Data Insights Agent
 
-Available in Customer Journey Analytics, this agent:
+Available in Customer Journey Analytics, the Data Insights Agent:
 
-- Answers questions about your data using natural language
-- Builds relevant visualizations in Analysis Workspace
-- Uses components from your dataview and actual data
+- Answers questions about your data using natural language.
+- Builds relevant visualizations in Analysis Workspace.
+- Uses components from your dataview and actual data.
 
 #### Journey Agent
 
-Enables Journey Optimizer users to:
+The Journey Agent enables the Adobe Journey Optimizer users to:
 
-- Analyze, and optimize journeys using natural language
-- Detect and resolve schedule or audience conflicts
-- Analyze performance and drop-off points
+- Analyze, and optimize journeys using natural language.
+- Detect and resolve schedule or audience conflicts.
+- Analyze performance and drop-off points.
 
 #### Product Support Agent
 
-Offers self-serve debugging and troubleshooting:
+Use the Product Support Agent for self-serve debugging and troubleshooting:
 
-- Troubleshoot Adobe Experience Platform features without leaving workflows
-- Create support tickets with context from AI Assistant interactions
-- Check ticket updates through AI Assistant
+- Troubleshoot Adobe Experience Platform features without leaving workflows.
+- Create support tickets with context from AI Assistant interactions.
+- Check ticket updates through AI Assistant.
 
 ## Getting started
 
@@ -71,33 +72,30 @@ Offers self-serve debugging and troubleshooting:
 
 To use AI Assistant and Experience Platform Agents, your Adobe Admin needs to set up the appropriate permissions:
 
-- **Real-Time CDP and Adobe Journey Optimizer**: Requires "Enable AI Assistant" permission and "View Operational Insights" permission for operational questions
-- **Customer Journey Analytics**: Access through Customer Journey Analytics Access Control for product knowledge and data insights questions
-- **Adobe Experience Manager**: Access through the Adobe Admin Console
+- To use AI Assistant within Real-Time CDP and Adobe Journey Optimizer, you need the "Enable AI Assistant" permission, as well as the "View Operational Insights" permission to access operational questions.
+- Access to AI Assistant in Customer Journey Analytics is managed through Customer Journey Analytics Access Control, which allows you to ask both product knowledge and data insights questions.
+- For Adobe Experience Manager, you can access AI Assistant through permissions set in the Adobe Admin Console.
 
 ### Privacy and security
 
 AI Assistant is built with privacy, security, and governance at the forefront:
 
-- No personal data is used for training
-- All existing access control policies are honored
-- HIPAA-ready when used with Adobe Experience Platform Healthcare Shield
-- 30-day retention policy for interaction logs
-- Sandbox-specific data isolation
+- No personal data is used for training.
+- All existing access control policies are honored.
+- HIPAA-ready when used with Adobe Experience Platform Healthcare Shield.
+- 30-day retention policy for interaction logs.
+- Sandbox-specific data isolation.
 
 ## Best practices
 
-- **Be specific** in your prompts to get targeted insights
-- **Verify responses** using source citations and reasoning explanations
-- **Use context setting** to ensure relevant data sources
-- **Provide feedback** to help improve AI Assistant performance
-- **Combine insights** from multiple agents for comprehensive analysis
+To get the most value from your AI Assistant experience, follow these best practices:
+
+- **Be specific** in your prompts to obtain targeted and relevant insights from the AI Assistant.
+- **Verify responses** by reviewing the source citations and the reasoning explanations provided by the AI Assistant.
+- **Use context setting** to make sure that the most relevant data sources are used for your questions.
+- **Provide feedback** to help improve the performance and accuracy of the AI Assistant over time.
+- **Combine insights** from multiple agents to achieve a more comprehensive and well-rounded analysis.
 
 ## Legal considerations
 
-- AI Assistant currently supports English only
-- Always verify responses as language models can make mistakes
-- Review reasoning steps and explanations provided
-- Submit feedback for any issues or inaccuracies
-
-This guide provides everything you need to effectively use AI capabilities across your Experience Cloud applications, from basic interactions to advanced agent orchestration and specialized workflows.
+When using AI Assistant, it is important to be aware of key legal and practical considerations. Currently, AI Assistant supports responses in English only. Always take care to verify the information provided, as language models may occasionally make mistakes. Make use of the reasoning steps and explanations included in the responses to better understand the answers you receive. If you encounter any issues or inaccuracies, please submit feedback to help improve the AI Assistant over time.
