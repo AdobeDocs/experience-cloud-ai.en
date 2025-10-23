@@ -19,47 +19,47 @@ The Audience Agent lets you view insights about audiences, including detecting s
 
 The Audience Agent within AI Assistant supports the following use cases:
 
-- Find your audience size and detect significant changes in audience size
-
+- Conversationally explore your audience
+  - Find audience sizes of existing audiences
+  - Look for audiences based on full or partial attributes named
+  - Detect duplicate audiences
+  - Discover XDM fields you can use to define an audience
+- Detect significant changes in audience size
   - This lets you find audiences that have suddenly grown or shrunk, letting you better analyze potential market changes
 
+<!-- - Find your audience size and detect significant changes in audience size
+  - This lets you find audiences that have suddenly grown or shrunk, letting you better analyze potential market changes
 - Detect duplicate audiences
-
   - This lets you reduce redundancies with your created audiences
-
 - Find audiences based on full or partial attributes named
-
   - This lets you more easily navigate through your audience inventory
-
 - Discover XDM fields you can use to define an audience
-
-  - This skill lets you more easily identify the right fields to use in your audience based on context and relevance
+  - This skill lets you more easily identify the right fields to use in your audience based on context and relevance -->
 
 The Audience Agent does not **currently** support the following features:
 
 - Knowledge-based audience creation
-
   - Knowledge-based audience creation is creating an audience based on the given attributes and events
   - Additionally, you can estimate the potential size of the audience prior to audience creation. This lets you quickly iterate on the most effective audience before it's ready to activate
   - Support for this feature is coming soon
-
 - Goal-based audience exploration
-
   - Goal-based audience exploration lets you discover relevant datasets and profiles aligned to a business goal by applying machine learning models such as propensity to buy or convert.
 
 Additionally, when using Audience Agent, you should keep the following constraints in mind:
 
 - Audience Agent needs at least 24 hours to process your data
-
   - For example, you **cannot** have a query that looks for data within the last 24 hours. You'll need to look within the last 48 hours, at a minimum.
-
-- Audience Agent only supports **people** based audiences that are evaluated using batch segmentation
+- Audience Agent only supports the following audience types:
+    - **People-based** audiences that are evaluated using batch segmentation
+    - **Account-based** audiences for the following use cases:
+      - Conversational audience exploration
+      - Duplicate audience detection
 
 ## Sample prompts
 
 The following examples demonstrate sample prompts and responses for the Audience Agent.
 
-### Conversation audience exploration
+### Conversational audience exploration
 
 Show me fields for affluent buyers.
 
@@ -82,6 +82,14 @@ List all the audiences that have been mapped to new destinations in the last 3 m
 +++ Response
 
 ![The AI Assistant lists the one audience that has been mapped to a new destination in the last 3 months.](./images/audience/new-destination.png)
+
++++
+
+Which account audience has the largest audience size and what is that size?
+
++++ Response
+
+![The AI Assistant shows a table that displays the largest account audiences.](./images/audience/largest-account-audience.png)
 
 +++
 
@@ -108,6 +116,14 @@ Show me all the audiences that have the same rules but different activation dest
 +++ Response
 
 ![The AI Assistant shows that there are no duplicate segment definitions to different destinations.](./images/audience/same-rules-different-destinations.png)
+
++++
+
+Identify account audiences that have the same rules but have different names.
+
++++ Response
+
+![The AI Assistant displays a table that contains the names and IDs of account audiences that share the same audience rules.](./images/audience/duplicate-account-audience.png)
 
 +++
 
