@@ -42,6 +42,8 @@ The Audience Agent provides insights about audiences including:
 - Exploring audience inventory.
 - Retrieving audience sizes.
 
+Read the [Audience Agent documentation](./agents/audience.md) for more information.
+
 #### Data Insights Agent
 
 Available in Customer Journey Analytics, the Data Insights Agent:
@@ -50,13 +52,15 @@ Available in Customer Journey Analytics, the Data Insights Agent:
 - Builds relevant visualizations in Analysis Workspace.
 - Uses components from your dataview and actual data.
 
-#### Journey Agent
+#### Journey Analyze Agent
 
-The Journey Agent enables the Adobe Journey Optimizer users to:
+The Journey Analyze Agent enables the Adobe Journey Optimizer users to:
 
 - Analyze, and optimize journeys using natural language.
 - Detect and resolve schedule or audience conflicts.
 - Analyze performance and drop-off points.
+
+Read the [Journey Analyze Agent documentation](./agents/ajo-agent-analyze.md) for more information.
 
 #### Product Support Agent
 
@@ -65,6 +69,8 @@ Use the Product Support Agent for self-serve debugging and troubleshooting:
 - Troubleshoot Adobe Experience Platform features without leaving workflows.
 - Create support tickets with context from AI Assistant interactions.
 - Check ticket updates through AI Assistant.
+
+Read the [Product Support Agent documentation](./agents/product-support.md) for more information.
 
 ## Getting started
 
