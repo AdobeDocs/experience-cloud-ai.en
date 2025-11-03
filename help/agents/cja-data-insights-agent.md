@@ -46,7 +46,8 @@ The following parameters govern access to Data Insights Agent in Customer Journe
 
 * **Permissions**: Necessary permissions must be granted in the [!UICONTROL Adobe Admin Console] before users can access Data Insights Agent. 
 
-  To grant permissions, a [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) must complete the following steps in the [!UICONTROL Admin Console]:
+   To grant permissions, a [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) must complete the following steps in the [!UICONTROL Admin Console]:
+
    1. In the **[!UICONTROL Admin Console]**, select the **[!UICONTROL Products]** tab to view the **[!UICONTROL All products and services]** page.
    1. Select **[!UICONTROL Customer Journey Analytics]**.
    1. On the **[!UICONTROL Product Profiles]** tab, select the title of the product profile for which you want to provide access to [!UICONTROL AI Assistant: Product Knowledge].
@@ -68,24 +69,22 @@ The following parameters govern access to Data Insights Agent in Customer Journe
 
 * **Data view access**: Data views must be enabled for Data Insights Agent.
 
-  >[!IMPORTANT]
-  >
-  >Consider the following when enabling data views:
-  >* You can enable a maximum of 50 data views per IMS organization. If you enable more than 50 data views across all product profiles for a given organization, the Data Insights Agent will use the 50 most-used data views. 
-  >* The Data Insights Agent can reference the included data views sometime during the same day that you enable them. 
+   >[!IMPORTANT]
+   >
+   >Consider the following when enabling data views:
+   >* You can enable a maximum of 50 data views per IMS organization. If you enable more than 50 data views across all product profiles for a given organization, the Data Insights Agent will use the 50 most-used data views. 
+   >* The Data Insights Agent can reference the included data views sometime during the same day that you enable them. 
 
-  To enable data views for Data Insights Agent:
+   To enable data views for Data Insights Agent:
    
    1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
-
    1. Select one or more data views that you want to enable for Data Insights Agent, then select **[!UICONTROL Enable for Data Insights Agent]**.
 
       ![Enable data views for Data Insights Agent](images/cja-agent/data-view-enable-dia.png)   
 
-  To view the number of data views that are enabled for Data Insights Agent in your IMS organization:
+   To view the number of data views that are enabled for Data Insights Agent in your IMS organization:
 
    1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
-
    1. Select the info icon at the top of the **[!UICONTROL Data Insights Agent]** column.
 
       ![Data Insights Agent info icon](images/cja-agent/data-insights-agent-tooltip.png)
@@ -93,26 +92,21 @@ The following parameters govern access to Data Insights Agent in Customer Journe
 ## Access Data Insights Agent in the AI Assistant
 
 1. Go to [experience.adobe.com](https://experience.adobe.com/) and login with your Adobe ID.
-
-2. Select **Customer Journey Analytics** from Experience Cloud Home.
-
-3. Select **[!UICONTROL Blank project]** in the banner at the top of the projects page to open a new blank project.
-
-4. Ensure that the selected data view for the panel is a data view that was enabled for use with Data Insights Agent, as described in [Manage access to Data Insights Agent in Customer Journey Analytics](#manage-access-to-data-insights-agent-in-customer-journey-analytics). 
-
-5. Select the AI Assistant chat icon at the top-right area of the page. 
+1. Select **Customer Journey Analytics** from Experience Cloud Home.
+1. Select **[!UICONTROL Blank project]** in the banner at the top of the projects page to open a new blank project.
+1. Ensure that the selected data view for the panel is a data view that was enabled for use with Data Insights Agent, as described in [Manage access to Data Insights Agent in Customer Journey Analytics](#manage-access-to-data-insights-agent-in-customer-journey-analytics). 
+1. Select the AI Assistant chat icon at the top-right area of the page. 
 
    If you do not see the chat icon, contact your administrator so they can enable the following features in the Admin Conole:
    
    * Reporting Tools: **[!UICONTROL AI Assistant: Product Knowledge]**
-
    * Data View Tools: **[!UICONTROL Data Insights Agent]**
    
    For additional details, see [Manage access to Data Insights Agent in Customer Journey Analytics](#manage-access-to-data-insights-agent-in-customer-journey-analytics). 
 
    ![AI Assistant icon](images/cja-agent/ai-asst-icon.png)
 
-6. In the **[!UICONTROL Ask about Customer Journey Analytics]** dialog at the bottom of the page, ask a data visualization question using Data Insights Agent.
+1. In the **[!UICONTROL Ask about Customer Journey Analytics]** dialog at the bottom of the page, ask a data visualization question using Data Insights Agent.
  
    For more information, see the following examples.
 
@@ -186,7 +180,6 @@ The following are some examples of common prompts and the visualizations used by
 | Proportion of purchases by month of year | Donut |
 | Total profit in [Month] | Summary Number<p>Asking for the "total" of a metric across a certain time range should return a Summary number visualization. |
 
-
 ## Prompting best practices
 
 Data Insights Agent processes the context provided by each user prompt and tries to respond intelligently with the most appropriate visualization and components in a freeform table. 
@@ -259,4 +252,3 @@ Below are best practices for your Customer Journey Analytics configuration (data
 >[Data Dictionary](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/data-dictionary/data-dictionary-overview)
 >[Approve calculated metric](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-approving)
 >[Share segments](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/segments/seg-share)
->
