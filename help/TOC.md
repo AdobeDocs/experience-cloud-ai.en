@@ -20,4 +20,5 @@ role: Admin,User,Developer,Leader
   - [Audience Agent](./agents/audience.md)
   - [Experiment Agent](./agents/agent-experiment.md)
   - [Journey Agent](./agents/ajo-agent-analyze.md)
+  - [Product Support Agent](./agents/product-support.md)
 
