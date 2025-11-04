@@ -8,7 +8,7 @@ solution: Customer Journey Analytics
 
 >[!AVAILABILITY]
 >
->Data Insights Agent is available to eligible customers for a limited time. Access to Data Insights Agent will end on February 28, 2026. To continue using Data Insights Agent without interruption, please contact your Adobe account representative to learn more about licensing Data Insights Agent.
+>Data Insights Agent is available to eligible customers for a limited time. Access to Data Insights Agent is available through February 28, 2026. To continue using Data Insights Agent without interruption, please contact your Adobe account representative to learn more about licensing Adobe Experience Platform Agent Orchestrator.
 
 Data Insights Agent, accessible from the [AI Assistant](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/ai-assistant) in Customer Journey Analytics, is a generative AI conversation agent that quickly and efficiently answers questions about your data. It builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data.
 
