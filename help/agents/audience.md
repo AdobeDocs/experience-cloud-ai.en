@@ -172,6 +172,38 @@ What is my fastest growing audience?
 
 +++
 
+### Create an audience
+
+When you create an audience with Audience Agent, AI Assistant will guide you through a three step plan:
+
+1. [Identify audience characteristics](#identify)
+2. [Estimate audience size](#estimate)
+3. [Create and persist a new audience](#create)
+
+#### Identify audience characteristics {#identify}
+
+Firstly, you'll need to let AI Assistant know what you want your audience to be made up of. For example, you can ask to look for "All men who live in California". If the AI Assistant's audience definition is correct, you can approve and move on to the next step.
+
++++ Response
+
++++
+
+#### Estimate audience size {#estimate}
+
+After approving the identified audience characteristics, AI Assistant will estimate the size of the potential audience and the audience definition details. If the estimated size looks correct, you can approve and move on to the next step.
+
++++ Response
+
++++
+
+#### Create and persist new audience {#create}
+
+Finally, if the characteristics and the audience size look correct, you can provide the name and description for the audience and confirm its creation.
+
++++ Response
+
++++
+
 ## Next steps
 
 After reading this guide, you should have a better understanding of Audience Agent and what features it supports. For more information on agents in Adobe Experience Platform, read the [Agent Orchestrator overview](./agent-orchestrator.md).
