@@ -28,6 +28,9 @@ The Audience Agent within AI Assistant supports the following use cases:
   - Discover XDM fields you can use to define an audience
 - Detect significant changes in audience size
   - This lets you find audiences that have suddenly grown or shrunk, letting you better analyze potential market changes
+- Audience creation 
+    - This skill lets you create an audience based on the given attributes and events
+    - Additionally, this skill lets you estimate the potential size of an audience prior to creating the audience, letting you quickly iterate on the most effective audience before it's ready to activate
 
 <!-- - Find your audience size and detect significant changes in audience size
   - This lets you find audiences that have suddenly grown or shrunk, letting you better analyze potential market changes
@@ -38,12 +41,8 @@ The Audience Agent within AI Assistant supports the following use cases:
 - Discover XDM fields you can use to define an audience
   - This skill lets you more easily identify the right fields to use in your audience based on context and relevance -->
 
-The Audience Agent does not **currently** support the following features:
+The Audience Agent does not **currently** support the following feature:
 
-- Knowledge-based audience creation
-  - Knowledge-based audience creation is creating an audience based on the given attributes and events
-  - Additionally, you can estimate the potential size of the audience prior to audience creation. This lets you quickly iterate on the most effective audience before it's ready to activate
-  - Support for this feature is coming soon
 - Goal-based audience exploration
   - Goal-based audience exploration lets you discover relevant datasets and profiles aligned to a business goal by applying machine learning models such as propensity to buy or convert.
 
@@ -172,6 +171,80 @@ What is my fastest growing audience?
 ![The AI Assistant states the name of the fastest growing audience, as well as the current size and the percentage of growth.](./images/audience/fastest-growing.png)
 
 +++
+
+### Create an audience
+
+When you create an audience with Audience Agent, AI Assistant will guide you through a plan. For example, you can ask to "Create an audience made up of people who live in California". AI Assistant then lists the plan that it will undertake to create the audience.
+
++++ Response
+
+![The AI Assistant shows the plan to create an audience.](./images/audience/audience-create-plan.png)
+
++++
+
+This plan is made up of three steps:
+
+1. [Identify audience characteristics](#identify)
+2. [Estimate audience size](#estimate)
+3. [Create and persist a new audience](#create)
+
+#### Identify audience characteristics {#identify}
+
+![Step 1 of the plan, which is to identify audience characteristics.](./images/audience/plan-step-1.png){align="center" width="80%"}
+
+After accepting the plan, AI Assistant will grab the audience's characteristics based off of your initial query.
+
++++ Response
+
+![The audience definition based off of the user query.](./images/audience/audience-create-definition.png)
+
+For this query, AI Assistant generates the relevant Profile Query Language (PQL) that would look for people who live in California. In this use case, the PQL query would look like the following:
+
+```sql
+homeAddress.state.equals("California", false)
+```
+
+For more information on PQL, read the [PQL overview](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview).
+
++++
+
+If the AI Assistant's audience definition is correct, you can approve and move on to the next step.
+
+#### Estimate audience size {#estimate}
+
+![Step 2 of the plan, which is to estimate the size of the potential audience.](./images/audience/plan-step-2.png){align="center" width="80%"}
+
+After approving the identified audience characteristics, AI Assistant will estimate the size of the potential audience and the audience definition details. 
+
++++ Response
+
+![The sample estimate for the potential audience is displayed. The estimated size and the segment definition are shown.](./images/audience/audience-create-estimate.png)
+
++++
+
+If the estimated size looks correct, you can approve and move on to the next step.
+
+#### Create and persist new audience {#create}
+
+![Step 3 of the plan, which is to finish creating the audience.](./images/audience/plan-step-3.png){align="center" width="80%"}
+
+Finally, if the characteristics and the audience size look correct, you can approve or reject the audience's creation.
+
++++ Response
+
+First, you can review the proposed audience through the provided data grid.
+
+![The review screen is displayed.](./images/audience/audience-create-review.png)
+
+If the audience looks correct, you can accept the proposal by selecting **[!UICONTROL Create]** to finish creating the audience.
+
+![The complete proposal for the audience is displayed.](./images/audience/audience-create-proposal.png)
+
++++
+
+The audience is now created.
+
+![The audience proposal was accepted, and the audience was created.](./images/audience/audience-finish-create.png){align="center" width="80%"}
 
 ## Next steps
 
