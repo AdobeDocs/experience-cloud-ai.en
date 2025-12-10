@@ -174,7 +174,7 @@ What is my fastest growing audience?
 
 ### Create an audience
 
-When you create an audience with Audience Agent, AI Assistant will guide you through a plan. For example, you can ask to "Create an audience made up of men who live in California". AI Assistant then lists the plan that it will undertake to create the audience.
+When you create an audience with Audience Agent, AI Assistant will guide you through a plan. For example, you can ask to "Create an audience made up of people who live in California". AI Assistant then lists the plan that it will undertake to create the audience.
 
 +++ Response
 
@@ -190,7 +190,7 @@ This plan is made up of three steps:
 
 #### Identify audience characteristics {#identify}
 
-![Step 1 of the plan, which is to identify audience characteristics.](./images/audience/plan-step-1.png)
+![Step 1 of the plan, which is to identify audience characteristics.](./images/audience/plan-step-1.png){align="center" width="80%"}
 
 After accepting the plan, AI Assistant will grab the audience's characteristics based off of your initial query.
 
@@ -198,13 +198,21 @@ After accepting the plan, AI Assistant will grab the audience's characteristics 
 
 ![The audience definition based off of the user query.](./images/audience/audience-create-definition.png)
 
+For this query, AI Assistant generates the relevant Profile Query Language (PQL) that would look for people who live in California. In this use case, the PQL query would look like the following:
+
+```sql
+homeAddress.state.equals("California", false)
+```
+
+For more information on PQL, read the [PQL overview](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview).
+
 +++
 
 If the AI Assistant's audience definition is correct, you can approve and move on to the next step.
 
 #### Estimate audience size {#estimate}
 
-![Step 2 of the plan, which is to estimate the size of the potential audience.](./images/audience/plan-step-2.png)
+![Step 2 of the plan, which is to estimate the size of the potential audience.](./images/audience/plan-step-2.png){align="center" width="80%"}
 
 After approving the identified audience characteristics, AI Assistant will estimate the size of the potential audience and the audience definition details. 
 
@@ -218,7 +226,7 @@ If the estimated size looks correct, you can approve and move on to the next ste
 
 #### Create and persist new audience {#create}
 
-![Step 3 of the plan, which is to finish creating the audience.](./images/audience/plan-step-3.png)
+![Step 3 of the plan, which is to finish creating the audience.](./images/audience/plan-step-3.png){align="center" width="80%"}
 
 Finally, if the characteristics and the audience size look correct, you can approve or reject the audience's creation.
 
@@ -236,7 +244,7 @@ If the audience looks correct, you can accept the proposal by selecting **[!UICO
 
 The audience is now created.
 
-![The audience proposal was accepted, and the audience was created.](./images/audience/audience-finish-create.png)
+![The audience proposal was accepted, and the audience was created.](./images/audience/audience-finish-create.png){align="center" width="80%"}
 
 ## Next steps
 
