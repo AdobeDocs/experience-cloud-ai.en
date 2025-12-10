@@ -6,15 +6,21 @@ description: Learn how to use Experimentation Agent
 
 >[!AVAILABILITY]
 >
->The Experimentation Agent is available for all customers who have access to AI Assistant. However, you need the following permissions in order to fully use the Experimentation Agent features.
+>The Experimentation Agent is available to all customers who have purchased the paid license of Journey Optimizer Experimentation Accelerator and integrates seamlessly with either Adobe Target or Adobe Journey Optimizer.
 >
->**View View Experiments**: This permission lets you use the Experimentation Agent to view insights into the experiment directly in AI Assistant.
->
->**Manage Experiment Metada**: This permission lets you use the Experimentation Agent to create new experiments directly in AI Assistant.
+>[Learn more on Journey Optimizer Experimentation Accelerator](https://experienceleague.adobe.com/en/docs/experimentation-accelerator/using/overview)
 
 ## Overview  
 
 The **Experimentation Agent** is an AI-powered tool that modernizes how you can run and manage digital experiments across websites, emails, push messages, and applications. Built on Adobe Experience Platform AI platform and experimentation tools, the **Experimentation Agent** helps you run experiments more efficiently, organize business goals, and generate actionable insights, highlighting what worked, what did not, and where to experiment next.
+
+The following permissions in order to fully use the Experimentation Agent features.
+
+* **View Experiments**: This permission lets you use the Experimentation Agent to view insights into the experiment directly in AI Assistant.
+
+* **Manage Experiment Metada**: This permission lets you use the Experimentation Agent to create new experiments directly in AI Assistant.
+
+➡️ [Learn more in Journey Optimizer Experimentation Accelerator documentation](https://experienceleague.adobe.com/en/docs/experimentation-accelerator/using/get-started/experiment-accelerator-access)
 
 As part of Experimentation Accelerator feature, the Agent delivers:
 
