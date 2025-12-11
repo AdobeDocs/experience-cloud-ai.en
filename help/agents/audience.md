@@ -174,6 +174,10 @@ What is my fastest growing audience?
 
 ### Create an audience
 
+>[!AVAILABILITY]
+>
+>You can only use the create audience skill if you are part of the Agent Orchestrator Explorer program. For more information, contact Adobe Customer Care.
+
 When you create an audience with Audience Agent, AI Assistant will guide you through a plan. For example, you can ask to "Create an audience made up of people who live in California". AI Assistant then lists the plan that it will undertake to create the audience.
 
 +++ Response
