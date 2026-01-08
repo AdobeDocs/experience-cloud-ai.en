@@ -4,9 +4,6 @@ description: Learn how to use the Journey Agent Create skill to build marketing 
 solution: Journey Optimizer
 product: journey optimizer
 role: Admin,User,Developer
-feature: AI Assistant
-topic: Administration
-level: Beginner
 ---
 
 # Journey Create Agent: Skill overview and user guide
