@@ -16,9 +16,7 @@ Journey Agent consists of two main skills:
 - **Journey Create Agent**: Build and configure marketing journeys through natural language prompts
 - **Journey Analyze Agent**: Analyze journeys, detect issues, uncover insights, and optimize customer engagement
 
----
-
-# Journey Create Agent: Skill overview and user guide
+## Journey Create Agent: Skill overview and user guide
 
 ## Overview
 
@@ -155,9 +153,7 @@ To maximize the effectiveness of Journey Create Agent, follow these best practic
 - **Plan Message Content**: Have your messaging strategy defined before journey creation.
 - **Consider Customer Experience**: Design journey flows that respect customer preferences and avoid over-communication.
 
----
-
-# Journey Analyze Agent: Skill Overview and User Guide
+## Journey Analyze Agent: Skill Overview and User Guide
 
 ## Overview
 
@@ -304,8 +300,6 @@ To maximize the effectiveness of Journey Agent Analyze, follow these best practi
 - **Define Clear Objectives**: Before analyzing journeys, establish clear goals (e.g., improving retention, increasing conversions).
 - **Monitor Regularly**: Schedule regular reviews of journey performance to identify trends and anomalies.
 - **Optimize Segmentation**: Ensure audience segmentation is balanced to avoid fatigue and maximize engagement.
-
----
 
 ## Slides and Presentations
 
