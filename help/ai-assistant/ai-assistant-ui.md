@@ -66,7 +66,7 @@ The rail view provides quick access to chat, discovery prompts, updates, convers
 
 This section provides an overview of the main features and navigation options in the AI Assistant user interface. It explains how to access AI Assistant, describes the layout and controls in both full screen and rail views, and introduces key tools such as conversations, input features, autocomplete, context setting, and discovery prompts. The following sections offer detailed guidance on using these features to interact with AI Assistant and get the most out of your experience.
 
-### Discovery prompts
+### Discovery prompts {#discovery-prompts}
 
 You can use AI Assistant's discovery feature to view a list of the general subjects, grouped into entities, that AI Assistant supports. Discovery prompts are different depending on your starting point.
 
