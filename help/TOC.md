@@ -20,7 +20,6 @@ role: Admin,User,Developer,Leader
   - [Audience Agent](./agents/audience.md)
   - [Data Insights Agent](./agents/cja-data-insights-agent.md)
   - [Experiment Agent](./agents/agent-experiment.md)
-  - [Journey Analyze Agent](./agents/ajo-agent-analyze.md)
-  - [Journey Create Agent](./agents/ajo-agent-create.md)
+  - [Journey Agent](./agents/ajo-agent.md)
   - [Product Support Agent](./agents/product-support.md)
 

@@ -60,7 +60,7 @@ The Journey Analyze Agent enables the Adobe Journey Optimizer users to:
 - Detect and resolve schedule or audience conflicts.
 - Analyze performance and drop-off points.
 
-Read the [Journey Analyze Agent documentation](./agents/ajo-agent-analyze.md) for more information.
+Read the [Journey Agent documentation](./agents/ajo-agent.md) for more information.
 
 #### Product Support Agent
 
