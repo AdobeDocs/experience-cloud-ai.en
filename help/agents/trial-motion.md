@@ -6,7 +6,7 @@ description:
 
 >[!AVAILABILITY]
 >
->Agent Orchestrator is currently being offered as a trial to a limited group of customers, and you do not need to purchase a SKU to participate.
+>**Select customers now have access to Adobe Experience Platform Agents for a complimentary trial**, enabling you to explore and interact with these Agents through the AI Assistant interface powered by Adobe Experience Platform Agent Orchestrator. The trial offers hands-on experience with AI Agents that operate within the context of customers' existing Experience Cloud products and environments, allowing teams to evaluate value before committing to a full purchase. Adobe Experience Platform Agents are guided by user input and oversight and respect existing product-level access controls, ensuring users can only perform actions or view data for which they are authorized within the underlying Experience Cloud applications.
 
 When you use AI Assistant in Adobe Experience Platform, you interact through a conversational interface: you type or speak a question, and the system translates that into actions across your data, campaigns, audiences, and workflows. Instead of navigating multiple tools, you can "ask" for insights, explanations, or changes—for example, to analyze performance, create an audience, or troubleshoot a setup—and AI Assistant returns answers, visualizations, or deep links into Experience Platform, Adobe Journey Optimizer, Customer Journey Analytics, or other digital experience apps. It keeps track of what you've already asked, so you can refine or build on previous questions without restating context.
 
@@ -49,5 +49,11 @@ If you need additional assistance or have questions that aren't covered by the r
 
 Details about topics covered and any additional joining instructions will be provided upon registration.
 
-## Access, Roles, and Permissions
+## Additional resources
 
+Read the following guides for more information on Agent Orchestrator and AI Assistant:
+
+- [Agent Orchestrator overview](agent-orchestrator.md)
+- [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md)
+- [AI Assistant prompt library](../ai-assistant/prompt-library.md)
+- [AI in Experience Cloud](../home.md)
