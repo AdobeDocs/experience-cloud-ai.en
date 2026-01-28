@@ -12,9 +12,17 @@ When you use AI Assistant in Adobe Experience Platform, you interact through a c
 
 Behind that experience, Agent Orchestrator is the technical layer that works on your behalf. For every request you make, it interprets your intent, decides which specialized agents or operators to call (and in what sequence), executes multi-step plans, and synthesizes their outputs into a single response you can act on. It maintains conversation state, coordinates reasoning (including planning, verification, and backtracking), and emits trace and usage data so your organization can monitor quality, performance, and credit consumption. In effect, AI Assistant is the surface you interact with, and Agent Orchestrator is the engine that routes, executes, and stitches together the work needed to fulfill your request.
 
+## Try-before-you-buy program details
+
+Your eligibility for the try-before-you-buy trial is fully at Adobe's discretion. Try-before-you-buy is not available to customers who are licensing or have licensed the Experience Platform Agent Orchestrator Promotion SKU or Experience Platform Agents AI Credits SKU.
+
+Customers enabled for Experience Platform Agents try-before-you-buy offer will be entitled to an initial one-time allotment of 10,000 AI Credits to use for any combination of Jobs listed in the AI Credit Consumption Table. Once you use up this initial one-time allotment of 10,000 AI AI Credits, you must transact the Experience Platform Agents AI Credits SKU to purchase AI Credits for continued use of Agents. You can track your AI Credits using the license usage dashboard in the Adobe Experience Platform UI. For more information, read the [license usage dashboard documentation](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/guides/license-usage).
+
 >[!IMPORTANT]
 >
->Customers enabled for Experience Platform Agents try-before-you-buy offer will be entitled to an initial one-time allotment of 10k AI credits to use for any combination of Jobs listed in the AI Credit Consumption Table. Once you use up this initial one-time allotment of 10k AI AI Credits, you must transact the Experience Platform Agents AI Credits SKU to purchase AI Credits for continued use of Agents
+>AI Credits only exist for the duration of the trial and **do not roll over** if you license additional AI Credits before using the full 10,000 AI Credit allotment.
+
+The trial ends once you consume the initial one-time allotment of 10,000 AI Credits or licenses additional AI Credits. While you may not immediately lose access or be charged overages, the extension of those benefits is at Adobe's discretion. You must purchase additional AI Credits as soon as the trial is complete in order to continue using Experience Platform Agents without disruption. Please contact your Adobe Account Team for guidance on how to license additional AI Credits.
 
 ## Access and Start Using AI Assistant powered by Agent Orchestrator
 
@@ -24,17 +32,9 @@ Once you have access, navigate to the Adobe Experience Cloud homepage to get sta
 
 For information on the available agents, read the [Agent Orchestrator overview](agent-orchestrator.md).
 
-## How to get help
-
-If you need additional assistance or have questions that aren't covered by the resources above, you can join our bi-weekly office hours for personalized support.
-
-**How to participate:**
-
-- **Sign-up link:** [Insert sign-up form link here]
-- **Meeting link:** [Insert Teams/meeting link here]
-- **Office hours schedule:** [Insert days/times here]
-
-Details about topics covered and any additional joining instructions will be provided upon registration.
+>[!TIP]
+>
+>Get Help - Please send a request to [aep-agents-trial-support@adobe.com](mailto:aep-agents-trial-support@adobe.com).
 
 ## Additional resources
 
