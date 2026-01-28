@@ -22,4 +22,5 @@ role: Admin,User,Developer,Leader
   - [Experiment Agent](./agents/agent-experiment.md)
   - [Journey Agent](./agents/ajo-agent.md)
   - [Product Support Agent](./agents/product-support.md)
+  - [Agents Usage-Bound Trial](./agents/trial.md)
 
