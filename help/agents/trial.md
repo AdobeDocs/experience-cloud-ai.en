@@ -1,6 +1,8 @@
 ---
 title: Adobe Experience Platform Agents Usage-Bound Trial
 description: Learn about the the complimentary trial for Adobe Experience Platform Agents.
+hide: true
+hidefromtoc: true
 ---
 # Adobe Experience Platform Agents usage-bound trial
 
