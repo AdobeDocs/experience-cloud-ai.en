@@ -23,4 +23,5 @@ role: Admin,User,Developer,Leader
   - [Journey Analyze Agent](./agents/ajo-agent-analyze.md)
   - [Journey Create Agent](./agents/ajo-agent-create.md)
   - [Product Support Agent](./agents/product-support.md)
+  - [Agents Usage-Bound Trial](./agents/trial-program.md)
 
