@@ -14,26 +14,13 @@ Behind that experience, Agent Orchestrator is the technical layer that works on 
 
 >[!IMPORTANT]
 >
->Customers enabled for Experience Platform Agents try-before-you-buy offer will be entitled to an initial one-time allotment of X AI Credits to use for any combination of Jobs listed in the AI Credit Consumption Table. Once you use up this initial one-time allotment of X AI Credits, you must transact the Experience Platform Agents AI Credits SKU to purchase AI Credits for continued use of Agents
+>Customers enabled for Experience Platform Agents try-before-you-buy offer will be entitled to an initial one-time allotment of 10k AI credits to use for any combination of Jobs listed in the AI Credit Consumption Table. Once you use up this initial one-time allotment of 10k AI AI Credits, you must transact the Experience Platform Agents AI Credits SKU to purchase AI Credits for continued use of Agents
 
 ## Access and Start Using AI Assistant powered by Agent Orchestrator
 
-To access and use the AI Assistant conversational interface and Experience Platform Agents, your Adobe administrator must assign you specific permissions in either the Permissions UI or the Adobe Admin Console:
+Users already have default access to AI Assistant and Agents as part of the trial, so no action is needed unless your organization wants to opt out of this trial access. To turn off access for your organization, please send a request to [aep-agents-trial-support@adobe.com](mailto:aep-agents-trial-support@adobe.com).
 
-- **For Real-Time CDP and Adobe Journey Optimizer**:  
-  - You need the **Enable AI Assistant** permission to use the AI Assistant.  
-  - You also need the **View Operational Insights** permission to ask operational insights questions in AI Assistant.  
-  - Both permissions are managed in the Permissions UI.
-
-- **For Customer Journey Analytics**:  
-  - Your administrator must grant access through the [Customer Journey Analytics Access Control](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control).  
-  - This permission allows you to ask product knowledge and data insights questions in AI Assistant.
-
->[!NOTE]
->
->Operational insights questions are not available for Customer Journey Analytics; therefore, no additional permissions apply.
-
-Once you have the necessary permissions, navigate to the Adobe Experience Cloud homepage to get started with AI Assistant. You can use the [discovery prompts](../ai-assistant/ai-assistant-ui.md#discovery-prompts) to view suggestions for prompts and common workflows. Use this feature to help accelerate your onboarding with AI Assistant. Additionally, read the [prompt library](../ai-assistant/prompt-library.md) for a variety of prompts that you can use with different agents. For more comprehensive information, read the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
+Once you have access, navigate to the Adobe Experience Cloud homepage to get started with AI Assistant. You can use the [discovery prompts](../ai-assistant/ai-assistant-ui.md#discovery-prompts) to view suggestions for prompts and common workflows. Use this feature to help accelerate your onboarding with AI Assistant. Additionally, read the [prompt library](../ai-assistant/prompt-library.md) for a variety of prompts that you can use with different agents. For more comprehensive information, read the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
 
 For information on the available agents, read the [Agent Orchestrator overview](agent-orchestrator.md).
 
