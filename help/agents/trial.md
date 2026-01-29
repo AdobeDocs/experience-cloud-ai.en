@@ -19,7 +19,7 @@ hidefromtoc: true
 
 Adobe will determine your eligibility for the trial at its sole discretion. Customers who currently have or previously had an Adobe Experience Platform Agent Orchestrator Promotion license or an Experience Platform Agents AI Credits license are not eligible for the trial.
 
-Eligible customers receive an initial one-time entitlement of up to 10,000 AI Credits to use for any combination of Jobs (depending on your existing license(s) to Experience Cloud applications) listed in the AI Credit Consumption Table. You can track your AI Credits using the license usage dashboard in the Adobe Experience Platform UI. For more information, read the [license usage dashboard documentation](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/guides/license-usage).
+Eligible customers receive an initial one-time entitlement of up to 10,000 AI Credits to use for any combination of Jobs (depending on your existing license(s) to Experience Cloud applications) listed in the [AI Credit Consumption Table](https://experienceleague.adobe.com/en/docs/core-services/interface/features/ai-credit-consumption). You can track your AI Credits using the license usage dashboard in the Adobe Experience Platform UI. For more information, read the [license usage dashboard documentation](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/guides/license-usage).
 
 >[!IMPORTANT]
 >
