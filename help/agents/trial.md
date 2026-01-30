@@ -37,6 +37,18 @@ For information on the available agents, read the [Agent Orchestrator overview](
 >
 >Get Help - Please send a request to [aep-agents-trial-support@adobe.com](mailto:aep-agents-trial-support@adobe.com).
 
+## Frequently asked questions {#faq}
+
+Read the following for answers to frequently asked questions regarding the Experience Platform Agents usage-bound trial.
+
+### What is the Adobe Experience Platform Agents usage-bound trial?
+
+The Adobe Experience Platform Agents usage-bound trial lets eligible customers use certain Agents at no additional cost up to 10,000 AI Credits. The goal is to provide a low‑friction, low‑risk path to experience value from these agents before customers make a commercial decision.
+
+### Which Agents are included in this trial?
+
+Read the guide on [Agentic AI in Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/agentic-ai) for a complete list of Agents included in the trial.
+
 ## Additional resources
 
 Read the following guides for more information on Agent Orchestrator and AI Assistant:
