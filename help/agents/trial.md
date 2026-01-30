@@ -37,6 +37,50 @@ For information on the available agents, read the [Agent Orchestrator overview](
 >
 >Get Help - Please send a request to [aep-agents-trial-support@adobe.com](mailto:aep-agents-trial-support@adobe.com).
 
+## Frequently asked questions {#faq}
+
+Read the following for answers to frequently asked questions regarding the Experience Platform Agents usage-bound trial.
+
+### What is the Adobe Experience Platform Agents usage-bound trial?
+
+The Adobe Experience Platform Agents usage-bound trial lets eligible customers use certain Agents at no additional cost up to 10,000 AI Credits. The goal is to provide a low‑friction, low‑risk path to experience value from these agents before customers make a commercial decision.
+
+### Which Agents are included in this trial?
+
+Read the guide on [Agentic AI in Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/agentic-ai) for a complete list of Agents included in the trial.
+
+### Who can participate in this trial?
+
+The trial is being rolled out to certain eligible Adobe Experience Cloud customers in phases so Adobe can provide appropriate support. If you are interested in participating, please reach out to your Adobe Account Team and they can verify your status and discuss options for access.
+
+### How much AI Credits do I get and what happens when those AI Credits are used?
+
+Eligible customers receive up to 10,000 AI Credits for the trial, which are consumed as Agents execute Jobs. Please note that these AI Credits only exist for the duration of the trial experience and do not roll over if you license additional AI Credits before using the full 10,000 AI Credits. For more information on AI Credit consumption, read the [Agent jobs and AI Credit consumption guide](https://experienceleague.adobe.com/en/docs/core-services/interface/features/ai-credit-consumption).
+
+### Does this cost anything?
+
+The trial does not require any additional purchase. There is no automatic conversion to a paid offering. If you decide to continue using Agents beyond the trial, your Adobe Account Team will work with you to transition to a paid offering.
+
+### Who can see the usage and how?
+
+You can track your AI Credits using the license usage dashboard in the Adobe Experience Platform UI. For more information, read the [license usage dashboard documentation](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/guides/license-usage).
+
+Use the dashboard to view your AI Credits usage and reporting. Only administrators and users with the appropriate permissions can view your usage information.
+
+### What happens after the trial ends?
+
+The trial ends when you consume the initial one-time entitlement of up to 10,000 AI Credits or once you license additional AI Credits.
+
+Once the trial ends, you can choose to:
+
+- Not move forward
+  - Doing so will allow the trial to expire
+  - Your existing Adobe products continue working as before, without penalty for not converting the trial
+- Move forward with continued Agent usage
+  - You can work with your Adobe Account Team to transition to a paid offering.
+
+There is no automatic hidden switch to convert customers whose trial has ended to paid.
+
 ## Additional resources
 
 Read the following guides for more information on Agent Orchestrator and AI Assistant:
