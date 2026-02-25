@@ -8,6 +8,10 @@ description: Learn about the the complimentary trial for Adobe Experience Platfo
 >
 >Certain eligible Experience Cloud customers may have access to the usage-bound Adobe Experience Platform Agents trial to experience the value of the Agents in their own environment before making the commitment to license.
 
+The following video is intended to support your understanding of the Adobe Experience Platform Agents usage-bound trial.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3480228?learn=on)
+
 ## What is available with the trial
 
 - **AI Assistant**: A full-page, immersive conversational interface powered by Agent Orchestrator and works cross-product, enabling practitioners using enabled Experience Cloud products to leverage GenAI and Agentic AI capabilities. For more information, read the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
