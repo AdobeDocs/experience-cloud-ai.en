@@ -48,17 +48,12 @@ The knowledge base provides agents with secure access to customer business intel
 
 ## Access {#access}
 
-AI Assistant requests are authenticated using the Adobe Identity Management Services. Authorizations are enforced by Adobe Experience Platform Access Control and Customer Journey Analytics Access Control.
+All users get access to AI Assistant and associated agents.
 
-To get access to the AI Assistant conversational interface and use one or more Experience Platform Agents, your Adobe administrator must grant you the relevant permissions in the Permissions UI or the Adobe Admin Console:
-
-* **Real-Time CDP** and **Adobe Journey Optimizer**: Your administrator must grant you the **Enable AI Assistant** permission to enable you to access AI Assistant. Your administrator must also grant you the **View Operational Insights** permissions to allow you to ask operational insights questions in AI Assistant. Both permissions are set by the administrator in the Permissions UI.
+* **Adobe Experience Manager**: Your administrator must grant you the permission to access AI Assistant through the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html).
 
 * **Customer Journey Analytics**: Your administrator must grant you the permission to access AI Assistant through [Customer Journey Analytics Access Control](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control). This allows you to ask product knowledge and data insights questions. 
 
 >[!NOTE]
 >
 >Operational insights questions are not available for Customer Journey Analytics; therefore, no additional permissions apply.
-
-* **Adobe Experience Manager**: Your administrator must grant you the permission to access AI Assistant through the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html).
-
