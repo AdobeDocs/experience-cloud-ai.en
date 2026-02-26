@@ -48,7 +48,7 @@ The knowledge base provides agents with secure access to customer business intel
 
 ## Access {#access}
 
-All users get access to AI Assistant and associated agents.
+All users get access to AI Assistant and associated Experience Platform agents.
 
 * **Adobe Experience Manager**: Your administrator must grant you the permission to access AI Assistant through the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html).
 
