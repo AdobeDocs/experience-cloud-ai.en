@@ -23,4 +23,6 @@ role: Admin,User,Developer,Leader
   - [Journey Agent](./agents/ajo-agent.md)
   - [Product Support Agent](./agents/product-support.md)
   - [Agents Trial](./agents/trial.md)
+  - Data Engineering {#data-engineering}
+    - [Data Engineering Agent](./agents/data-engineering/overview.md)
 
