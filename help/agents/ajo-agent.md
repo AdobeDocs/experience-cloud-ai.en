@@ -12,19 +12,21 @@ role: Admin,User,Developer,Leader
 
 Journey Agent enables Journey Optimizer users to create, analyze, and optimize marketing journeys using a natural language interface. With Journey Agent, practitioners can quickly build journeys, detect and resolve schedule or audience conflicts, analyze performance and drop-off points, and identify top-performing journeys to replicate for future campaigns. It empowers practitioners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
 
-Journey Agent consists of two main skills:
-- **Journey Create Agent**: Build and configure marketing journeys through natural language prompts
-- **Journey Analyze Agent**: Analyze journeys, detect issues, uncover insights, and optimize customer engagement
+Journey Agent consists of three main jobs to be done:
 
-## Journey Create Agent: Skill overview and user guide
+- **Journey Create**: Build and configure marketing journeys through natural language prompts
+- **Channel Content Create**: Generate, edit, and manage channel-specific content (email, push, SMS) for journeys using AI-powered content generation
+- **Journey Analyze**: Analyze journeys, detect issues, uncover insights, and optimize customer engagement
+
+## Journey Create: Use cases, Agentic skills and User guide
 
 ## Overview
 
-Journey Create Agent enables Journey Optimizer users to build and configure marketing journeys using a natural language interface. With Journey Create Agent, practitioners can quickly create journeys by describing their requirements in conversational prompts. The agent streamlines journey creation, allowing marketers to focus on strategy rather than technical configuration.
+Journey Create enables Journey Optimizer users to build and configure marketing journeys using a natural language interface. With Journey Create, practitioners can quickly create journeys by describing their requirements in conversational prompts. The agent streamlines journey creation, allowing marketers to focus on strategy rather than technical configuration.
 
 >[!AVAILABILITY]
 >
->The Journey Create Agent is available for all customers who have access to AI Assistant. However, you will need the following permissions in order to fully use the Journey Create Agent features:
+>Journey Create is available for all customers who have access to AI Assistant. However, you will need the following permissions in order to fully use Journey Create features:
 >
 >**Manage Journeys**: This permission lets you create new journeys directly in AI Assistant.
 >
@@ -36,9 +38,9 @@ Journey Create Agent enables Journey Optimizer users to build and configure mark
 
 ## Use cases
 
-### Key use cases for Journey Create Agent
+### Key use cases for Journey Create
 
-The Journey Create Agent skill offers capabilities that can be leveraged to accelerate marketing execution:
+Journey Create offers capabilities that can be leveraged to accelerate marketing execution:
 
 1. **Event-triggered journey creation**
 
@@ -72,7 +74,7 @@ For each of these use cases, the agent translates natural language requirements 
 
 ### **In scope**
 
-The following capabilities are supported by Journey Create Agent:
+The following capabilities are supported by Journey Create:
 
 - **Natural language journey creation**: Allows users to describe journey flow in conversational language.
 - **Event-based and audience-based journeys**: Supports both trigger-based and scheduled journey types, also business event and audience qualification.
@@ -89,7 +91,6 @@ The following functionalities are currently not supported:
 - **Cross-journey orchestration**
 - **A/B testing configuration**
 - **Complex data transformations**
-- **Content message creation**
 
 ## Sample prompts
 
@@ -135,7 +136,7 @@ The agent will provide guidance and examples to help you define your journey req
 
 ### Prompting best practices
 
-To maximize the effectiveness of Journey Create Agent, follow these best practices:
+To maximize the effectiveness of Journey Create, follow these best practices:
 
 1. **Be Specific**: Provide clear details about your journey goals, target audience, and desired actions. Include information about channels, timing, and conditions.
 1. **Specify Timing**: Clearly indicate wait periods between actions and when the journey should start.
@@ -144,7 +145,7 @@ To maximize the effectiveness of Journey Create Agent, follow these best practic
 1. **Mention Scheduling**: For scheduled journeys, provide the desired start date and time.
 1. **Custom Actions**: If you are using custom actions in your workflow you need to specify that you are using a custom action along with the exact name of the custom action. Example: 
    When a user enters my store location send a welcome message using custom action ExternalPush. Wait 2 days and then send a follow up message using custom action ExternalEmail with a survey on their visit.
-1. **Validate Expressions**: Make sure to check and validate any expressions that Journey Agent creates to ensure that the correct fields and values are used. 
+1. **Validate Expressions**: Make sure to check and validate any expressions that Journey Agent creates to ensure that the correct fields and values are used.
 
 ### Setup best practices
 
@@ -153,7 +154,89 @@ To maximize the effectiveness of Journey Create Agent, follow these best practic
 - **Plan Message Content**: Have your messaging strategy defined before journey creation.
 - **Consider Customer Experience**: Design journey flows that respect customer preferences and avoid over-communication.
 
-## Journey Analyze Agent: Skill Overview and User Guide
+## Channel Content Create: Use Cases, Agentic Skills and User Guide
+
+>[!AVAILABILITY]
+>
+>This feature is available for all customers in Limited Availability. Contact your Adobe representative to gain access.
+
+## Overview
+
+Channel Content Create enables Journey Optimizer users to generate, edit, and manage channel-specific content for journeys using AI-powered content generation.
+
+## Use cases
+
+### Key use cases for Channel Content Create
+
+1. **Channel-specific content generation**: Generate content for email, push notifications, SMS, and other channels using natural language prompts.
+
+1. **Template-based content creation**: Browse and select from available templates with preview capabilities.
+
+1. **Multi-channel content management**: Generate and manage content for multiple channels within the same journey workflow.
+
+1. **In-context content editing**: Open generated content in Content Designer for editing and refinement.
+
+1. **Content refinement and iteration**: Regenerate content with different tones or styles using the Regenerate action.
+
+1. **Journey canvas integration**: Select journeys from inventory and view associated channels.
+
+## In scope and out of scope skills
+
+### **In scope**
+
+The following capabilities are supported by Channel Content Create:
+
+- **AI-powered content generation**: Generate content for email, push, SMS, and other channels using natural language prompts.
+- **Template management**: Browse and select from available templates with preview capabilities.
+- **In-context editing**: Open generated content in Content Designer for editing and refinement.
+- **Content regeneration**: Regenerate content with different tones, styles, or messaging using the Regenerate action.
+- **Multi-channel support**: Generate and manage content for multiple channels within the same journey workflow.
+- **Journey inventory access**: Select journeys from inventory and view associated channels.
+
+### **Out of scope**
+
+The following functionalities are currently not supported:
+
+- **Brand alignment and content quality checks**
+- **Insert content nodes directly into journey canvas**
+- **Template import**
+
+## Sample prompts
+
+### Content generation
+
+"Generate email content for my welcome journey. Create a welcome email for new customers with a friendly tone and include a 10% discount offer."
+
+"Add content for channel email for my welcome journey."
+
+"Generate a push notification for my store visit journey. Create a welcome message that encourages customers to check in and receive a special offer."
+
+"Generate SMS content for my event-triggered journey. Create a short message notifying customers about a flash sale with a call-to-action."
+
+### Template selection
+
+"Show me available email templates for my seasonal campaign journey."
+
+"Select a template for my email that has a modern, clean design."
+
+### Content editing and refinement
+
+"Open the email content in Content Designer so I can customize the design."
+
+"Regenerate the push notification content with a more casual tone."
+
+"Update the email content to include a promotional code."
+
+## Best practices
+
+### Prompting best practices
+
+1. **Be Specific**: Provide clear details about the content type, tone, target audience, and key messaging.
+1. **Specify Channel**: Clearly indicate which channel you are creating content for (email, push, SMS).
+1. **Define Tone**: Specify the desired tone (friendly, formal, casual, urgent).
+1. **Iterate and Refine**: Use the regenerate action to refine content until it meets your requirements.
+
+## Journey Analyze: Use Cases, Agentic Skills and User Guide
 
 ## Overview
 
@@ -177,9 +260,9 @@ Learn more and discover the agent at a glance in this [overview](https://experie
 
 ## Use Cases
 
-### Key Use Cases for Journey Agent Analyze
+### Key Use Cases for Journey Analyze
 
-The Journey Agent Analyze skill offers a range of functionalities that can be leveraged to optimize marketing efforts:
+Journey Analyze offers a range of functionalities that can be leveraged to optimize marketing efforts:
 
 1. **Journey Fallout Analysis**
 
@@ -209,7 +292,7 @@ For each of these analyses, the agent not only detects issues but also provides 
 
 ### **In Scope**
 
-The following capabilities are supported by Journey Agent Analyze:
+The following capabilities are supported by Journey Analyze:
 
 - **Reactive Queries**: Allows users to ask specific questions about journey performance, audience usage, and scheduling conflicts.
 - **Integration with Other Agents**: Collaborates with Audience Agent and Data Insights Agent for deeper analysis.
@@ -289,7 +372,7 @@ Use these prompts to analyze potential conflicts between journeys, including sch
 
 ### Prompting Best Practices
 
-To maximize the effectiveness of Journey Agent Analyze, follow these best practices:
+To maximize the effectiveness of Journey Analyze, follow these best practices:
 
 1. **Be Specific**: Use clear and concise prompts to get targeted insights. For example, instead of asking "What are my journeys?", specify "List all journeys created in the last month."
 1. **Combine Insights**: Integrate insights from Audience Agent and Data Insights Agent for a holistic view of journey performance.
