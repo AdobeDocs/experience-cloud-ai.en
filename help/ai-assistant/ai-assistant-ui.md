@@ -4,6 +4,20 @@ description: Learn how to access and use AI Assistant in the user interface.
 ---
 # AI Assistant
 
+>[!IMPORTANT]
+>
+>This document applies to AI Assistant (Next-Gen). For information on AI Assistant (Legacy), read the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home) in the Adobe Experience Platform documentation.
+
+Refer to the following table for a comparison of AI Assistant (Legacy) and AI Assistant (Next-Gen):
+
+| Feature Area | AI Assistant (Legacy) | AI Assistant (Next-Gen) |
+| --- | --- | --- |
+| User experience | Available in a right-rail panel only. | Available in both right-rail panel and immersive full-screen experience. |
+| Scope of capabilities | Provides product knowledge and operational insights. | Provides product knowledge and operational insights, plus advanced agentic skills and multi-step task execution. |
+| Platform architecture | Not built on the Agent Orchestrator stack. | Built on the Agent Orchestrator stack, enabling extensibility and advanced coordination across capabilities. |
+| Application coverage | Application-specific implementation. | Unified AI assistant experience across all Adobe Experience Cloud applications. |
+| Access and permission model | Application-scoped access model aligned to individual product boundaries. | Platform-orchestrated, role-aware access model governed through the Agent Orchestrator stack. |
+
 AI Assistant is an intelligent conversational, generative AI tool that will boost productivity and redefine work in Adobe Experience Platform-based Applications. You can use AI Assistant to access Adobe Experience Platform Agents and other AI capabilities.
 
 Read this guide to learn how you can use AI Assistant.
