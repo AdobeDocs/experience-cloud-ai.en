@@ -1,14 +1,14 @@
 ---
-title: Adobe Experience Platform Agents Usage-Bound Trial
+title: Adobe Experience Platform Agents Trial
 description: Learn about the the complimentary trial for Adobe Experience Platform Agents.
 ---
-# Adobe Experience Platform Agents usage-bound trial
+# Adobe Experience Platform Agents trial
 
 >[!AVAILABILITY]
 >
->Certain eligible Experience Cloud customers may have access to the usage-bound Adobe Experience Platform Agents trial to experience the value of the Agents in their own environment before making the commitment to license.
+>Certain eligible Experience Cloud customers may have access to the Adobe Experience Platform Agents trial to experience the value of the Agents in their own environment before making the commitment to license.
 
-The following video is intended to support your understanding of the Adobe Experience Platform Agents usage-bound trial.
+The following video is intended to support your understanding of the Adobe Experience Platform Agents trial.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480228?learn=on)
 
@@ -43,11 +43,11 @@ For information on the available agents, read the [Agent Orchestrator overview](
 
 ## Frequently asked questions {#faq}
 
-Read the following for answers to frequently asked questions regarding the Experience Platform Agents usage-bound trial.
+Read the following for answers to frequently asked questions regarding the Experience Platform Agents trial.
 
-### What is the Adobe Experience Platform Agents usage-bound trial?
+### What is the Adobe Experience Platform Agents trial?
 
-The Adobe Experience Platform Agents usage-bound trial lets eligible customers use certain Agents at no additional cost up to 10,000 AI Credits. The goal is to provide a low‑friction, low‑risk path to experience value from these agents before customers make a commercial decision.
+The Adobe Experience Platform Agents trial lets eligible customers use certain Agents at no additional cost up to 10,000 AI Credits. The goal is to provide a low‑friction, low‑risk path to experience value from these agents before customers make a commercial decision.
 
 ### Which Agents are included in this trial?
 
