@@ -1,10 +1,12 @@
 ---
 title: Data Engineering Agent
-description: Learn how you can use the Data Engineering Agent. (WIP)
+description: Learn how you can use the Data Engineering Agent. 
 hide: true
 hidefromtoc: true
 ---
 # Data Engineering Agent
+
+<!--- THIS IS A DRAFT --->
 
 Data Engineering Agent is an Agent Orchestrator-powered, AI-based copilot for data teams in Adobe Experience Platform. The agent is designed to handle the heavy lifting across the end-to-end data lifecycle: data modeling, onboarding, SQL data prep, governance, and lifecycle management. With the Data Engineering Agent, engineers and architects can move faster with higher data quality and less manual work.
 
@@ -20,8 +22,8 @@ Data Engineering Agent is organized into skills that you can take advantage of t
 
 With Data Engineering Agent, you can ensure:
 
-- Faster onboarding: Reduce time from weeks of manual schema mapping & pipeline setup to hours of guided, conversational configuration.
-- Higher data quality: Fewer invalid records and production incidents due to built‑in data quality analysis and semantic checks.
-- Improved governance & compliance: Governance policies are attached at design time (labels, TTL, identity handling) rather than as an afterthought.
-- More productive data teams: Repetitive SQL/dataflow work is automated so engineers focus on higher‑value design and optimization.
-- Broader self‑service: Non‑expert stakeholders can safely self‑serve common data prep tasks with guardrails.
+- **Faster onboarding**: Reduce time from weeks of manual schema mapping & pipeline setup to hours of guided, conversational configuration.
+- **Higher data quality**: Fewer invalid records and production incidents due to built‑in data quality analysis and semantic checks.
+- **Improved governance & compliance**: Governance policies are attached at design time (labels, TTL, identity handling) rather than as an afterthought.
+- **More productive data teams**: Repetitive SQL/dataflow work is automated so engineers focus on higher‑value design and optimization.
+- **Broader self‑service**: Non‑expert stakeholders can safely self‑serve common data prep tasks with guardrails.
