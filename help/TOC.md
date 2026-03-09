@@ -25,4 +25,5 @@ role: Admin,User,Developer,Leader
   - [Agents Trial](./agents/trial.md)
   - Data Engineering {#data-engineering}
     - [Data Engineering Agent](./agents/data-engineering/overview.md)
+    - [Validate your data](./agents/data-engineering/data-validation.md)
 
