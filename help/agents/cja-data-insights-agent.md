@@ -10,7 +10,7 @@ solution: Customer Journey Analytics
 >
 >Data Insights Agent is available to eligible customers for a limited time. Access to Data Insights Agent is available through March 31, 2026. To continue using Data Insights Agent beyond this date without interruption, please contact your Adobe account representative to learn more about licensing Adobe Experience Platform Agent Orchestrator.
 
-Data Insights Agent, accessible from the [AI Assistant](/help/ai-assistant.md) in Customer Journey Analytics, is a generative AI conversation agent that quickly and efficiently answers questions about your data. It builds relevant visualizations in Analysis Workspace using components from your data view and your actual data.
+Data Insights Agent, accessible from the [AI Assistant](/help/ai-assistant/ai-assistant-ui.md), is a generative AI conversation agent that quickly and efficiently answers questions about your data. It builds relevant visualizations in Analysis Workspace using components from your data view and your actual data.
 
 Using Data Insights Agent to answer data-centric questions in Analysis Workspace can save significant time that you might otherwise spend manually building visualizations in Analysis Workspace and familiarizing yourself with your data view components. 
 
@@ -64,7 +64,7 @@ The following parameters govern access to Data Insights Agent in Customer Journe
 
    1. Select **[!UICONTROL Save]** to save the permissions.
 
-   For additional information about access control, see [Access control](/help/technotes/access-control.md#access-control).
+   For additional information about access control, see [Access control](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#access-control).
 
 * **Data view access**: Data views must be enabled for Data Insights Agent.
 
@@ -72,7 +72,7 @@ The following parameters govern access to Data Insights Agent in Customer Journe
   >
   >Consider the following when enabling data views:
   >* You can enable a maximum of 50 data views per IMS organization. If you enable more than 50 data views across all product profiles for a given organization, the Data Insights Agent will use the 50 most-used data views. 
-  >  You can use the [info on the Data Insights Agent column in Data views](/help/data-views/manage-dataviews.md#manage-data-views) to view the number of data views that are enabled for Data Insights Agent in your IMS organization.
+  >  You can use the [info on the Data Insights Agent column in Data views](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/manage-dataviews#manage-data-views) to view the number of data views that are enabled for Data Insights Agent in your IMS organization.
   >* The Data Insights Agent can reference the included data views sometime during the same day that you enable them. 
 
   To enable data views for Data Insights Agent:
@@ -83,7 +83,7 @@ The following parameters govern access to Data Insights Agent in Customer Journe
 
        ![Enable data views for Data Insights Agent](/help/agents/images/cja-agent/data-view-enable-dia.png)   
 
-       For more information about enabling data views for Data Insights Agent, see the [AI Settings for a data view](/help/data-views/create-dataview.md#ai-settings).
+       For more information about enabling data views for Data Insights Agent, see the [AI Settings for a data view](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview#ai-settings/help/data-views/create-dataview.md#ai-settings).
 
   To view the number of data views that are enabled for Data Insights Agent in your IMS organization:
 
