@@ -39,7 +39,7 @@ Example prompts for field validation include:
 
 >[!TAB Dataset validation]
 
-Use dataset validation to validate up to five fields in a given dataset. While you can provide these fields explicitly, the Data Engineering Agent can also analyze the dataset and automatically determine the most relevant fields. This skill provides the same type of information as field validation, albeit to a number of several targeted fields.
+Use dataset validation to validate entire datasets, summarizing overall quality and key issues. While you can provide these fields explicitly, the Data Engineering Agent can also analyze the dataset and automatically determine the most relevant fields. This skill provides the same type of information as field validation, albeit to a number of several targeted fields. You can validate up to five fields in a given dataset. 
 
 Example prompts for dataset validation include:
 
