@@ -114,3 +114,50 @@ The agent is intended to return read‑only insights and does not modify your cu
 **Supported languages and scope**
 
 The initial release is available as an English‑language experience. Capabilities are limited to read‑only insights; the agent does not create or update marketing assets or configurations.
+
+## Appendix
+
+Read the following for additional information on the Adobe Marketing Agent for [!DNL Microsoft Copilot 365].
+
+### Adobe Marketing Agent [!DNL Microsoft 365 Copilot] admin steps
+
+To set up agents from an external provider (third-party developers or the Microsoft Commercial Marketplace), you must first ensure your tenant settings allow external apps and then manage them through the Integrated Apps or Agents section of the admin center.
+
+#### Enable external agents in tenant settings
+
+Before you can deploy external agents, your organization's policy must allow them.
+
+- Log in to the [Microsoft 365 admin center](https://admin.microsoft.com/).
+- Go to **Agents** > **Settings** > **User access**.
+- Under **Allowed agent types,** ensure **Allow apps and agents built by external publishers** is selected.
+
+>[!IMPORTANT]
+>
+>If this setting is disabled, external agents will not appear in the [Agent Store](https://devblogs.microsoft.com/microsoft365dev/introducing-the-agent-store-build-publish-and-discover-agents-in-microsoft-365-copilot/) for your users.
+
+#### Acquire and approve the agent
+
+Typically, you can find external agents in the [[!DNL Microsoft Commercial Marketplace]](https://appsource.microsoft.com/).
+
+- **From the Marketplace**: Find the agent you want and select **Get it now**. This will often redirect you back to your admin center's **Integrated Apps** page.
+- **Review Permissions**: In the [Integrated Apps](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide) list, select the external agent.
+- Review the **Data & tools** and **Security & compliance** tabs to see what data the external provider will access.
+- Select **Approve** or **Activate** to move it into your organization's inventory.
+
+#### Deploy to certain users
+
+Once approved, you can control exactly who sees the agent in their Copilot sidebar.
+
+- In the [[!DNL Microsoft 365] admin center](https://admin.microsoft.com/), navigate to **Agents** > **All agents**.
+- Select the external agent from the list.
+- Select **Deploy** (or **Edit Assignment**).
+- Choose **Specific users/groups** and search for the individuals or [!DNL Entra ID] groups who should have it.
+- Select **Finish deployment**. This "pushes" the agent to those users so it appears automatically in their Copilot interface.
+
+#### Manage updates
+
+External providers frequently update their agents. In order to manage these updates, follow the best practices below:
+
+- Check the [[!DNL Agent Registry]](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-registry?view=o365-worldwide) periodically.
+- If an update requires new permissions, the agent may show a status of **Pending Update**.
+- You must manually **Approve Updates** before the new version is rolled out to your assigned users.
