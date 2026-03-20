@@ -6,7 +6,7 @@ hidefromtoc: true
 ---
 # Adobe Marketing Agent for [!DNL Microsoft 365 Copilot]
 
-The Adobe Marketing Agent for [!DNL Microsoft 365 Copilot] is an AI-powered tool that connects Adobe Experience Platform directly to [!DNL Microsoft 365 Copilot]. With this agent, you can ask natural-language questions within [!DNL Microsoft 365] applications such as [!DNL Teams], [!DNL Word], and [!DNL Powerpoint] to instantly retrieve marketing insights from Experience Platform without interrupting your workflow.
+The Adobe Marketing Agent for [!DNL Microsoft 365 Copilot] is an AI-powered tool that connects Adobe Experience Platform directly to [!DNL Microsoft 365 Copilot]. With this agent, you can ask natural-language questions within [!DNL Microsoft 365] applications such as [!DNL Teams], [!DNL Word], [!DNL Powerpoint], and [!DNL Excel] to instantly retrieve marketing insights from Experience Platform without interrupting your workflow. The same agent is available across these apps, and your chat history with the Adobe Marketing Agent carries over—so you can start research in [!DNL Copilot] in [!DNL Teams], for example, and continue the conversation in [!DNL Word] or [!DNL Powerpoint] while you draft a campaign brief or review a presentation.
 
 With the Adobe Marketing Agent for [!DNL Microsoft 365 Copilot], marketing managers, analytics and insights teams, and business stakeholders can:
 
@@ -18,8 +18,12 @@ With the Adobe Marketing Agent for [!DNL Microsoft 365 Copilot], marketing manag
 
 The Adobe Marketing Agent for [!DNL Microsoft 365 Copilot] provides an integrated experience between Experience Platform and [!DNL Microsoft 365] applications:
 
-- Adobe Marketing Agent appears as an agent in [!DNL Microsoft 365 Copilot] and [!DNL Teams].
+- Adobe Marketing Agent appears as an agent in [!DNL Microsoft 365 Copilot], including in [!DNL Teams], [!DNL Word], [!DNL Powerpoint], and [!DNL Excel].
 - Sign in with your Adobe account and select the data environment (sandbox, data view) that you would like to use.
+
+### Data access and permissions
+
+The answers you receive reflect the **data and access level** tied to your Adobe identity, what you can query and see is the same as what you are entitled to in Experience Platform and its associated solutions. The Adobe Marketing Agent **inherits** those permissions and does **not** require a separate permissions setup for the [!DNL Microsoft 365] integration. For underlying Experience Platform AI Assistant capabilities and other Adobe AI agents, **permission requirements are unchanged** from using those features in Experience Platform.
 
 The agent connects your [!DNL Microsoft 365] instance to Experience Platform and its associated applications (Real-Time CDP, Adobe Journey Optimizer, and Customer Journey Analytics). With this integration, you can then use the Experience Platform AI Assistant and agents to retrieve relevant insights directly to your [!DNL Microsoft 365] instance. The answers returned in your [!DNL Microsoft 365] instance are presented as conversational and natural language texts, tables, and data visualizations. Additionally, support for follow-up questions and investigations are available within the same [!DNL Copilot] chat.
 
@@ -38,10 +42,22 @@ Before you can use the Adobe Marketing Agent for [!DNL Microsoft 365 Copilot], y
 - [!DNL Microsoft 365] with [!DNL Microsoft Teams] or [!DNL Microsoft Copilot Chat].
 - Experience Platform and at least one of: Real-Time CDP, Adobe Journey Optimizer, and/or Customer Journey Analytics.
 - Entitlement to the Experience Platform Agent Orchestrator and agents.
+- Access to your organization's Adobe Experience Cloud account (sign-in and product entitlements) for the solutions and data you use. If you do not have Adobe access, contact your Adobe administrator.
+
+## Enable the agent for your organization {#enable-the-agent-for-your-organization}
+
+End users can use the Adobe Marketing Agent only after it is made available in your [!DNL Microsoft 365] tenant. **Work with your [!DNL Microsoft 365] Copilot administrator** (or equivalent admin for Copilot agents in your organization) to enable access and assign the agent as your organization requires.
+
+Typical outcomes after admin setup include:
+
+- You can open **[!DNL Agent Store]** in [!DNL Teams], find **[!DNL Adobe Marketing Agent]** in your list of agents, and choose **[!DNL Add]** to attach it to your Copilot agents.
+- Alternatively, your Copilot administrator can **publish** the agent to everyone in your organization or to specific groups so users do not need to add it individually.
+
+For administrator steps and policy options in the [!DNL Microsoft 365] admin center, see [Manage agents for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/manage) in the Microsoft documentation.
 
 ## Get started
 
-Navigate to the [!DNL Microsoft 365 Copilot] (or the application of your choice) and use the left-navigation to select **[!DNL All Agents]**.
+After your organization has enabled the agent (see [Enable the agent for your organization](#enable-the-agent-for-your-organization)), navigate to [!DNL Microsoft 365 Copilot] in the application of your choice and use the left-navigation to select **[!DNL All Agents]**.
 
 ![Microsoft 365 Copilot left navigation with All Agents selected.](../agents/images/ama/all-agents.png)
 
@@ -59,7 +75,7 @@ The [!DNL Microsoft 365 Copilot] dashboard updates with the [!DNL Adobe Marketin
 
 ### Sign in and set your context
 
-Next, prompt the agent to sign and follow the ensuing steps required to authenticate your account. During this step, you will need to copy a numerical code that the agent returns and then sign in to your Adobe organization. 
+Next, prompt the agent to sign in and follow the ensuing steps required to authenticate your account. During this step, you will need to copy a numerical code that the agent returns and then sign in to your Adobe organization. If you cannot complete sign-in or you lack access to Adobe solutions for your organization, contact your **Adobe administrator**.
 
 ![Adobe sign-in step showing a numerical code to copy and instructions to authenticate with your Adobe organization.](../agents/images/ama/sign-in.png)
 
@@ -89,7 +105,7 @@ For more information on the AI Assistant UI features, read the guide on [using t
 
 **Data handling and governance**
 
-The Adobe Marketing Agent relies on the same controls and governance that apply to Experience Platform and [!DNL Microsoft 365]. Your organization retains ownership and control of its data.
+The Adobe Marketing Agent relies on the same controls and governance that apply to Experience Platform and [!DNL Microsoft 365]. Your organization retains ownership and control of its data. Insights returned through the agent are scoped to each user's Adobe permissions and data entitlements; no additional permission model is introduced for the [!DNL Microsoft 365] surface beyond what already applies in Experience Platform and related Adobe AI agents.
 
 **Responsible AI use**
 
