@@ -1,8 +1,6 @@
 ---
 title: Adobe Marketing Agent for Microsoft 365 Copilot
 description: Learn how you can use the Adobe Marketing Agent for Microsoft 365 Copilot.
-hide: true
-hidefromtoc: true
 ---
 # Adobe Marketing Agent for [!DNL Microsoft 365 Copilot]
 
@@ -15,6 +13,10 @@ With the Adobe Marketing Agent for [!DNL Microsoft 365 Copilot], marketing manag
 - Simplify access to audience and journey insights across teams.
 
 ## How the agent works
+
+>[!IMPORTANT]
+>
+>The Adobe Marketing Agent for [!DNL Microsoft 365 Copilot] currently supports Experience Platform Operational Insights, Customer Journey Analytics Data Insights, Audience Agent, and the Journey Agent.
 
 The Adobe Marketing Agent for [!DNL Microsoft 365 Copilot] provides an integrated experience between Experience Platform and [!DNL Microsoft 365] applications:
 
@@ -33,7 +35,7 @@ The agent connects your [!DNL Microsoft 365] instance to Experience Platform and
 | --- | --- |
 | Retrieve operational insights for audiences and customer journeys | With the Adobe Marketing Agent, you can easily retrieve operational insights across your audiences and customer journeys. You can identify which audiences are the largest or most engaged, so you can prioritize where to focus your efforts. You can see which customer journeys are currently active and learn how they are performing, helping you pinpoint opportunities for optimization. The agent also lets you track how your different segments are growing or shrinking over time, empowering you to respond to changes in your audience dynamics as they happen.  |
 | Use data visualization to better analyze customer journeys and campaigns | You can review journey performance and drop‑offs, compare campaign performance over time, and understand which touchpoints drive conversions. Additionally, you can generate visual reports on campaign performance and compare these across channels, regions, or over different time periods. You can also explore trends without needing to manually build queries or dashboards. |
-| Empower collaboration and decision-making | Use pre‑built "starter prompts" to explore audiences, campaigns, and web traffic. Take advantage of a natural‑language interface for easier learning of Experience Platform and Customer Journey Analytics concepts. Furthermore, you can share insights on [!DNL Teams] channels or chats during planning meetings. You can also use the Adobe Marketing Agent to answer ad-hoc questions in real-time while reviewing plans or decks, allowing you to keep stakeholders aligned on the same set of metrics and definitions. |
+| Empower collaboration and decision-making | Use suggested prompts to explore audiences, campaigns, and web traffic. Take advantage of a natural‑language interface for easier learning of Experience Platform and Customer Journey Analytics concepts. Furthermore, you can share insights on [!DNL Teams] channels or chats during planning meetings. You can also use the Adobe Marketing Agent to answer ad-hoc questions in real-time while reviewing plans or decks, allowing you to keep stakeholders aligned on the same set of metrics and definitions. |
 
 ## Prerequisites 
 
