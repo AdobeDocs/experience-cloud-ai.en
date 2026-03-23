@@ -1,6 +1,8 @@
 ---
 title: Adobe Marketing Agent for Microsoft 365 Copilot
 description: Learn how you can use the Adobe Marketing Agent for Microsoft 365 Copilot.
+hide: true
+hidefromtoc: true
 ---
 # Adobe Marketing Agent for [!DNL Microsoft 365 Copilot]
 
@@ -25,19 +27,19 @@ The Adobe Marketing Agent for [!DNL Microsoft 365 Copilot] provides an integrate
 
 ### Data access and permissions
 
-The answers you receive reflect the **data and access level** tied to your Adobe identity, what you can query and see is the same as what you are entitled to in Experience Platform and its associated solutions. The Adobe Marketing Agent **inherits** those permissions and does **not** require a separate permissions setup for the [!DNL Microsoft 365] integration. For underlying Experience Platform AI Assistant capabilities and other Adobe AI agents, **permission requirements are unchanged** from using those features in Experience Platform.
+The answers you receive reflect the **data and access level** tied to your Adobe identity—what you can query and see is the same as what you are entitled to in Experience Platform and its associated solutions. The Adobe Marketing Agent **inherits** those permissions and does **not** require a separate permissions setup for the [!DNL Microsoft 365] integration. For underlying Experience Platform AI Assistant capabilities and other Adobe AI agents, **permission requirements are unchanged** from using those features in Experience Platform.
 
-The agent connects your [!DNL Microsoft 365] instance to Experience Platform and its associated applications (Real-Time CDP, Adobe Journey Optimizer, and Customer Journey Analytics). With this integration, you can then use the Experience Platform AI Assistant and agents to retrieve relevant insights directly to your [!DNL Microsoft 365] instance. The answers returned in your [!DNL Microsoft 365] instance are presented as conversational and natural language texts, tables, and data visualizations. Additionally, support for follow-up questions and investigations are available within the same [!DNL Copilot] chat.
+The agent connects your [!DNL Microsoft 365] instance to Experience Platform and its associated applications (Real-Time CDP, Adobe Journey Optimizer, and Customer Journey Analytics). With this integration, you can then use the Experience Platform AI Assistant and agents to retrieve relevant insights directly to your [!DNL Microsoft 365] instance. The answers returned in your [!DNL Microsoft 365] instance are presented as conversational and natural language texts, tables, and data visualizations. Additionally, support for follow-up questions and investigations is available within the same [!DNL Copilot] chat.
 
 ## Key use cases and example scenarios
 
 | Use case | Description |
 | --- | --- |
-| Retrieve operational insights for audiences and customer journeys | With the Adobe Marketing Agent, you can easily retrieve operational insights across your audiences and customer journeys. You can identify which audiences are the largest or most engaged, so you can prioritize where to focus your efforts. You can see which customer journeys are currently active and learn how they are performing, helping you pinpoint opportunities for optimization. The agent also lets you track how your different segments are growing or shrinking over time, empowering you to respond to changes in your audience dynamics as they happen.  |
+| Retrieve operational insights for audiences and customer journeys | With the Adobe Marketing Agent, you can easily retrieve operational insights across your audiences and customer journeys. You can identify which audiences are the largest or most engaged, so you can prioritize where to focus your efforts. You can see which customer journeys are currently active and learn how they are performing, helping you pinpoint opportunities for optimization. The agent also lets you track how your different segments are growing or shrinking over time, empowering you to respond to changes in your audience dynamics as they happen. |
 | Use data visualization to better analyze customer journeys and campaigns | You can review journey performance and drop‑offs, compare campaign performance over time, and understand which touchpoints drive conversions. Additionally, you can generate visual reports on campaign performance and compare these across channels, regions, or over different time periods. You can also explore trends without needing to manually build queries or dashboards. |
 | Empower collaboration and decision-making | Use suggested prompts to explore audiences, campaigns, and web traffic. Take advantage of a natural‑language interface for easier learning of Experience Platform and Customer Journey Analytics concepts. Furthermore, you can share insights on [!DNL Teams] channels or chats during planning meetings. You can also use the Adobe Marketing Agent to answer ad-hoc questions in real-time while reviewing plans or decks, allowing you to keep stakeholders aligned on the same set of metrics and definitions. |
 
-## Prerequisites 
+## Prerequisites
 
 Before you can use the Adobe Marketing Agent for [!DNL Microsoft 365 Copilot], you must first ensure that you have the following:
 
@@ -67,7 +69,7 @@ Locate the card for [!DNL Adobe Marketing Agent] or use the search bar to manual
 
 ![Adobe Marketing Agent card or search result in the agents gallery.](../agents/images/ama/select-ama.png)
 
-Use the pop-up window to learn more information about the agent, once you are ready, select **[!DNL Add]**.
+Use the pop-up window to learn more about the agent. When you are ready, select **[!DNL Add]**.
 
 ![Adobe Marketing Agent details pop-up with Add button highlighted.](../agents/images/ama/add-ama.png)
 
@@ -81,13 +83,13 @@ Next, prompt the agent to sign in and follow the ensuing steps required to authe
 
 ![Adobe sign-in step showing a numerical code to copy and instructions to authenticate with your Adobe organization.](../agents/images/ama/sign-in.png)
 
-When successful, use the context setter to establish the documentation source, sandbox, and dataview that you will use for your queries.
+When successful, use the context setter to establish the documentation source, sandbox, and data view that you will use for your queries.
 
 ![Context setter UI to choose documentation source, sandbox, and data view for queries.](../agents/images/ama/context.png)
 
-### Use the agent to retrieve operational insights 
+### Use the agent to retrieve operational insights
 
-Once you are signed in, you can use the prompts provided in the main page to get started. You can also take advantage of a starter prompt that can branch out to analyzing marketing audiences, reviewing campaign performances, and monitoring campaign journeys. For example, select **[!DNL Review campaign performance]** and then select **[!DNL Analyze engagement - Show web visitors for top 10 products last week]**
+Once you are signed in, you can use the prompts provided in the main page to get started. You can also take advantage of a starter prompt that can branch out to analyzing marketing audiences, reviewing campaign performance, and monitoring campaign journeys. For example, select **[!DNL Review campaign performance]** and then select **[!DNL Analyze engagement - Show web visitors for top 10 products last week]**.
 
 ![Starter prompts on the agent home page, including Review campaign performance and Analyze engagement options.](../agents/images/ama/starter-guide.png)
 
@@ -97,7 +99,7 @@ Allow for a few moments for the agent to calculate and then the agent responds w
 
 ![Same insights shown as a data table after selecting View data.](../agents/images/ama/tables.png)
 
-You can further investigate by selecting follow up questions that the agent recommends. Alternatively, you can pivot and try different starter prompts, verify the information sources that the agent referenced, or provide feedback using the feedback mechanism.
+You can further investigate by selecting follow-up questions that the agent recommends. Alternatively, you can pivot and try different starter prompts, verify the information sources that the agent referenced, or provide feedback using the feedback mechanism.
 
 ![Suggested follow-up questions below the agent's response for further investigation.](../agents/images/ama/follow-up.png)
 
@@ -119,7 +121,7 @@ The initial release is available as an English‑language experience. Capabiliti
 
 ## Appendix
 
-Read the following for additional information on the Adobe Marketing Agent for [!DNL Microsoft Copilot 365].
+Read the following for additional information on the Adobe Marketing Agent for [!DNL Microsoft 365 Copilot].
 
 ### Adobe Marketing Agent [!DNL Microsoft 365 Copilot] admin steps
 
