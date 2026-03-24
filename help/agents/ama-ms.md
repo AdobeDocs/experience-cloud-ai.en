@@ -1,8 +1,6 @@
 ---
 title: Adobe Marketing Agent for Microsoft 365 Copilot
 description: Learn how you can use the Adobe Marketing Agent for Microsoft 365 Copilot.
-hide: true
-hidefromtoc: true
 ---
 # Adobe Marketing Agent for [!DNL Microsoft 365 Copilot]
 
