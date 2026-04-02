@@ -72,6 +72,7 @@ Use the Product Support Agent for self-serve debugging and troubleshooting:
 
 Read the [Product Support Agent documentation](./agents/product-support.md) for more information.
 
+<!--
 #### Adobe Marketing Agent for [!DNL Microsoft 365 Copilot]
 
 Use the Adobe Marketing Agent for [!DNL Microsoft 365 Copilot] to retrieve marketing insights from Experience Platform in [!DNL Microsoft 365] apps like [!DNL Teams], [!DNL Word], [!DNL Powerpoint], and [!DNL Excel]. With this agent, you can:
@@ -81,6 +82,7 @@ Use the Adobe Marketing Agent for [!DNL Microsoft 365 Copilot] to retrieve marke
 - Simplify access to audience and journey insights across teams.
 
 Read the [Adobe Marketing Agent documentation](./agents/ama-ms.md) for more information.
+-->
 
 ## Getting started
 

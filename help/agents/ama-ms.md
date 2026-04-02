@@ -117,6 +117,10 @@ The agent is intended to return read‑only insights and does not modify your cu
 
 The initial release is available as an English‑language experience. Capabilities are limited to read‑only insights; the agent does not create or update marketing assets or configurations.
 
+>[!IMPORTANT]
+>
+>The Adobe Marketing Agent invokes different Adobe agents and jobs depending on the submitted prompts. This underlying Adobe agent that gets invoked utilizes AI credits as indicated in the [Adobe Experience Platform agent jobs and AI credits consumption](https://experienceleague.adobe.com/en/docs/core-services/interface/features/ai-credit-consumption) page.
+
 ## Appendix
 
 Read the following for additional information on the Adobe Marketing Agent for [!DNL Microsoft 365 Copilot].
