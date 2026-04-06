@@ -22,6 +22,7 @@ role: Admin,User,Developer,Leader
   - [Experiment Agent](./agents/agent-experiment.md)
   - [Journey Agent](./agents/ajo-agent.md)
   - [Product Support Agent](./agents/product-support.md)
+  - [Adobe Marketing Agent for Microsoft 365 Copilot](./agents/ama-ms.md)
   - [Agents Trial](./agents/trial.md)
   - Data Engineering {#data-engineering}
     - [Data Engineering Agent](./agents/data-engineering/overview.md)

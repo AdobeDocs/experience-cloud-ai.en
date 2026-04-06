@@ -2,10 +2,12 @@
 cloud: Experience Cloud
 solution: Experience Cloud,Experience Platform,Real-Time Customer Data Platform
 product: experience cloud
+landing-page-name: AI
+landing-page-breadcrumb-title: AI Documentation
 type: Documentation
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-cloud-ai.en
-index: yes
+index: true
 ---
 
 # Metadata for internal use
