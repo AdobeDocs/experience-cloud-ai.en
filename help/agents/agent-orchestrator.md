@@ -46,6 +46,14 @@ For further information around availability of Agents in Experience Cloud applic
 
 The knowledge base provides agents with secure access to customer business intelligence through structured and unstructured data sources, including Adobe product documentation, customer metadata about business objects, and analytics data.
 
+## Ecosystem {#ecosystem}
+
+The Agent Orchestrator ecosystem includes the following agents:
+
+| Agent | Details |
+| --- | --- |
+| [Adobe Marketing Agent for Microsoft 365 Copilot](ama-ms.md) | Use the Adobe Marketing Agent for [!DNL Microsoft 365 Copilot] to retrieve marketing insights from Experience Platform in [!DNL Microsoft 365] apps like [!DNL Teams], [!DNL Word], [!DNL Powerpoint], and [!DNL Excel]. With this agent, you can: <ul><li>Make faster, data-driven marketing decisions.</li><li>Reduce time spent switching between tools.</li><li>Simplify access to audience and journey insights across teams.</li></ul> |
+
 ## Access {#access}
 
 All users get access to AI Assistant and associated Experience Platform agents.
