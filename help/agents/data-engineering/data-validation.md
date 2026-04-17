@@ -22,6 +22,51 @@ Read this documentation for comprehensive information on how you can use the Dat
 | Suspected mapping issue | In these scenarios, you can use the Data Engineering Agent to validate a field and inspect top values and invalids to confirm it matches the intended semantics. |
 | Ongoing data stewardship | In these scenarios, you can use the Data Engineering Agent to run dataset validation on critical datasets weekly to catch regressions early. |
 
+## UI guide
+
+Use **AI Assistant** in Adobe Experience Cloud to run validation with the Data Engineering Agent. The following steps follow the main screens you will see.
+
+### Start a validation
+
+![AI Assistant home with the prompt field showing a dataset validation request, Experience Platform environment selector, and Send control.](../images/data-engineering/validation/home.png)
+
+In the left navigation, select **AI Assistant**. Next, use the environment selector and  choose the Experience Platform organization or sandbox where your dataset lives (for example, **[!UICONTROL Experience Platform - Prod]**). In the prompt field, type a validation request (for example, ask to validate a dataset by name). Select **[!UICONTROL Send]** to submit the prompt.
+
+### Read the dataset summary and field table
+
+![AI Assistant response with Reasoning complete, a validation summary, and a Field summaries table listing field paths, types, and valid values.](../images/data-engineering/validation/answer.png)
+
+Allow for a brief moment for the run to finish (**Reasoning complete**). When reasoning is complete, read the summary for the dataset name, how many fields were validated, and the sample size (typically up to about 1,000 rows).
+
+Use the **[!UICONTROL Field summaries]** to review each field's path, type, and **Valid values** (including the validity indicator). Additionally, you can use the table, chart, or document icons on the card to change how results are displayed, if available.
+
+Select **[!UICONTROL Show all results]** when you need additional columns or rows beyond the first view.
+
+### Use a related suggestion for a follow-up
+
+![Related suggestions chips above the prompt field, with one suggestion selected to validate a specific field on the dataset.](../images/data-engineering/validation/related-suggestion.png)
+
+After a response, find **[!UICONTROL Related suggestions]** below the conversation. Select a suggestion (for example, validate a specific field on the same dataset) to load it into the prompt field. Adjust the text if needed, confirm the environment, then select **[!UICONTROL Send]** to run the follow-up.
+
+### Switch to chart view and open expanded view
+
+![Validation results card for a single field in chart view, showing a validity donut chart and the Show in expanded view action.](../images/data-engineering/validation/show-explained-view.png)
+
+Open a field-level **[!UICONTROL Validation results]** card (for example, after validating a single field). Use the view controls to switch to **Chart** (or another view) when you want a visual summary instead of a table. During this step, you can optionally select **[!UICONTROL Properties]** to see more about the field.
+
+Select **[!UICONTROL Show in expanded view]** to open a larger, more detailed view of that field's validation.
+
+### Work in split view
+
+![Split view with validation narrative and statistics on the left and an expanded chart visualization of valid values on the right.](../images/data-engineering/validation/split-screen.png)
+
+In expanded view, use the split layout: detailed statistics and narrative on one side and the chart on the other. 
+
+- On the narrative side, review validity, distinct values, null rates, top distinct values, and any invalid-value messages.
+- On the visualization side, use the chart for a quick read of valid versus invalid values in the sample.
+
+Use **[!UICONTROL Related suggestions]** or the prompt field at the bottom to validate another field, re-run the dataset, or continue the conversation.
+
 ## How validation works
 
 When you initiate a validation, the Data Engineering Agent analyzes a representative sample of your dataset, typically the most recent ~1,000 rows, rather than processing the entire dataset history. The process is strictly read-only, ensuring that your data, schemas, and mappings remain unchanged. Validation results are consistent regardless of how your data enters Experience Platform, whether through sources, streaming, file uploads, Data Prep, or other ingestion methods. Results serve as indicative checks to help you quickly identify data quality patterns or potential issues, enabling you to take further action (such as exploring with Query Service) if needed. This approach allows for rapid assessments without disrupting data ingestion or impacting production workloads.
