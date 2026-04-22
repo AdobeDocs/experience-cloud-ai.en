@@ -8,13 +8,15 @@ role: User, Admin, Developer
 
 # Field Discovery Agent
 
+When building segments, creating audiences, or onboarding data in Adobe Experience Platform, identifying the correct XDM field for a business concept often requires manually browsing schemas or knowing in advance exactly how a field is named. Different fields may represent the same concept under different names — for example, state, region, and location may all refer to geographic data — and choosing the wrong one introduces errors in downstream workflows. Field Discovery Agent removes that manual step.
+
 Field Discovery Agent is an AI-powered agent in Adobe Experience Platform that helps you find, evaluate, and select XDM fields using natural language queries in AI Assistant. You describe what you are looking for in plain language — a business concept, a workflow goal, or a specific field name — and the agent searches across your schemas, datasets, and metadata to return ranked field suggestions with supporting context.
 
 You can invoke Field Discovery Agent directly in AI Assistant, or it runs automatically when other AEP agents need to resolve field or entity references on your behalf. In both cases, Field Discovery Agent surfaces field information only. It does not modify schemas, datasets, or audiences, and it respects your existing access controls and sandbox context.
 
 ## Availability and permissions {#availability-and-permissions}
 
-To use Field Discovery Agent directly in AI Assistant, you must:
+To use Field Discovery Agent directly in AI Assistant (as opposed to through other agents that call it automatically), you must:
 
 - Have access to Adobe Experience Platform and AI Assistant.
 - Be working in the correct IMS organization and sandbox.
@@ -35,6 +37,8 @@ Field Discovery Agent provides four skills within AI Assistant. Each skill suppo
 | **Classification** | Categorizes fields by semantic type, data category, or functional role. | When you need to understand what type of data a field or group of fields holds before using them in queries or segment definitions. | A classification summary indicating each field's category or type. |
 | **Enrichment** | Returns detailed context for a specific field, including sample values, schema location, and where the field is used across datasets, audiences, and destinations. | When you have identified a candidate field and want to verify it is the right one before using it. | Field details including sample values, schema path, associated datasets, and audience or destination usage. |
 
+If your situation could fit more than one skill, use **Identification** when you have a specific concept in mind (for example, "email consent status"), and **Recommendation** when your starting point is a broader workflow goal (for example, "build a churn audience"). Use **Enrichment** after either to verify a specific candidate before using it in a segment or query.
+
 ## How Field Discovery Agent works {#how-field-discovery-agent-works}
 
 When you submit a query in AI Assistant, Field Discovery Agent processes your request in three stages.
@@ -45,7 +49,7 @@ When you submit a query in AI Assistant, Field Discovery Agent processes your re
 
 **Ranking.** The agent ranks results by semantic relevance — how closely a field matches your stated intent — supplemented by signals such as metadata completeness and field usage across your data ecosystem. Fields with descriptive names, populated metadata, and confirmed usage in active datasets rank higher than fields that exist only in a schema definition. The agent does not expose the specific weights assigned to individual signals.
 
-Results are returned as a ranked list with relevance indicators, sample values, and usage context to help you evaluate each candidate field.
+Results are returned as a ranked list with relevance indicators, sample values, and usage context to help you evaluate each candidate field. If results are consistently lower relevance, this often indicates that the concept you described is not well represented in your current schema metadata — using terminology that matches how your fields are named, or adding more specific context to your query, typically improves the result set.
 
 ## Understand your results {#understand-your-results}
 
@@ -53,13 +57,12 @@ Field Discovery Agent returns a structured result set for each query. Understand
 
 ### Relevance buckets
 
-Each field result is assigned a relevance tier — **High**, **Medium**, or **Low** — indicating how closely the field matches your query.
+Each field result is assigned a relevance label in the **[!UICONTROL Relevance]** column of the **[!UICONTROL Fields Identified]** panel, indicating how closely the field matches your query. [UNVERIFIED: whether a third, lower-relevance label exists in addition to those below.]
 
-- **High** — The field strongly matches your stated concept based on its name, metadata, and usage signals. Start your evaluation here.
-- **Medium** — The field partially matches your query. It may share semantic overlap but differ in scope, specificity, or data type. Review the sample values and usage context before selecting.
-- **Low** — The field has limited alignment with your query. It may appear due to indirect metadata associations. Use low-relevance results only when higher-relevance candidates are unavailable or unsuitable.
+- **Highly Relevant** — The field strongly matches your stated concept based on its name, metadata, and usage signals. Confirm the field path and review its sample values to verify it holds the data you expect.
+- **Relevant** — The field partially matches your query. It may share semantic overlap but differ in scope, specificity, or data type. Review the sample values and usage context before deciding whether to use it.
 
-If all results are medium or low relevance, your query may be too broad or use terminology that does not match your schema metadata. Refine your prompt with more specific language or domain terms that reflect how your fields are named.
+If all results are labeled **Relevant** rather than **Highly Relevant**, your query may be too broad or use terminology that does not match your schema metadata. Refine your prompt with more specific language or domain terms that reflect how your fields are named.
 
 ### Sample values
 
@@ -81,9 +84,16 @@ A field that appears in an active dataset, is used in a published audience, and 
 
 ### Results in AI Assistant
 
-[UNVERIFIED: Specific UI element label names — expander titles, table column headers, link text — pending confirmation against finalized UI screenshots.]
+Field Discovery Agent returns results in a **[!UICONTROL Fields Identified]** panel within the AI Assistant response. The panel displays a table with four columns:
 
-Field Discovery Agent returns results directly in the AI Assistant response panel. Results appear in a structured table listing candidate fields with their relevance tier, field path, and available actions. Select the expander for a field to view its sample values and usage context details. Where applicable, links let you navigate directly to the field's schema or dataset in the Platform UI.
+- **[!UICONTROL Field Name]** — The XDM path of the candidate field.
+- **[!UICONTROL Relevance]** — The relevance label assigned to the field (**Highly Relevant** or **Relevant**).
+- **[!UICONTROL Usage Contexts]** — Links to the datasets and schemas where the field appears. Select **[!UICONTROL dataset]** or **[!UICONTROL schema]** to view usage details for that field.
+- **[!UICONTROL Total Usage]** — The number of times the field appears across your data ecosystem.
+
+To confirm that Field Discovery Agent handled your request, select the **[!UICONTROL Reasoning complete]** dropdown above the results panel. The reasoning panel displays the agent that handled the request and the action it performed. For example: *"The user is asking to find fields related to email, which is handled by the field discovery agent."*
+
+[UNVERIFIED: Whether sample values appear through a row-level interaction within the Fields Identified panel, or through a separate step.]
 
 ## Use Field Discovery Agent {#use-field-discovery-agent}
 
@@ -117,7 +127,7 @@ Describe the concept in plain language. Field Discovery Agent interprets your in
 > "Find fields related to purchase transaction date."
 > "What fields contain information about email marketing consent?"
 
-The response lists candidate fields with their relevance tier, XDM path, and available detail actions. Fields ranked High most closely match your stated concept. If the top results are not relevant, refine your query using more specific terminology or field-level context.
+The response lists candidate fields with their relevance label, XDM path, and available detail actions in the **[!UICONTROL Fields Identified]** panel. Fields labeled **Highly Relevant** most closely match your stated concept. If the top results are labeled **Relevant** rather than **Highly Relevant**, refine your query using more specific terminology or field-level context.
 
 ### Get field recommendations for a use case
 
@@ -159,6 +169,8 @@ The response returns the field's sample values, schema location, associated data
 
 Field Discovery Agent also runs automatically as an underlying capability within other AEP agents. When those agents need to resolve natural language references to XDM fields, audiences, or data entities, they call Field Discovery Agent to perform that resolution. You do not need to invoke Field Discovery Agent separately — it operates in the background to improve the accuracy of the agent you are working with.
 
+To confirm that Field Discovery Agent was involved in a response from another agent, select the **[!UICONTROL Reasoning complete]** dropdown above the response. The reasoning panel identifies the agent that handled the request by name.
+
 The following agents currently use Field Discovery Agent:
 
 ### Knowledge Base Audience Agent
@@ -195,7 +207,7 @@ Field Discovery Agent supports:
 - Recommending fields for a stated workflow goal or use case.
 - Classifying fields by semantic type, data category, or functional role.
 - Enriching a specific field with sample values, schema location, and usage context.
-- Returning results ranked by semantic relevance with High, Medium, and Low tiers.
+- Returning results ranked by semantic relevance, labeled Highly Relevant or Relevant.
 - Surfacing sample values within your authorized dataset permissions.
 - Operating as an underlying field and entity resolution capability within Knowledge Base Audience Agent, Goal-Based Audience Agent, Operational Insights, and Time Series.
 
@@ -228,11 +240,13 @@ New schemas, fields, or datasets added to your environment may not appear in Fie
 
 Result quality depends on the quality and completeness of field metadata in your AEP environment. The agent uses field names, display names, descriptions, and usage associations to rank results. Fields with poor or missing metadata may not surface in results or may rank lower than expected.
 
-To improve result quality:
+If you have schema editing access, you can improve result quality by:
 
-- Use clear, descriptive display names for fields in your schemas.
-- Add field descriptions where possible.
-- Associate fields with active datasets rather than leaving them as schema-only definitions.
+- Using clear, descriptive display names for fields in your schemas.
+- Adding field descriptions where possible.
+- Associating fields with active datasets rather than leaving them as schema-only definitions.
+
+If you do not have schema editing access and results are consistently poor, contact your AEP administrator or data engineering team to review field metadata for the schemas you work with.
 
 ### Access and PII constraints
 
@@ -282,7 +296,7 @@ Use the following guidance to get accurate, actionable results from Field Discov
 - **Be specific about the concept, not just the field type.** A prompt like "find a state field" produces lower-quality results than "find the field that holds a customer's US state for geographic segmentation." Specificity gives the agent more signal to match against your metadata. See [How Field Discovery Agent works](#how-field-discovery-agent-works) for why this matters.
 - **Use terminology that matches your schema metadata.** If your schemas use the term "transaction" rather than "purchase," use "transaction" in your prompts. The agent matches against actual field names and descriptions, not just general concepts.
 - **Use Enrichment to verify before committing.** After identifying a candidate field with the Identification or Recommendation skill, use the Enrichment skill to review its sample values and usage context before using it in a segment or query. This reduces the risk of selecting the wrong field.
-- **Iterate when results are low relevance.** If most results are medium or low relevance, rephrase your query with different terminology or add context about your use case. A second, more specific query often surfaces better candidates.
+- **Iterate when results are Relevant rather than Highly Relevant.** Rephrase your query with different terminology or add more context about your use case. A second, more specific query often surfaces better candidates.
 - **Include scope context in your prompts.** For geo-based segmentation, include the target region. For time-based queries, include the time attribute. The more context you provide, the more targeted the result ranking.
 
 ## Troubleshooting {#troubleshooting}
@@ -291,7 +305,7 @@ Use this section when results are missing, unexpected, or when you are unsure wh
 
 - **A recently added field does not appear in results.** The knowledge base may not yet reflect the new schema or field. Allow time for the knowledge base to update after adding schemas or fields to your environment, then resubmit your query. See [Knowledge base hydration](#knowledge-base-hydration).
 
-- **All results show medium or low relevance.** Your query may be too broad, or the terminology you used may not match your field metadata. Refine your prompt with more specific language or terms that align with how your fields are named in your schemas. See [Best practices](#best-practices).
+- **All results are labeled Relevant rather than Highly Relevant.** Your query may be too broad, or the terminology you used may not match your field metadata. Refine your prompt with more specific language or terms that align with how your fields are named in your schemas. See [Best practices](#best-practices).
 
 - **Field Discovery Agent was not invoked.** You submitted a query in AI Assistant but the **[!UICONTROL Reasoning complete]** panel does not indicate Field Discovery Agent. Your query may not have contained a clear field discovery intent. Restate your query explicitly — for example, "Find the field that holds customer email opt-out status" — and resubmit. See [Use Field Discovery Agent](#use-field-discovery-agent).
 
