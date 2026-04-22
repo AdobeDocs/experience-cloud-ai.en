@@ -1,7 +1,7 @@
 ---
 title: Field Discovery Agent
 description: Learn how to use the Field Discovery Agent to find, evaluate, and select XDM fields in Adobe Experience Platform using natural language queries in AI Assistant.
-keywords: field discovery, XDM, AI Assistant, AEP agents, entity linking, field recommendations, audience creation, segmentation
+keywords: field discovery, XDM, AI Assistant, Experience Platform agents, entity linking, field recommendations, audience creation, segmentation
 solution: Experience Platform
 role: User, Admin, Developer
 ---
@@ -12,7 +12,7 @@ When building segments, creating audiences, or onboarding data in Adobe Experien
 
 Field Discovery Agent is an AI-powered agent in Adobe Experience Platform that helps you find, evaluate, and select XDM fields using natural language queries in AI Assistant. You describe what you are looking for in plain language — a business concept, a workflow goal, or a specific field name — and the agent searches across your schemas, datasets, and metadata to return ranked field suggestions with supporting context.
 
-You can invoke Field Discovery Agent directly in AI Assistant, or it runs automatically when other AEP agents need to resolve field or entity references on your behalf. In both cases, Field Discovery Agent surfaces field information only. It does not modify schemas, datasets, or audiences, and it respects your existing access controls and sandbox context.
+You can invoke Field Discovery Agent directly in AI Assistant, or it runs automatically when other Experience Platform agents need to resolve field or entity references on your behalf. In both cases, Field Discovery Agent surfaces field information only. It does not modify schemas, datasets, or audiences, and it respects your existing access controls and sandbox context.
 
 ## Availability and permissions {#availability-and-permissions}
 
@@ -22,7 +22,7 @@ To use Field Discovery Agent directly in AI Assistant (as opposed to through oth
 - Be working in the correct IMS organization and sandbox.
 - Have access to the schemas and datasets you intend to query.
 
-[UNVERIFIED: Whether a separate Field Discovery Agent permission exists in the Permissions UI or Adobe Admin Console, distinct from the general AI Assistant access permissions.]
+<!-- UNVERIFIED: Whether a separate Field Discovery Agent permission exists in the Permissions UI or Adobe Admin Console, distinct from the general AI Assistant access permissions. -->
 
 For instructions on enabling AI Assistant access and granting the required permissions, see the [Agent Orchestrator access guide](./agent-orchestrator.md#access).
 
@@ -49,7 +49,7 @@ When you submit a query in AI Assistant, Field Discovery Agent processes your re
 
 **Ranking.** The agent ranks results by semantic relevance — how closely a field matches your stated intent — supplemented by signals such as metadata completeness and field usage across your data ecosystem. Fields with descriptive names, populated metadata, and confirmed usage in active datasets rank higher than fields that exist only in a schema definition. The agent does not expose the specific weights assigned to individual signals.
 
-Results are returned as a ranked list with relevance indicators, sample values, and usage context to help you evaluate each candidate field. If results are consistently lower relevance, this often indicates that the concept you described is not well represented in your current schema metadata — using terminology that matches how your fields are named, or adding more specific context to your query, typically improves the result set.
+Field Discovery Agent returns a ranked list of results with relevance indicators, sample values, and usage context to help you evaluate each candidate field. If results are consistently lower relevance, this often indicates that the concept you described is not well represented in your current schema metadata — using terminology that matches how your fields are named, or adding more specific context to your query, typically improves the result set.
 
 ## Understand your results {#understand-your-results}
 
@@ -57,7 +57,9 @@ Field Discovery Agent returns a structured result set for each query. Understand
 
 ### Relevance labels
 
-Each field result is assigned a relevance label in the **[!UICONTROL Relevance]** column of the **[!UICONTROL Fields Identified]** panel, indicating how closely the field matches your query. [UNVERIFIED: whether a third, lower-relevance label exists in addition to those below.]
+Each field result is assigned a relevance label in the **[!UICONTROL Relevance]** column of the **[!UICONTROL Fields Identified]** panel, indicating how closely the field matches your query.
+
+<!-- UNVERIFIED: whether a third, lower-relevance label exists in addition to those below. -->
 
 - **Highly Relevant** — The field strongly matches your stated concept based on its name, metadata, and usage signals. Confirm the field path and review its sample values to verify it holds the data you expect.
 - **Relevant** — The field partially matches your query. It may share semantic overlap but differ in scope, specificity, or data type. Review the sample values and usage context before deciding whether to use it.
@@ -70,7 +72,9 @@ Alongside each field suggestion, Field Discovery Agent surfaces sample values dr
 
 >[!IMPORTANT]
 >
->Sample values may contain personally identifiable information (PII). They are governed by your existing dataset access permissions — only fields you are authorized to access return sample values. Do not share sample values outside of secure internal workflows. For information on data governance and usage restrictions in Adobe Experience Platform, see the [Data Governance overview](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home).
+>Sample values may contain personally identifiable information (PII). Do not share sample values outside of secure internal workflows.
+
+Sample values are visible only for fields within your dataset access permissions. For information on data governance and usage restrictions in Experience Platform, see the [Data Governance overview](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home).
 
 If no sample values appear for a field, the field may be empty in your current sandbox, or your permissions may not include access to its underlying dataset.
 
@@ -95,9 +99,7 @@ Field Discovery Agent returns results in a **[!UICONTROL Fields Identified]** pa
 
 A **[!UICONTROL Results Explained]** section appears below the **[!UICONTROL Fields Identified]** table and provides additional field-level context, including explanations and supporting detail for each result. For guidance on navigating the AI Assistant interface, see the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
 
->[!NOTE]
->
->**SME clarification needed:** The **[!UICONTROL Fields Identified]** panel shows multiple icons in the top-right corner of the UI, but their functionality is not yet documented. Questions for SME review: What actions do these icons perform (for example, copy, expand, export, or refresh)? Are any of these considered primary user actions that should be included in the documented workflow? Should users rely on these icons as part of the field selection or extraction process? Until confirmed, these controls are intentionally not described to avoid introducing incorrect guidance.
+<!-- SME clarification needed: The Fields Identified panel shows multiple icons in the top-right corner of the UI, but their functionality is not yet documented. Questions for PM review: What actions do these icons perform (for example, copy, expand, export, or refresh)? Are any of these considered primary user actions that should be included in the documented workflow? Should users rely on these icons as part of the field selection or extraction process? Until confirmed, these controls are not described in the document. -->
 
 ## Use Field Discovery Agent {#use-field-discovery-agent}
 
@@ -108,18 +110,18 @@ To use Field Discovery Agent:
 1. Open AI Assistant from any enabled Experience Platform application.
 2. State your intent explicitly in the input field. Describe the concept, goal, or field characteristic you are looking for. For example: *"Find fields related to customer email opt-out status."*
 
-   ![AI Assistant response showing the Fields Identified panel with candidate fields, Relevance labels, Usage Contexts links, and the Reasoning complete dropdown.](./images/field-discovery/fields-identified-panel.png)
+   ![AI Assistant response showing the Fields Identified panel returned after submitting a query, with candidate fields, Relevance labels, Usage Contexts links, and the Reasoning complete dropdown.](./images/field-discovery/PLACEHOLDER.png)
 
 3. Review the ranked results in the **[!UICONTROL Fields Identified]** panel. Each row includes a relevance label and an XDM field path in the **[!UICONTROL Field Name]** column.
 4. Select **[!UICONTROL dataset]** or **[!UICONTROL schema]** in the **[!UICONTROL Usage Contexts]** column to open a side panel showing where the field is used. For additional field-level context, see the **[!UICONTROL Results Explained]** section below the results table.
 5. Read the XDM field path from the **[!UICONTROL Field Name]** column for the field that best matches your needs. Use this path in the downstream tool where you are building your segment, audience, or query. Field Discovery Agent does not insert the field into other tools; it provides the field reference for you to use.
 6. To confirm that Field Discovery Agent handled your request, select the **[!UICONTROL Reasoning complete]** dropdown above the response. The reasoning panel indicates which agent was called.
 
-For guidance on the AI Assistant interface, see the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
-
 >[!NOTE]
 >
 >If the reasoning panel does not indicate Field Discovery Agent, your query may not have contained a clear field discovery intent. Restate your query with explicit field-finding language and resubmit. See [Troubleshooting](#troubleshooting) for common invocation issues.
+
+For guidance on the AI Assistant interface, see the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
 
 ## Supported use cases {#supported-use-cases}
 
@@ -129,7 +131,7 @@ Field Discovery Agent returns field information only — it does not create audi
 
 ### Identify fields for a business concept
 
-Use the Identification skill when you know the data attribute you need but not the specific XDM field that holds it.
+Use the **Identification** skill when you know the data attribute you need but not the specific XDM field that holds it.
 
 Describe the concept in plain language. Field Discovery Agent interprets your intent and returns a ranked list of fields that semantically match your description.
 
@@ -141,7 +143,7 @@ The response lists candidate fields with their relevance label and XDM path in t
 
 ### Get field recommendations for a use case
 
-Use the Recommendation skill when you are starting a workflow — such as building a segment, onboarding a dataset, or preparing a query — and need guidance on which fields to include.
+Use the **Recommendation** skill when you are starting a workflow — such as building a segment, onboarding a dataset, or preparing a query — and need guidance on which fields to include.
 
 Describe your goal or use case. Field Discovery Agent recommends fields aligned to that objective, prioritized by relevance.
 
@@ -153,7 +155,7 @@ The response returns a prioritized list of fields with relevance context. Review
 
 ### Classify fields
 
-Use the Classification skill when you need to understand the semantic type, data category, or functional role of a field or set of fields before using them.
+Use the **Classification** skill when you need to understand the semantic type, data category, or functional role of a field or set of fields before using them.
 
 Describe the fields or field group you want to classify.
 
@@ -161,11 +163,11 @@ Describe the fields or field group you want to classify.
 > "Which fields in my profile schema relate to location data?"
 > "Which of these fields contain behavioral data versus demographic data?"
 
-The response categorizes each field by type or functional role. This result is informational — it supports decisions about field selection, governance, or schema design but does not produce a field path for direct use in a downstream workflow. Use the classification to determine which fields to investigate further using the Identification or Enrichment skill.
+The response categorizes each field by type or functional role. This result is informational — it supports decisions about field selection, governance, or schema design but does not produce a field path for direct use in a downstream workflow. Use the **Classification** results to determine which fields to investigate further using the **Identification** or **Enrichment** skill.
 
 ### Enrich field context
 
-Use the Enrichment skill when you have identified a candidate field and want to verify it is the right one before using it in a segment, query, or mapping.
+Use the **Enrichment** skill when you have identified a candidate field and want to verify it is the right one before using it in a segment, query, or mapping.
 
 Ask about a specific field by name or path.
 
@@ -177,7 +179,7 @@ The response returns the field's sample values, schema location, associated data
 
 ## Field Discovery Agent in other agents {#field-discovery-in-other-agents}
 
-Field Discovery Agent also runs automatically as an underlying capability within other AEP agents. When those agents need to resolve natural language references to XDM fields, audiences, or data entities, they call Field Discovery Agent to perform that resolution. You do not need to invoke Field Discovery Agent separately — it operates in the background to improve the accuracy of the agent you are working with.
+Field Discovery Agent also runs automatically as an underlying capability within other Experience Platform agents. When those agents need to resolve natural language references to XDM fields, audiences, or data entities, they call Field Discovery Agent to perform that resolution. You do not need to invoke Field Discovery Agent separately — it operates in the background to improve the accuracy of the agent you are working with.
 
 To confirm that Field Discovery Agent was involved in a response from another agent, see step 6 in [Use Field Discovery Agent](#use-field-discovery-agent).
 
@@ -213,7 +215,7 @@ This section summarizes what Field Discovery Agent can and cannot do. For detail
 
 ### In scope
 
-Field Discovery Agent supports:
+Field Discovery Agent supports the following tasks:
 
 - Identifying XDM fields that match a business concept or natural language description.
 - Recommending fields for a stated workflow goal or use case.
@@ -225,7 +227,7 @@ Field Discovery Agent supports:
 
 ### Out of scope
 
-Field Discovery Agent does not:
+Field Discovery Agent does not perform the following actions:
 
 - Modify schemas, datasets, fields, or audiences.
 - Create or publish audiences or segments.
@@ -240,7 +242,7 @@ Field Discovery Agent operates within platform-level constraints that affect res
 
 ### Knowledge base hydration
 
-Field Discovery Agent relies on a knowledge base that is periodically refreshed with schema and metadata from your AEP environment. Results reflect the state of the knowledge base at the time of your query — not the real-time state of your schemas.
+Field Discovery Agent relies on a knowledge base that is periodically refreshed with schema and metadata from your Experience Platform environment. Results reflect the state of the knowledge base at the time of your query — not the real-time state of your schemas.
 
 New schemas, fields, or datasets added to your environment may not appear in Field Discovery Agent results immediately. Results may take time to reflect recent changes.
 
@@ -250,7 +252,7 @@ New schemas, fields, or datasets added to your environment may not appear in Fie
 
 ### Metadata quality and coverage
 
-Result quality depends on the quality and completeness of field metadata in your AEP environment. The agent uses field names, display names, descriptions, and usage associations to rank results. Fields with poor or missing metadata may not surface in results or may rank lower than expected.
+Result quality depends on the quality and completeness of field metadata in your Experience Platform environment. The agent uses field names, display names, descriptions, and usage associations to rank results. Fields with poor or missing metadata may not surface in results or may rank lower than expected.
 
 If you have schema editing access, you can improve result quality by:
 
@@ -260,7 +262,7 @@ If you have schema editing access, you can improve result quality by:
 
 For guidance on editing field display names and descriptions in the Schema Editor, see [Create and edit schemas in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas).
 
-If you do not have schema editing access and results are consistently poor, contact your AEP administrator or data engineering team to review field metadata for the schemas you work with.
+If you do not have schema editing access and results are consistently poor, contact your Experience Platform administrator or data engineering team to review field metadata for the schemas you work with.
 
 ### Access and PII constraints
 
@@ -274,7 +276,7 @@ Use the following guidance to get accurate, actionable results from Field Discov
 
 - **Be specific about the concept, not just the field type.** A prompt like "find a state field" produces lower-quality results than "find the field that holds a customer's US state for geographic segmentation." Specificity gives the agent more signal to match against your metadata. See [How Field Discovery Agent works](#how-field-discovery-agent-works) for why this matters.
 - **Use terminology that matches your schema metadata.** If your schemas use the term "transaction" rather than "purchase," use "transaction" in your prompts. The agent matches against actual field names and descriptions, not just general concepts.
-- **Use Enrichment to verify before committing.** After identifying a candidate field with the Identification or Recommendation skill, use the Enrichment skill to review its sample values and usage context before using it in a segment or query. This reduces the risk of selecting the wrong field.
+- **Use Enrichment to verify before committing.** After identifying a candidate field with the **Identification** or **Recommendation** skill, use the **Enrichment** skill to review its sample values and usage context before using it in a segment or query. This reduces the risk of selecting the wrong field.
 - **Iterate when results are Relevant rather than Highly Relevant.** Rephrase your query with different terminology or add more context about your use case. A second, more specific query often surfaces better candidates.
 - **Include scope context in your prompts.** For geo-based segmentation, include the target region. For time-based queries, include the time attribute. The more context you provide, the more targeted the result ranking.
 
@@ -284,6 +286,8 @@ Use this section as a quick-reference prompt library. If you are new to Field Di
 
 ### Identification prompts
 
+Use these prompts when you know the data concept you need but not which field holds it.
+
 > "Which field holds a customer's state or region?"
 > "Find fields related to email subscription status."
 > "What field contains the date of a customer's first purchase?"
@@ -291,6 +295,8 @@ Use this section as a quick-reference prompt library. If you are new to Field Di
 > "Which fields in my profile schema relate to loyalty program membership?"
 
 ### Recommendation prompts
+
+Use these prompts when you are starting a workflow and need guidance on which fields to include for a specific goal.
 
 > "What fields should I use to build a re-engagement audience?"
 > "Recommend fields for an audience targeting customers who have not purchased in 90 days."
@@ -300,12 +306,16 @@ Use this section as a quick-reference prompt library. If you are new to Field Di
 
 ### Classification prompts
 
+Use these prompts when you need to understand the data type or functional role of a field or set of fields.
+
 > "What type of data does `commerce.order.currencyCode` hold?"
 > "Classify the fields in my ExperienceEvent schema that relate to web behavior."
 > "Which of my profile fields contain behavioral data versus demographic data?"
 > "Is `person.birthDate` considered a PII field?"
 
 ### Enrichment prompts
+
+Use these prompts when you have a candidate field and want to verify it before using it in a segment, query, or mapping.
 
 > "Tell me more about `homeAddress.stateProvince`."
 > "Show me sample values for `commerce.purchases.value`."
