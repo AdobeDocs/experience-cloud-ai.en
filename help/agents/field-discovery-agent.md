@@ -70,7 +70,7 @@ Alongside each field suggestion, Field Discovery Agent surfaces sample values dr
 
 >[!IMPORTANT]
 >
->Sample values may contain personally identifiable information (PII). They are governed by your existing dataset access permissions — only fields you are authorized to access return sample values. Do not share sample values outside of secure internal workflows.
+>Sample values may contain personally identifiable information (PII). They are governed by your existing dataset access permissions — only fields you are authorized to access return sample values. Do not share sample values outside of secure internal workflows. For information on data governance and usage restrictions in Adobe Experience Platform, see the [Data Governance overview](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home).
 
 If no sample values appear for a field, the field may be empty in your current sandbox, or your permissions may not include access to its underlying dataset.
 
@@ -93,7 +93,7 @@ Field Discovery Agent returns results in a **[!UICONTROL Fields Identified]** pa
 
 ![The Fields Identified panel in AI Assistant showing candidate field rows with Relevance labels, Usage Contexts links, and Total Usage counts.](./images/field-discovery/fields-identified-panel.png)
 
-A **[!UICONTROL Results Explained]** section appears below the **[!UICONTROL Fields Identified]** table and provides additional field-level context, including explanations and supporting detail for each result.
+A **[!UICONTROL Results Explained]** section appears below the **[!UICONTROL Fields Identified]** table and provides additional field-level context, including explanations and supporting detail for each result. For guidance on navigating the AI Assistant interface, see the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ To use Field Discovery Agent:
 
 3. Review the ranked results in the **[!UICONTROL Fields Identified]** panel. Each row includes a relevance label and an XDM field path in the **[!UICONTROL Field Name]** column.
 4. Select **[!UICONTROL dataset]** or **[!UICONTROL schema]** in the **[!UICONTROL Usage Contexts]** column to open a side panel showing where the field is used. For additional field-level context, see the **[!UICONTROL Results Explained]** section below the results table.
-5. Read the XDM field path from the **[!UICONTROL Field Name]** column for the field that best matches your needs. Use this path in the downstream tool where you are building your segment, audience, or query — for example, when defining a segment rule in Real-Time CDP or constructing a query in Query Service. Field Discovery Agent does not insert the field into other tools; it provides the field reference for you to use.
+5. Read the XDM field path from the **[!UICONTROL Field Name]** column for the field that best matches your needs. Use this path in the downstream tool where you are building your segment, audience, or query. Field Discovery Agent does not insert the field into other tools; it provides the field reference for you to use.
 6. To confirm that Field Discovery Agent handled your request, select the **[!UICONTROL Reasoning complete]** dropdown above the response. The reasoning panel indicates which agent was called.
 
 For guidance on the AI Assistant interface, see the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
@@ -193,6 +193,8 @@ For full audience creation guidance, see [Audience Agent](./audience.md).
 
 When you describe a business goal to the Goal-Based Audience Agent — such as increasing loyalty program enrollment or reducing churn — Field Discovery Agent resolves the XDM fields required to build segment conditions aligned to that goal. The resolution process is the same as in the Knowledge Base Audience Agent; the difference is that the input starts from a business objective rather than a specific audience description.
 
+For full audience creation guidance, see [Audience Agent](./audience.md).
+
 ### Operational Insights
 
 When you ask Operational Insights questions about your AEP environment, Field Discovery Agent resolves entity references in your query — identifying the correct datasets, schemas, journeys, attributes, sources, and audiences by name. This allows the Operational Insights agent to handle approximate names and partial references accurately. For example, if you refer to a dataset by an informal or shortened name, Field Discovery Agent matches it to the correct entity in your organization.
@@ -255,6 +257,8 @@ If you have schema editing access, you can improve result quality by:
 - Using clear, descriptive display names for fields in your schemas.
 - Adding field descriptions where possible.
 - Associating fields with active datasets rather than leaving them as schema-only definitions.
+
+For guidance on editing field display names and descriptions in the Schema Editor, see [Create and edit schemas in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas).
 
 If you do not have schema editing access and results are consistently poor, contact your AEP administrator or data engineering team to review field metadata for the schemas you work with.
 
