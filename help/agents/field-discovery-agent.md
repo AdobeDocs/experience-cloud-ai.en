@@ -103,9 +103,10 @@ To use Field Discovery Agent:
 
 1. Open AI Assistant from any enabled Experience Platform application.
 2. State your intent explicitly in the input field. Describe the concept, goal, or field characteristic you are looking for. For example: *"Find fields related to customer email opt-out status."*
-3. Review the ranked results in the response panel. Each result includes a relevance tier, field path, and available detail actions.
-4. Select the expander next to a field to view its sample values and usage context.
-5. To confirm that Field Discovery Agent handled your request, select the **[!UICONTROL Reasoning complete]** dropdown above the response. The reasoning panel indicates which agent was called.
+3. Review the ranked results in the **[!UICONTROL Fields Identified]** panel. Each row includes a relevance label and an XDM field path in the **[!UICONTROL Field Name]** column.
+4. Select **[!UICONTROL dataset]** or **[!UICONTROL schema]** in the **[!UICONTROL Usage Contexts]** column to verify where a field is actively used before selecting it.
+5. Read the XDM field path from the **[!UICONTROL Field Name]** column for the field that best matches your needs. Use this path in the downstream tool where you are building your segment, audience, or query — for example, when defining a segment rule in Real-Time CDP or constructing a query in Query Service. Field Discovery Agent does not insert the field into other tools; it provides the field reference for you to use.
+6. To confirm that Field Discovery Agent handled your request, select the **[!UICONTROL Reasoning complete]** dropdown above the response. The reasoning panel indicates which agent was called.
 
 For guidance on the AI Assistant interface, see the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
 
@@ -117,6 +118,8 @@ For guidance on the AI Assistant interface, see the [AI Assistant UI guide](../a
 
 The following sections describe each of Field Discovery Agent's four skills with representative scenarios and example prompts. For result interpretation, see [Understand your results](#understand-your-results).
 
+Field Discovery Agent returns field information only — it does not create audiences, execute queries, or push data into other tools. After identifying the right field, read its XDM path from the **[!UICONTROL Field Name]** column in the **[!UICONTROL Fields Identified]** panel and use that path in the downstream tool where you are building your segment, query, or schema mapping.
+
 ### Identify fields for a business concept
 
 Use the Identification skill when you know the data attribute you need but not the specific XDM field that holds it.
@@ -127,7 +130,7 @@ Describe the concept in plain language. Field Discovery Agent interprets your in
 > "Find fields related to purchase transaction date."
 > "What fields contain information about email marketing consent?"
 
-The response lists candidate fields with their relevance label, XDM path, and available detail actions in the **[!UICONTROL Fields Identified]** panel. Fields labeled **Highly Relevant** most closely match your stated concept. If the top results are labeled **Relevant** rather than **Highly Relevant**, refine your query using more specific terminology or field-level context.
+The response lists candidate fields with their relevance label and XDM path in the **[!UICONTROL Fields Identified]** panel. Fields labeled **Highly Relevant** most closely match your stated concept. If the top results are labeled **Relevant** rather than **Highly Relevant**, refine your query using more specific terminology or field-level context. Once you identify the right field, read its XDM path from the **[!UICONTROL Field Name]** column and use it in the downstream tool where you are building your segment, audience, or query.
 
 ### Get field recommendations for a use case
 
@@ -139,7 +142,7 @@ Describe your goal or use case. Field Discovery Agent recommends fields aligned 
 > "Recommend fields for modeling purchase propensity."
 > "What fields should I include when onboarding a retail transaction dataset?"
 
-The response returns a prioritized list of fields with relevance context. Review the usage context for each recommended field to confirm it is actively used in your environment before including it in your workflow.
+The response returns a prioritized list of fields with relevance context. Review the usage context for each recommended field to confirm it is actively used in your environment. Once you have identified the fields you need, read their XDM paths from the **[!UICONTROL Field Name]** column and use them in the downstream tool where you are building your segment, audience, or query.
 
 ### Classify fields
 
@@ -151,7 +154,7 @@ Describe the fields or field group you want to classify.
 > "Which fields in my profile schema relate to location data?"
 > "Which of these fields contain behavioral data versus demographic data?"
 
-The response categorizes each field by type or functional role. This is useful when evaluating fields for schema design, query construction, or compliance review before committing to a specific field in a workflow.
+The response categorizes each field by type or functional role. This result is informational — it supports decisions about field selection, governance, or schema design but does not produce a field path for direct use in a downstream workflow. Use the classification to determine which fields to investigate further using the Identification or Enrichment skill.
 
 ### Enrich field context
 
@@ -163,7 +166,7 @@ Ask about a specific field by name or path.
 > "What sample values exist for `homeAddress.stateProvince`?"
 > "Where is the field `commerce.purchases.value` used across my datasets and audiences?"
 
-The response returns the field's sample values, schema location, associated datasets, and any audiences or destinations where the field appears. Cross-reference this context with your use case requirements before selecting the field.
+The response returns the field's sample values, schema location, associated datasets, and any audiences or destinations where the field appears. Review this context to confirm the field holds the data you expect. Once verified, read the XDM path from the **[!UICONTROL Field Name]** column and use it in the downstream tool where you are building your segment, query, or schema mapping.
 
 ## Field Discovery Agent in other agents {#field-discovery-in-other-agents}
 
