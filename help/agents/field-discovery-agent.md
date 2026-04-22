@@ -8,461 +8,295 @@ role: User, Admin, Developer
 
 # Field Discovery Agent
 
-<!--
-  WRITER GUIDANCE — Intro paragraph (required; no stacked heading):
-  Write 3–4 sentences that answer: what FDA is, how users interact with it (via natural
-  language in AI Assistant), and establish its dual role — directly invocable by the
-  user AND an underlying capability that other AEP agents call automatically. Close with
-  a single boundary statement: FDA surfaces field information and returns ranked
-  suggestions; it does not modify schemas, datasets, or audiences, and respects all
-  existing access controls and sandbox context. Do not list features here; keep it
-  goal-oriented and audience-appropriate for a marketer reading this for the first time.
-  Reference: Execution Brief §1 (Core Objective), §5.1–5.2 (What it is / What it does).
--->
+Field Discovery Agent is an AI-powered agent in Adobe Experience Platform that helps you find, evaluate, and select XDM fields using natural language queries in AI Assistant. You describe what you are looking for in plain language — a business concept, a workflow goal, or a specific field name — and the agent searches across your schemas, datasets, and metadata to return ranked field suggestions with supporting context.
+
+You can invoke Field Discovery Agent directly in AI Assistant, or it runs automatically when other AEP agents need to resolve field or entity references on your behalf. In both cases, Field Discovery Agent surfaces field information only. It does not modify schemas, datasets, or audiences, and it respects your existing access controls and sandbox context.
 
 ## Availability and permissions {#availability-and-permissions}
 
-<!--
-  WRITER GUIDANCE:
-  State the product entitlements and permissions required to use FDA directly in AI
-  Assistant. List the minimum required items as a bulleted prerequisite list (IMS org,
-  sandbox context, AI Assistant access, and any specific FDA permission if one exists
-  separately from AI Assistant). If no separate FDA-specific permission exists, state
-  that clearly and cross-link to the Agent Orchestrator access guide rather than
-  duplicating the full permission steps. Add an [!AVAILABILITY] callout above this
-  section if FDA has any trial, limited-access, or license-tier restrictions.
-  Reference: Execution Brief §3 (Audience & Prerequisites); Placement Evaluation §3
-  (agent-orchestrator.md cross-link pattern).
--->
+To use Field Discovery Agent directly in AI Assistant, you must:
+
+- Have access to Adobe Experience Platform and AI Assistant.
+- Be working in the correct IMS organization and sandbox.
+- Have access to the schemas and datasets you intend to query.
+
+[UNVERIFIED: Whether a separate Field Discovery Agent permission exists in the Permissions UI or Adobe Admin Console, distinct from the general AI Assistant access permissions.]
+
+For instructions on enabling AI Assistant access and granting the required permissions, see the [Agent Orchestrator access guide](./agent-orchestrator.md#access).
 
 ## Field Discovery Agent skills {#field-discovery-agent-skills}
 
-<!--
-  WRITER GUIDANCE:
-  Open with 1–2 sentences scoping what this table covers before presenting it (style
-  guide: never place a table directly under a heading without introductory prose). Then
-  present a four-column skills table: Skill | Description | When to use it | Expected
-  output. Populate one row per core skill: Identification, Recommendation,
-  Classification, and Enrichment. Descriptions should be one sentence, user-goal
-  framed (e.g., "Identifies the XDM fields that best match a business concept you
-  describe in natural language."). Expected output should describe what the agent
-  returns — not what it does internally. Model the table format directly on the Data
-  Distiller Agent skills table.
-  Reference: Execution Brief §2 In-Scope (core use cases); §5.2 (What it does).
--->
+Field Discovery Agent provides four skills within AI Assistant. Each skill supports a different stage of field exploration, from identifying candidate fields to verifying that a specific field meets your needs.
+
+| Skill | Description | When to use it | Expected output |
+| --- | --- | --- | --- |
+| **Identification** | Identifies XDM fields that semantically match a business concept or attribute you describe in natural language. | When you know what data you need but not which field holds it. | A ranked list of candidate fields with relevance tiers, field paths, and available detail actions. |
+| **Recommendation** | Recommends XDM fields based on a workflow goal or use case you describe, such as building an audience segment or modeling a behavioral attribute. | When you are starting a new use case and need guidance on which fields to include. | A prioritized list of fields relevant to the stated goal, with relevance context for each. |
+| **Classification** | Categorizes fields by semantic type, data category, or functional role. | When you need to understand what type of data a field or group of fields holds before using them in queries or segment definitions. | A classification summary indicating each field's category or type. |
+| **Enrichment** | Returns detailed context for a specific field, including sample values, schema location, and where the field is used across datasets, audiences, and destinations. | When you have identified a candidate field and want to verify it is the right one before using it. | Field details including sample values, schema path, associated datasets, and audience or destination usage. |
 
 ## How Field Discovery Agent works {#how-field-discovery-agent-works}
 
-<!--
-  WRITER GUIDANCE:
-  This section is the primary transparency section. It must explain the agent's
-  process at a conceptual level without exposing implementation details (no embeddings,
-  no vector DB internals — these are explicitly out-of-scope per the Brief). Structure
-  this as a short prose explanation covering three stages: (1) intent interpretation —
-  how the agent reads natural language and maps it to a searchable concept; (2) search
-  scope — what it searches across (schemas, datasets, metadata); (3) ranking — how it
-  prioritizes results using semantic relevance signals. Use qualitative language for
-  ranking ("fields with stronger metadata coverage are ranked higher") rather than
-  algorithmic specifics. The goal is trust-building, not technical disclosure.
-  Reference: Execution Brief §2 In-Scope (semantic matching, ranking logic);
-  Out-of-Scope (deep technical architecture, full EL implementation details).
--->
+When you submit a query in AI Assistant, Field Discovery Agent processes your request in three stages.
+
+**Intent interpretation.** The agent reads your natural language input and identifies the underlying concept or goal. For example, a query about "people in California" is interpreted as a geographic attribute request, not a literal string match. The agent maps your phrasing to semantically equivalent concepts that may appear under different names across your schemas.
+
+**Search scope.** The agent searches across the XDM schemas, datasets, and field metadata available in your current IMS organization and sandbox. It considers field names, display names, descriptions, and usage associations to find candidates that align with your intent.
+
+**Ranking.** The agent ranks results by semantic relevance — how closely a field matches your stated intent — supplemented by signals such as metadata completeness and field usage across your data ecosystem. Fields with descriptive names, populated metadata, and confirmed usage in active datasets rank higher than fields that exist only in a schema definition. The agent does not expose the specific weights assigned to individual signals.
+
+Results are returned as a ranked list with relevance indicators, sample values, and usage context to help you evaluate each candidate field.
 
 ## Understand your results {#understand-your-results}
 
-<!--
-  WRITER GUIDANCE:
-  Open with 1–2 sentences explaining that FDA returns a structured result set and that
-  understanding the result format helps users evaluate and act on recommendations
-  confidently. Then introduce the three sub-sections below. Do not stack headings —
-  include this bridging prose before the first H3.
-  Reference: Execution Brief §2 In-Scope (Explanation of results); §1 Success Metric
-  ("Users understand why results are ranked a certain way").
--->
+Field Discovery Agent returns a structured result set for each query. Understanding the components of a result helps you evaluate candidate fields and act on them with confidence, without additional trial and error.
 
 ### Relevance buckets
 
-<!--
-  WRITER GUIDANCE:
-  Explain the three relevance tiers — high, medium, and low — and what each signals
-  to the user about a field's fit for their query. Describe the practical implication
-  of each bucket: what a user should do when a high-relevance field appears vs. when
-  all results are medium or low. Avoid stating the exact algorithmic threshold for
-  buckets (out-of-scope). One short paragraph or a three-row definition table is
-  appropriate. If the UI labels these buckets visually (e.g., color coding or a badge),
-  note that here and reference the screenshot placed in the next sub-section.
-  Reference: Execution Brief §2 In-Scope (Relevance buckets: high / medium / low).
--->
+Each field result is assigned a relevance tier — **High**, **Medium**, or **Low** — indicating how closely the field matches your query.
+
+- **High** — The field strongly matches your stated concept based on its name, metadata, and usage signals. Start your evaluation here.
+- **Medium** — The field partially matches your query. It may share semantic overlap but differ in scope, specificity, or data type. Review the sample values and usage context before selecting.
+- **Low** — The field has limited alignment with your query. It may appear due to indirect metadata associations. Use low-relevance results only when higher-relevance candidates are unavailable or unsuitable.
+
+If all results are medium or low relevance, your query may be too broad or use terminology that does not match your schema metadata. Refine your prompt with more specific language or domain terms that reflect how your fields are named.
 
 ### Sample values
 
-<!--
-  WRITER GUIDANCE:
-  Describe that FDA returns sample values alongside field suggestions to help users
-  verify a field contains the data they expect. Explain what sample values represent
-  (example data drawn from the field in the user's sandbox). Include an [!IMPORTANT]
-  callout immediately before or within this sub-section noting that sample values may
-  contain personally identifiable information (PII) and are governed by the user's
-  existing dataset permissions — users should not share sample values outside secure
-  workflows. Do not state exact PII field categories; keep the note general and
-  governance-oriented.
-  Reference: Execution Brief §2 In-Scope (Sample values with PII caveats).
--->
+Alongside each field suggestion, Field Discovery Agent surfaces sample values drawn from the field's data in your sandbox. Sample values help you verify that a field contains the type of data you expect before selecting it.
+
+>[!IMPORTANT]
+>
+>Sample values may contain personally identifiable information (PII). They are governed by your existing dataset access permissions — only fields you are authorized to access return sample values. Do not share sample values outside of secure internal workflows.
+
+If no sample values appear for a field, the field may be empty in your current sandbox, or your permissions may not include access to its underlying dataset.
 
 ### Usage context
 
-<!--
-  WRITER GUIDANCE:
-  Explain that FDA provides usage context for each suggested field, showing where the
-  field appears across the data ecosystem: schema → dataset → audience → destination.
-  Describe why this matters to the reader — a field that appears in an active audience
-  used in a live destination is more likely to be a reliable, meaningful field than one
-  that exists only in a schema definition. Keep this practical and business-context
-  framed for the primary (marketer) audience. One short paragraph is sufficient.
-  Reference: Execution Brief §2 In-Scope (Usage context: schema → dataset → audience
-  → destination).
--->
+Each field result includes usage context showing where the field appears across your data ecosystem:
+
+**Schema → Dataset → Audience → Destination**
+
+A field that appears in an active dataset, is used in a published audience, and is mapped to a live destination has demonstrated real usage in your environment. This distinguishes fields that are actively relied on from fields that exist only in a schema definition but have not been used in practice. Use this signal alongside relevance tier and sample values to make a more informed field selection.
 
 ### Results in AI Assistant
 
-<!--
-  WRITER GUIDANCE:
-  Describe the finalized UI result structure: the tables, expanders, and links that
-  appear in the AI Assistant response panel when FDA returns results. Walk through the
-  interface elements in the order a user encounters them. For each UI element (table,
-  expander, link), name it using [!UICONTROL] notation, describe what it contains,
-  and explain how to interact with it (using "select" not "click"). Place the
-  screenshot(s) immediately after the instruction they illustrate. Include descriptive
-  alt text for each image. This sub-section is the primary reference for users who
-  have results on screen and need to know what they are looking at.
-  Reference: User-provided clarification (UI in final state: tables, expanders, links);
-  Adobe Style Guide §9 (Visual Elements), §5 (UI References).
--->
+[UNVERIFIED: Specific UI element label names — expander titles, table column headers, link text — pending confirmation against finalized UI screenshots.]
+
+Field Discovery Agent returns results directly in the AI Assistant response panel. Results appear in a structured table listing candidate fields with their relevance tier, field path, and available actions. Select the expander for a field to view its sample values and usage context details. Where applicable, links let you navigate directly to the field's schema or dataset in the Platform UI.
 
 ## Use Field Discovery Agent {#use-field-discovery-agent}
 
-<!--
-  WRITER GUIDANCE:
-  Describe the end-to-end workflow for invoking FDA directly in AI Assistant, from
-  opening AI Assistant to reviewing and acting on a result. Use a numbered list only if
-  the steps are strictly sequential and platform-action-based; otherwise use prose with
-  clear step markers per the style guide. Include: how to state intent (explicit natural
-  language is required — model on the Data Distiller "state your intent explicitly"
-  pattern), how to submit a query, and how to verify FDA handled the request using the
-  Reasoning complete dropdown in the AI Assistant reasoning panel. Include a screenshot
-  of the reasoning panel with FDA indicated, with alt text. Cross-link to the AI
-  Assistant UI guide for users who need orientation on the interface itself.
-  Reference: Execution Brief §2 In-Scope (What FDA is and when to use it — standalone);
-  Placement Evaluation §3 (cross-link to ai-assistant-ui.md).
--->
+You interact with Field Discovery Agent through AI Assistant using natural language. The agent requires a clear statement of intent — a vague or overly brief query produces lower-quality results or may not invoke Field Discovery Agent at all.
+
+To use Field Discovery Agent:
+
+1. Open AI Assistant from any enabled Experience Platform application.
+2. State your intent explicitly in the input field. Describe the concept, goal, or field characteristic you are looking for. For example: *"Find fields related to customer email opt-out status."*
+3. Review the ranked results in the response panel. Each result includes a relevance tier, field path, and available detail actions.
+4. Select the expander next to a field to view its sample values and usage context.
+5. To confirm that Field Discovery Agent handled your request, select the **[!UICONTROL Reasoning complete]** dropdown above the response. The reasoning panel indicates which agent was called.
+
+For guidance on the AI Assistant interface, see the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
+
+>[!NOTE]
+>
+>If the reasoning panel does not indicate Field Discovery Agent, your query may not have contained a clear field discovery intent. Restate your query with explicit field-finding language and resubmit. See [Troubleshooting](#troubleshooting) for common invocation issues.
 
 ## Supported use cases {#supported-use-cases}
 
-<!--
-  WRITER GUIDANCE:
-  Open with 1–2 sentences stating that this section provides task-based guidance for
-  each of FDA's four core skills. Introduce the sub-sections without stacking headings.
-  Each H3 below should follow the same internal structure: (1) a one-sentence goal
-  statement, (2) when to use this skill, (3) what to type in AI Assistant (example
-  prompt in blockquote format), (4) what the agent returns (expected output aligned to
-  the skills table above), (5) any relevant screenshot immediately after the described
-  action. Do not reproduce the full result UI explanation here — cross-link to
-  "Understand your results" for field-level result interpretation.
-  Reference: Execution Brief §2 In-Scope (Core use cases: Identification,
-  Recommendation, Classification, Enrichment).
--->
+The following sections describe each of Field Discovery Agent's four skills with representative scenarios and example prompts. For result interpretation, see [Understand your results](#understand-your-results).
 
 ### Identify fields for a business concept
 
-<!--
-  WRITER GUIDANCE:
-  Cover the Identification skill: the user describes a business concept in plain
-  language (e.g., "customers in California" or "email opt-outs") and FDA returns
-  XDM fields that semantically match that concept. Describe the scenario from the
-  marketer's perspective — they have a segmentation goal but don't know which field
-  holds the relevant data. Include at least one representative example prompt in
-  blockquote format and describe the shape of the response (relevance-ranked field
-  list). Draw examples from the demo transcript where available.
-  Reference: Execution Brief §2 In-Scope (Identification); §5.2 (interprets user
-  intent, returns ranked field suggestions).
--->
+Use the Identification skill when you know the data attribute you need but not the specific XDM field that holds it.
+
+Describe the concept in plain language. Field Discovery Agent interprets your intent and returns a ranked list of fields that semantically match your description.
+
+> "Which fields represent a customer's home state or province?"
+> "Find fields related to purchase transaction date."
+> "What fields contain information about email marketing consent?"
+
+The response lists candidate fields with their relevance tier, XDM path, and available detail actions. Fields ranked High most closely match your stated concept. If the top results are not relevant, refine your query using more specific terminology or field-level context.
 
 ### Get field recommendations for a use case
 
-<!--
-  WRITER GUIDANCE:
-  Cover the Recommendation skill: the user describes a use case or goal (e.g., "I want
-  to build a loyalty audience" or "I'm modeling purchase propensity") and FDA recommends
-  fields that are relevant to that goal. Distinguish this from Identification —
-  Recommendation operates at the use-case or workflow level, not just a single concept.
-  Describe the output: a prioritized list of fields with relevance context. Include a
-  representative example prompt and output shape.
-  Reference: Execution Brief §2 In-Scope (Recommendation).
--->
+Use the Recommendation skill when you are starting a workflow — such as building a segment, onboarding a dataset, or preparing a query — and need guidance on which fields to include.
+
+Describe your goal or use case. Field Discovery Agent recommends fields aligned to that objective, prioritized by relevance.
+
+> "I want to build an audience of high-value customers. What fields should I use?"
+> "Recommend fields for modeling purchase propensity."
+> "What fields should I include when onboarding a retail transaction dataset?"
+
+The response returns a prioritized list of fields with relevance context. Review the usage context for each recommended field to confirm it is actively used in your environment before including it in your workflow.
 
 ### Classify fields
 
-<!--
-  WRITER GUIDANCE:
-  Cover the Classification skill: FDA categorizes fields by type, semantic role, or
-  data category. Describe a realistic scenario — a data engineer or marketing ops user
-  who needs to understand the type of data held in a set of fields before using them in
-  a query or segment definition. Describe the output format (classification labels,
-  categories). Include a representative example prompt.
-  Reference: Execution Brief §2 In-Scope (Classification); §3 Audience (Secondary:
-  Data Engineers / AEP implementers).
--->
+Use the Classification skill when you need to understand the semantic type, data category, or functional role of a field or set of fields before using them.
+
+Describe the fields or field group you want to classify.
+
+> "What type of data does `commerce.order.priceTotal` hold?"
+> "Which fields in my profile schema relate to location data?"
+> "Which of these fields contain behavioral data versus demographic data?"
+
+The response categorizes each field by type or functional role. This is useful when evaluating fields for schema design, query construction, or compliance review before committing to a specific field in a workflow.
 
 ### Enrich field context
 
-<!--
-  WRITER GUIDANCE:
-  Cover the Enrichment skill: the user asks about a specific field and FDA returns
-  enriched context — sample values, schema location, datasets where it appears, and
-  audience or destination associations. This skill directly supports the "understand
-  your results" transparency goal. Describe the scenario: a user has identified a
-  candidate field and wants to verify it's the right one before using it. Include a
-  representative example prompt and connect the output to the relevance buckets and
-  usage context concepts already defined.
-  Reference: Execution Brief §2 In-Scope (Enrichment; Sample values; Usage context).
--->
+Use the Enrichment skill when you have identified a candidate field and want to verify it is the right one before using it in a segment, query, or mapping.
+
+Ask about a specific field by name or path.
+
+> "Tell me more about the field `person.name.lastName`."
+> "What sample values exist for `homeAddress.stateProvince`?"
+> "Where is the field `commerce.purchases.value` used across my datasets and audiences?"
+
+The response returns the field's sample values, schema location, associated datasets, and any audiences or destinations where the field appears. Cross-reference this context with your use case requirements before selecting the field.
 
 ## Field Discovery Agent in other agents {#field-discovery-in-other-agents}
 
-<!--
-  WRITER GUIDANCE:
-  Open with 2–3 sentences explaining FDA's role as an underlying capability: when other
-  AEP agents need to resolve natural language references to XDM fields, audiences, or
-  entities, they call FDA automatically — the user does not need to invoke FDA
-  separately. State that users who interact with these agents benefit from FDA without
-  needing to know it is running. Then introduce the sub-sections below without stacking
-  headings. For each agent, explain specifically what FDA does in that context (what
-  entity type it resolves and why), not just that it is used. Label the Data Engineering
-  Agent as a future use case. This section is new to the agent doc pattern in this repo;
-  cross-linking back to this section from audience.md and other affected agent docs is
-  required (see Placement Evaluation §3).
-  Reference: Execution Brief §2 In-Scope (Relationship to other agents); User-provided
-  clarification (confirmed agent list and per-agent FDA usage).
--->
+Field Discovery Agent also runs automatically as an underlying capability within other AEP agents. When those agents need to resolve natural language references to XDM fields, audiences, or data entities, they call Field Discovery Agent to perform that resolution. You do not need to invoke Field Discovery Agent separately — it operates in the background to improve the accuracy of the agent you are working with.
+
+The following agents currently use Field Discovery Agent:
 
 ### Knowledge Base Audience Agent
 
-<!--
-  WRITER GUIDANCE:
-  Describe FDA's role in the Knowledge Base Audience Agent: FDA (via entity linking)
-  discovers the XDM fields required to define segment conditions so the Audience Agent
-  can generate audiences. Explain this from the user's perspective — when a user asks
-  the Audience Agent to create an audience based on a natural language description, FDA
-  resolves the field references behind the scenes. Cross-link to the Audience Agent doc
-  (audience.md) for users who want full audience creation guidance.
-  Reference: User-provided clarification (Knowledge Base Audience Agent uses FDA for
-  field discovery required to create segments and generate audiences).
--->
+When you ask the Knowledge Base Audience Agent to create an audience using a natural language description, Field Discovery Agent resolves the XDM fields required to define the segment conditions. For example, if you request an audience of "customers who purchased in the last 30 days," Field Discovery Agent identifies the purchase event and date fields needed to generate the segment definition, which the Audience Agent then uses to build and persist the audience.
+
+For full audience creation guidance, see [Audience Agent](./audience.md).
 
 ### Goal-Based Audience Agent
 
-<!--
-  WRITER GUIDANCE:
-  Describe FDA's role in the Goal-Based Audience Agent: similar to the Knowledge Base
-  Audience Agent, FDA resolves XDM fields needed to create segment definitions when a
-  user states a business goal. Distinguish this from the Knowledge Base agent if a
-  meaningful distinction exists for users (e.g., goal-based starts from a business
-  objective rather than an audience name). If the distinction is not user-visible, note
-  that FDA operates the same way in both and keep this brief to avoid redundancy.
-  Reference: User-provided clarification (Goal-Based Audience Agent uses FDA for field
-  discovery for audience generation).
--->
+When you describe a business goal to the Goal-Based Audience Agent — such as increasing loyalty program enrollment or reducing churn — Field Discovery Agent resolves the XDM fields required to build segment conditions aligned to that goal. The resolution process is the same as in the Knowledge Base Audience Agent; the difference is that the input starts from a business objective rather than a specific audience description.
 
 ### Operational Insights
 
-<!--
-  WRITER GUIDANCE:
-  Describe FDA's role in Operational Insights: entity linking identifies all named
-  entities in a user's natural language query — datasets, schemas, journeys, attributes,
-  sources, and audiences — so the Operational Insights agent can resolve the correct
-  objects. Explain why this matters to the user: when a user refers to an audience by
-  an approximate name or a dataset by a partial name, FDA resolves the correct entity
-  rather than returning no result or the wrong one.
-  Reference: User-provided clarification (Op-insights uses EL to identify all entity
-  names: datasets, schemas, journeys, attributes, sources, audiences).
--->
+When you ask Operational Insights questions about your AEP environment, Field Discovery Agent resolves entity references in your query — identifying the correct datasets, schemas, journeys, attributes, sources, and audiences by name. This allows the Operational Insights agent to handle approximate names and partial references accurately. For example, if you refer to a dataset by an informal or shortened name, Field Discovery Agent matches it to the correct entity in your organization.
 
 ### Time Series
 
-<!--
-  WRITER GUIDANCE:
-  Describe FDA's role in Time Series: entity linking identifies true audience entities
-  from user natural language queries, handling cases where a user uses an audience ID
-  or an inexact audience name. Explain the user benefit: the Time Series agent can
-  resolve ambiguous audience references accurately, reducing the risk of querying the
-  wrong audience.
-  Reference: User-provided clarification (Time Series uses EL for identifying true
-  audience entities from NLQ, handling audience IDs and inexact names).
--->
+When you submit a natural language query to the Time Series agent that references an audience by name or ID, Field Discovery Agent resolves the correct audience entity. This prevents the agent from querying the wrong audience when names are inexact or when an audience ID is used in place of its display name.
+
+>[!NOTE]
+>
+>Data Engineering Agent is a planned future consumer of Field Discovery Agent. In that context, Field Discovery Agent will support XDM field mapping during the data modeling stage of schema creation. This capability is not yet available.
 
 ## In scope and out of scope {#in-scope-and-out-of-scope}
 
-<!--
-  WRITER GUIDANCE:
-  Open with one sentence stating that this section summarizes FDA's supported and
-  unsupported capabilities, and cross-link to "Supported use cases" and "Guardrails
-  and limitations" for full details. Then present two sub-sections below. Use bulleted
-  lists for each (not tables, which are better reserved for the skills section).
-  Reference: Execution Brief §2 (Scope Boundaries); Adobe Style Guide §3 (progressive
-  disclosure; cross-linking).
--->
+This section summarizes what Field Discovery Agent can and cannot do. For detailed task guidance, see [Supported use cases](#supported-use-cases). For platform constraints, see [Guardrails and limitations](#guardrails-and-limitations).
 
 ### In scope
 
-<!--
-  WRITER GUIDANCE:
-  List what FDA supports: all four skills (Identification, Recommendation,
-  Classification, Enrichment), result ranking and explanation, sample value surfacing
-  (within permissions), usage context display, and operation as an underlying capability
-  within other agents. Keep items concise — one clause per bullet.
-  Reference: Execution Brief §2 In-Scope.
--->
+Field Discovery Agent supports:
+
+- Identifying XDM fields that match a business concept or natural language description.
+- Recommending fields for a stated workflow goal or use case.
+- Classifying fields by semantic type, data category, or functional role.
+- Enriching a specific field with sample values, schema location, and usage context.
+- Returning results ranked by semantic relevance with High, Medium, and Low tiers.
+- Surfacing sample values within your authorized dataset permissions.
+- Operating as an underlying field and entity resolution capability within Knowledge Base Audience Agent, Goal-Based Audience Agent, Operational Insights, and Time Series.
 
 ### Out of scope
 
-<!--
-  WRITER GUIDANCE:
-  List what FDA does not support. Draw directly from the Execution Brief out-of-scope
-  items and translate them into user-facing language: FDA does not modify schemas or
-  datasets, does not create audiences or segments, does not expose internal embedding
-  architecture, and does not guarantee SLA-bound hydration windows. Cross-link to
-  "Guardrails and limitations" for the constraints that most affect outcomes.
-  Reference: Execution Brief §2 Out-of-Scope.
--->
+Field Discovery Agent does not:
+
+- Modify schemas, datasets, fields, or audiences.
+- Create or publish audiences or segments.
+- Execute queries or activate data to destinations.
+- Access fields or datasets outside your authorized permissions.
+- Expose internal embedding logic, vector database architecture, or entity linking implementation details.
+- Guarantee a specific time window for knowledge base updates after schema or dataset changes.
 
 ## Guardrails and limitations {#guardrails-and-limitations}
 
-<!--
-  WRITER GUIDANCE:
-  Open with one sentence stating that FDA operates within platform-level constraints
-  that affect result quality and availability. Then introduce the three sub-sections
-  below without stacking headings. This section must set accurate expectations without
-  overpromising on timing or coverage. Avoid hard SLA numbers (out-of-scope per the
-  Brief); use qualitative language with directional guidance (e.g., "results may take
-  time to reflect recent schema changes").
-  Reference: Execution Brief §2 In-Scope (Limitations / constraints); Out-of-Scope
-  (Exact SLA guarantees).
--->
+Field Discovery Agent operates within platform-level constraints that affect result availability and quality. Understanding these constraints helps you interpret results accurately and troubleshoot unexpected gaps.
 
 ### Knowledge base hydration
 
-<!--
-  WRITER GUIDANCE:
-  Explain that FDA relies on a knowledge base that is periodically updated with schema
-  and metadata from the user's AEP environment. New schemas, fields, or datasets may
-  not appear in FDA results immediately after creation — results reflect the state of
-  the knowledge base at the time of the query. Do not state a specific hour count.
-  Use language such as "results may take time to reflect recent changes." Include a
-  [!NOTE] if the delay window is expected to change, and advise users to resubmit
-  queries if a newly added field is not appearing.
-  Reference: Execution Brief §2 In-Scope (KB hydration delay); §4 Non-Blocking
-  Unknowns (exact KB hydration timing: currently ~24h but changing → document as
-  "may take time").
--->
+Field Discovery Agent relies on a knowledge base that is periodically refreshed with schema and metadata from your AEP environment. Results reflect the state of the knowledge base at the time of your query — not the real-time state of your schemas.
+
+New schemas, fields, or datasets added to your environment may not appear in Field Discovery Agent results immediately. Results may take time to reflect recent changes.
+
+>[!NOTE]
+>
+>The refresh interval for the knowledge base is subject to change. If a recently added field does not appear in results, allow time for the knowledge base to update and then resubmit your query.
 
 ### Metadata quality and coverage
 
-<!--
-  WRITER GUIDANCE:
-  Explain that FDA's result quality depends on the quality and completeness of field
-  metadata in the user's AEP environment. Fields with descriptive names, populated
-  display names, and dataset associations rank higher and return more useful context.
-  Fields with poor metadata (e.g., unnamed, undescribed, or isolated in a schema with
-  no dataset) may not surface or may rank lower. Provide one or two actionable data
-  hygiene recommendations (e.g., use friendly display names in schemas). Keep guidance
-  practical and brief — this is a constraint section, not a configuration guide.
-  Reference: Execution Brief §2 In-Scope (Dependence on metadata quality); §4
-  Non-Blocking Unknowns (ranking algorithm specifics: can describe qualitatively).
--->
+Result quality depends on the quality and completeness of field metadata in your AEP environment. The agent uses field names, display names, descriptions, and usage associations to rank results. Fields with poor or missing metadata may not surface in results or may rank lower than expected.
+
+To improve result quality:
+
+- Use clear, descriptive display names for fields in your schemas.
+- Add field descriptions where possible.
+- Associate fields with active datasets rather than leaving them as schema-only definitions.
 
 ### Access and PII constraints
 
-<!--
-  WRITER GUIDANCE:
-  State that FDA respects all existing AEP access controls and sandbox context: users
-  only see fields from schemas and datasets they have permission to access. Reiterate
-  (briefly, linking back to "Sample values") that sample values may include PII and
-  are governed by the same dataset-level permissions. State that FDA does not bypass
-  field-level security or profile-enabled restrictions. This sub-section is concise —
-  two to four sentences maximum; it reinforces trust and governance rather than
-  introducing new content.
-  Reference: Execution Brief §5.2 (agent respects access controls); Placement
-  Evaluation §3 (PII sample value conflict flag).
--->
+Field Discovery Agent respects all existing AEP access controls and operates within your current sandbox context. You only receive results for fields in schemas and datasets you are authorized to access.
+
+Sample values are governed by the same dataset-level permissions. Fields in profile-enabled datasets with PII restrictions return sample values only if you have the required access. See [Sample values](#sample-values) for handling guidance. Field Discovery Agent does not bypass field-level security or profile-enabled access restrictions.
 
 ## Example prompts {#example-prompts}
 
-<!--
-  WRITER GUIDANCE:
-  Open with one sentence advising users to state their intent clearly and specifically
-  (specificity improves results — this is the core prompting principle from the Brief).
-  Then organize prompts by skill using H3 subsections below. Each prompt should be in
-  blockquote format. For each skill, provide 3–5 example prompts ranging from broad
-  to specific, demonstrating how prompt specificity affects result precision. Do not
-  include expected outputs here — cross-link to the relevant supported use case
-  sub-section for full context. Prompts should be realistic for the primary audience
-  (marketer) and include at least one prompt per skill that a data engineer would
-  recognize as relevant (secondary audience).
-  Reference: Execution Brief §2 In-Scope (Example prompts and outputs); §3 Audience;
-  Adobe Style Guide §6 (descriptive link text; cross-linking).
--->
+Use specific, intent-driven language when querying Field Discovery Agent. More specific prompts produce better-ranked results because the agent has more signal to match against your field metadata. See [Best practices](#best-practices) for guidance on structuring effective queries.
 
 ### Identification prompts
 
-<!--
-  WRITER GUIDANCE (applies to all four prompt H3s):
-  Provide 3–5 example prompts in blockquote format, ordered from less specific to more
-  specific. The last prompt in each group should model the level of specificity the
-  Best practices section recommends. No additional prose is needed within each H3 —
-  let the prompts speak for themselves and keep this section scannable.
--->
+> "Which field holds a customer's state or region?"
+> "Find fields related to email subscription status."
+> "What field contains the date of a customer's first purchase?"
+> "Identify fields that represent customer lifetime value."
+> "Which fields in my profile schema relate to loyalty program membership?"
 
 ### Recommendation prompts
 
+> "What fields should I use to build a re-engagement audience?"
+> "Recommend fields for an audience targeting customers who have not purchased in 90 days."
+> "What fields are most useful for modeling churn risk?"
+> "Suggest fields I should include when creating a geographic segmentation."
+> "I am building a propensity-to-buy model. Which fields should I start with?"
+
 ### Classification prompts
+
+> "What type of data does `commerce.order.currencyCode` hold?"
+> "Classify the fields in my ExperienceEvent schema that relate to web behavior."
+> "Which of my profile fields contain behavioral data versus demographic data?"
+> "Is `person.birthDate` considered a PII field?"
 
 ### Enrichment prompts
 
+> "Tell me more about `homeAddress.stateProvince`."
+> "Show me sample values for `commerce.purchases.value`."
+> "Where is `person.name.lastName` used across my datasets and audiences?"
+> "What datasets contain the field `web.webPageDetails.URL`?"
+> "Is `segmentMembership` mapped to any active destinations?"
+
 ## Best practices {#best-practices}
 
-<!--
-  WRITER GUIDANCE:
-  Write this section as a bulleted list of actionable, prescriptive guidance for
-  getting accurate results from FDA. Organize bullets around the three key behaviors
-  the Brief identifies: (1) prompt specificity (more specific language produces better-
-  ranked results), (2) use of domain terminology that matches schema metadata, and
-  (3) iterating on results (using enrichment to verify a field before using
-  identification to find more fields in the same area). Do not restate generic AI
-  guidance that applies to all agents — focus on FDA-specific behavior. Each bullet
-  should be one sentence, imperative voice, with a brief rationale clause where
-  helpful. Cross-link back to "How Field Discovery Agent works" to reinforce why
-  specificity helps (it improves semantic matching).
-  Reference: Execution Brief §2 In-Scope (Best practices for prompting: specificity
-  improves results); Adobe Style Guide §4 (lists: parallel structure, no stacking).
--->
+Use the following guidance to get accurate, actionable results from Field Discovery Agent.
+
+- **Be specific about the concept, not just the field type.** A prompt like "find a state field" produces lower-quality results than "find the field that holds a customer's US state for geographic segmentation." Specificity gives the agent more signal to match against your metadata. See [How Field Discovery Agent works](#how-field-discovery-agent-works) for why this matters.
+- **Use terminology that matches your schema metadata.** If your schemas use the term "transaction" rather than "purchase," use "transaction" in your prompts. The agent matches against actual field names and descriptions, not just general concepts.
+- **Use Enrichment to verify before committing.** After identifying a candidate field with the Identification or Recommendation skill, use the Enrichment skill to review its sample values and usage context before using it in a segment or query. This reduces the risk of selecting the wrong field.
+- **Iterate when results are low relevance.** If most results are medium or low relevance, rephrase your query with different terminology or add context about your use case. A second, more specific query often surfaces better candidates.
+- **Include scope context in your prompts.** For geo-based segmentation, include the target region. For time-based queries, include the time attribute. The more context you provide, the more targeted the result ranking.
 
 ## Troubleshooting {#troubleshooting}
 
-<!--
-  WRITER GUIDANCE:
-  Structure this section as a definition-style list using bold problem statements
-  followed by a one-to-two sentence resolution, matching the Data Distiller
-  troubleshooting pattern. Cover at minimum: (1) expected fields not appearing in
-  results — likely KB hydration delay; cross-link to "Knowledge base hydration";
-  (2) all results showing low relevance — likely a metadata quality issue; cross-link
-  to "Metadata quality and coverage" and advise refining the prompt; (3) FDA not
-  invoked — user submitted a query but the reasoning panel shows a different agent
-  was called; advise stating intent more explicitly and cross-link to "Use Field
-  Discovery Agent"; (4) sample values not appearing — access permission issue;
-  cross-link to "Access and PII constraints." Add a final closing sentence directing
-  users to the reasoning panel to confirm which agent handled their request, with a
-  cross-link to the AI Assistant UI guide.
-  Reference: Execution Brief §1 Success Metric (fewer support/escalation questions);
-  Placement Evaluation §11 (troubleshooting identified as a missing standard section
-  in 5 of 6 existing agent docs).
--->
+Use this section when results are missing, unexpected, or when you are unsure whether Field Discovery Agent handled your request.
+
+- **A recently added field does not appear in results.** The knowledge base may not yet reflect the new schema or field. Allow time for the knowledge base to update after adding schemas or fields to your environment, then resubmit your query. See [Knowledge base hydration](#knowledge-base-hydration).
+
+- **All results show medium or low relevance.** Your query may be too broad, or the terminology you used may not match your field metadata. Refine your prompt with more specific language or terms that align with how your fields are named in your schemas. See [Best practices](#best-practices).
+
+- **Field Discovery Agent was not invoked.** You submitted a query in AI Assistant but the **[!UICONTROL Reasoning complete]** panel does not indicate Field Discovery Agent. Your query may not have contained a clear field discovery intent. Restate your query explicitly — for example, "Find the field that holds customer email opt-out status" — and resubmit. See [Use Field Discovery Agent](#use-field-discovery-agent).
+
+- **Sample values are not appearing for a field.** The field may be empty in your current sandbox, or your permissions may not include access to its underlying dataset. Confirm your dataset access permissions and verify the field is populated with data. See [Access and PII constraints](#access-and-pii-constraints).
+
+- **Results include fields from schemas you did not expect.** Field Discovery Agent searches all schemas and datasets in your current sandbox that are accessible under your permissions. If unexpected results appear, confirm your active sandbox context in AI Assistant and verify which schemas and datasets are accessible to your role.
+
+If you are unsure whether the correct agent handled your request, expand the **[!UICONTROL Reasoning complete]** dropdown above the AI Assistant response and review the reasoning panel. For guidance on the reasoning panel, see the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
