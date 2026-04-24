@@ -24,8 +24,6 @@ To use Field Discovery Agent directly in AI Assistant (as opposed to through oth
 - Be working in the correct IMS organization and sandbox.
 - Have access to the schemas and datasets you intend to query.
 
-<!-- UNVERIFIED: Whether a separate Field Discovery Agent permission exists in the Permissions UI or Adobe Admin Console, distinct from the general AI Assistant access permissions. -->
-
 For instructions on enabling AI Assistant access and granting the required permissions, see the [Agent Orchestrator access guide](./agent-orchestrator.md#access).
 
 ## Field Discovery Agent functions {#field-discovery-agent-functions}
