@@ -5,7 +5,6 @@ keywords: field discovery, XDM, AI Assistant, Experience Platform agents, entity
 solution: Experience Platform
 role: User, Admin, Developer
 ---
-
 # Field Discovery Agent
 
 When building segments, creating audiences, or onboarding data in Adobe Experience Platform, identifying the correct XDM field for a business concept often requires manually browsing schemas or knowing in advance exactly how a field is named. Different fields may represent the same concept under different names — for example, state, region, and location may all refer to geographic data — and choosing the wrong one introduces errors in downstream workflows. Field Discovery Agent removes that manual step.
@@ -57,10 +56,10 @@ Field Discovery Agent returns a structured result set for each query. Understand
 Each field result is assigned a relevance label in the **[!UICONTROL Relevance]** column of the **[!UICONTROL Fields Identified]** panel, indicating how closely the field matches your query.
 
 - **[!UICONTROL Highly Relevant]** — The field strongly matches your stated concept based on its name, metadata, and usage signals. Confirm the field path and review its sample values to verify it holds the data you expect.
-- **[!UICONTROL Moderately Relevant]** — path  field] hrtial semantic overlap with your query but may differ in scope, data type, or specificity. Review the sample values and usage context to determine whether it meets your needs before selecting it.
-- **Relevant** — The field partially matches your query. It may share semantic overlap but differ in scope, specificity, or data type. Review the sample values and usage context before deciding whether to use it.
+- **[!UICONTROL Moderately Relevant]** — The field has partial semantic overlap with your query but may differ in scope, data type, or specificity. Review the sample values and usage context to determine whether it meets your needs before selecting it.
+- **[!UICONTROL Relevant]** — The field partially matches your query. It may share semantic overlap but differ in scope, specificity, or data type. Review the sample values and usage context before deciding whether to use it.
 
-If all results to use  labeled] *ONTROL Moderately Relevant]** or **Relevant** rather than **[!UICONTROL Highly Relevant]**, your query may be too broad or use terminology that does not match your schema metadata. Refine your prompt with more specific language or domain terms that reflect how your fields are named.
+If all results are labeled **[!UICONTROL Moderately Relevant]** or **[!UICONTROL Relevant]** rather than **[!UICONTROL Highly Relevant]**, your query may be too broad or use terminology that does not match your schema metadata. Refine your prompt with more specific language or domain terms that reflect how your fields are named.
 
 ### Sample values
 
@@ -87,7 +86,7 @@ A field that is used in a published audience, appears in an active dataset, is m
 Field Discovery Agent returns results in a **[!UICONTROL Fields Identified]** panel within the AI Assistant response. The panel displays a table with three columns:
 
 - **[!UICONTROL Field Name]** — The XDM path of the candidate field.
-- **[!UICONTROL Relevance]** — The relevance label assigned to the field (**[!UICONTROL Highly Relevant]**, **[!UICONTROL Moderately Relevant]**, - **[! **]Re.
+- **[!UICONTROL Relevance]** — The relevance label assigned to the field (**[!UICONTROL Highly Relevant]**, **[!UICONTROL Moderately Relevant]**, or **[!UICONTROL Relevant]**)
 - **[!UICONTROL Usage Contexts]** — Links showing where the field appears across your data ecosystem. Select **[!UICONTROL audience]**, **[!UICONTROL dataset]**, **[!UICONTROL destination]**, or **[!UICONTROL schema]** to open a side panel showing where the field is used.
 
 ![The Fields Identified panel in AI Assistant showing candidate field rows with Relevance labels and Usage Contexts links.](./images/field-discovery/fields-identified-panel.png)
