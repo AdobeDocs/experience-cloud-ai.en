@@ -58,11 +58,11 @@ Field Discovery Agent returns a structured result set for each query. Understand
 
 Each field result is assigned a relevance label in the **[!UICONTROL Relevance]** column of the **[!UICONTROL Fields Identified]** panel, indicating how closely the field matches your query.
 
-- **Highly Relevant** — The field strongly matches your stated concept based on its name, metadata, and usage signals. Confirm the field path and review its sample values to verify it holds the data you expect.
-- **Moderately Relevant** — The field has partial semantic overlap with your query but may differ in scope, data type, or specificity. Review the sample values and usage context to determine whether it meets your needs before selecting it.
+- **[!UICONTROL Highly Relevant]** — The field strongly matches your stated concept based on its name, metadata, and usage signals. Confirm the field path and review its sample values to verify it holds the data you expect.
+- **[!UICONTROL Moderately Relevant]** — path  field] hrtial semantic overlap with your query but may differ in scope, data type, or specificity. Review the sample values and usage context to determine whether it meets your needs before selecting it.
 - **Relevant** — The field partially matches your query. It may share semantic overlap but differ in scope, specificity, or data type. Review the sample values and usage context before deciding whether to use it.
 
-If all results are labeled **Moderately Relevant** or **Relevant** rather than **Highly Relevant**, your query may be too broad or use terminology that does not match your schema metadata. Refine your prompt with more specific language or domain terms that reflect how your fields are named.
+If all results to use  labeled] *ONTROL Moderately Relevant]** or **Relevant** rather than **[!UICONTROL Highly Relevant]**, your query may be too broad or use terminology that does not match your schema metadata. Refine your prompt with more specific language or domain terms that reflect how your fields are named.
 
 ### Sample values
 
@@ -89,14 +89,12 @@ A field that is used in a published audience, appears in an active dataset, is m
 Field Discovery Agent returns results in a **[!UICONTROL Fields Identified]** panel within the AI Assistant response. The panel displays a table with three columns:
 
 - **[!UICONTROL Field Name]** — The XDM path of the candidate field.
-- **[!UICONTROL Relevance]** — The relevance label assigned to the field (**Highly Relevant**, **Moderately Relevant**, or **Relevant**).
+- **[!UICONTROL Relevance]** — The relevance label assigned to the field (**[!UICONTROL Highly Relevant]**, **[!UICONTROL Moderately Relevant]**, - **[! **]Re.
 - **[!UICONTROL Usage Contexts]** — Links showing where the field appears across your data ecosystem. Select **[!UICONTROL audience]**, **[!UICONTROL dataset]**, **[!UICONTROL destination]**, or **[!UICONTROL schema]** to open a side panel showing where the field is used.
 
 ![The Fields Identified panel in AI Assistant showing candidate field rows with Relevance labels and Usage Contexts links.](./images/field-discovery/fields-identified-panel.png)
 
 A **[!UICONTROL Results Explained]** section appears below the **[!UICONTROL Fields Identified]** table and provides additional field-level context, including explanations and supporting detail for each result. For guidance on navigating the AI Assistant interface, see the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
-
-<!-- SME clarification needed: The Fields Identified panel shows multiple icons in the top-right corner of the UI, but their functionality is not yet documented. Questions for PM review: What actions do these icons perform (for example, copy, expand, export, or refresh)? Are any of these considered primary user actions that should be included in the documented workflow? Should users rely on these icons as part of the field selection or extraction process? Until confirmed, these controls are not described in the document. -->
 
 ## Use Field Discovery Agent {#use-field-discovery-agent}
 
@@ -134,7 +132,7 @@ When you describe a specific data concept or attribute, Field Discovery Agent re
 > "Find fields related to purchase transaction date."
 > "What fields contain information about email marketing consent?"
 
-The response lists candidate fields with their relevance label and XDM path in the **[!UICONTROL Fields Identified]** panel. Fields labeled **Highly Relevant** most closely match your stated concept. If the top results are labeled **Moderately Relevant** or **Relevant** rather than **Highly Relevant**, refine your query using more specific terminology or field-level context. Once you identify the right field, read its XDM path from the **[!UICONTROL Field Name]** column and use it in the downstream tool where you are building your segment, audience, or query.
+The response lists candidate fields with their relevance label and XDM path in the **[!UICONTROL Fields Identified]** panel. Fields labeled **[!UICONTROL Highly Relevant]** most closely match your stated concept. If the top results are labeled **[!UICONTROL Moderately Relevant]** or **[!UICONTROL Relevant]** rather than **[!UICONTROL Highly Relevant]**, refine your query using more specific terminology or field-level context. Once you identify the right field, read its XDM path from the **[!UICONTROL Field Name]** column and use it in the downstream tool where you are building your segment, audience, or query.
 
 ### Get field recommendations for a use case
 
