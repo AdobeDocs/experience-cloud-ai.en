@@ -93,7 +93,7 @@ Field Discovery Agent returns results in a **[!UICONTROL Fields Identified]** pa
 - **[!UICONTROL Relevance]** — The relevance label assigned to the field (**[!UICONTROL Highly Relevant]**, **[!UICONTROL Moderately Relevant]**, or **[!UICONTROL Relevant]**)
 - **[!UICONTROL Usage Contexts]** — Links showing where the field appears across your data ecosystem. Select **[!UICONTROL audience]**, **[!UICONTROL dataset]**, **[!UICONTROL destination]**, or **[!UICONTROL schema]** to open a side panel showing where the field is used.
 
-![The Fields Identified panel in AI Assistant showing candidate field rows with Relevance labels and Usage Contexts links.](./images/field-discovery/fields-identified-panel.png)
+![The Fields Identified panel in AI Assistant showing candidate field rows with Relevance labels and Usage Contexts links.](./images/field-discovery/fields-identified-panel-in-chat.png)
 
 A **[!UICONTROL Results Explained]** section appears below the **[!UICONTROL Fields Identified]** table and provides additional field-level context, including explanations and supporting detail for each result. For guidance on navigating the AI Assistant interface, see the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
 
@@ -107,11 +107,9 @@ To use Field Discovery Agent:
 
 1. Navigate to **[!UICONTROL AI Assistant]** from any enabled Experience Platform application. The **[!UICONTROL AI Assistant]** workspace displays.
 2. State your intent explicitly in the input field. Describe the concept, goal, or field characteristic you are looking for. For example: *"Find fields related to customer email opt-out status."* The input field displays your prompt text.
-
-   ![AI Assistant response showing the Fields Identified panel returned after submitting a query, with candidate fields, Relevance labels, Usage Contexts links, and the Reasoning complete dropdown.](./images/field-discovery/PLACEHOLDER.png)
-
 3. Review the ranked results in the **[!UICONTROL Fields Identified]** panel. The **[!UICONTROL Fields Identified]** panel displays each row with a relevance label and an XDM field path in the **[!UICONTROL Field Name]** column.
 4. Select **[!UICONTROL audience]**, **[!UICONTROL dataset]**, **[!UICONTROL destination]**, or **[!UICONTROL schema]** in the **[!UICONTROL Usage Contexts]** column. The side panel displays where the field is used. For additional field-level context, see the **[!UICONTROL Results Explained]** section below the results table.
+    ![Side panel in AI Assistant showing Usage Contexts for a selected field, including audience, dataset, destination, and schema associations.](./images/field-discovery/fields-identified-panel-expanded.png)
 5. The **[!UICONTROL Field Name]** column displays the path for each ranked field. Use this path in downstream tools such as Segment Builder, Query Service, or data ingestion workflows, depending on your use case. Field Discovery Agent does not insert the field into other tools; it provides the field reference for you to use.
 6. Select the **[!UICONTROL Reasoning complete]** dropdown above the response to confirm that Field Discovery Agent handled your request. The **[!UICONTROL Reasoning complete]** dropdown displays reasoning details that indicate which agent was called.
 
