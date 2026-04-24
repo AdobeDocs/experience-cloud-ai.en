@@ -7,19 +7,19 @@ role: User, Admin, Developer
 ---
 # Field Discovery Agent
 
-When building segments, creating audiences, or onboarding data in Adobe Experience Platform, identifying the correct XDM field for a business concept often requires manually browsing schemas or knowing in advance exactly how a field is named. Different fields may represent the same concept under different names — for example, state, region, and location may all refer to geographic data — and choosing the wrong one introduces errors in downstream workflows. Field Discovery Agent removes that manual step.
+When building audiences, or onboarding data in Adobe Experience Platform, identifying the correct XDM field for a business concept often requires manually browsing schemas or knowing in advance exactly how a field is named. Different fields may represent the same concept under different names — for example, state, region, and location may all refer to geographic data — and choosing the wrong one introduces errors in downstream workflows. Field Discovery Agent removes that manual step.
 
 Field Discovery Agent is an AI-powered agent in Adobe Experience Platform that helps you find, evaluate, and select XDM fields using natural language queries in AI Assistant. You describe what you are looking for in plain language — a business concept, a workflow goal, or a specific field name — and the agent searches across your schemas, datasets, and metadata to return ranked field suggestions with supporting context.
 
-You can invoke Field Discovery Agent automatically in AI Assistant, as an underlying capability within other Experience Platform agents when those agents need to resolve natural language references to XDM fields, audiences, or data entities, or when they need to resolve other field or entity references on your behalf. You do not need to invoke Field Discovery Agent separately in those cases because it operates in the background to improve the accuracy of the agent you are working with. Field Discovery Agent surfaces field information only. It does not modify schemas, datasets, or audiences, and it respects your existing access controls and sandbox context.
+You automatically invoke Field Discovery Agent directly in AI Assistant, when other Experience Platform agents need to resolve field or entity references. In those cases it operates in the background to improve the accuracy of the agent you are working with. Field Discovery Agent surfaces field information only. It does not modify schemas, datasets, or audiences, and it respects your existing access controls and sandbox context.
 
 ## Prerequisites {#prerequisites}
 
-To use Field Discovery Agent, ensure the following:
+To use Field Discovery Agent, ensure you have the following:
 
-- Have access to Adobe Experience Platform and AI Assistant.
-- Be working in the correct IMS organization and sandbox.
-- Have access to the schemas and datasets you intend to query.
+- Access to Adobe Experience Platform and AI Assistant
+- The correct organization and sandbox
+- Access to the schemas and datasets you intend to query
 
 For instructions on enabling AI Assistant access and granting the required permissions, see the [Agent Orchestrator access guide](./agent-orchestrator.md#access).
 
@@ -104,7 +104,7 @@ To use Field Discovery Agent:
 
 3. Review the ranked results in the **[!UICONTROL Fields Identified]** panel. The **[!UICONTROL Fields Identified]** panel displays each row with a relevance label and an XDM field path in the **[!UICONTROL Field Name]** column.
 4. Select **[!UICONTROL audience]**, **[!UICONTROL dataset]**, **[!UICONTROL destination]**, or **[!UICONTROL schema]** in the **[!UICONTROL Usage Contexts]** column. The side panel displays where the field is used. For additional field-level context, see the **[!UICONTROL Results Explained]** section below the results table.
-5. Read the XDM field path from the **[!UICONTROL Field Name]** column for the field that best matches your needs. The **[!UICONTROL Field Name]** column displays the path for each ranked field. Use this path in the downstream tool where you are building your segments (audiences) or query. Field Discovery Agent does not insert the field into other tools; it provides the field reference for you to use.
+5. The **[!UICONTROL Field Name]** column displays the path for each ranked field. Use this path in the downstream tool where you are building your audiences or query. Field Discovery Agent does not insert the field into other tools; it provides the field reference for you to use.
 6. Select the **[!UICONTROL Reasoning complete]** dropdown above the response to confirm that Field Discovery Agent handled your request. The **[!UICONTROL Reasoning complete]** dropdown displays reasoning details that indicate which agent was called.
 
 >[!NOTE]
