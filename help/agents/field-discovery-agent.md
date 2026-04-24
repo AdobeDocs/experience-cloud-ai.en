@@ -11,7 +11,11 @@ When building audiences, or onboarding data in Adobe Experience Platform, identi
 
 Field Discovery Agent is an AI-powered agent in Adobe Experience Platform that helps you find, evaluate, and select XDM fields using natural language queries in AI Assistant. You describe what you are looking for in plain language — a business concept, a workflow goal, or a specific field name — and the agent searches across your schemas, datasets, and metadata to return ranked field suggestions with supporting context.
 
-Field Discovery Agent is automatically invoked within AI Assistant when other Experience Platform agents need to resolve field or entity references. In these cases, it operates in the background to improve the accuracy of the agent you are working with. Field Discovery Agent surfaces field information only. It does not modify schemas, datasets, or audiences, and it respects your existing access controls and sandbox context.
+Field Discovery Agent is invoked automatically in the background within AI Assistant when other Experience Platform agents need to resolve field or entity references; you do not initiate that path yourself. In those automatic invocations, it operates in the background to improve the accuracy of the agent you are working with. When you need field discovery for your own work, write an explicit field-finding prompt in AI Assistant. Field Discovery Agent surfaces field information only. It does not modify schemas, datasets, or audiences, and it respects your existing access controls and sandbox context.
+
+## When to use this {#when-to-use-this}
+
+Use Field Discovery Agent explicitly in AI Assistant when you need ranked field suggestions, sample values, and usage context for a mapping, segmentation, or query. It is used implicitly when another Experience Platform agent invokes it in the background to resolve field or entity references. In those cases, you remain in that agent's workflow and do not issue a separate field-finding prompt.
 
 ## Prerequisites {#prerequisites}
 
@@ -48,6 +52,8 @@ Field Discovery Agent returns a ranked list of results with relevance indicators
 ## Understand your results {#understand-your-results}
 
 Field Discovery Agent returns a structured result set for each query. Understanding the components of a result helps you evaluate candidate fields and act on them with confidence, without additional trial and error.
+
+Treat a field as ready to use when its **[!UICONTROL Relevance]** label is **[!UICONTROL Highly Relevant]**, its sample values match the data you expect (when available), and its **[!UICONTROL Usage Contexts]** aligns with how you plan to use it. If results are only **[!UICONTROL Moderately Relevant]** or **[!UICONTROL Relevant]**, sample values do not match your expectations, or usage context is limited, refine your query and review a new result set before proceeding.
 
 ### Relevance labels
 
@@ -94,6 +100,8 @@ A **[!UICONTROL Results Explained]** section appears below the **[!UICONTROL Fie
 ## Use Field Discovery Agent {#use-field-discovery-agent}
 
 You interact with Field Discovery Agent through AI Assistant using natural language. The agent requires a clear statement of intent — a vague or overly brief query produces lower-quality results or may not invoke Field Discovery Agent at all.
+
+For explicit field discovery, follow this workflow: identify the attribute or mapping problem, submit a field-finding query, review ranked results and usage context in the **[!UICONTROL Fields Identified]** panel, select the **[!UICONTROL Field Name]** path that fits your intent, and apply that XDM path in Segment Builder, Query Service, or another workflow.
 
 To use Field Discovery Agent:
 
