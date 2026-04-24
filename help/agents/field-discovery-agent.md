@@ -51,7 +51,7 @@ Field Discovery Agent returns a structured result set for each query. Understand
 
 ### Relevance labels
 
-Each field result is assigned a relevance label in the **[!UICONTROL Relevance]** column of the **[!UICONTROL Fields Identified]** panel, indicating how closely the field matches your query.
+Field Discovery Agent assigns a relevance label in the **[!UICONTROL Relevance]** column of the **[!UICONTROL Fields Identified]** panel for each field result, indicating how closely the field matches your query.
 
 - **[!UICONTROL Highly Relevant]** — The field strongly matches your stated concept based on its name, metadata, and usage signals. Confirm the field path and review its sample values to verify it holds the data you expect.
 - **[!UICONTROL Moderately Relevant]** — The field has partial semantic overlap with your query but may differ in scope, data type, or specificity. Review the sample values and usage context to determine whether it meets your needs before selecting it.
@@ -65,7 +65,7 @@ Alongside each field suggestion, Field Discovery Agent surfaces sample values dr
 
 >[!IMPORTANT]
 >
->Sample values may contain personally identifiable information (PII). Do not share sample values outside of secure internal workflows.
+>Sample values may contain PII. Do not share them outside secure internal workflows.
 
 Sample values are visible only for fields within your dataset access permissions. For information on data governance and usage restrictions in Experience Platform, see the [Data Governance overview](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home).
 
@@ -153,7 +153,7 @@ This section summarizes what Field Discovery Agent can and cannot do. For detail
 
 ### In scope
 
-Field Discovery Agent supports the following tasks:
+The following list describes tasks Field Discovery Agent can perform; use it to confirm whether the agent can meet your request before you rely on it in your workflow.
 
 - Identifying XDM fields that match a business concept or natural language description.
 - Recommending fields for a stated workflow goal or use case.
@@ -163,7 +163,7 @@ Field Discovery Agent supports the following tasks:
 
 ### Out of scope
 
-Field Discovery Agent does not perform the following actions:
+The following list describes actions Field Discovery Agent does not perform; use it to avoid relying on the agent for work outside its scope.
 
 - Modify schemas, datasets, fields, or audiences.
 - Create or publish audiences or segments.
@@ -174,7 +174,7 @@ Field Discovery Agent does not perform the following actions:
 
 ## Guardrails and limitations {#guardrails-and-limitations}
 
-Field Discovery Agent operates within platform-level constraints that affect result availability and quality. Understanding these constraints helps you interpret results accurately and troubleshoot unexpected gaps.
+These guardrails matter because Field Discovery Agent operates within platform-level constraints that affect result availability and quality. Use them to interpret missing, delayed, or incomplete results and to troubleshoot unexpected gaps with realistic expectations.
 
 ### Knowledge base hydration
 
