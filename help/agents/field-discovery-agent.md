@@ -1,17 +1,17 @@
 ---
 title: Field Discovery Agent
-description: Learn how to use the Field Discovery Agent to find, evaluate, and select XDM fields in Adobe Experience Platform using natural language queries in AI Assistant.
+description: Find, evaluate, and select XDM fields in Adobe Experience Platform using natural language in AI Assistant, with ranked results, sample values, and usage context for segmentation, querying, and data workflows.
 keywords: field discovery, XDM, AI Assistant, Experience Platform agents, entity linking, field recommendations, audience creation, segmentation
 solution: Experience Platform
 role: User, Admin, Developer
 ---
 # Field Discovery Agent
 
-When building audiences, or onboarding data in Adobe Experience Platform, identifying the correct XDM field for a business concept often requires manually browsing schemas or knowing in advance exactly how a field is named. Different fields may represent the same concept under different names — for example, state, region, and location may all refer to geographic data — and choosing the wrong one introduces errors in downstream workflows. Field Discovery Agent removes that manual step.
+When building audiences or onboarding data in Adobe Experience Platform, identifying the correct XDM field for a business concept often requires manually browsing schemas or knowing in advance exactly how a field is named. Different fields may represent the same concept under different names—for example, state, region, and location—and choosing the wrong one introduces errors in downstream workflows.
 
-Field Discovery Agent is an AI-powered agent in Adobe Experience Platform that helps you find, evaluate, and select XDM fields using natural language queries in AI Assistant. You describe what you are looking for in plain language — a business concept, a workflow goal, or a specific field name — and the agent searches across your schemas, datasets, and metadata to return ranked field suggestions with supporting context.
+Field Discovery Agent is an AI-powered agent in Adobe Experience Platform that helps you find, evaluate, and select XDM fields using natural language queries in AI Assistant. You describe what you are looking for in plain language — a business concept, a workflow goal, or a specific field name — and the agent returns ranked field suggestions with supporting context.
 
-Field Discovery Agent is invoked automatically in the background within AI Assistant when other Experience Platform agents need to resolve field or entity references; you do not initiate that path yourself. In those automatic invocations, it operates in the background to improve the accuracy of the agent you are working with. When you need field discovery for your own work, write an explicit field-finding prompt in AI Assistant. Field Discovery Agent surfaces field information only. It does not modify schemas, datasets, or audiences, and it respects your existing access controls and sandbox context.
+Field Discovery Agent is invoked automatically in the background within AI Assistant when other Experience Platform agents need to resolve field or entity references. In those cases, it operates in the background to improve the accuracy of the agent you are working with. When you need field discovery for your own work, write an explicit field-finding prompt in AI Assistant. Field Discovery Agent surfaces field information only. It does not modify schemas, datasets, or audiences, and it respects your existing access controls and sandbox context.
 
 ## When to use this {#when-to-use-this}
 
@@ -25,11 +25,13 @@ To use Field Discovery Agent, ensure you have the following:
 - The correct organization and sandbox
 - Access to the schemas and datasets you intend to query
 
+Basic familiarity with XDM schemas and how fields are used in segmentation or data workflows can help you interpret results more effectively. For more information, see the [XDM overview](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) and [Schema Editor documentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui).
+
 For instructions on enabling AI Assistant access and granting the required permissions, see the [Agent Orchestrator access guide](./agent-orchestrator.md#access).
 
 ## Field Discovery Agent functions {#field-discovery-agent-functions}
 
-Field Discovery Agent processes your query and returns one of three types of output depending on the intent of your query. You do not select a function — the agent determines the appropriate response type automatically based on what you describe.
+Field Discovery Agent processes your query and returns one of three types of output depending on your intent. These functions reflect how the agent interprets your query; you do not select them. The agent determines the appropriate response type automatically based on what you describe.
 
 | Function | Description | Expected output |
 | --- | --- | --- |
@@ -38,6 +40,8 @@ Field Discovery Agent processes your query and returns one of three types of out
 | **Enrichment** | Returns detailed context for a specific field, including sample values, schema location, and where the field is used across datasets, audiences, and destinations. | Field details including sample values, schema path, associated datasets, and audience or destination usage. |
 
 ## How Field Discovery Agent works {#how-field-discovery-agent-works}
+
+At a high level, the agent interprets your intent, searches your available data, and ranks results by relevance. How you phrase your query directly affects each stage, which in turn impacts the quality of results.
 
 When you submit a query in AI Assistant, Field Discovery Agent processes your request in three stages.
 
@@ -99,19 +103,22 @@ A **[!UICONTROL Results Explained]** section appears below the **[!UICONTROL Fie
 
 ## Use Field Discovery Agent {#use-field-discovery-agent}
 
-You interact with Field Discovery Agent through AI Assistant using natural language. The agent requires a clear statement of intent — a vague or overly brief query produces lower-quality results or may not invoke Field Discovery Agent at all.
+You interact with Field Discovery Agent through AI Assistant using natural language. The agent requires a clear statement of intent—a vague or overly brief query produces lower-quality results or may not invoke Field Discovery Agent at all.
 
 For explicit field discovery, follow this workflow: identify the attribute or mapping problem, submit a field-finding query, review ranked results and usage context in the **[!UICONTROL Fields Identified]** panel, select the **[!UICONTROL Field Name]** path that fits your intent, and apply that XDM path in Segment Builder, Query Service, or another workflow.
 
 To use Field Discovery Agent:
 
 1. Navigate to **[!UICONTROL AI Assistant]** from any enabled Experience Platform application. The **[!UICONTROL AI Assistant]** workspace displays.
-2. State your intent explicitly in the input field. Describe the concept, goal, or field characteristic you are looking for. For example: *"Find fields related to customer email opt-out status."* The input field displays your prompt text.
-3. Review the ranked results in the **[!UICONTROL Fields Identified]** panel. The **[!UICONTROL Fields Identified]** panel displays each row with a relevance label and an XDM field path in the **[!UICONTROL Field Name]** column.
-4. Select **[!UICONTROL audience]**, **[!UICONTROL dataset]**, **[!UICONTROL destination]**, or **[!UICONTROL schema]** in the **[!UICONTROL Usage Contexts]** column. The side panel displays where the field is used. For additional field-level context, see the **[!UICONTROL Results Explained]** section below the results table.
+2. State your intent explicitly in the input field. Describe the concept, goal, or field characteristic you are looking for. For example: *"Find fields related to customer email opt-out status."*
+3. Review the ranked results in the **[!UICONTROL Fields Identified]** panel. Each row includes a relevance label and an XDM field path in the **[!UICONTROL Field Name]** column.
+4. Select **[!UICONTROL audience]**, **[!UICONTROL dataset]**, **[!UICONTROL destination]**, or **[!UICONTROL schema]** in the **[!UICONTROL Usage Contexts]** column to open a side panel showing where the field is used. For additional field-level context, see the **[!UICONTROL Results Explained]** section below the results table.
+
     ![Side panel in AI Assistant showing Usage Contexts for a selected field, including audience, dataset, destination, and schema associations.](./images/field-discovery/fields-identified-panel-expanded.png)
-5. The **[!UICONTROL Field Name]** column displays the path for each ranked field. Use this path in downstream tools such as Segment Builder, Query Service, or data ingestion workflows, depending on your use case. Field Discovery Agent does not insert the field into other tools; it provides the field reference for you to use.
-6. Select the **[!UICONTROL Reasoning complete]** dropdown above the response to confirm that Field Discovery Agent handled your request. The **[!UICONTROL Reasoning complete]** dropdown displays reasoning details that indicate which agent was called.
+
+5. Use the **[!UICONTROL Field Name]** path in downstream tools such as Segment Builder, Query Service, or data ingestion workflows, depending on your use case. Field Discovery Agent provides the field reference but does not insert it into other tools.
+
+If needed, select the **[!UICONTROL Reasoning complete]** dropdown above the response to confirm that Field Discovery Agent handled your request. The dropdown displays reasoning details that indicate which agent was called.
 
 >[!NOTE]
 >
