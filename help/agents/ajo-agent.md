@@ -49,7 +49,12 @@ topic_v2:
   - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
     internal-label: Audience segmentation
 ---
+
 # Journey Agent: Overview and User Guide
+
+>[!AVAILABILITY]
+>
+>Journey Agent create skills and content generation skills are available to customers that are a part of the Agent Orchestrator Explorer program. For more information, contact Adobe Customer Care.
 
 ## Introduction to Journey Agent in Adobe Journey Optimizer
 
@@ -69,7 +74,7 @@ Journey Create enables Journey Optimizer users to build and configure marketing 
 
 >[!AVAILABILITY]
 >
->Journey Create is available for all customers who have access to AI Assistant. However, you will need the following permissions in order to fully use Journey Create features:
+>Journey Create is available to customers that are a part of the Agent Orchestrator Explorer program. You will also need the following permissions in order to fully use Journey Create features:
 >
 >**Manage Journeys**: This permission lets you create new journeys directly in AI Assistant.
 >
