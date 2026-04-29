@@ -43,15 +43,13 @@ Field Discovery Agent processes your query and returns one of three types of out
 
 At a high level, the agent interprets your intent, searches your available data, and ranks results by relevance. How you phrase your query directly affects each stage, which in turn impacts the quality of results.
 
-When you submit a query in AI Assistant, Field Discovery Agent processes your request in three stages.
+When you submit a query in AI Assistant, Field Discovery Agent processes your request in three stages:
 
-**Intent interpretation.** The agent reads your natural language input and identifies the underlying concept or goal. For example, a query about "people in California" is interpreted as a geographic attribute request, not a literal string match. The agent maps your phrasing to semantically equivalent concepts that may appear under different names across your schemas.
-
-**Search scope.** The agent searches across the XDM schemas, datasets, and field metadata available in your current IMS organization and sandbox. It considers field names, display names, descriptions, and usage associations to find candidates that align with your intent.
-
-**Ranking.** The agent ranks results by semantic relevance — how closely a field matches your stated intent — supplemented by signals such as metadata completeness and field usage across your data ecosystem. Fields with descriptive names, populated metadata, and confirmed usage in active datasets rank higher than fields that exist only in a schema definition. The agent does not expose the specific weights assigned to individual signals.
-
-Field Discovery Agent returns a ranked list of results with relevance indicators, sample values, and usage context to help you evaluate each candidate field. If results are consistently lower relevance, this often indicates that the concept you described is not well represented in your current schema metadata — using terminology that matches how your fields are named, or adding more specific context to your query, typically improves the result set.
+| Stage | Description |
+|------|-------------|
+| **Intent interpretation** | The agent reads your natural language input and identifies the underlying concept or goal. For example, a query about "people in California" is interpreted as a geographic attribute request, not a literal string match. The agent maps your phrasing to semantically equivalent concepts that may appear under different names across your schemas. |
+| **Search scope** | The agent searches across the XDM schemas, datasets, and field metadata available in your current IMS organization and sandbox. It considers field names, display names, descriptions, and usage associations to find candidates that align with your intent. |
+| **Ranking** | The agent ranks results by semantic relevance — how closely a field matches your stated intent — supplemented by signals such as metadata completeness and field usage across your data ecosystem. Fields with descriptive names, populated metadata, and confirmed usage in active datasets rank higher than fields that exist only in a schema definition. The agent does not expose the specific weights assigned to individual signals. |
 
 ## Understand your results {#understand-your-results}
 
@@ -189,7 +187,7 @@ The following list describes actions Field Discovery Agent does not perform; use
 
 These guardrails matter because Field Discovery Agent operates within platform-level constraints that affect result availability and quality. Use them to interpret missing, delayed, or incomplete results and to troubleshoot unexpected gaps with realistic expectations.
 
-### Knowledge base hydration
+### Knowledge base
 
 Field Discovery Agent relies on a knowledge base that is periodically refreshed with schema and metadata from your Experience Platform environment. Results reflect the state of the knowledge base at the time of your query—not the real-time state of your schemas, and there may be a delay between data ingestion and when it is surfaced in the agent.
 
@@ -267,7 +265,7 @@ Use these prompts when you have a candidate field and want to verify it before u
 
 Use this section when results are missing, unexpected, or when you are unsure whether Field Discovery Agent handled your request.
 
-- **A recently added field does not appear in results.** The knowledge base may not yet reflect the new schema or field. Allow time for the knowledge base to update after adding schemas or fields to your environment, then resubmit your query. See [Knowledge base hydration](#knowledge-base-hydration).
+- **A recently added field does not appear in results.** The knowledge base may not yet reflect the new schema or field. Allow time for the knowledge base to update after adding schemas or fields to your environment, then resubmit your query. See [Knowledge base](#knowledge-base).
 
 - **All results are labeled Moderately Relevant or Relevant rather than Highly Relevant.** Your query may be too broad, or the terminology you used may not match your field metadata. Refine your prompt with more specific language or terms that align with how your fields are named in your schemas. See [Best practices](#best-practices).
 

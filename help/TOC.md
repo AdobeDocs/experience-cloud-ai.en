@@ -18,9 +18,9 @@ role: Admin,User,Developer,Leader
 - Agents {#agents}
   - [Agent Orchestrator](./agents/agent-orchestrator.md)
   - [Audience Agent](./agents/audience.md)
-  - [Field Discovery Agent](./agents/field-discovery-agent.md)
   - [Data Insights Agent](./agents/cja-data-insights-agent.md)
   - [Experiment Agent](./agents/agent-experiment.md)
+  - [Field Discovery Agent](./agents/field-discovery-agent.md)
   - [Journey Agent](./agents/ajo-agent.md)
   - [Product Support Agent](./agents/product-support.md)
   - [Adobe Marketing Agent for Microsoft 365 Copilot](./agents/ama-ms.md)
