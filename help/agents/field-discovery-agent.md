@@ -79,7 +79,7 @@ Alongside each field suggestion, Field Discovery Agent surfaces sample values dr
 
 Sample values are visible only for fields within your dataset access permissions. For information on data governance and usage restrictions in Experience Platform, see the [Data Governance overview](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home).
 
-If no sample values appear for a field, the field may be empty in your current sandbox, your permissions may not include access to its underlying dataset, or the field may have high cardinality (such as identifier or UUID fields) for which sample values are not returned.
+If no sample values appear for a field, the field may be empty in your current sandbox or your permissions may not include access to its underlying dataset. Fields with high cardinality (such as identifier or UUID fields) may also not return representative sample values. Sample values are aggregated and frequency-based and are not traceable to individual profiles.
 
 ### Usage context
 
@@ -191,7 +191,7 @@ These guardrails matter because Field Discovery Agent operates within platform-l
 
 ### Knowledge base hydration
 
-Field Discovery Agent relies on a knowledge base that is periodically refreshed with schema and metadata from your Experience Platform environment. Results reflect the state of the knowledge base at the time of your query — not the real-time state of your schemas.
+Field Discovery Agent relies on a knowledge base that is periodically refreshed with schema and metadata from your Experience Platform environment. Results reflect the state of the knowledge base at the time of your query—not the real-time state of your schemas, and there may be a delay between data ingestion and when it is surfaced in the agent.
 
 New schemas, fields, or datasets added to your environment may not appear in Field Discovery Agent results immediately. Results may take time to reflect recent changes.
 
