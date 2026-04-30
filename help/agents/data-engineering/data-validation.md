@@ -26,11 +26,15 @@ Read this documentation for comprehensive information on how you can use the Dat
 
 Use **AI Assistant** in Adobe Experience Cloud to run validation with the Data Engineering Agent. The following steps follow the main screens you will see.
 
-### Start a validation
+### Start validation
 
 ![AI Assistant home with the prompt field showing a dataset validation request, Experience Platform environment selector, and Send control.](../images/data-engineering/validation/home.png)
 
 In the left navigation, select **AI Assistant**. Next, use the environment selector and  choose the Experience Platform organization or sandbox where your dataset lives (for example, **[!UICONTROL Experience Platform - Prod]**). In the prompt field, type a validation request (for example, ask to validate a dataset by name). Select **[!UICONTROL Send]** to submit the prompt.
+
+>[!TIP]
+>
+>It is best practice to prepend your dataset names with the word "dataset" when submitting a query to AI Assistant. For example, your query should be "Validate the dataset Electronics Sample 1000" instead of "Validate Electronics Sample 1000".
 
 ### Read the dataset summary and field table
 
@@ -42,20 +46,6 @@ Use the **[!UICONTROL Field summaries]** to review each field's path, type, and 
 
 Select **[!UICONTROL Show all results]** when you need additional columns or rows beyond the first view.
 
-### Use a related suggestion for a follow-up
-
-![Related suggestions chips above the prompt field, with one suggestion selected to validate a specific field on the dataset.](../images/data-engineering/validation/related-suggestion.png)
-
-After a response, find **[!UICONTROL Related suggestions]** below the conversation. Select a suggestion (for example, validate a specific field on the same dataset) to load it into the prompt field. Adjust the text if needed, confirm the environment, then select **[!UICONTROL Send]** to run the follow-up.
-
-### Switch to chart view and open expanded view
-
-![Validation results card for a single field in chart view, showing a validity donut chart and the Show in expanded view action.](../images/data-engineering/validation/show-explained-view.png)
-
-Open a field-level **[!UICONTROL Validation results]** card (for example, after validating a single field). Use the view controls to switch to **Chart** (or another view) when you want a visual summary instead of a table. During this step, you can optionally select **[!UICONTROL Properties]** to see more about the field.
-
-Select **[!UICONTROL Show in expanded view]** to open a larger, more detailed view of that field's validation.
-
 ### Work in split view
 
 ![Split view with validation narrative and statistics on the left and an expanded chart visualization of valid values on the right.](../images/data-engineering/validation/split-screen.png)
@@ -66,6 +56,24 @@ In expanded view, use the split layout: detailed statistics and narrative on one
 - On the visualization side, use the chart for a quick read of valid versus invalid values in the sample.
 
 Use **[!UICONTROL Related suggestions]** or the prompt field at the bottom to validate another field, re-run the dataset, or continue the conversation.
+
+### Use a related suggestion for a follow-up
+
+![Related suggestions chips above the prompt field, with one suggestion selected to validate a specific field on the dataset.](../images/data-engineering/validation/related-suggestion.png)
+
+After a response, find **[!UICONTROL Related suggestions]** below the conversation. Select a suggestion (for example, validate a specific field on the same dataset) to load it into the prompt field. Adjust the text if needed, confirm the environment, then select **[!UICONTROL Send]** to run the follow-up.
+
+### Validate at the field level
+
+![Validation results card for a single field in chart view, showing a validity donut chart and the Show in expanded view action.](../images/data-engineering/validation/single-field.png)
+
+Open a field-level **[!UICONTROL Validation results]** card (for example, after validating a single field). Use the view controls to switch to **Chart** (or another view) when you want a visual summary instead of a table. During this step, you can optionally select **[!UICONTROL Properties]** to see more about the field.
+
+Select **[!UICONTROL Show in expanded view]** to open a larger, more detailed view of that field's validation.
+
+![Expanded view showing detailed field-level validation statistics and chart visualization.](../images/data-engineering/validation/expanded-view.png)
+
+Through the expanded view, you can view an itemized list of the entire field, based on a sample of up to 1000 records for the given field. You can use this capability to retrieve information on your valid, distinct, and null values.
 
 ## How validation works
 
