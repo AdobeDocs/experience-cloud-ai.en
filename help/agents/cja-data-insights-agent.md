@@ -296,3 +296,4 @@ Below are best practices for your Customer Journey Analytics configuration (data
 >[Data Dictionary](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/data-dictionary/data-dictionary-overview)
 >[Approve calculated metric](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-approving)
 >[Share segments](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/segments/seg-share)
+
