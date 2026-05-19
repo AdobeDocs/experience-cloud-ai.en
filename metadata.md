@@ -8,6 +8,7 @@ product_v2:
     internal-label: "Experience Platform"
   - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
     internal-label: "Real-Time Customer Data Platform"
+usetq: true
 product: experience cloud
 landing-page-name: AI
 landing-page-breadcrumb-title: AI Documentation
