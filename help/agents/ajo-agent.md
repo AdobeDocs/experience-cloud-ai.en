@@ -60,11 +60,12 @@ topic_v2:
 
 Journey Agent enables Journey Optimizer users to create, analyze, and optimize marketing journeys using a natural language interface. With Journey Agent, practitioners can quickly build journeys, detect and resolve schedule or audience conflicts, analyze performance and drop-off points, and identify top-performing journeys to replicate for future campaigns. It empowers practitioners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
 
-Journey Agent consists of three main jobs to be done:
+Journey Agent consists of four main jobs to be done:
 
 - **Journey Create**: Build and configure marketing journeys through natural language prompts
 - **Channel Content Create**: Generate, edit, and manage channel-specific content (email, push, SMS) for journeys using AI-powered content generation
 - **Journey Analyze**: Analyze journeys, detect issues, uncover insights, and optimize customer engagement
+- **Journey Simulate**: Test and validate journeys end-to-end before activation using simulated users and automated test execution
 
 ## Journey Create: Use cases, Agentic skills and User guide
 
@@ -431,6 +432,139 @@ To maximize the effectiveness of Journey Analyze, follow these best practices:
 - **Define Clear Objectives**: Before analyzing journeys, establish clear goals (e.g., improving retention, increasing conversions).
 - **Monitor Regularly**: Schedule regular reviews of journey performance to identify trends and anomalies.
 - **Optimize Segmentation**: Ensure audience segmentation is balanced to avoid fatigue and maximize engagement.
+
+## Journey Simulate: Use Cases, Agentic Skills and User Guide
+
+## Overview
+
+Journey Simulate enables Journey Optimizer users to safely test and validate marketing journeys before activation. By leveraging Simulated users and automated test execution workflows, practitioners can test and validate journeys end-to-end. Journey Simulate bridges the gap between journey creation and activation, building confidence in journey logic and reducing the risk of post-launch errors.
+
+>[!AVAILABILITY]
+>
+>Journey Simulate is available to customers that are a part of the Agent Orchestrator Explorer program. You will also need the following permissions in order to fully use Journey Simulate features:
+>
+>**Manage Journeys**: This permission lets you start and stop test mode on journeys directly in AI Assistant.
+>
+>**View Journeys**: This permission lets the AI Assistant read the journey canvas, including all paths, conditions, and actions.
+>
+>**View Segments**: This permission ensures that AI Assistant can access audience information when validating journey configurations.
+
+## Use cases
+
+### Key use cases for Journey Simulate
+
+Journey Simulate offers capabilities that can be leveraged to reduce testing time and improve journey quality before go-live:
+
+1. **Simulated user generation**
+
+   - Generate simulated users automatically based on journey paths and required attributes.
+   - Create simulated users that cover all branches and conditions in a journey, including execution addresses (email, push, SMS).
+   - Update simulated user attributes on demand to refine test scenarios.
+
+1. **Automated test execution**
+
+   - Start journey test mode and trigger test executions for one or multiple simulated users in a single interaction.
+   - Visualize how simulated users flow through a journey, step by step, including branching paths and conditional logic.
+   - Identify which simulated user flows through which path, and why, with detailed node-by-node traversal.
+
+1. **Content preview during simulation**
+
+   - Preview personalized channel content (email, push, SMS) for a selected simulated user directly in the journey canvas during simulation.
+   - Validate that personalization attributes resolve correctly before activation.
+
+1. **Multi-branch coverage testing**
+
+   - Ensure all journey branches are covered by assigning the right simulated user to each path.
+   - Run tests across all branches simultaneously to verify end-to-end journey behavior.
+
+## In scope and out of scope skills
+
+### **In scope**
+
+The following capabilities are supported by Journey Simulate:
+
+- **Simulated user generation**: Create simulated users based on journey paths, existing test profiles, or specified attributes.
+- **Simulated user management**: View, edit, and update simulated user attributes, including execution addresses and personalization data.
+- **Test mode control**: Start and stop journey test mode directly through natural language prompts.
+- **Test execution**: Trigger test executions for one or multiple simulated users.
+- **Journey flow visualization**: View step-by-step traversal of simulated users through journey nodes, including branching, splits, and user status.
+- **Content preview**: Preview channel content personalized for a selected simulated user in the journey canvas.
+- **Multi-user testing**: Run and visualize tests for multiple simulated users simultaneously, covering all journey branches.
+
+### **Out of scope**
+
+The following functionalities are currently not supported:
+
+- **Action Campaigns and Orchestrated Campaigns**
+- **Real profile testing** 
+- **Links and images validation**
+- **Personalization attribute validation**
+- **Dry run execution**
+- **Inbox rendering validation**
+- **Decisioning output validation for links and images**
+
+## Sample prompts
+
+### Common prompts for Journey Simulate
+
+Here are examples of valuable prompts users can leverage to simulate and test journeys.
+
+### Simulated user generation
+
+**Generate simulated users for all branches:**
+
+"Generate simulated users for each branch of my Onboarding Journey."
+
+**Generate a simulated user for a specific branch:**
+
+"Generate a simulated user for the branch that leads to the welcome email in my Loyalty Rewards journey."
+
+**Update a simulated user:**
+
+"Update the email address for simulated user John Doe to `test@example.com`."
+
+### Test execution
+
+**Start test mode:**
+
+"Start test mode for my Summer Campaign journey."
+
+**Run a test for a specific simulated user:**
+
+"Run the test for simulated user number 1."
+
+"Start a test for John Doe."
+
+**Test all simulated users:**
+
+"Start a test for all simulated users."
+
+**Stop test mode:**
+
+"Stop test mode for my Summer Campaign journey."
+
+### Open-ended prompts
+
+For users starting without a specific test scenario in mind:
+
+- "I want to simulate my Onboarding Journey."
+- "Help me test my journey before I publish it."
+- "Simulate journey Fourth of July Campaign."
+
+The agent will analyze the journey, generate appropriate simulated users for each branch, and guide you through the test execution.
+
+## Best practices
+
+### Prompting best practices
+
+To maximize the effectiveness of Journey Simulate, follow these best practices:
+
+1. **Specify the journey**: Always reference the journey by name to ensure the agent targets the correct journey.
+1. **Reference simulated users by name or number**: When requesting tests or updates, use the name or incremental number provided by the agent (for example, "(1) John Doe") for precision.
+1. **Request branch-level coverage**: Ask the agent to generate one simulated user per branch to ensure complete coverage of all journey paths.
+1. **Provide execution addresses**: If you want to receive actual test messages (email, push, SMS), ask the agent to include an execution address when generating simulated users.
+1. **Iterate and refine**: After reviewing generated simulated users, update specific attributes through follow-up prompts before starting the test execution.
+1. **Validate content inline**: During simulation, use the content preview in the journey canvas to verify personalized content for each simulated user before activation.
 
 ## Slides and Presentations
 
