@@ -1,14 +1,14 @@
 ---
 solution: Real-Time Customer Data Platform
-title: Work with MCP clients (Beta)
-description: Learn how to connect Adobe Real-Time CDP to MCP clients using the MCP server
+title: Real-Time CDP MCP (Beta)
+description: Learn how to connect Adobe Real-Time CDP to MCP clients using the MCP server.
 feature: Integrations
 topic: Content Management, Artificial Intelligence
 badge: label="Beta" type="Informative"
 role: User, Developer
 level: Beginner, Intermediate
 ---
-# Work with MCP clients (Beta) {#rtcdp-mcp}
+# Real-Time CDP MCP (Beta) {#rtcdp-mcp}
 
 You can use the Adobe Real-Time CDP MCP integration to query audiences, destinations, and activation health using plain-language prompts — without writing API calls or navigating product screens. This integration serves both Adobe Real-Time CDP and Adobe Real-Time CDP B2B Edition customers, providing a conversational way to inspect supported Real-Time CDP data and workflows from MCP-compatible clients. Read this guide to learn how the integration works, what you can do with it, and how to get started.
 
@@ -52,20 +52,17 @@ The Beta release includes the following 18 tools:
 | `preview_audience_membership` | Estimate the size of a PQL or SDD segment expression before saving it as an audience. |
 | `inspect_audience_evaluation_jobs` | Retrieve segment evaluation job records to diagnose why a batch audience isn't refreshing or to confirm recent evaluation history. |
 | `inspect_audience_export_jobs` | Retrieve audience export job records to confirm exports completed or to surface failure details. |
-| | |
 | `search_destination_connectors` | List the destination connector types available in the platform (e.g. [!DNL Amazon S3], [!DNL Google Ads], [!DNL Salesforce] CRM). |
 | `search_destination_accounts` | List authenticated destination accounts — configured instances of a destination connector type. |
 | `search_destination_input_connections` | Retrieve the Experience Platform-side input of a destination flow — the audience or dataset being exported. |
 | `search_destination_output_connections` | Retrieve the external endpoint of a destination flow — target path, file format, and delivery configuration. |
 | `search_destination_flows` | List and inspect configured destination activation flows including their state, mappings, and schedule. |
 | `inspect_flow_runs` | Retrieve execution history for source and destination flows — status, timing, record counts, and failure details per run. |
-| | |
 | `search_source_connectors` | List the source connector types available in the platform. |
 | `search_source_accounts` | List authenticated source accounts — configured instances of a source connector type. |
 | `search_source_input_connections` | Retrieve the data selection layer of a source flow — what is being pulled from an account. |
 | `search_source_output_connections` | Retrieve the Experience Platform dataset destination of a source flow — where ingested data lands. |
 | `search_source_flows` | List and inspect configured source ingestion pipelines including their state, mappings, and schedule. |
-| | |
 | `search_identity_namespaces` | List identity namespace definitions in your sandbox — both Adobe-standard and custom namespaces. |
 | `search_merge_policies` | List merge policy records that control how Real-Time Customer Profiles are assembled from profile fragments. |
 | `search_organizations` | List the Adobe organizations accessible to the authenticated user. |
@@ -81,7 +78,6 @@ The Real-Time CDP MCP server is designed for **monitoring and triage**. Because 
 | **Diagnose an evaluation failure** | "Show me the most recent evaluation jobs and flag any failures." |
 | **Check an export job** | "List recent audience export jobs and show me the status of each." |
 | **Estimate audience size** | "Estimate the size of this PQL expression before I save it: `homeAddress.country = 'US'`." |
-| | |
 | **List destination connector types** | "What destination connector types are available in my sandbox?" |
 | **List configured destination accounts** | "List my destination accounts and their connection state." |
 | **List destination flows** | "List my destination activation flows and show which are enabled or disabled." |
@@ -89,11 +85,9 @@ The Real-Time CDP MCP server is designed for **monitoring and triage**. Because 
 | **Check destination account health** | "List my destination accounts and flag any that are in an error state." |
 | **Monitor recent activation runs** | "Show me flow runs from the last 24 hours and flag any failures." |
 | **Investigate a failed run** | "Show me the run history for flow ID `xyz789` and summarize any errors." |
-| | |
 | **List source flows** | "List my source ingestion flows and show their current state." |
 | **Inspect a source flow** | "Show me the configuration for source flow ID `src456` — what is it ingesting and where does it land?" |
 | **Check ingestion run health** | "Show me recent run history for source flow ID `src456` and flag failures." |
-| | |
 | **List identity namespaces** | "What identity namespaces are configured in my sandbox?" |
 | **List merge policies** | "List my merge policies and show which is the default." |
 | **Find your Organization ID** | "List the Adobe organizations I have access to." |
