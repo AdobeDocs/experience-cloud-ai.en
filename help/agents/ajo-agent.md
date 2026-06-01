@@ -441,13 +441,15 @@ Journey Simulate enables Journey Optimizer users to safely test and validate mar
 
 >[!AVAILABILITY]
 >
->Journey Simulate is available to customers that are a part of the Agent Orchestrator Explorer program. You will also need the following permissions in order to fully use Journey Simulate features:
+>Journey Simulate is available to customers that are a part of the Agent Orchestrator Explorer program. You need at least one of the following permissions to use Journey Simulate:
 >
->**Manage Journeys**: This permission lets you start and stop test mode on journeys directly in AI Assistant.
+>**Simulate journeys**: Run simulation workflows from the journey canvas.
 >
->**View Journeys**: This permission lets the AI Assistant read the journey canvas, including all paths, conditions, and actions.
+>**Publish journeys**: Publish journeys, including flows that use simulation before go-live.
 >
->**View Segments**: This permission ensures that AI Assistant can access audience information when validating journey configurations.
+>**Approve and Publish journeys**: Approve and publish journeys when your organization uses approval workflows.
+>
+>[Learn more about permissions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/administration/permissions).
 
 ## Use cases
 
@@ -463,21 +465,20 @@ Journey Simulate offers capabilities that can be leveraged to reduce testing tim
 
 1. **Automated test execution**
 
-   - Start journey test mode and trigger test executions for one or multiple simulated users in a single interaction.
+   - Start journey simulation and trigger test executions for one or multiple simulated users in a single interaction.
    - Visualize how simulated users flow through a journey, step by step, including branching paths and conditional logic.
    - Identify which simulated user flows through which path, and why, with detailed node-by-node traversal.
 
-1. **Content preview during simulation**
+1. **Simulation reporting**
 
-   - Preview personalized channel content (email, push, SMS) for a selected simulated user directly in the journey canvas during simulation.
-   - Validate that personalization attributes resolve correctly before activation.
+   - Review simulation reporting at the end of a run in the Journey Optimizer UI to validate outcomes before activation.
 
 1. **Multi-branch coverage testing**
 
    - Ensure all journey branches are covered by assigning the right simulated user to each path.
    - Run tests across all branches simultaneously to verify end-to-end journey behavior.
 
-## In scope and out of scope skills
+## In scope skills and limitations
 
 ### **In scope**
 
@@ -485,23 +486,27 @@ The following capabilities are supported by Journey Simulate:
 
 - **Simulated user generation**: Create simulated users based on journey paths, existing test profiles, or specified attributes.
 - **Simulated user management**: View, edit, and update simulated user attributes, including execution addresses and personalization data.
-- **Test mode control**: Start and stop journey test mode directly through natural language prompts.
+- **Simulation control**: Start and stop journey simulation directly through natural language prompts in the journey UI.
 - **Test execution**: Trigger test executions for one or multiple simulated users.
 - **Journey flow visualization**: View step-by-step traversal of simulated users through journey nodes, including branching, splits, and user status.
-- **Content preview**: Preview channel content personalized for a selected simulated user in the journey canvas.
+- **Simulation reporting**: View reporting at the end of a simulation run in the Journey Optimizer UI.
 - **Multi-user testing**: Run and visualize tests for multiple simulated users simultaneously, covering all journey branches.
 
-### **Out of scope**
+### **Limitations**
 
 The following functionalities are currently not supported:
 
-- **Action Campaigns and Orchestrated Campaigns**
-- **Real profile testing** 
-- **Links and images validation**
-- **Personalization attribute validation**
-- **Dry run execution**
-- **Inbox rendering validation**
-- **Decisioning output validation for links and images**
+- **Split condition**: The agent can generate simulated users for each branch, but it cannot force which branch a user follows. Split logic is evaluated at runtime with live data, so the path may differ from what generation suggested.
+- **Profile capping**: The agent cannot turn off or override capping. Profile capping limits still apply during simulation.
+- **Date and time conditions**: The agent cannot set the date or time used in evaluation. To test time-based conditions, configure them to use the current date and time before you start simulation.
+- **Timeout branch (action or condition)**: The agent does not generate simulated users for action timeout or error branches.
+- **Timeout branch (event)**: The agent can generate simulated users for the journey, but it cannot control which users enter the event timeout branch. Manage timeout branch entry in the Simulation UI.
+- **Reaction events**: The agent does not trigger reaction events. The journey can still run, but paths that depend on a reaction event are not exercised.
+- **External data source response parameters**: The agent does not override external data source responses. Conditions based on those response values may be difficult to test predictably during simulation.
+- **Custom action response parameters**: The agent does not override custom action responses. Branches that depend on a custom action response may not behave predictably during simulation.
+- **Consent policy evaluation**: Consent policies are not evaluated for generated simulated users.
+- **Business rules (frequency capping and journey arbitration)**: Frequency capping and journey arbitration are not evaluated for generated simulated users. Suppression and fatigue rules do not apply to them during simulation.
+- **Maximum simulated users per generation request**: The agent generates at most 50 simulated users in a single generation request.
 
 ## Sample prompts
 
@@ -525,9 +530,9 @@ Here are examples of valuable prompts users can leverage to simulate and test jo
 
 ### Test execution
 
-**Start test mode:**
+**Start simulation:**
 
-"Start test mode for my Summer Campaign journey."
+"Start simulation for my Summer Campaign journey."
 
 **Run a test for a specific simulated user:**
 
@@ -539,9 +544,9 @@ Here are examples of valuable prompts users can leverage to simulate and test jo
 
 "Start a test for all simulated users."
 
-**Stop test mode:**
+**Stop simulation:**
 
-"Stop test mode for my Summer Campaign journey."
+"Stop simulation for my Summer Campaign journey."
 
 ### Open-ended prompts
 
@@ -564,7 +569,7 @@ To maximize the effectiveness of Journey Simulate, follow these best practices:
 1. **Request branch-level coverage**: Ask the agent to generate one simulated user per branch to ensure complete coverage of all journey paths.
 1. **Provide execution addresses**: If you want to receive actual test messages (email, push, SMS), ask the agent to include an execution address when generating simulated users.
 1. **Iterate and refine**: After reviewing generated simulated users, update specific attributes through follow-up prompts before starting the test execution.
-1. **Validate content inline**: During simulation, use the content preview in the journey canvas to verify personalized content for each simulated user before activation.
+1. **Review simulation reporting**: When a run completes, use the simulation reporting shown in the Journey Optimizer UI to confirm paths and outcomes before you publish.
 
 ## Slides and Presentations
 
