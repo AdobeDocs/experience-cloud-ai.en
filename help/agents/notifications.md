@@ -37,7 +37,7 @@ Read the following sections for examples of prompts you can use with Notificatio
 ### Actions
 
 - "Mark all non-actionable notifications as read."
-- "Remind me about the {NOTIFICATION_OF_INTERESET} notification in an hour."
+- "Remind me about the {NOTIFICATION_OF_INTEREST} notification in an hour."
 
 ### Preferences
 
