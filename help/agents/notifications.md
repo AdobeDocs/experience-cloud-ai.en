@@ -16,7 +16,7 @@ Notifications Agent supports the following capabilities:
 | **Operational actions** | Take action on notifications directly through conversation—mark them as read, snooze them, or set reminders for individual or grouped notifications. |
 | **Preferences and settings** | Enable or disable notification channels (email, Slack, in-app) per solution and category, without navigating Settings. |
 | **Navigation and deep linking** | Jump from a notification directly to the relevant product area via deep links. |
-| **Collaboration and sharing** | Share notifications or send announcements to specific users or the entire organization (authorized users) |
+| **Collaboration and sharing** | Share notifications or send announcements to recipients within the same organization. |
 
 ## Access Notifications Agent
 
@@ -37,7 +37,7 @@ Read the following sections for examples of prompts you can use with Notificatio
 ### Actions
 
 - "Mark all non-actionable notifications as read."
-- "Remind me about the APAC Winback Campaign notification in an hour."
+- "Remind me about the {NOTIFICATION_OF_INTERESET} notification in an hour."
 
 ### Preferences
 
@@ -52,6 +52,6 @@ Read the following sections for examples of prompts you can use with Notificatio
 
 Keep the following tips in mind when using Notifications Agent:
 
-- **Be specific** — Clearly name the app, category, or notification so that the agent can act on the intended target.
+- **Be specific** — Clearly name the app, notification, notification category, channel so that the agent can act on the intended target.
 - **Chain prompts** — You can ask for a summary, follow up by focusing on a specific notification, and then take an action, all within a single conversation.
 - **Answer clarifying questions** — When the agent asks for confirmation about the app, channel, or notification, be sure to respond so that changes are applied correctly.
