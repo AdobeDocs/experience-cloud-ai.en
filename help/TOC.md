@@ -25,7 +25,7 @@ role: Admin,User,Developer,Leader
   - [Product Support Agent](./agents/product-support.md)
   - [Adobe Marketing Agent for Microsoft 365 Copilot](./agents/ama-ms.md)
   - [Agents Trial](./agents/trial.md)
-  - [Pulse Agent](./agents/pulse.md)
+  - [Notifications Agent](./agents/notifications.md)
   - Data Engineering {#data-engineering}
     - {hide-from-toc} [Data Engineering Agent](./agents/data-engineering/overview.md)
 - MCP {#mcp}
