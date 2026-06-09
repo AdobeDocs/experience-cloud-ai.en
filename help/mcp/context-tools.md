@@ -11,7 +11,7 @@ Adobe CX Enterprise MCP includes a set of session context tools that establish t
 CX Enterprise MCP scopes every tool call to one active Adobe organization. Beyond that, context requirements depend on the product:
 
 - **Experience Platform–based products** — [Real-Time CDP](rtcdp-mcp.md), [Experience Platform](aep-mcp.md), and [Journey Optimizer](ajo-mcp.md) tools operate within an Experience Platform sandbox. Set the sandbox once per session with `core-set_sandbox`; all three share it.
-- **Other products** — Products not built on Experience Platform do not use sandbox context. For example, [Customer Journey Analytics](cja-mcp.md) tools resolve against a data view and [Adobe Analytics](aa-mcp.md) tools resolve against report suites.
+- **Other products** — Products not built on Experience Platform do not use sandbox context. For example, [Customer Journey Analytics](cja-mcp.md) tools resolve against a data view and [Adobe Analytics](analytics-mcp.md) tools resolve against report suites.
 
 Set context once at the start of a session — individual product tools do not switch organizations, sandboxes, or data views mid-session.
 
