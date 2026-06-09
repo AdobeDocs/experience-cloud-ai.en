@@ -35,7 +35,7 @@ role: Admin,User,Developer,Leader
   - Tool families {#mcp-tool-families}
     - [Real-Time CDP tools](./mcp/rtcdp-mcp.md)
     - [Experience Platform tools](./mcp/aep-mcp.md)
-    - [Journey Optimizer tools](./mcp/jo-mcp.md)
+    - [Journey Optimizer tools](./mcp/ajo-mcp.md)
     - [Customer Journey Analytics tools](./mcp/cja-mcp.md)
     - [Adobe Analytics tools](./mcp/analytics-mcp.md)
     - [Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview)

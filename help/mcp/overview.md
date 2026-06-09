@@ -30,7 +30,7 @@ The following tool families are documented in this guide:
 | **Experience Platform** | Schemas, datasets, data governance, Query Service, and audit events (read-only) | Beta | [Experience Platform tools](aep-mcp.md) |
 | **Journey Optimizer** | Campaigns and channel configurations (read-only) | Beta | [Journey Optimizer tools](ajo-mcp.md) |
 | **Customer Journey Analytics** | Data views, dimensions, metrics, reports, segments, date ranges, projects, and audiences (read and write) | Available | [Customer Journey Analytics tools](cja-mcp.md) |
-| **Adobe Analytics** | Report suites, dimensions, metrics, reports, segments, date ranges, and workspace projects (read and write for supported components) | Available | [Adobe Analytics tools](aa-mcp.md) |
+| **Adobe Analytics** | Report suites, dimensions, metrics, reports, segments, date ranges, and workspace projects (read and write for supported components) | Available | [Adobe Analytics tools](analytics-mcp.md) |
 | **Workfront** | Work management tools for projects, tasks, and approval workflows | Preview | [Workfront MCP server](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview) |
 
 >[!NOTE]
