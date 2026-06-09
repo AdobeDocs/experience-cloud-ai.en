@@ -31,7 +31,8 @@ role: Admin,User,Developer,Leader
   - [Adobe CX Enterprise MCP servers](./mcp/overview.md)
   - Get started {#mcp-get-started}
     - [Access CX Enterprise MCP tools](./mcp/access.md)
-    - [Install Adobe CX Enterprise MCP](./mcp/install.md)
+    - [Install CX Enterprise MCP](./mcp/install.md)
+    - [Session context tools in CX Enterprise MCP](./mcp/context-tools.md)
   - Tool families {#mcp-tool-families}
     - [Real-Time CDP tools](./mcp/rtcdp-mcp.md)
     - [Experience Platform tools](./mcp/aep-mcp.md)
