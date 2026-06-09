@@ -1,10 +1,10 @@
 ---
 title: Install AdobeCX Enterprise MCP
-description: Learn how to connect MCP-compatible clients to the Adobe CX Enterprise MCP gateway.
+description: Learn how to connect MCP-compatible clients to the Adobe CX Enterprise MCP.
 ---
 # Install Adobe CX Enterprise MCP {#mcp-install}
 
-Read this guide to learn how to connect an MCP-compatible client to Adobe CX Enterprise. CX Enterprise uses one gateway endpoint for all documented tool families:
+Read this guide to learn how to connect an MCP-compatible client to Adobe CX Enterprise. CX Enterprise uses one endpoint for all documented tool families:
 
 ```
 https://cx-enterprise.adobe.io/mcp
@@ -16,7 +16,7 @@ Before installing, confirm that your organization and user account can access th
 
 CX Enterprise MCP uses a remote HTTP transport with a browser-based Adobe sign-in flow. In every supported client, the setup pattern is the same:
 
-1. Add the gateway endpoint URL: `https://cx-enterprise.adobe.io/mcp`.
+1. Add the endpoint URL: `https://cx-enterprise.adobe.io/mcp`.
 2. Save or enable the connection.
 3. Complete the browser-based Adobe sign-in the first time the client invokes a tool.
 4. Set your Adobe organization and sandbox for the session if your tools require them. See [Product context for tool calls](#mcp-connect-params).
@@ -29,10 +29,10 @@ CX Enterprise MCP uses a remote HTTP transport with a browser-based Adobe sign-i
 
 Most team and enterprise MCP client plans require an administrator to add custom connectors for the organization. In these environments, installation has two steps:
 
-1. An administrator adds the CX Enterprise gateway once for the organization.
+1. An administrator adds the CX Enterprise endpoint once for the organization.
 2. Each user enables the connector and signs in with their own Adobe credentials.
 
-### Step 1: An administrator adds the gateway {#mcp-install-enterprise-admin}
+### Step 1: An administrator adds the endpoint {#mcp-install-enterprise-admin}
 
 The administrator adds `https://cx-enterprise.adobe.io/mcp` as a custom connector or remote MCP server in the client's organization settings. The exact location depends on the client.
 
@@ -69,11 +69,11 @@ After an administrator adds CX Enterprise, each user enables it for their own ac
 3. Start a conversation, invoke one of the Adobe tools, and complete the browser-based Adobe sign-in when prompted.
 4. Set your Adobe organization and sandbox for the session if your tools require them. See [Product context for tool calls](#mcp-connect-params).
 
-Users do not need to enter the gateway URL themselves when an administrator has already added the connector for the organization.
+Users do not need to enter the URL themselves when an administrator has already added the connector for the organization.
 
 ## Individual installation (self-service) {#mcp-install-individual}
 
-If you use an individual plan, a locally configured developer client, or an organization that allows members to add their own connectors, add the gateway directly in your own client settings.
+If you use an individual plan, a locally configured developer client, or an organization that allows members to add their own connectors, add the endpoint directly in your own client settings.
 
 ### Claude individual {#mcp-install-individual-claude}
 
@@ -102,7 +102,7 @@ After connection, entitled Adobe for CX Enterprise tools are available in Cursor
 
 ### Claude Code {#mcp-install-individual-claude-code}
 
-Add the gateway from the terminal:
+Add the endpoint from the terminal:
 
 ```bash
 claude mcp add --transport http cx-enterprise https://cx-enterprise.adobe.io/mcp
@@ -118,7 +118,7 @@ Select the `cx-enterprise` server and complete the Adobe sign-in flow in your br
 
 ### Codex {#mcp-install-individual-codex}
 
-Add the gateway from the terminal:
+Add the endpoint from the terminal:
 
 ```bash
 codex mcp add cx-enterprise --url https://cx-enterprise.adobe.io/mcp
@@ -136,7 +136,7 @@ Verify the configuration:
 codex mcp list
 ```
 
-You can also add the gateway directly to `~/.codex/config.toml`:
+You can also add the endpoint directly to `~/.codex/config.toml`:
 
 ```toml
 [mcp_servers.cx-enterprise]
@@ -182,7 +182,7 @@ For other desktop or web clients with remote MCP support, add Adobe for CX Enter
 
 ## Product context for tool calls {#mcp-connect-params}
 
-The gateway scopes every tool call to one Adobe organization and sandbox, set at the connection level and shared across all tool families. You do not switch organizations or sandboxes from individual tools — set the context once for the session, and every tool family operates within it. Experience Platform-based tools, including Real-Time CDP and Experience Platform, require this context; analytics tools resolve against the entitlements on your Adobe credentials.
+The MCP scopes every tool call to one Adobe organization and sandbox, set at the connection level and shared across all tool families. You do not switch organizations or sandboxes from individual tools — set the context once for the session, and every product tool operates within it. Experience Platform-based tools, including Real-Time CDP and Experience Platform, require this context; analytics tools resolve against the entitlements on your Adobe credentials.
 
 Set the context at the start of a session. Example:
 

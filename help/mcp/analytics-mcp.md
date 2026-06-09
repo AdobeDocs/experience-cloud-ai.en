@@ -4,7 +4,7 @@ description: Learn which Adobe Analytics tools are available through Adobe CX En
 ---
 # Adobe Analytics tools in Adobe CX Enterprise MCP {#aa-mcp}
 
-You can use Adobe Analytics tools to explore report suites, discover dimensions and metrics, run reports, and manage selected analytics components from an MCP-compatible client. These tools are available through the unified [Adobe CX Enterprise MCP gateway](overview.md) when your account has the required Adobe Analytics license and permissions.
+You can use Adobe Analytics tools to explore report suites, discover dimensions and metrics, run reports, and manage selected analytics components from an MCP-compatible client. These tools are available through the unified [Adobe CX Enterprise MCP](overview.md) when your account has the required Adobe Analytics license and permissions.
 
 >[!AVAILABILITY]
 >

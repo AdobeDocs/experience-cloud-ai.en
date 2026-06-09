@@ -4,11 +4,11 @@ description: Learn which Adobe Journey Optimizer tools are available through the
 ---
 # Adobe Journey Optimizer tools in CX Enterprise MCP {#ajo-mcp}
 
-The Adobe Journey Optimizer tool family lets you inspect campaigns and channel configurations from an MCP-compatible client. These tools are available through the [CX Enterprise MCP gateway](overview.md) when your organization is enabled and your user account has the required Journey Optimizer permissions.
+Use the Adobe Journey Optimizer product tools to inspect campaigns and channel configurations from an MCP-compatible client. These tools are available through the [CX Enterprise MCP](overview.md) when your organization is enabled and your user account has the required Journey Optimizer permissions.
 
 >[!AVAILABILITY]
 >
->The Journey Optimizer tool family is in Beta. Access is by invitation only and requires Adobe organization enablement. See [Access CX Enterprise MCP tools](access.md).
+>The Journey Optimizer product tools is in Beta. Access is by invitation only and requires Adobe organization enablement. See [Access CX Enterprise MCP tools](access.md).
 
 ## Key capabilities {#mcp-capabilities}
 
@@ -46,7 +46,7 @@ Journey Optimizer tools provide a read-only surface for campaign and channel con
 
 ## Product context and permissions {#mcp-context}
 
-Your user account must have permission to view the Journey Optimizer campaigns and channel configurations you query. The gateway does not bypass product permissions.
+Your user account must have permission to view the Journey Optimizer campaigns and channel configurations you query. The MCP does not bypass product permissions.
 
 If your organization uses multiple sandboxes, specify the sandbox or environment context in your prompt when you need results from a specific sandbox.
 

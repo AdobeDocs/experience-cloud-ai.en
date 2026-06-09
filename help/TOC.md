@@ -33,7 +33,7 @@ role: Admin,User,Developer,Leader
     - [Access CX Enterprise MCP tools](./mcp/access.md)
     - [Install CX Enterprise MCP](./mcp/install.md)
     - [Session context tools in CX Enterprise MCP](./mcp/context-tools.md)
-  - Tool families {#mcp-tool-families}
+  - Product tools {#mcp-product-tools}
     - [Real-Time CDP tools](./mcp/rtcdp-mcp.md)
     - [Experience Platform tools](./mcp/aep-mcp.md)
     - [Journey Optimizer tools](./mcp/ajo-mcp.md)

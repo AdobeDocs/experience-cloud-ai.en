@@ -5,11 +5,11 @@ description: Learn which Adobe Experience Platform tools are available through C
 
 # Adobe Experience Platform tools in Adobe CX Enterprise MCP {#aep-mcp}
 
-You can use the Adobe Experience Platform tool family to inspect schemas, datasets, data governance configuration, Query Service resources, and audit events from an MCP-compatible client. These tools are available through the [Adobe CX Enterprise MCP gateway](overview.md) when your organization is enabled and your user account has the required Experience Platform permissions.
+You can use the Adobe Experience Platform product tools to inspect schemas, datasets, data governance configuration, Query Service resources, and audit events from an MCP-compatible client. These tools are available through the [Adobe CX Enterprise MCP](overview.md) when your organization is enabled and your user account has the required Experience Platform permissions.
 
 >[!AVAILABILITY]
 >
->The Experience Platform tool family is in Beta. Access is by invitation only and requires Adobe organization enablement. See [Access CX Enterprise MCP tools](access.md).
+>The Experience Platform product tool is in Beta. Access is by invitation only and requires Adobe organization enablement. See [Access CX Enterprise MCP tools](access.md).
 
 ## Key capabilities {#mcp-capabilities}
 
@@ -58,9 +58,9 @@ Experience Platform tools provide a read-only monitoring and triage surface. You
 
 ## Permissions {#mcp-context}
 
-Your Adobe organization and sandbox context are established once at the gateway connection level and apply to every tool family, so you do not switch organizations or sandboxes from the Experience Platform tools. To set that context for a session, see [Product context for tool calls](install.md#mcp-connect-params).
+Your Adobe organization and sandbox context are established once at the MCP connection level and apply to every product tool, so you do not switch organizations or sandboxes from the Experience Platform tools. To set that context for a session, see [Product context for tool calls](install.md#mcp-connect-params).
 
-Your user account must have permission to view the Experience Platform resources you query. The gateway does not bypass product permissions.
+Your user account must have permission to view the Experience Platform resources you query. The MCP does not bypass product permissions.
 
 ## Known limitations {#mcp-limitations}
 

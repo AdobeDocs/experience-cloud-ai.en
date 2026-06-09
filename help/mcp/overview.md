@@ -1,30 +1,30 @@
 ---
 title: Adobe CX Enterprise MCP servers
-description: Adobe CX Enterprise MCP server is the unified MCP gateway for Adobe CX Enterprise, giving MCP clients a single connection to supported product tools.
+description: Adobe CX Enterprise MCP server is the unified MCP for Adobe CX Enterprise, giving MCP clients a single connection to supported product tools.
 ---
 # Adobe CX Enterprise MCP servers {#mcp-overview}
 
-Adobe CX Enterprise MCP servers is the unified Model Context Protocol (MCP) gateway for Adobe CX Enterprise (formerly Adobe Experience Cloud). With one connection, MCP-compatible clients can access the Adobe product tools your organization and account are entitled to use.
+Adobe CX Enterprise MCP servers is the unified Model Context Protocol (MCP) for Adobe CX Enterprise (formerly Adobe Experience Cloud). With one connection, MCP-compatible clients can access the Adobe product tools your organization and account are entitled to use.
 
-Use the CX Enterprise gateway endpoint for all MCP client setup:
+Use the CX Enterprise endpoint for all MCP client setup:
 
 ```
 https://cx-enterprise.adobe.io/mcp
 ```
 
-After you connect, the gateway exposes the tools available to your Adobe organization and credentials. Product-specific pages in this guide describe what each tool family can do, what data it can access, and any product-specific limitations.
+After you connect, the endpoint exposes the tools available to your Adobe organization and credentials. Product-specific pages in this guide describe what each product tool can do, what data it can access, and any product-specific limitations.
 
 ## What is the Model Context Protocol? {#mcp-what-is}
 
 MCP is an open standard that lets applications expose tools to large language models (LLMs) in a uniform way. MCP-compatible clients such as [!DNL Claude], [!DNL ChatGPT], [!DNL Cursor], [!DNL Claude Code], [!DNL Codex], and [!DNL VS Code] can use those tools to retrieve product context, run supported operations, and return answers in natural language.
 
-CX Enterprise provides a governed gateway for CX Enterprise product tools. Instead of adding separate product servers, connect once to the gateway and use the product tools surfaced for your entitled solutions.
+CX Enterprise provides a governed endpoint for CX Enterprise product tools. Instead of adding separate product servers, connect once to the endpoint and use the product tools surfaced for your entitled solutions.
 
 ## Available tool families {#mcp-servers}
 
 The following tool families are documented in this guide:
 
-| Tool family | What it exposes through the gateway | Availability | Documentation |
+| Product tool | What it exposes through the endpoint | Availability | Documentation |
 | --- | --- | --- | --- |
 | **Real-Time CDP** | Audiences, destinations, sources, identity namespaces, and activation health (read-only) | Beta | [Real-Time CDP tools](rtcdp-mcp.md) |
 | **Experience Platform** | Schemas, datasets, data governance, Query Service, and audit events (read-only) | Beta | [Experience Platform tools](aep-mcp.md) |
@@ -35,19 +35,19 @@ The following tool families are documented in this guide:
 
 >[!NOTE]
 >
->Tool availability depends on your product licenses, organization enablement, product permissions, and the Adobe credentials used to authenticate. The gateway only surfaces tools your organization and user account are entitled to access. See [Access CX Enterprise MCP tools](access.md).
+>Tool availability depends on your product licenses, organization enablement, product permissions, and the Adobe credentials used to authenticate. The MCP only surfaces tools your organization and user account are entitled to access. See [Access CX Enterprise MCP tools](access.md).
 
 ## Get started {#mcp-get-started}
 
 1. Review [Access CX Enterprise MCP tools](access.md) to confirm product availability, enablement, and permissions.
-2. Follow [Install Adobe for CX Enterprise MCP](install.md) to connect your MCP client to the gateway.
-3. Review the product page for each tool family you plan to use.
+2. Follow [Install Adobe for CX Enterprise MCP](install.md) to connect your MCP client to the endpoint.
+3. Review the product page for each product tool you plan to use.
 
 ## How it works {#mcp-how}
 
-Adobe CX Enterprise uses a remote HTTP transport with a browser-based Adobe sign-in flow. No API keys, bearer tokens, client secrets, or additional headers are stored in your MCP client configuration. On first use, the client opens a browser-based Adobe sign-in flow and the gateway discovers the Adobe authorization server automatically.
+Adobe CX Enterprise uses a remote HTTP transport with a browser-based Adobe sign-in flow. No API keys, bearer tokens, client secrets, or additional headers are stored in your MCP client configuration. On first use, the client opens a browser-based Adobe sign-in flow and the endpoint discovers the Adobe authorization server automatically.
 
-The gateway establishes your Adobe organization and sandbox context for the session, and all tool families operate within that context — individual tools do not switch organizations or sandboxes. Set this context once at the start of a session; see [Product context for tool calls](install.md#mcp-connect-params).
+The MCP establishes your Adobe organization and sandbox context for the session, and all tool families operate within that context — individual tools do not switch organizations or sandboxes. Set this context once at the start of a session; see [Product context for tool calls](install.md#mcp-connect-params).
 
 ## Security, beta, and legal notices {#mcp-notices}
 

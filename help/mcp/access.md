@@ -4,11 +4,11 @@ description: Confirm product availability, organization enablement, and permissi
 ---
 # Access CX Enterprise MCP tools {#mcp-access}
 
-Adobe CX Enterprise exposes product tools through a single MCP gateway. Access is evaluated by tool family: your Adobe organization must be enabled for the relevant product tools, and your user account must have the product permissions required to view or change the product data those tools expose.
+Adobe CX Enterprise exposes product tools through a single MCP. Access is evaluated by product tools: your Adobe organization must be enabled for the relevant product tools, and your user account must have the product permissions required to view or change the product data those tools expose.
 
 ## Access requirements {#mcp-requirements}
 
-| Tool family | Availability | Access requirements |
+| Product tools | Availability | Access requirements |
 | --- | --- | --- |
 | Real-Time CDP | Beta | Active Real-Time CDP license, Beta enablement for your Adobe organization, and permissions to view the audiences, destinations, sources, identity, and activation resources you query. |
 | Experience Platform | Beta | Active Experience Platform license, Beta enablement for your Adobe organization, and permissions to view the schemas, datasets, governance, Query Service, audit, and sandbox resources you query. |
@@ -19,7 +19,7 @@ Adobe CX Enterprise exposes product tools through a single MCP gateway. Access i
 
 >[!NOTE]
 >
->The gateway surfaces only the tools your organization and credentials are entitled to use. If a tool family is missing after you sign in, confirm product licensing, organization enablement, and user permissions.
+>The MCP surfaces only the tools your organization and credentials are entitled to use. If a product tool is missing after you sign in, confirm product licensing, organization enablement, and user permissions.
 
 ## Request access {#mcp-request}
 
@@ -29,13 +29,13 @@ For generally available tool families that use the **MCP Access** permission ite
 
 ## In-product enablement {#mcp-product-enablement}
 
-Some products require in-product enablement or product-specific permissions in addition to gateway access. For example:
+Some products require in-product enablement or product-specific permissions in addition to MCP access. For example:
 
 * Adobe Analytics and Customer Journey Analytics require the **MCP Access** permission item in Adobe Admin Console.
 * Workfront MCP tools are enabled from Workfront settings.
-* Beta tool families require Adobe organization enablement before their tools appear through the gateway.
+* Beta tool families require Adobe organization enablement before their tools appear through the MCP.
 
-Check the product page for the tool family you plan to use for product-specific permissions, context requirements, and limitations.
+Check the product page for the product tool you plan to use for product-specific permissions, context requirements, and limitations.
 
 ## Before you install {#mcp-prerequisites}
 
