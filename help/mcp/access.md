@@ -23,9 +23,9 @@ Adobe CX Enterprise exposes product tools through a single MCP. Access is evalua
 
 ## Request access {#mcp-request}
 
-For Beta or limited-release tool families, contact your Adobe account representative and specify which Adobe for CX Enterprise MCP tool families you want to use. Your representative can coordinate product enablement and confirm when your Adobe organization is ready.
+For Beta or limited-release product tools, contact your Adobe account representative and specify which Adobe for CX Enterprise MCP product tools you want to use. Your representative can coordinate product enablement and confirm when your Adobe organization is ready.
 
-For generally available tool families that use the **MCP Access** permission item, ask a system or product administrator to add your account to a product profile that includes MCP access.
+For generally available product tools that use the **MCP Access** permission item, ask a system or product administrator to add your account to a product profile that includes MCP access.
 
 ## In-product enablement {#mcp-product-enablement}
 
@@ -33,7 +33,7 @@ Some products require in-product enablement or product-specific permissions in a
 
 * Adobe Analytics and Customer Journey Analytics require the **MCP Access** permission item in Adobe Admin Console.
 * Workfront MCP tools are enabled from Workfront settings.
-* Beta tool families require Adobe organization enablement before their tools appear through the MCP.
+* Beta product tools require Adobe organization enablement before their tools appear through the MCP.
 
 Check the product page for the product tool you plan to use for product-specific permissions, context requirements, and limitations.
 
@@ -41,7 +41,7 @@ Check the product page for the product tool you plan to use for product-specific
 
 Before connecting your MCP client, confirm that:
 
-* Your Adobe organization is enabled for the tool families you need.
+* Your Adobe organization is enabled for the product tools you need.
 * Your user account has the product permissions required for the data and operations you plan to use.
 * You have access to a supported MCP client such as [!DNL Claude], [!DNL ChatGPT], [!DNL Cursor], [!DNL Claude Code], [!DNL Codex], or [!DNL VS Code].
 * For enterprise installation, you or a colleague can manage connectors or custom apps in your MCP client's organization settings.

@@ -1,16 +1,16 @@
 ---
-title: Install AdobeCX Enterprise MCP
+title: Install Adobe CX Enterprise MCP
 description: Learn how to connect MCP-compatible clients to the Adobe CX Enterprise MCP.
 ---
 # Install Adobe CX Enterprise MCP {#mcp-install}
 
-Read this guide to learn how to connect an MCP-compatible client to Adobe CX Enterprise. CX Enterprise uses one endpoint for all documented tool families:
+Read this guide to learn how to connect an MCP-compatible client to Adobe CX Enterprise. CX Enterprise uses one endpoint for all documented product tools:
 
 ```
 https://cx-enterprise.adobe.io/mcp
 ```
 
-Before installing, confirm that your organization and user account can access the tool families you need. See [Access CX Enterprise MCP tools](access.md).
+Before installing, confirm that your organization and user account can access the product tools you need. See [Access CX Enterprise MCP tools](access.md).
 
 ## How installation works {#mcp-install-how}
 
@@ -19,7 +19,7 @@ CX Enterprise MCP uses a remote HTTP transport with a browser-based Adobe sign-i
 1. Add the endpoint URL: `https://cx-enterprise.adobe.io/mcp`.
 2. Save or enable the connection.
 3. Complete the browser-based Adobe sign-in the first time the client invokes a tool.
-4. Set your Adobe organization and sandbox for the session if your tools require them. See [Product context for tool calls](#mcp-connect-params).
+4. Set product context for the session if your tools require it — organization for all products, sandbox for Experience Platform–based tools, and data view for Customer Journey Analytics. See [Product context for tool calls](#mcp-connect-params).
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ After an administrator adds CX Enterprise, each user enables it for their own ac
 1. Open personal connector, app, or MCP settings in the client.
 2. Find the CX Enterprise connector and enable it.
 3. Start a conversation, invoke one of the Adobe tools, and complete the browser-based Adobe sign-in when prompted.
-4. Set your Adobe organization and sandbox for the session if your tools require them. See [Product context for tool calls](#mcp-connect-params).
+4. Set product context for the session if your tools require it — organization for all products, sandbox for Experience Platform–based tools, and data view for Customer Journey Analytics. See [Product context for tool calls](#mcp-connect-params).
 
 Users do not need to enter the URL themselves when an administrator has already added the connector for the organization.
 
@@ -182,10 +182,15 @@ For other desktop or web clients with remote MCP support, add Adobe for CX Enter
 
 ## Product context for tool calls {#mcp-connect-params}
 
-The MCP scopes every tool call to one Adobe organization and sandbox, set at the connection level and shared across all tool families. You do not switch organizations or sandboxes from individual tools — set the context once for the session, and every product tool operates within it. Experience Platform-based tools, including Real-Time CDP and Experience Platform, require this context; analytics tools resolve against the entitlements on your Adobe credentials.
+The MCP scopes every tool call to one active Adobe organization. Beyond that, context requirements depend on the product:
 
-Set the context at the start of a session. Example:
+- **Experience Platform–based products** — Real-Time CDP, Experience Platform, and Journey Optimizer tools operate within an Experience Platform sandbox. Set the sandbox once per session; all three share it.
+- **Other products** — Products not built on Experience Platform do not use sandbox context. Adobe Analytics, Customer Journey Analytics, Workfront, Marketo, and Target tools resolve against their own product resources — for example, data views for Customer Journey Analytics and report suites for Adobe Analytics.
 
-> "Use organization `1234ABCD@AdobeOrg` and sandbox `prod` for this session."
+Set context once at the start of a session — individual product tools do not switch organizations, sandboxes, or data views mid-session. See [Session context tools](context-tools.md) for the tools that set organization, sandbox, and data view context.
 
-If you do not know the required values, ask your MCP client to list the organizations or sandboxes available to your Adobe credentials.
+Example:
+
+> "Use organization `1234ABCD@AdobeOrg`, sandbox `prod`, and data view `My Company — Global` for this session."
+
+If you do not know the required values, ask your MCP client to list the organizations, sandboxes, or data views available to your Adobe credentials.

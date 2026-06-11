@@ -4,7 +4,7 @@ description: Adobe CX Enterprise MCP server is the unified MCP for Adobe CX Ente
 ---
 # Adobe CX Enterprise MCP servers {#mcp-overview}
 
-Adobe CX Enterprise MCP servers is the unified Model Context Protocol (MCP) for Adobe CX Enterprise (formerly Adobe Experience Cloud). With one connection, MCP-compatible clients can access the Adobe product tools your organization and account are entitled to use.
+Adobe CX Enterprise MCP servers is the unified Model Context Protocol (MCP) for Adobe CX Enterprise. With one connection, MCP-compatible clients can access the Adobe product tools your organization and account are entitled to use.
 
 Use the CX Enterprise endpoint for all MCP client setup:
 
@@ -20,11 +20,11 @@ MCP is an open standard that lets applications expose tools to large language mo
 
 CX Enterprise provides a governed endpoint for CX Enterprise product tools. Instead of adding separate product servers, connect once to the endpoint and use the product tools surfaced for your entitled solutions.
 
-## Available tool families {#mcp-servers}
+## Available product tools {#available-product-tools}
 
-The following tool families are documented in this guide:
+The following product tools are documented in this guide:
 
-| Product tool | What it exposes through the endpoint | Availability | Documentation |
+| Product tools | What it exposes through the endpoint | Availability | Documentation |
 | --- | --- | --- | --- |
 | **Real-Time CDP** | Audiences, destinations, sources, identity namespaces, and activation health (read-only) | Beta | [Real-Time CDP tools](rtcdp-mcp.md) |
 | **Experience Platform** | Schemas, datasets, data governance, Query Service, and audit events (read-only) | Beta | [Experience Platform tools](aep-mcp.md) |
@@ -47,7 +47,7 @@ The following tool families are documented in this guide:
 
 Adobe CX Enterprise uses a remote HTTP transport with a browser-based Adobe sign-in flow. No API keys, bearer tokens, client secrets, or additional headers are stored in your MCP client configuration. On first use, the client opens a browser-based Adobe sign-in flow and the endpoint discovers the Adobe authorization server automatically.
 
-The MCP establishes your Adobe organization and sandbox context for the session, and all tool families operate within that context — individual tools do not switch organizations or sandboxes. Set this context once at the start of a session; see [Product context for tool calls](install.md#mcp-connect-params).
+The MCP establishes your Adobe organization and sandbox context for the session, and all product tools operate within that context — individual tools do not switch organizations or sandboxes. Set this context once at the start of a session; see [Product context for tool calls](install.md#mcp-connect-params).
 
 ## Security, beta, and legal notices {#mcp-notices}
 
@@ -59,4 +59,4 @@ The MCP establishes your Adobe organization and sandbox context for the session,
 >
 >To reduce risk, Adobe encourages testing integrations in a sandbox environment before production use, and carefully reviewing and validating MCP-initiated actions and responses before confirming or relying on them.
 
-Beta tool families and Beta documentation are subject to change before general availability. Adobe makes no representations about the completeness or accuracy of Beta documentation. By using any Adobe MCP feature identified as Beta, you acknowledge that the Beta is provided **"as is" without warranty of any kind** and that Adobe has no obligation to maintain, correct, update, change, modify, or otherwise support the Beta. Beta materials are considered Confidential Information of Adobe. Any feedback you provide to Adobe about the Beta, including problems, defects, suggestions, improvements, or recommendations, is assigned to Adobe, including all rights, title, and interest in that feedback.
+Beta product tools and Beta documentation are subject to change before general availability. Adobe makes no representations about the completeness or accuracy of Beta documentation. By using any Adobe MCP feature identified as Beta, you acknowledge that the Beta is provided **"as is" without warranty of any kind** and that Adobe has no obligation to maintain, correct, update, change, modify, or otherwise support the Beta. Beta materials are considered Confidential Information of Adobe. Any feedback you provide to Adobe about the Beta, including problems, defects, suggestions, improvements, or recommendations, is assigned to Adobe, including all rights, title, and interest in that feedback.

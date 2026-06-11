@@ -23,7 +23,7 @@ Customer Journey Analytics tools support governed analytics workflows from your 
 
 >[!IMPORTANT]
 >
->Unlike the read-only [Real-Time CDP](rtcdp-mcp.md), [Experience Platform](aep-mcp.md), and [Journey Optimizer](ajo-mcp.md) tool families, Customer Journey Analytics tools include write operations. They can create and update segments, calculated metrics, date ranges, projects, and audiences. Review and validate all MCP-initiated changes before relying on them.
+>Unlike the read-only [Real-Time CDP](rtcdp-mcp.md), [Experience Platform](aep-mcp.md), and [Journey Optimizer](ajo-mcp.md) product tools, Customer Journey Analytics tools include write operations. They can create and update segments, calculated metrics, date ranges, projects, and audiences. Review and validate all MCP-initiated changes before relying on them.
 
 ## Available tools {#mcp-tools}
 

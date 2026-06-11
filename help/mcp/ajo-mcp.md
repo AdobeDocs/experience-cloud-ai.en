@@ -8,7 +8,7 @@ Use the Adobe Journey Optimizer product tools to inspect campaigns and channel c
 
 >[!AVAILABILITY]
 >
->The Journey Optimizer product tools is in Beta. Access is by invitation only and requires Adobe organization enablement. See [Access CX Enterprise MCP tools](access.md).
+>The Journey Optimizer product tools are in Beta. Access is by invitation only and requires Adobe organization enablement. See [Access CX Enterprise MCP tools](access.md).
 
 ## Key capabilities {#mcp-capabilities}
 
@@ -27,9 +27,9 @@ Journey Optimizer tools provide a read-only surface for campaign and channel con
 
 | Tool | Description |
 | --- | --- |
-| `List Campaigns` | Browse Journey Optimizer marketing campaigns. Supports filtering by status, such as `DRAFT`, `LIVE`, `STOPPED`, and `COMPLETED`. |
-| `Get Campaign` | Fetch details and configuration for a specific campaign by ID, including audience targeting, schedule, channel, and content settings metadata. |
-| `List Channel Configurations` | View surface presets and branding settings for email, SMS, push, or [!DNL WhatsApp] channels. |
+| `ajo_campaign_list` | Browse Journey Optimizer marketing campaigns. Supports filtering by status, such as `DRAFT`, `LIVE`, `STOPPED`, and `COMPLETED`. |
+| `ajo_campaign_get` | Fetch details and configuration for a specific campaign by ID, including audience targeting, schedule, channel, and content settings metadata. |
+| `ajo_channel_configuration_list`, `ajo_channel_configuration_get` | View surface presets and branding settings for email, SMS, push, or [!DNL WhatsApp] channels. |
 
 ## Example prompts {#mcp-use-cases}
 
