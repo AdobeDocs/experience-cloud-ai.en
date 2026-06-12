@@ -53,6 +53,8 @@ Users of eligible customers will have access to AI Assistant and Agents as part 
 
 Once you have access, navigate to the Adobe Experience Cloud homepage to get started with AI Assistant. You can use the [discovery prompts](../ai-assistant/ai-assistant-ui.md#discovery-prompts) to view suggestions for prompts and common workflows. Use this feature to help accelerate your onboarding with AI Assistant. Additionally, read the [prompt library](../ai-assistant/prompt-library.md) for a variety of prompts that you can use with different agents. For more comprehensive information, read the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
 
+The Agentic AI Monitoring dashboard gives you clear visibility into how Agentic AI is being adopted and used across your organization. As an authorized user, you can easily track engagement, gather feedback, monitor AI credit usage, and review key metrics. Use these insights to uncover optimization opportunities and support your governance and adoption efforts. To learn more, visit the [Agentic AI Usage Monitoring guide](https://experienceleague.adobe.com/en/docs/core-services/interface/features/monitoring).
+
 For information on the available agents, read the [Agent Orchestrator overview](agent-orchestrator.md).
 
 >[!TIP]
@@ -85,9 +87,9 @@ The trial does not require any additional purchase. There is no automatic conver
 
 ### Who can see the usage and how?
 
-You can track your AI Credits using the license usage dashboard in the Adobe Experience Platform UI. For more information, read the [license usage dashboard documentation](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/guides/license-usage).
+You can track your AI Credits using the license usage dashboard in the Adobe Experience Platform UI. For more information, read the [license usage dashboard documentation](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/guides/license-usage). Use the dashboard to view your AI Credits usage and reporting. Only administrators and users with the appropriate permissions can view your usage information.
 
-Use the dashboard to view your AI Credits usage and reporting. Only administrators and users with the appropriate permissions can view your usage information.
+You can also use the Agentic AI Monitoring dashboard to gain insight into Agentic AI adoption, engagement, feedback, and AI credit usage across your organization. Authorized users can use the dashboard to track key metrics, identify optimization opportunities, and support governance and adoption initiatives. For more information, read the guide on [Agentic AI Monitoring](https://experienceleague.adobe.com/en/docs/core-services/interface/features/monitoring).
 
 ### What happens after the trial ends?
 
