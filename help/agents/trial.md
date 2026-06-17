@@ -41,6 +41,8 @@ Adobe will determine your eligibility for the trial at its sole discretion. Cust
 
 Eligible customers receive an initial one-time entitlement of up to 10,000 AI Credits to use for any combination of Jobs (depending on your existing license(s) to Experience Cloud applications) listed in the [AI Credit Consumption Table](https://experienceleague.adobe.com/en/docs/core-services/interface/features/ai-credit-consumption). You can track your AI Credits using the license usage dashboard in the Adobe Experience Platform UI. For more information, read the [license usage dashboard documentation](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/guides/license-usage).
 
+The Agentic AI Monitoring dashboard gives you clear visibility into how Agentic AI is being adopted and used across your organization. As an authorized user, you can easily track engagement, gather feedback, monitor AI credit usage, and review key metrics. Use these insights to uncover optimization opportunities and support your governance and adoption efforts. To learn more, visit the [Agentic AI Usage Monitoring guide](https://experienceleague.adobe.com/en/docs/core-services/interface/features/monitoring).
+
 >[!IMPORTANT]
 >
 >AI Credits only exist for the duration of the trial and **do not roll over** if you license additional AI Credits before using the full 10,000 AI Credit entitlement.
@@ -52,8 +54,6 @@ The trial ends once you consume the initial one-time entitlement of 10,000 AI Cr
 Users of eligible customers will have access to AI Assistant and Agents as part of the trial, so no action is needed. Experience Platform Agents are guided by user input and oversight. Agents also honor previously defined product-level access controls, so users can only perform jobs or execute actions for which they have permissions within the applicable underlying Experience Cloud products. If you want to opt-out of access to these Agentic capabilities and disable the trial access, please send a request to [aep-agents-trial-support@adobe.com](mailto:aep-agents-trial-support@adobe.com).
 
 Once you have access, navigate to the Adobe Experience Cloud homepage to get started with AI Assistant. You can use the [discovery prompts](../ai-assistant/ai-assistant-ui.md#discovery-prompts) to view suggestions for prompts and common workflows. Use this feature to help accelerate your onboarding with AI Assistant. Additionally, read the [prompt library](../ai-assistant/prompt-library.md) for a variety of prompts that you can use with different agents. For more comprehensive information, read the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
-
-The Agentic AI Monitoring dashboard gives you clear visibility into how Agentic AI is being adopted and used across your organization. As an authorized user, you can easily track engagement, gather feedback, monitor AI credit usage, and review key metrics. Use these insights to uncover optimization opportunities and support your governance and adoption efforts. To learn more, visit the [Agentic AI Usage Monitoring guide](https://experienceleague.adobe.com/en/docs/core-services/interface/features/monitoring).
 
 For information on the available agents, read the [Agent Orchestrator overview](agent-orchestrator.md).
 
