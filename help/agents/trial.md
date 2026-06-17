@@ -89,7 +89,7 @@ The trial does not require any additional purchase. There is no automatic conver
 
 You can track your AI Credits using the license usage dashboard in the Adobe Experience Platform UI. For more information, read the [license usage dashboard documentation](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/guides/license-usage). Use the dashboard to view your AI Credits usage and reporting. Only administrators and users with the appropriate permissions can view your usage information.
 
-You can also use the Agentic AI Monitoring dashboard to gain insight into Agentic AI adoption, engagement, feedback, and AI credit usage across your organization. Authorized users can use the dashboard to track key metrics, identify optimization opportunities, and support governance and adoption initiatives. For more information, read the guide on [Agentic AI Monitoring](https://experienceleague.adobe.com/en/docs/core-services/interface/features/monitoring).
+You can also use the Agentic AI Monitoring dashboard to gain insight into Agentic AI adoption, engagement, feedback, and AI credit usage in your organization. Authorized users can use the dashboard to track key metrics, identify optimization opportunities, and support governance and adoption initiatives. For more information, read the guide on [Agentic AI Monitoring](https://experienceleague.adobe.com/en/docs/core-services/interface/features/monitoring).
 
 ### What happens after the trial ends?
 
