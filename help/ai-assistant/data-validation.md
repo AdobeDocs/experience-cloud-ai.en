@@ -1,34 +1,34 @@
 ---
-title: Validate Your Data With Data Engineering Agent
-description: Learn how you can use the Data Engineering Agent to perform statistical and semantical validations on your datasets.
+title: Validate Your Data With AI Assistant
+description: Learn how you can use the data validation capabilities to perform statistical and semantical validations on your datasets.
 ---
-# Validate your data with Data Engineering Agent
+# Validate your data with AI Assistant
 
-You can use the Data Engineering Agent to validate the data quality of your Adobe Experience Platform datasets. With the Data Engineering Agent, you can perform statistical and semantical validations on datasets, analyze dataset fields, identify data quality issues, and retrieve natural language summaries with actionable insights. Data engineers, analysts, and data stewards can utilize the validation skills of the Data Engineering Agent to execute rapid data quality assessments without writing SQL queries or navigating complex schema hierarchies.
+You can use AI Assistant to validate the data quality of your Adobe Experience Platform datasets. With the data validation capabilities, you can perform statistical and semantical validations on datasets, analyze dataset fields, identify data quality issues, and retrieve natural language summaries with actionable insights. Data engineers, analysts, and data stewards can utilize the validation capabilities of AI Assistant to execute rapid data quality assessments without writing SQL queries or navigating complex schema hierarchies.
 
-By using the data validation capabilities of the Data Engineering Agent, you can:
+With data validation capabilities, you can:
 
 - Fill the essential gaps in both the onboarding process and the day-to-day diagnostics.
 - Reduce manual QA on your datasets.
 - Accelerate time-to-value for your customers.
 
-Read this documentation for comprehensive information on how you can use the Data Engineering Agent to validate your data on Experience Platform.
+Read this documentation to learn how you can validate your data with AI Assistant.
 
 ## Use cases
 
 | Use case | Description |
 | --- | --- |
-| New implementation | In these scenarios, you can use the Data Engineering Agent to validate key identity and event fields to confirm formats and null rates look healthy. |
-| Suspected mapping issue | In these scenarios, you can use the Data Engineering Agent to validate a field and inspect top values and invalids to confirm it matches the intended semantics. |
-| Ongoing data stewardship | In these scenarios, you can use the Data Engineering Agent to run dataset validation on critical datasets weekly to catch regressions early. |
+| New implementation | In these scenarios, you can validate key identity and event fields to confirm formats and null rates look healthy. |
+| Suspected mapping issue | In these scenarios, you can validate a field and inspect top values and invalids to confirm it matches the intended semantics. |
+| Ongoing data stewardship | In these scenarios, you can run dataset validation on critical datasets weekly to catch regressions early. |
 
 ## UI guide
 
-Use **AI Assistant** in Adobe Experience Cloud to run validation with the Data Engineering Agent. The following steps follow the main screens you will see.
+Use **AI Assistant** in Adobe Experience Cloud to validate your data. The following steps follow the main screens you will see.
 
 ### Start validation
 
-![AI Assistant home with the prompt field showing a dataset validation request, Experience Platform environment selector, and Send control.](../images/data-engineering/validation/home.png)
+![AI Assistant home with the prompt field showing a dataset validation request, Experience Platform environment selector, and Send control.](./images/ai-assistant/validation/home.png)
 
 In the left navigation, select **AI Assistant**. Next, use the environment selector and  choose the Experience Platform organization or sandbox where your dataset lives (for example, **[!UICONTROL Experience Platform - Prod]**). In the prompt field, type a validation request (for example, ask to validate a dataset by name). Select **[!UICONTROL Send]** to submit the prompt.
 
@@ -38,7 +38,7 @@ In the left navigation, select **AI Assistant**. Next, use the environment selec
 
 ### Read the dataset summary and field table
 
-![AI Assistant response with Reasoning complete, a validation summary, and a Field summaries table listing field paths, types, and valid values.](../images/data-engineering/validation/answer.png)
+![AI Assistant response with Reasoning complete, a validation summary, and a Field summaries table listing field paths, types, and valid values.](./images/ai-assistant/validation/answer.png)
 
 Allow for a brief moment for the run to finish (**Reasoning complete**). When reasoning is complete, read the summary for the dataset name, how many fields were validated, and the sample size (typically up to about 1,000 rows).
 
@@ -48,7 +48,7 @@ Select **[!UICONTROL Show all results]** when you need additional columns or row
 
 ### Work in split view
 
-![Split view with validation narrative and statistics on the left and an expanded chart visualization of valid values on the right.](../images/data-engineering/validation/split-screen.png)
+![Split view with validation narrative and statistics on the left and an expanded chart visualization of valid values on the right.](./images/ai-assistant/validation/split-screen.png)
 
 In expanded view, use the split layout: detailed statistics and narrative on one side and the chart on the other. 
 
@@ -59,29 +59,29 @@ Use **[!UICONTROL Related suggestions]** or the prompt field at the bottom to va
 
 ### Use a related suggestion for a follow-up
 
-![Related suggestions chips above the prompt field, with one suggestion selected to validate a specific field on the dataset.](../images/data-engineering/validation/related-suggestion.png)
+![Related suggestions chips above the prompt field, with one suggestion selected to validate a specific field on the dataset.](./images/ai-assistant/validation/related-suggestion.png)
 
 After a response, find **[!UICONTROL Related suggestions]** below the conversation. Select a suggestion (for example, validate a specific field on the same dataset) to load it into the prompt field. Adjust the text if needed, confirm the environment, then select **[!UICONTROL Send]** to run the follow-up.
 
 ### Validate at the field level
 
-![Validation results card for a single field in chart view, showing a validity donut chart and the Show in expanded view action.](../images/data-engineering/validation/single-field.png)
+![Validation results card for a single field in chart view, showing a validity donut chart and the Show in expanded view action.](./images/ai-assistant/validation/single-field.png)
 
 Open a field-level **[!UICONTROL Validation results]** card (for example, after validating a single field). Use the view controls to switch to **Chart** (or another view) when you want a visual summary instead of a table. During this step, you can optionally select **[!UICONTROL Properties]** to see more about the field.
 
 Select **[!UICONTROL Show in expanded view]** to open a larger, more detailed view of that field's validation.
 
-![Expanded view showing detailed field-level validation statistics and chart visualization.](../images/data-engineering/validation/expanded-view.png)
+![Expanded view showing detailed field-level validation statistics and chart visualization.](./images/ai-assistant/validation/expanded-view.png)
 
 Through the expanded view, you can view an itemized list of the entire field, based on a sample of up to 1000 records for the given field. You can use this capability to retrieve information on your valid, distinct, and null values.
 
 ## How validation works
 
-When you initiate a validation, the Data Engineering Agent analyzes a representative sample of your dataset, typically the most recent ~1,000 rows, rather than processing the entire dataset history. The process is strictly read-only, ensuring that your data, schemas, and mappings remain unchanged. Validation results are consistent regardless of how your data enters Experience Platform, whether through sources, streaming, file uploads, Data Prep, or other ingestion methods. Results serve as indicative checks to help you quickly identify data quality patterns or potential issues, enabling you to take further action (such as exploring with Query Service) if needed. This approach allows for rapid assessments without disrupting data ingestion or impacting production workloads.
+When you initiate a validation, the AI Assistant analyzes a representative sample of your dataset, typically the most recent ~1,000 rows, rather than processing the entire dataset history. The process is strictly read-only, ensuring that your data, schemas, and mappings remain unchanged. Validation results are consistent regardless of how your data enters Experience Platform, whether through sources, streaming, file uploads, Data Prep, or other ingestion methods. Results serve as indicative checks to help you quickly identify data quality patterns or potential issues, enabling you to take further action (such as exploring with Query Service) if needed. This approach allows for rapid assessments without disrupting data ingestion or impacting production workloads.
 
 ## Validation results
 
-For every validated field, the Data Engineering Agent returns:
+For every validated field, AI Assistant returns:
 
 **Basic statistics**
 
@@ -109,7 +109,7 @@ For every validated field, the Data Engineering Agent returns:
 
 ## Validation types
 
-There are two main validation types that you can perform with the Data Engineering Agent:
+There are two main validation types that you can perform with the AI Assistant:
 
 - **Field validation**: Validate a specific field in a dataset.
 - **Dataset validation**: Validate up to five (5) fields in a dataset. 
@@ -132,7 +132,7 @@ Example prompts for field validation include:
 
 >[!TAB Dataset validation]
 
-Use dataset validation to validate entire datasets, summarizing overall quality and key issues. While you can provide these fields explicitly, the Data Engineering Agent can also analyze the dataset and automatically determine the most relevant fields. This skill provides the same type of information as field validation, albeit to a number of several targeted fields. You can validate up to five fields in a given dataset. 
+Use dataset validation to validate entire datasets, summarizing overall quality and key issues. While you can provide these fields explicitly, AI Assistant can also analyze the dataset and automatically determine the most relevant fields. This skill provides the same type of information as field validation, albeit to a number of several targeted fields. You can validate up to five fields in a given dataset. 
 
 Example prompts for dataset validation include:
 
@@ -143,9 +143,9 @@ Example prompts for dataset validation include:
 
 >[!ENDTABS]
 
-## Checks performed by the Data Engineering Agent
+## Checks performed by data validation
 
-For each field or dataset, the agent can perform:
+The following types of validation are performed for each field and dataset:
 
 - **Completeness checks**: null/missing counts and percentages.
 - **Distribution checks**: top unique values and their distributions, high‑cardinality detection.
@@ -160,7 +160,7 @@ These checks combine deterministic statistics with LLM‑assisted semantic valid
 
 ## Limitations
 
-Before using the Data Engineering Agent for data validation, it's important to be aware of a few key limitations. These constraints are intended to balance performance with functionality, and will help set expectations for the types of analysis and insights you can expect.
+Before validating your data, it's important to be aware of a few key limitations. These constraints are intended to balance performance with functionality, and will help set expectations for the types of analysis and insights you can expect.
 
 - **Sampling only**: Validation operates on a sample of the dataset (typically the last ~1,000 rows) rather than processing the entire dataset. Full-dataset scans are not available.
 - **Field count limit**: When validating a dataset, the agent analyzes up to five fields per request. You can specify these fields, or allow the agent to select them automatically.
