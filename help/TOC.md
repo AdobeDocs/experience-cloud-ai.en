@@ -15,6 +15,7 @@ role: Admin,User,Developer,Leader
   - [Prompt Library](./ai-assistant/prompt-library.md)
   - [Privacy](./ai-assistant/privacy.md)
   - [Legal Disclaimer](./ai-assistant/legal-disclaimer.md)
+  - [Validate your data](./ai-assistant/data-validation.md)
 - Agents {#agents}
   - [Agent Orchestrator](./agents/agent-orchestrator.md)
   - [Audience Agent](./agents/audience.md)
@@ -27,7 +28,6 @@ role: Admin,User,Developer,Leader
   - [Notifications Agent](./agents/notifications.md)
   - [Agents Trial](./agents/trial.md)
   - Data Engineering {#data-engineering}
-    - {hide-from-toc} [Data Engineering Agent](./agents/data-engineering/overview.md)
-    - [Validate your data](./agents/data-engineering/data-validation.md)
+    - {hide-from-toc} [Data Engineering Agent](./agents/data-engineering/overview.md
 - MCP {#mcp}
   - [Real-Time CDP MCP](./mcp/rtcdp-mcp.md)
