@@ -41,6 +41,8 @@ Adobe will determine your eligibility for the trial at its sole discretion. Cust
 
 Eligible customers receive an initial one-time entitlement of up to 10,000 AI Credits to use for any combination of Jobs (depending on your existing license(s) to Experience Cloud applications) listed in the [AI Credit Consumption Table](https://experienceleague.adobe.com/en/docs/core-services/interface/features/ai-credit-consumption). You can track your AI Credits using the license usage dashboard in the Adobe Experience Platform UI. For more information, read the [license usage dashboard documentation](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/guides/license-usage).
 
+The Agentic AI Monitoring dashboard gives you clear visibility into how Agentic AI is being adopted and used across your organization. As an authorized user, you can easily track engagement, gather feedback, monitor AI credit usage, and review key metrics. Use these insights to uncover optimization opportunities and support your governance and adoption efforts. To learn more, visit the [Agentic AI Usage Monitoring guide](https://experienceleague.adobe.com/en/docs/core-services/interface/features/monitoring).
+
 >[!IMPORTANT]
 >
 >AI Credits only exist for the duration of the trial and **do not roll over** if you license additional AI Credits before using the full 10,000 AI Credit entitlement.
@@ -85,9 +87,9 @@ The trial does not require any additional purchase. There is no automatic conver
 
 ### Who can see the usage and how?
 
-You can track your AI Credits using the license usage dashboard in the Adobe Experience Platform UI. For more information, read the [license usage dashboard documentation](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/guides/license-usage).
+You can track your AI Credits using the license usage dashboard in the Adobe Experience Platform UI. For more information, read the [license usage dashboard documentation](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/guides/license-usage). Use the dashboard to view your AI Credits usage and reporting. Only administrators and users with the appropriate permissions can view your usage information.
 
-Use the dashboard to view your AI Credits usage and reporting. Only administrators and users with the appropriate permissions can view your usage information.
+You can also use the Agentic AI Monitoring dashboard to gain insight into Agentic AI adoption, engagement, feedback, and AI credit usage in your organization. Authorized users can use the dashboard to track key metrics, identify optimization opportunities, and support governance and adoption initiatives. For more information, read the guide on [Agentic AI Monitoring](https://experienceleague.adobe.com/en/docs/core-services/interface/features/monitoring).
 
 ### What happens after the trial ends?
 

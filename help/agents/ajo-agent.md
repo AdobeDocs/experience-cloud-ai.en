@@ -60,11 +60,17 @@ topic_v2:
 
 Journey Agent enables Journey Optimizer users to create, analyze, and optimize marketing journeys using a natural language interface. With Journey Agent, practitioners can quickly build journeys, detect and resolve schedule or audience conflicts, analyze performance and drop-off points, and identify top-performing journeys to replicate for future campaigns. It empowers practitioners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
 
-Journey Agent consists of three main jobs to be done:
+Journey Agent consists of four main jobs to be done:
 
 - **Journey Create**: Build and configure marketing journeys through natural language prompts
 - **Channel Content Create**: Generate, edit, and manage channel-specific content (email, push, SMS) for journeys using AI-powered content generation
 - **Journey Analyze**: Analyze journeys, detect issues, uncover insights, and optimize customer engagement
+
+In addition, **Journey Simulation** is a Journey Optimizer feature that includes [Journey Simulate](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/simulate-journey/simulate-journey-gs), an in-product agentic skill, non conversational, with three capabilities: 
+
+- Generating simulated users
+- Generating event values
+- Quick simulation
 
 ## Journey Create: Use cases, Agentic skills and User guide
 
@@ -432,8 +438,82 @@ To maximize the effectiveness of Journey Analyze, follow these best practices:
 - **Monitor Regularly**: Schedule regular reviews of journey performance to identify trends and anomalies.
 - **Optimize Segmentation**: Ensure audience segmentation is balanced to avoid fatigue and maximize engagement.
 
-## Slides and Presentations
+## Journey Simulate: Use Cases, Agentic Skills and User Guide
 
->[!NOTE]
->
->Slides and presentation materials for Journey Agent will be available here. Please check back soon for updates.
+## Overview
+
+>[!BEGINSHADEBOX]
+
+Journey Simulation is available to all Journey Optimizer customers. Journey Simulate, the in-product agentic skill within Journey Simulation, is available to customers that are a part of the Agent Orchestrator Explorer program and requires at least one of the following permissions:
+
+- **Simulate journeys**: Run simulation workflows from the journey canvas.
+
+- **Publish journeys**: Publish journeys, including flows that use simulation before go-live.
+
+- **Approve and Publish journeys**: Approve and publish journeys when your organization uses approval workflows.
+
+To use AI in **[!UICONTROL Simulation]** (**[!UICONTROL Quick simulation]**, generating simulated users with AI, **[!UICONTROL Generate event values]**), users require **[!UICONTROL Generate Content]** permission from the **[!UICONTROL AI Assistant]** capability. 
+
+[Learn more about permissions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/administration/permissions).
+
+>[!ENDSHADEBOX]
+
+Journey Simulation is a Journey Optimizer feature that enables Journey Optimizer users to safely test and validate marketing journeys before activation. Within Journey Simulation, Journey Simulate is an in-product agentic skill, not a conversational one, that automates and assists the testing process directly from the journey canvas.
+
+Journey Simulate includes three capabilities:
+
+- Generating simulated users
+- Generating event values
+- Quick simulation. 
+
+Together, they bridge the gap between journey creation and activation, building confidence in journey logic and reducing the risk of post-launch errors.
+
+## Use cases
+
+### Key use cases for Journey Simulate
+
+Journey Simulate offers three capabilities that can be leveraged to reduce testing time and improve journey quality before go-live:
+
+**Generating simulated users**
+
+- Generate simulated users automatically based on journey paths and required attributes.
+- Create simulated users that cover all branches and conditions in a journey, including execution addresses (email, push, SMS).
+- Update simulated user attributes on demand to refine test scenarios.
+- Ensure all journey branches are covered by assigning the right simulated user to each path.
+
+**Generating event values**
+
+- Generate values for events used in a journey to drive test execution through specific paths.
+- Define event attribute values that trigger the desired conditions and branches during simulation.
+
+**Quick simulation**
+
+- Start journey simulation and trigger test executions for all simulated users needed to test all paths of a journey, in a single interaction.
+- Visualize how simulated users flow through a journey, step by step, including branching paths and conditional logic.
+- Identify which simulated user flows through which path, and why, with detailed node-by-node traversal.
+- Review simulation reporting at the end of a run in the Journey Optimizer UI to validate outcomes before activation.
+
+## In scope skills and limitations
+
+### **In scope**
+
+The following capabilities are supported by the Journey Simulation feature:
+
+- **Simulated user management**: View, edit, and update simulated user attributes, including execution addresses and personalization data.
+- **Simulation control**: Start and stop journey simulation directly through the Journey Simulation in-product experience.
+- **Test execution**: Trigger test executions for one or multiple simulated users.
+- **Journey flow visualization**: View step-by-step traversal of simulated users through journey nodes, including branching, splits, and user status.
+- **Simulation reporting**: View reporting at the end of a simulation run in the Journey Optimizer UI.
+- **Multi-user testing**: Run and visualize tests for multiple simulated users simultaneously, covering all journey branches.
+
+In addition to this, the following capabilities are supported by the Journey Simulate skill:
+
+- **Simulated user generation**: Create simulated users based on journey paths, existing test profiles, or specified attributes.
+- **Event value generation**: Generate and assign event attribute values to drive test execution through specific journey paths.
+- **Quick simulation**: Run a full end-to-end simulation with minimal intervention. The skill automatically generates simulated users, event values, and pre-filled test settings, then executes the journey and surfaces results for review.
+
+### **Limitations**
+
+Simulation may not support every activity, channel, or integration that Test mode or a live journey supports, and behavior may change as the capability matures.
+
+➡️ Learn more about [Simulation limitations](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/simulate-journey/simulate-journey-gs#limitations) in the Journey Optimizer documentation.

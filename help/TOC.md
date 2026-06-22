@@ -24,8 +24,10 @@ role: Admin,User,Developer,Leader
   - [Journey Agent](./agents/ajo-agent.md)
   - [Product Support Agent](./agents/product-support.md)
   - [Adobe Marketing Agent for Microsoft 365 Copilot](./agents/ama-ms.md)
+  - [Notifications Agent](./agents/notifications.md)
   - [Agents Trial](./agents/trial.md)
   - Data Engineering {#data-engineering}
-    - [Data Engineering Agent](./agents/data-engineering/overview.md)
+    - {hide-from-toc} [Data Engineering Agent](./agents/data-engineering/overview.md)
     - [Validate your data](./agents/data-engineering/data-validation.md)
-
+- MCP {#mcp}
+  - [Real-Time CDP MCP](./mcp/rtcdp-mcp.md)
