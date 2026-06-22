@@ -15,7 +15,6 @@ role: Admin,User,Developer,Leader
   - [Prompt Library](./ai-assistant/prompt-library.md)
   - [Privacy](./ai-assistant/privacy.md)
   - [Legal Disclaimer](./ai-assistant/legal-disclaimer.md)
-  - [Validate your data](./ai-assistant/data-validation.md)
 - Agents {#agents}
   - [Agent Orchestrator](./agents/agent-orchestrator.md)
   - [Audience Agent](./agents/audience.md)
@@ -27,6 +26,7 @@ role: Admin,User,Developer,Leader
   - [Adobe Marketing Agent for Microsoft 365 Copilot](./agents/ama-ms.md)
   - [Notifications Agent](./agents/notifications.md)
   - [Agents Trial](./agents/trial.md)
+  - [Validate your data](./agents/data-validation.md)
   - Data Engineering {#data-engineering}
     - {hide-from-toc} [Data Engineering Agent](./agents/data-engineering/overview.md)
 - MCP {#mcp}
