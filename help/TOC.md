@@ -28,6 +28,6 @@ role: Admin,User,Developer,Leader
   - [Notifications Agent](./agents/notifications.md)
   - [Agents Trial](./agents/trial.md)
   - Data Engineering {#data-engineering}
-    - {hide-from-toc} [Data Engineering Agent](./agents/data-engineering/overview.md
+    - {hide-from-toc} [Data Engineering Agent](./agents/data-engineering/overview.md)
 - MCP {#mcp}
   - [Real-Time CDP MCP](./mcp/rtcdp-mcp.md)
