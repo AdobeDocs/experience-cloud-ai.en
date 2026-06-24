@@ -1,6 +1,6 @@
 ---
 title: Get Started With Coworker Chat In Playground
-description:
+description: Learn how to use Coworker Chat in Playground to explore how natural-language prompts can help you learn, investigate, and refine your work. 
 hide: true
 ---
 # Get started with Coworker Chat in Playground
