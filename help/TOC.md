@@ -31,3 +31,5 @@ role: Admin,User,Developer,Leader
     - {hide-from-toc} [Data Engineering Agent](./agents/data-engineering/overview.md)
 - MCP {#mcp}
   - [Real-Time CDP MCP](./mcp/rtcdp-mcp.md)
+- Coworker {#coworker}
+  - {hide-from-toc} [Coworker Chat in Playground](./coworker/playground-coworker-chat.md)
