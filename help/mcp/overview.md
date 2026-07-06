@@ -1,10 +1,10 @@
 ---
-title: Adobe CX Enterprise MCP servers
+title: Adobe CX Enterprise MCP server
 description: Adobe CX Enterprise MCP server is the unified MCP for Adobe CX Enterprise, giving MCP clients a single connection to supported product tools.
 ---
-# Adobe CX Enterprise MCP servers {#mcp-overview}
+# Adobe CX Enterprise MCP server {#mcp-overview}
 
-Adobe CX Enterprise MCP servers is the unified Model Context Protocol (MCP) for Adobe CX Enterprise. With one connection, MCP-compatible clients can access the Adobe product tools your organization and account are entitled to use.
+Adobe CX Enterprise MCP server is the unified Model Context Protocol (MCP) for Adobe CX Enterprise. With one connection, MCP-compatible clients can access the Adobe product tools your organization and account are entitled to use.
 
 Use the CX Enterprise endpoint for all MCP client setup:
 
@@ -16,7 +16,7 @@ After you connect, the endpoint exposes the tools available to your Adobe organi
 
 ## What is the Model Context Protocol? {#mcp-what-is}
 
-MCP is an open standard that lets applications expose tools to large language models (LLMs) in a uniform way. MCP-compatible clients such as [!DNL Claude], [!DNL ChatGPT], [!DNL Cursor], [!DNL Claude Code], [!DNL Codex], and [!DNL VS Code] can use those tools to retrieve product context, run supported operations, and return answers in natural language.
+MCP (Model Context Protocol) is an open-source standard for connecting AI applications to external systems. MCP-compatible clients such as [!DNL Claude], [!DNL ChatGPT], [!DNL Cursor], [!DNL Claude Code], [!DNL Codex], and [!DNL VS Code] can use those tools to retrieve product context, run supported operations, and return answers in natural language.
 
 CX Enterprise provides a governed endpoint for CX Enterprise product tools. Instead of adding separate product servers, connect once to the endpoint and use the product tools surfaced for your entitled solutions.
 
