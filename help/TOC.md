@@ -42,6 +42,5 @@ role: Admin,User,Developer,Leader
     - [Customer Journey Analytics tools](./mcp/cja-mcp.md)
     - [Adobe Analytics tools](./mcp/analytics-mcp.md)
     - [Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview)
-  - [Real-Time CDP MCP](./mcp/rtcdp-mcp.md)
 - Coworker {#coworker}
   - {hide-from-toc} [Coworker Chat in Playground](./coworker/playground-coworker-chat.md)
