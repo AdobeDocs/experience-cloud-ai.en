@@ -24,7 +24,9 @@ role: Admin,User,Developer,Leader
   - [Journey Agent](./agents/ajo-agent.md)
   - [Product Support Agent](./agents/product-support.md)
   - [Adobe Marketing Agent for Microsoft 365 Copilot](./agents/ama-ms.md)
+  - [Notifications Agent](./agents/notifications.md)
   - [Agents Trial](./agents/trial.md)
+  - [Validate your data](./agents/data-validation.md)
   - Data Engineering {#data-engineering}
     - {hide-from-toc} [Data Engineering Agent](./agents/data-engineering/overview.md)
 - MCP {#mcp}
@@ -40,3 +42,6 @@ role: Admin,User,Developer,Leader
     - [Customer Journey Analytics tools](./mcp/cja-mcp.md)
     - [Adobe Analytics tools](./mcp/analytics-mcp.md)
     - [Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview)
+  - [Real-Time CDP MCP](./mcp/rtcdp-mcp.md)
+- Coworker {#coworker}
+  - {hide-from-toc} [Coworker Chat in Playground](./coworker/playground-coworker-chat.md)
