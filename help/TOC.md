@@ -30,7 +30,18 @@ role: Admin,User,Developer,Leader
   - Data Engineering {#data-engineering}
     - {hide-from-toc} [Data Engineering Agent](./agents/data-engineering/overview.md)
 - MCP {#mcp}
-  - [Real-Time CDP MCP](./mcp/rtcdp-mcp.md)
+  - [Adobe CX Enterprise MCP](./mcp/overview.md)
+  - Get started {#mcp-get-started}
+    - [Access CX Enterprise MCP tools](./mcp/access.md)
+    - [Install CX Enterprise MCP](./mcp/install.md)
+    - [Session context tools in CX Enterprise MCP](./mcp/context-tools.md)
+  - Product tools {#mcp-product-tools}
+    - [Real-Time CDP tools](./mcp/rtcdp-mcp.md)
+    - [Experience Platform tools](./mcp/aep-mcp.md)
+    - [Journey Optimizer tools](./mcp/ajo-mcp.md)
+    - [Customer Journey Analytics tools](./mcp/cja-mcp.md)
+    - [Adobe Analytics tools](./mcp/analytics-mcp.md)
+    - [Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview)
 - Coworker {#coworker}
   - {hide-from-toc} [Coworker Chat in Playground](./coworker/playground-coworker-chat.md)
   - {hide-from-toc} [Validate AA to CJA migration data](./coworker/data-validation-aa-cja.md)
