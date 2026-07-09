@@ -43,9 +43,9 @@ You don't need to know how your implementation is architected ahead of time. The
    
    | Question | Additional context |
    |---------|----------|
-   | [!UICONTROL **Select your Analytics company**] | This is your Adobe Analytics login company. | 
-   | [!UICONTROL **Select your report suite**] <!--In the UI, recommend change to "Select your Adobe Analytics report suite"--> | This is the report suite in Adobe Analytics that contains the data that you want to validate against the Customer Journey Analytics data. | 
-   | [!UICONTROL **Select your Customer Journey Analytics data view**] | This is the data view in Customer Journey Analytics that contains the same data as the Adobe Analytics report suite that you selected. | 
+   | [!UICONTROL **Select your Analytics company**] | This is your Adobe Analytics login company. |
+   | [!UICONTROL **Select your report suite**] <!--In the UI, recommend change to "Select your Adobe Analytics report suite"--> | This is the report suite in Adobe Analytics that contains the data that you want to validate against the Customer Journey Analytics data. |
+   | [!UICONTROL **Select your Customer Journey Analytics data view**] | This is the data view in Customer Journey Analytics that contains the same data as the Adobe Analytics report suite that you selected. |
 
 1. Review the setup summary to confirm you're validating the right data before you continue. The summary includes the company, report suite, and data view you selected, along with a preview of the top metrics and dimensions in each system.
 
@@ -69,10 +69,10 @@ You can validate individual metrics or dimensions, or you can validate all metri
 
 1. Select each of the following tabs to review the analysis:
 
-   | Analysis review tab | Description | 
+   | Analysis review tab | Description |
    |---------|----------|
    | [!UICONTROL **Overal matching rate**] | A percentage that indicates how closely the data from the Adobe Analytics report suite matches that of the Customer Journey Analytics data view. |
-   | [!UICONTROL **Key insights**] | Key insights discovered during the analysis. | 
+   | [!UICONTROL **Key insights**] | Key insights discovered during the analysis. |
    | [!UICONTROL **Summary**] | Adobe Analytics totals, Customer Journey Analytics totals, total variance, days passing, and days critical. <!--what are these?--> |
    | [!UICONTROL **Daily trend**] | Graph showing a side-by-side comparison of the Adobe Analytics data and the Customer Journey Analytics data. |
    | [!UICONTROL **Daily detail**] | <!--what goes here?--> |
