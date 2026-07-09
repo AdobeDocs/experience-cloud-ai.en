@@ -6,9 +6,9 @@ description: Adobe CX Enterprise MCP server is the unified MCP for Adobe CX Ente
 
 Adobe CX Enterprise MCP server is the unified Model Context Protocol (MCP) for Adobe CX Enterprise. With one connection, MCP-compatible clients can access the Adobe product tools your organization and account are entitled to use.
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 >
-> Your Adobe organization must be enabled before you can use CX Enterprise MCP tools. If your organization does not yet have access, contact your Adobe Account Team to request enablement for your organization.
+>Your Adobe organization must be enabled before you can use CX Enterprise MCP tools. If your organization does not yet have access, contact your Adobe Account Team to request enablement for your organization.
 
 Use the CX Enterprise endpoint for all MCP client setup:
 

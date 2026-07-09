@@ -6,9 +6,9 @@ description: Confirm product availability, organization enablement, and permissi
 
 Adobe CX Enterprise exposes product tools through a single MCP. Access is evaluated by product tools: your Adobe organization must be enabled for the relevant product tools, and your user account must have the product permissions required to view or change the product data those tools expose.
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 >
-> Your Adobe organization must be enabled before you can use CX Enterprise MCP tools. If your organization does not yet have access, contact your Adobe Account Team to request enablement for your organization.
+>Your Adobe organization must be enabled before you can use CX Enterprise MCP tools. If your organization does not yet have access, contact your Adobe Account Team to request enablement for your organization.
 
 ## Access requirements {#mcp-requirements}
 
@@ -23,11 +23,9 @@ Adobe CX Enterprise exposes product tools through a single MCP. Access is evalua
 | Workfront                  | Preview      | Active Workfront license and Workfront MCP enablement. See the [Workfront MCP documentation](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview).                                                    |
 
 
-> [!NOTE]
+>[!NOTE]
 >
-> The MCP surfaces only the tools your organization and credentials are entitled to use. If a product tool is missing after you sign in, confirm product licensing, organization enablement, and user permissions.
-
-
+>The MCP surfaces only the tools your organization and credentials are entitled to use. If a product tool is missing after you sign in, confirm product licensing, organization enablement, and user permissions.
 
 ## Request access {#mcp-request}
 
