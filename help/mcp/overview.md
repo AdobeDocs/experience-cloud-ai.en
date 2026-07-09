@@ -39,9 +39,9 @@ The following product tools are documented in this guide:
 | **Workfront**                  | Work management tools for projects, tasks, and approval workflows                                                                    | Preview      | [Workfront MCP server](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview) |
 
 
-> [!NOTE]
+>[!NOTE]
 >
-> Tool availability depends on your product licenses, organization enablement, product permissions, and the Adobe credentials used to authenticate. The MCP only surfaces tools your organization and user account are entitled to access. See [Access CX Enterprise MCP tools](access.md).
+>Tool availability depends on your product licenses, organization enablement, product permissions, and the Adobe credentials used to authenticate. The MCP only surfaces tools your organization and user account are entitled to access. See [Access CX Enterprise MCP tools](access.md).
 
 
 
