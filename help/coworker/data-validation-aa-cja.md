@@ -40,7 +40,11 @@ You don't need to know how your implementation is architected ahead of time. The
    Your request is routed to the data validation skill, which starts an interactive setup process. 
 
 1. The setup process includes the questions in the table below. For each question, select an answer, then select [!UICONTROL **Submit**].
-   
+
+   >[!NOTE]
+   >
+   >You can change any of these selections later in the same conversation. For example, ask the agent to change your report suite or data view, and the agent repeats only the steps needed to update that selection, without restarting the entire setup process.
+
    | Question | Additional context |
    |---------|----------|
    | [!UICONTROL **Select your Analytics company**] | This is your Adobe Analytics login company. |
@@ -61,25 +65,70 @@ You can validate individual metrics or dimensions, or you can validate all metri
    |---------|----------|
    | [!UICONTROL **Single metric comparison**] | Compare one metric's trend between Adobe Analytics and Customer Journey Analytics. Use this when you want a quick check on a specific metric, such as page views or visits. |
    | [!UICONTROL **Single dimension comparison**] | Compare the breakdown of a single dimension between Adobe Analytics and Customer Journey Analytics. Use this when you suspect a mapping or classification difference for a specific dimension. |
-   | [!UICONTROL **Full report suite and data view audit**] | Compare up to 20 metrics and dimensions in a single run. Use this when you want a comprehensive view of your migration's overall health. |
+   | [!UICONTROL **Full report suite and data view audit**] | Compare up to 40 metrics and 10 dimensions in a single run. Use this when you want a comprehensive view of your migration's overall health. |
+
+
 
 1. Continue with the following section, [Review the analysis](#review-the-analysis).
 
 ## Review the analysis
 
-1. Select each of the following tabs to review the analysis:
+1. Select the [!UICONTROL **Overall matching rate**] tab to view a percentage that indicates how closely the data from the Adobe Analytics report suite matches that of the Customer Journey Analytics data view. This score always appears first, before any other results. It weighs every compared metric and dimension equally to ensure that high-volume metrics, such as page views, don't skew the score.
 
-   | Analysis review tab | Description |
-   |---------|----------|
-   | [!UICONTROL **Overal matching rate**] | A percentage that indicates how closely the data from the Adobe Analytics report suite matches that of the Customer Journey Analytics data view. |
-   | [!UICONTROL **Key insights**] | Key insights discovered during the analysis. |
-   | [!UICONTROL **Summary**] | Adobe Analytics totals, Customer Journey Analytics totals, total variance, days passing, and days critical. <!--what are these?--> |
-   | [!UICONTROL **Daily trend**] | Graph showing a side-by-side comparison of the Adobe Analytics data and the Customer Journey Analytics data. |
-   | [!UICONTROL **Daily detail**] | <!--what goes here?--> |
+   Use the following scale to interpret the score:
 
-1. Scroll down in the analysis to view additional patterns that were discovered during the analysis, likely causes for those patterns, and suggested actions that you can take to resolve any data discrepancies. 
+   | Score | Rating | What it means |
+   |---------|----------|----------|
+   | 97%–100% | ![Green square](./images/data-validation-aa-cja/excellent-square.svg) [!UICONTROL Excellent] | All properties are highly aligned. No action required. |
+   | 90%–96% | ![Yellow circle](./images/data-validation-aa-cja/good-circle.svg) [!UICONTROL Good] | Minor gaps are present. Monitor trends and investigate if they decline. |
+   | 75%–89% | ![Orange circle](./images/data-validation-aa-cja/review-circle.svg) [!UICONTROL Review] | Meaningful gaps exist. Investigate root causes before relying on Customer Journey Analytics data. |
+   | Less than 75% | ![Red circle](./images/data-validation-aa-cja/critical-circle.svg) [!UICONTROL Poor] | Significant misalignment. Take immediate action before using Customer Journey Analytics data. |
+
+1. Select the [!UICONTROL **Key insights**] tab to view two to four short callout boxes, each summarizing one finding from the analysis in a single sentence. Callouts are color-coded by severity so you can spot the most important findings first.
+
+1. Select the [!UICONTROL **Summary**] tab to view Adobe Analytics totals, Customer Journey Analytics totals, total variance, days passing, and days critical, where days passing and days critical reflect how many days in the date range fall into the [!UICONTROL **Pass**] and [!UICONTROL **Critical**] variance statuses described below.
+
+1. (Conditional) When doing a single-dimension comparison or a single-metric comparison, you can view a side-by-side comparison of the Adobe Analytics data and the Customer Journey Analytics data in the [!UICONTROL **Daily trend**] tab.
+
+   For metrics, this is a line chart that compares the daily trend.
+
+   ![Daily trend tab showing a line chart](./images/data-validation-aa-cja/trend-line.png)
+
+   For dimensions, this is a bar chart that compares the top values.
+
+   ![Daily trend tab showing a horizontal bar chart](./images/data-validation-aa-cja/trend-bar.png)
+
+1. (Conditional) When doing a single-dimension comparison or a single-metric comparison, you can view row-level detail in the [!UICONTROL **Date detail**] tab. This table lists the date, the Adobe Analytics value, the Customer Journey Analytics value, the variance percentage, and a status badge for each compared metric or dimension value.
+
+   ![Date detail tab showing a table of variance percentages and status badges](./images/data-validation-aa-cja/date-detail.png)
+
+   The variance and status columns use the following scale:
+
+   | Variance | Status | What it means |
+   |---------|----------|----------|
+   | Less than 3% | ![Green checkmark](./images/data-validation-aa-cja/pass-check.svg) [!UICONTROL Pass] | Data is well aligned. No action required. |
+   | 3%–10% | ![Yellow warning triangle](./images/data-validation-aa-cja/flagged-warning.svg) [!UICONTROL Flag] | Monitor the difference and investigate if it continues or worsens. |
+   | Greater than 10% | ![Red circle](./images/data-validation-aa-cja/critical-circle.svg) [!UICONTROL Critical] | Investigate immediately. This usually points to a schema, ingestion, or mapping issue. |
+
+1. (Conditional) When running a full report suite and data view audit, the [!UICONTROL **Daily trend**] and [!UICONTROL **Daily detail**] tabs are replaced by a scorecard showing pass, flagged, and critical counts, along with separate tables listing the top five best-matching and top five lowest-matching metrics and dimensions.
+
+1. Scroll down in the analysis to view additional patterns and issues that were discovered during the analysis, likely causes for those patterns, and suggested actions that you can take to resolve any data discrepancies. 
+
+   >[!NOTE]
+   >
+   >Some variance is expected and doesn't indicate a problem with your migration. 
+
+   Common issues include:
+
+   * Adobe Analytics counts device-based visitors, while Customer Journey Analytics counts people, using cross-device identity stitching.
+   * Adobe Analytics processes data at collection time, while Customer Journey Analytics processes data at report time.
+   * Session definitions differ: Adobe Analytics visits use a fixed timeout, while Customer Journey Analytics sessions are configurable.
+   * Adobe Analytics filters bots by default, while Customer Journey Analytics bot filtering is opt-in.
+   * Adobe Analytics reports missing values as "Unspecified" or "None," while Customer Journey Analytics reports them as "No value."
+   * Marketing channel differences can result from Adobe Analytics processing rules compared to Customer Journey Analytics derived fields applied retroactively.
+   * If Customer Journey Analytics values are consistently about twice the Adobe Analytics values across all metrics, this usually indicates duplicate data in the data view rather than an identity stitching effect.
 
 1. Verify that the suggested actions are valid, then resolve them in Adobe Experience Platform or Adobe Analytics.
 
-1. (Optional) Continue your analysis by analyzing another metric, analyzing another dimension, or by running another report of up to 20 metrics and dimensions, as described in [Choose the data to validate](#choose-the-data-to-validate).
+1. (Optional) Continue your analysis by analyzing another metric, analyzing another dimension, or by running another report of up to 40 metrics and 10 dimensions, as described in [Choose the data to validate](#choose-the-data-to-validate). You don't need to repeat the setup process to do this; your company, report suite, and data view selections carry forward throughout the conversation.
 
