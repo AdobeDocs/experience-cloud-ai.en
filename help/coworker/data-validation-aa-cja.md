@@ -1,9 +1,13 @@
 ---
 title: Validate data with Coworker when upgrading from Adobe Analytics to Customer Journey Analytics
-description: Learn how Analytics admins use the CX Enterprise Coworker data validation skill to compare Adobe Analytics and Customer Journey Analytics data during migration.
+description: Learn how Analytics admins use the CX Enterprise Coworker data validation skill to compare Adobe Analytics and Customer Journey Analytics data during the upgrade.
 hide: true
 ---
 # Validate data with Coworker when upgrading from Adobe Analytics to Customer Journey Analytics
+
+>[!NOTE]
+> 
+>Follow the steps on this page only after you complete all previous upgrade steps. You can follow the recommended upgrade steps (recommended for most organizations), or you can follow steps that are dynamically generated for your organization with the Customer Journey Analytics Upgrade Guide. <ul><li>**Recommended upgrade steps** (Recommended for most organizations)<p>A set of steps that lead to an ideal Customer Journey Analytics implementation.</p><p>For detailed information, see [Upgrade from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations).</p></li><li>**Customer Journey Analytics Upgrade Guide** (Custom steps tailored to the specific needs of your organization)<p>A new upgrade guide is available that dynamically generates upgrade steps that are tailored for your organization and your unique circumstances.</p><p>To access the guide from Customer Journey Analytics, select the **[!UICONTROL Workspace]** tab, then select **[!UICONTROL Upgrade to Customer Journey Analytics]** in the left panel. Follow the on-screen instructions.</p></li></ul>
 
 CX Enterprise Coworker includes a validation skill that allows you to validate data when upgrading from Adobe Analytics to Customer Journey Analytics. Data validation is completed within a single conversation.
 
@@ -17,13 +21,15 @@ After making these comparisons, the skill generates AI-driven insights and recom
 
 ## Before you begin
 
+
+
 To validate data as part of your upgrade, you need:
 
 * The Adobe Analytics report suite you want to validate.
 
 * The Customer Journey Analytics data view that contains the same data.
 
-You don't need to know how your implementation is architected ahead of time. The skill automatically detects whether your data is mapped through an Analytics source connector or through two side-by-side implementations, so you don't have to provide that context yourself.
+You don't need to know how your implementation is architected. The skill automatically detects whether your Customer Journey Analytics implementation uses the Analytics Source Connector or a new implementation of the Experience Platform Web SDK.
 
 ## Start a validation session
 
@@ -31,7 +37,7 @@ You don't need to know how your implementation is architected ahead of time. The
 
 1. Select [!UICONTROL **New Chat**].
 
-1. In the text field, prompt the agent to validate your migration from Adobe Analytics to Customer Journey Analytics:
+1. In the text field, prompt the agent to validate your upgrade from Adobe Analytics to Customer Journey Analytics:
 
    **Prompt**
 
@@ -65,9 +71,7 @@ You can validate individual metrics or dimensions, or you can validate all metri
    |---------|----------|
    | [!UICONTROL **Single metric comparison**] | Compare one metric's trend between Adobe Analytics and Customer Journey Analytics. Use this when you want a quick check on a specific metric, such as page views or visits. |
    | [!UICONTROL **Single dimension comparison**] | Compare the breakdown of a single dimension between Adobe Analytics and Customer Journey Analytics. Use this when you suspect a mapping or classification difference for a specific dimension. |
-   | [!UICONTROL **Full report suite and data view audit**] | Compare up to 40 metrics and 10 dimensions in a single run. Use this when you want a comprehensive view of your migration's overall health. |
-
-
+   | [!UICONTROL **Full report suite and data view audit**] | Compare up to 40 Adobe Analytics metrics and 20 dimensions with their Customer Journey Analytics counterparts in a single run. Use this when you want a comprehensive view of your upgrade's overall health. |
 
 1. Continue with the following section, [Review the analysis](#review-the-analysis).
 
@@ -116,7 +120,7 @@ You can validate individual metrics or dimensions, or you can validate all metri
 
    >[!NOTE]
    >
-   >Some variance is expected and doesn't indicate a problem with your migration. 
+   >Some variance is expected and doesn't indicate a problem with your upgrade to Customer Journey Analytics. 
 
    Common issues include:
 
@@ -130,5 +134,7 @@ You can validate individual metrics or dimensions, or you can validate all metri
 
 1. Verify that the suggested actions are valid, then resolve them in Adobe Experience Platform or Adobe Analytics.
 
-1. (Optional) Continue your analysis by analyzing another metric, analyzing another dimension, or by running another report of up to 40 metrics and 10 dimensions, as described in [Choose the data to validate](#choose-the-data-to-validate). You don't need to repeat the setup process to do this; your company, report suite, and data view selections carry forward throughout the conversation.
+1. (Optional) Continue your analysis by analyzing another metric, analyzing another dimension, or by running another report of up to 40 metrics and 20 dimensions, as described in [Choose the data to validate](#choose-the-data-to-validate). You don't need to repeat the setup process to do this; your company, report suite, and data view selections carry forward throughout the conversation.
+
+1. Continue following the [recommended upgrade steps](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) or the dynamically generated upgrade steps in the Customer Journey Analytics Upgrade Guide. To access the guide from Customer Journey Analytics, select the **[!UICONTROL Workspace]** tab, then select **[!UICONTROL Upgrade to Customer Journey Analytics]** in the left panel. Follow the on-screen instructions.
 
