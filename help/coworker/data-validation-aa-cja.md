@@ -23,7 +23,7 @@ To validate data as part of your upgrade, you need:
 
 * The Customer Journey Analytics data view that contains the same data.
 
-You don't need to know how your implementation is architected ahead of time. The skill automatically detects whether your data is mapped through an Analytics source connector or through two side-by-side implementations, so you don't have to provide that context yourself.
+You don't need to know how your implementation is architected ahead of time. The skill automatically detects whether your Customer Journey Analytics implementation uses the Analytics Source Connector or a new implementation of the Experience Platform Web SDK.
 
 ## Start a validation session
 
@@ -65,9 +65,7 @@ You can validate individual metrics or dimensions, or you can validate all metri
    |---------|----------|
    | [!UICONTROL **Single metric comparison**] | Compare one metric's trend between Adobe Analytics and Customer Journey Analytics. Use this when you want a quick check on a specific metric, such as page views or visits. |
    | [!UICONTROL **Single dimension comparison**] | Compare the breakdown of a single dimension between Adobe Analytics and Customer Journey Analytics. Use this when you suspect a mapping or classification difference for a specific dimension. |
-   | [!UICONTROL **Full report suite and data view audit**] | Compare up to 40 metrics and 10 dimensions in a single run. Use this when you want a comprehensive view of your migration's overall health. |
-
-
+   | [!UICONTROL **Full report suite and data view audit**] | Compare up to 40 Adobe Analytics metrics and 20 dimensions with their Customer Journey Analytics counterparts in a single run. Use this when you want a comprehensive view of your migration's overall health. |
 
 1. Continue with the following section, [Review the analysis](#review-the-analysis).
 
@@ -130,5 +128,5 @@ You can validate individual metrics or dimensions, or you can validate all metri
 
 1. Verify that the suggested actions are valid, then resolve them in Adobe Experience Platform or Adobe Analytics.
 
-1. (Optional) Continue your analysis by analyzing another metric, analyzing another dimension, or by running another report of up to 40 metrics and 10 dimensions, as described in [Choose the data to validate](#choose-the-data-to-validate). You don't need to repeat the setup process to do this; your company, report suite, and data view selections carry forward throughout the conversation.
+1. (Optional) Continue your analysis by analyzing another metric, analyzing another dimension, or by running another report of up to 40 metrics and 20 dimensions, as described in [Choose the data to validate](#choose-the-data-to-validate). You don't need to repeat the setup process to do this; your company, report suite, and data view selections carry forward throughout the conversation.
 
