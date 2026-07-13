@@ -31,7 +31,7 @@ role: Admin,User,Developer,Leader
     - {hide-from-toc} [Data Engineering Agent](./agents/data-engineering/overview.md)
 - MCP {#mcp}
   - [Adobe CX Enterprise MCP](./mcp/overview.md)
-  - [Real-Time CDP MCP beta](./mcp/beta/rtcdp-mcp.md)
+  - {hide-from-toc} [Real-Time CDP MCP beta](./mcp/beta/rtcdp-mcp.md)
   - Get started {#mcp-get-started}
     - [Access CX Enterprise MCP tools](./mcp/access.md)
     - [Install CX Enterprise MCP](./mcp/install.md)
