@@ -75,9 +75,14 @@ Once you have access, navigate to the Adobe Experience Cloud homepage to get sta
 
 If Customer wants to opt-out of access to these Agentic capabilities and disable the trial access, please send a request to [cx-coworker-questions@adobe.com](mailto:cx-coworker-questions@adobe.com).
 
->[!TIP]
->
->Get Help - Please send a request to [aep-agents-trial-support@adobe.com](mailto:aep-agents-trial-support@adobe.com).
+## Additional resources
+
+Read the following guides for more information on Agents, Agent Orchestrator, and AI Assistant:
+
+- [Agent Orchestrator overview](agent-orchestrator.md) 
+- [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md) 
+- [AI Assistant prompt library](../ai-assistant/prompt-library.md) 
+- [AI in Experience Cloud](../home.md) 
 
 ## Frequently asked questions {#faq}
 
