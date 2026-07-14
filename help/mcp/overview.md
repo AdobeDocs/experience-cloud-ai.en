@@ -8,12 +8,14 @@ Adobe CX Coworker Gateway is the unified Model Context Protocol (MCP) for Adobe 
 
 >[!IMPORTANT]
 >
->Your Adobe organization must be enabled before you can use CX Coworker Gateway tools. If your organization does not yet have access, contact your Adobe Account Team to request enablement for your organization.
+>Your Adobe organization must be enabled before you can use **CX Coworker Gateway** tools.
+>
+>If your organization does not yet have access, email [cx-coworker-gateway-support@adobe.com](mailto:cx-coworker-gateway-support@adobe.com) to request enablement for your organization.
 
-Use the CX Enterprise endpoint for all MCP client setup:
+Use the CX Coworker Gateway endpoint for all MCP client setup:
 
 ```
-https://cx-enterprise.adobe.io/mcp
+https://cx-coworker-gateway.adobe.io/mcp
 ```
 
 After you connect, the endpoint exposes the tools available to your Adobe organization and credentials. Product-specific pages in this guide describe what each product tool can do, what data it can access, and any product-specific limitations.
@@ -22,7 +24,7 @@ After you connect, the endpoint exposes the tools available to your Adobe organi
 
 MCP (Model Context Protocol) is an open-source standard for connecting AI applications to external systems. MCP-compatible clients such as [!DNL Claude], [!DNL ChatGPT], [!DNL Cursor], [!DNL Claude Code], [!DNL Codex], and [!DNL VS Code] can use those tools to retrieve product context, run supported operations, and return answers in natural language.
 
-CX Enterprise provides a governed endpoint for CX Enterprise product tools. Instead of adding separate product servers, connect once to the endpoint and use the product tools surfaced for your entitled solutions.
+CX Coworker Gateway provides a governed endpoint for CX Coworker Gateway product tools. Instead of adding separate product servers, connect once to the endpoint and use the product tools surfaced for your entitled solutions.
 
 ## Available product tools {#available-product-tools}
 

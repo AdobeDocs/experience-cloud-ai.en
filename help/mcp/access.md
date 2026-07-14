@@ -13,14 +13,14 @@ Adobe CX Enterprise exposes product tools through a single MCP. Access is evalua
 ## Access requirements {#mcp-requirements}
 
 
-| Product tools              | Availability | Access requirements                                                                                                                                                                                                                                                    |
-| -------------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Real-Time CDP              | Beta         | Active Real-Time CDP license, Beta enablement for your Adobe organization, and permissions to view the audiences, destinations, sources, identity, and activation resources you query.                                                                                 |
-| Experience Platform        | Beta         | Active Experience Platform license, Beta enablement for your Adobe organization, and permissions to view the schemas, datasets, governance, Query Service, audit, and sandbox resources you query.                                                                     |
-| Journey Optimizer          | Beta         | Active Journey Optimizer license, Beta enablement for your Adobe organization, and permissions to view campaigns and channel configurations.                                                                                                                           |
-| Customer Journey Analytics | Available    | Active Customer Journey Analytics license and a product profile that includes the **MCP Access** permission item in Adobe Admin Console. Product permissions still govern which data views, components, reports, projects, and audiences you can access or modify.     |
-| Adobe Analytics            | Available    | Active Adobe Analytics license and a product profile that includes the **MCP Access** permission item in Adobe Admin Console. Product permissions still govern which report suites, components, reports, segments, date ranges, and projects you can access or modify. |
-| Workfront                  | Preview      | Active Workfront license and Workfront MCP enablement. See the [Workfront MCP documentation](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview).                                                    |
+| Product tools | Availability | Access requirements |
+| --- | --- | --- |
+| Real-Time CDP | Beta | Active Real-Time CDP license, Beta enablement for your Adobe organization, and permissions to view the audiences, destinations, sources, identity, and activation resources you query. |
+| Experience Platform | Beta | Active Experience Platform license, Beta enablement for your Adobe organization, and permissions to view the schemas, datasets, governance, Query Service, audit, and sandbox resources you query. |
+| Journey Optimizer | Beta | Active Journey Optimizer license, Beta enablement for your Adobe organization, and permissions to view campaigns and channel configurations. |
+| Customer Journey Analytics | Available | Active Customer Journey Analytics license and a product profile that includes the **MCP Access** permission item in Adobe Admin Console. Product permissions still govern which data views, components, reports, projects, and audiences you can access or modify. |
+| Adobe Analytics | Available | Active Adobe Analytics license and a product profile that includes the **MCP Access** permission item in Adobe Admin Console. Product permissions still govern which report suites, components, reports, segments, date ranges, and projects you can access or modify. |
+| Workfront | Preview | Active Workfront license and Workfront MCP enablement. See the [Workfront MCP documentation](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview). |
 
 
 >[!NOTE]
