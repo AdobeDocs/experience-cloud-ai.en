@@ -22,7 +22,7 @@ topic_v2:
 # Product Support Agent
 
 <!--
-TQID: https://experienceleague.adobe.com/SKcxvhwgLhbCjQ---MdK7JzOKF4EzJra3mZjNhpwZ-o
+TQID: https://experienceleague.adobe.com/SKcxvhwgLhbCjQ%2D%2D%2DMdK7JzOKF4EzJra3mZjNhpwZ-o
 -->
 
 Product Support Agent is a self-serve debugging and troubleshooting capability of AI Assistant that you can use for Adobe Experience Platform features and applications.
