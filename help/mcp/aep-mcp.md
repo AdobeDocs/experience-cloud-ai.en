@@ -1,15 +1,15 @@
 ---
-title: Adobe Experience Platform tools in CX Enterprise MCP
-description: Learn which Adobe Experience Platform tools are available through CX Enterprise MCP.
+title: Adobe Experience Platform tools in CX Coworker Gateway
+description: Learn which Adobe Experience Platform tools are available through CX Coworker Gateway.
 ---
 
-# Adobe Experience Platform tools in Adobe CX Enterprise MCP {#aep-mcp}
+# Adobe Experience Platform tools in Adobe CX Coworker Gateway {#aep-mcp}
 
-You can use the Adobe Experience Platform product tools to inspect schemas, datasets, data governance configuration, Query Service resources, and audit events from an MCP-compatible client. These tools are available through the [Adobe CX Enterprise MCP](overview.md) when your organization is enabled and your user account has the required Experience Platform permissions.
+You can use the Adobe Experience Platform product tools to inspect schemas, datasets, data governance configuration, Query Service resources, and audit events from an MCP-compatible client. These tools are available through the [Adobe CX Coworker Gateway](overview.md) when your organization is enabled and your user account has the required Experience Platform permissions.
 
 >[!AVAILABILITY]
 >
->The Experience Platform product tool is in Beta. Access is by invitation only and requires Adobe organization enablement. See [Access CX Enterprise MCP tools](access.md).
+>The Experience Platform product tool is in Beta. Access is by invitation only and requires Adobe organization enablement. See [Access CX Coworker Gateway tools](access.md).
 
 ## Summary
 

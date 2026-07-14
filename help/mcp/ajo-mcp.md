@@ -1,14 +1,14 @@
 ---
-title: Adobe Journey Optimizer tools in CX Enterprise MCP
-description: Learn which Adobe Journey Optimizer tools are available through the CX Enterprise MCP.
+title: Adobe Journey Optimizer tools in CX Coworker Gateway
+description: Learn which Adobe Journey Optimizer tools are available through the CX Coworker Gateway.
 ---
-# Adobe Journey Optimizer tools in CX Enterprise MCP {#ajo-mcp}
+# Adobe Journey Optimizer tools in CX Coworker Gateway {#ajo-mcp}
 
-Use the Adobe Journey Optimizer product tools to inspect campaigns and channel configurations from an MCP-compatible client. These tools are available through the [CX Enterprise MCP](overview.md) when your organization is enabled and your user account has the required Journey Optimizer permissions.
+Use the Adobe Journey Optimizer product tools to inspect campaigns and channel configurations from an MCP-compatible client. These tools are available through the [CX Coworker Gateway](overview.md) when your organization is enabled and your user account has the required Journey Optimizer permissions.
 
 >[!AVAILABILITY]
 >
->The Journey Optimizer product tools are in Beta. Access is by invitation only and requires Adobe organization enablement. See [Access CX Enterprise MCP tools](access.md).
+>The Journey Optimizer product tools are in Beta. Access is by invitation only and requires Adobe organization enablement. See [Access CX Coworker Gateway tools](access.md).
 
 ## Key capabilities {#mcp-capabilities}
 
