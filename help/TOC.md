@@ -30,12 +30,12 @@ role: Admin,User,Developer,Leader
   - Data Engineering {#data-engineering}
     - {hide-from-toc} [Data Engineering Agent](./agents/data-engineering/overview.md)
 - MCP {#mcp}
-  - [Adobe CX Enterprise MCP](./mcp/overview.md)
+  - [Adobe CX Coworker Gateway](./mcp/overview.md)
   - {hide-from-toc} [Real-Time CDP MCP beta](./mcp/beta/rtcdp-mcp.md)
   - Get started {#mcp-get-started}
-    - [Access CX Enterprise MCP tools](./mcp/access.md)
-    - [Install CX Enterprise MCP](./mcp/install.md)
-    - [Session context tools in CX Enterprise MCP](./mcp/context-tools.md)
+    - [Access CX Coworker Gateway tools](./mcp/access.md)
+    - [Install CX Coworker Gateway](./mcp/install.md)
+    - [Session context tools in CX Coworker Gateway](./mcp/context-tools.md)
   - Product tools {#mcp-product-tools}
     - [Real-Time CDP tools](./mcp/rtcdp-mcp.md)
     - [Experience Platform tools](./mcp/aep-mcp.md)

@@ -1,15 +1,15 @@
 ---
-title: Customer Journey Analytics tools in Adobe CX Enterprise MCP
-description: Learn which Adobe Customer Journey Analytics tools are available through Adobe CX Enterprise MCP.
+title: Customer Journey Analytics tools in Adobe CX Coworker Gateway
+description: Learn which Adobe Customer Journey Analytics tools are available through Adobe CX Coworker Gateway.
 ---
 
-# Customer Journey Analytics tools in Adobe CX Enterprise MCP {#cja-mcp}
+# Customer Journey Analytics tools in Adobe CX Coworker Gateway {#cja-mcp}
 
-Use the Customer Journey Analytics product tools explore data views, discover dimensions and metrics, run reports, and manage selected analytics components from an MCP-compatible client. These tools are available through the [CX Enterprise MCP](overview.md) when your account has the required Customer Journey Analytics license and permissions.
+Use the Customer Journey Analytics product tools explore data views, discover dimensions and metrics, run reports, and manage selected analytics components from an MCP-compatible client. These tools are available through the [CX Coworker Gateway](overview.md) when your account has the required Customer Journey Analytics license and permissions.
 
 >[!AVAILABILITY]
 >
->Customer Journey Analytics tools are available to customers with a Customer Journey Analytics license. Access is controlled by the **MCP Access** permission in Adobe Admin Console. See [Access CX Enterprise MCP tools](access.md).
+>Customer Journey Analytics tools are available to customers with a Customer Journey Analytics license. Access is controlled by the **MCP Access** permission in Adobe Admin Console. See [Access CX Coworker Gateway tools](access.md).
 
 ## Key capabilities {#mcp-capabilities}
 

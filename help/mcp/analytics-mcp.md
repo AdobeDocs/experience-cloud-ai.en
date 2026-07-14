@@ -1,14 +1,14 @@
 ---
-title: Adobe Analytics tools in Adobe CX Enterprise MCP
-description: Learn which Adobe Analytics tools are available through Adobe CX Enterprise MCP.
+title: Adobe Analytics tools in Adobe CX Coworker Gateway
+description: Learn which Adobe Analytics tools are available through Adobe CX Coworker Gateway.
 ---
-# Adobe Analytics tools in Adobe CX Enterprise MCP {#aa-mcp}
+# Adobe Analytics tools in Adobe CX Coworker Gateway {#aa-mcp}
 
-You can use Adobe Analytics tools to explore report suites, discover dimensions and metrics, run reports, and manage selected analytics components from an MCP-compatible client. These tools are available through the unified [Adobe CX Enterprise MCP](overview.md) when your account has the required Adobe Analytics license and permissions.
+You can use Adobe Analytics tools to explore report suites, discover dimensions and metrics, run reports, and manage selected analytics components from an MCP-compatible client. These tools are available through the unified [Adobe CX Coworker Gateway](overview.md) when your account has the required Adobe Analytics license and permissions.
 
 >[!AVAILABILITY]
 >
->Analytics tools are available to customers with an Adobe Analytics license. Access is controlled by the **MCP Access** permission in Adobe Admin Console. Read the [Access CX Enterprise MCP tools](access.md) for more information.
+>Analytics tools are available to customers with an Adobe Analytics license. Access is controlled by the **MCP Access** permission in Adobe Admin Console. Read the [Access CX Coworker Gateway tools](access.md) for more information.
 
 ## Key capabilities {#mcp-capabilities}
 

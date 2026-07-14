@@ -1,14 +1,14 @@
 ---
-title: Session context tools in CX Enterprise MCP
-description: Learn about the core tools that set organization, sandbox, and data view context for all CX Enterprise MCP tool calls.
+title: Session context tools in CX Coworker Gateway
+description: Learn about the core tools that set organization, sandbox, and data view context for all CX Coworker Gateway tool calls.
 ---
-# Session context tools in Adobe CX Enterprise MCP {#mcp-core}
+# Session context tools in Adobe CX Coworker Gateway {#mcp-core}
 
-Adobe CX Enterprise MCP includes a set of session context tools that establish the Adobe organization, Adobe Experience Platform sandbox, and Customer Journey Analytics data view that all other product tools operate within. No additional license or enablement is required — these tools are available to every authenticated user after connecting to the [CX Enterprise MCP server](overview.md).
+Adobe CX Coworker Gateway includes a set of session context tools that establish the Adobe organization, Adobe Experience Platform sandbox, and Customer Journey Analytics data view that all other product tools operate within. No additional license or enablement is required — these tools are available to every authenticated user after connecting to the [CX Coworker Gateway server](overview.md).
 
 ## How context works {#mcp-core-how}
 
-CX Enterprise MCP scopes every tool call to one active Adobe organization. Beyond that, context requirements depend on the product:
+CX Coworker Gateway scopes every tool call to one active Adobe organization. Beyond that, context requirements depend on the product:
 
 - **Experience Platform–based products** — [Real-Time CDP](rtcdp-mcp.md), [Experience Platform](aep-mcp.md), and [Journey Optimizer](ajo-mcp.md) tools operate within an Experience Platform sandbox. Set the sandbox once per session with `core-set_sandbox`; all three share it.
 - **Other products** — Products not built on Experience Platform do not use sandbox context. For example, [Customer Journey Analytics](cja-mcp.md) tools resolve against a data view and [Adobe Analytics](analytics-mcp.md) tools resolve against report suites.
@@ -58,5 +58,5 @@ The client will call the appropriate tools and confirm once the context is set.
 
 ## Related pages {#mcp-core-related}
 
-- [Install Adobe CX Enterprise MCP](install.md) — how to connect your MCP client, including the product context setup section.
-- [Access CX Enterprise MCP tools](access.md) — access requirements by product.
+- [Install Adobe CX Coworker Gateway](install.md) — how to connect your MCP client, including the product context setup section.
+- [Access CX Coworker Gateway tools](access.md) — access requirements by product.
