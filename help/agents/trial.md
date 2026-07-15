@@ -26,13 +26,13 @@ topic_v2:
 >
 >Certain eligible CX Enterprise customers may have access to a usage-bound trial to experience the value of Adobe's agentic AI offerings in their own environment before making the commitment to purchase.
 
-At Adobe's discretion, customers in the trial will get access to:
+At Adobe's discretion, customers in the trial will get access to **Coworker Chat**, an evolution of the AI Assistant conversational experience. Coworker Chat enables teams to automate CXO product tasks through natural language, quickly turning ideas into actions with flexible planning, customizable skills, and intelligent execution. 
 
-- **Coworker Chat**: an evolution of the AI Assistant conversational experience. Coworker Chat enables teams to automate CXO product tasks through natural language, quickly turning ideas into actions with flexible planning, customizable skills, and intelligent execution. All eligible customers will be transitioned from AI Assistant and Adobe Experience Platform Agents to Coworker Chat on a rolling basis. In the meantime, certain customers may retain access to AI Assistant and Experience Platform Agents until enabled for Coworker Chat. Please note that Coworker Campaigns is not in scope for this trial.  
+All eligible customers will be transitioned from AI Assistant and Adobe Experience Platform Agents to Coworker Chat on a rolling basis. In the meantime, certain customers may retain access to AI Assistant and Experience Platform Agents until enabled for Coworker Chat. Please note that Coworker Campaigns is not in scope for this trial.  
 
-- **AI Assistant**: A full-page, immersive conversational interface powered by Agent Orchestrator and works cross-product, enabling practitioners using enabled Experience Cloud products to leverage GenAI and Agentic AI capabilities. For more information, read the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
+**AI Assistant**: A full-page, immersive conversational interface powered by Agent Orchestrator and works cross-product, enabling practitioners using enabled Experience Cloud products to leverage GenAI and Agentic AI capabilities. For more information, read the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md).
 
-- **Adobe Experience Platform Agents**: Purpose-built AI agents skilled in delivering common jobs across customer experience domain categories. You can leverage Agents to expand your capacity to create and deliver experiences faster and with greater impact, unlocking next level productivity and efficiency. To understand what Agents can be leveraged with each Experience Cloud application, read the documentation on [Agentic AI in Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/agentic-ai).
+**Adobe Experience Platform Agents**: Purpose-built AI agents skilled in delivering common jobs across customer experience domain categories. You can leverage Agents to expand your capacity to create and deliver experiences faster and with greater impact, unlocking next level productivity and efficiency. To understand what Agents can be leveraged with each Experience Cloud application, read the documentation on [Agentic AI in Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/agentic-ai).
 
 ## Trial program details
 
@@ -77,14 +77,13 @@ If Customer wants to opt-out of access to these Agentic capabilities and disable
 
 ## Additional resources
 
-Read the following guides for more information on Agent Orchestrator and AI Assistant:
+Read the following guides for more information on Coworker, Agent Orchestrator, and AI Assistant:
 
+- [CX Enterprise Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-coworker/content/home)
 - [Agent Orchestrator overview](agent-orchestrator.md)
 - [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md)
 - [AI Assistant prompt library](../ai-assistant/prompt-library.md)
 - [AI in Experience Cloud](../home.md)
-
-<!--ADD LINK TO COWORKER CHAT-->
 
 ## Frequently asked questions {#faq}
 
