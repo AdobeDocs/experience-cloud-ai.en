@@ -61,7 +61,7 @@ Users of eligible customers will have default access to Coworker Chat as part of
 
 Users can access Coworker by selecting it from the application selector on the top header in CX Enterprise. 
 
-![Coworker Chat access]
+![The application selector where Coworker is.](../agents/images/coworker.png)
 
 If a customer wants to revoke their organization's access to **Coworker Chat** and/or revert to **AI Assistant** and **Experience Platform Agents**, send a request to [cx-coworker-questions@adobe.com](mailto:cx-coworker-questions@adobe.com) for consideration.
 
@@ -74,6 +74,7 @@ Users of eligible customers will have default access to AI Assistant and Agents 
 Once you have access, navigate to the Adobe Experience Cloud homepage to get started with AI Assistant. You can use the [discovery prompts](../ai-assistant/ai-assistant-ui.md#discovery-prompts) to view suggestions for prompts and common workflows. Use this feature to help accelerate your onboarding with AI Assistant. Additionally, read the [prompt library](../ai-assistant/prompt-library.md) for a variety of prompts that you can use with different agents. For more comprehensive information, read the [AI Assistant UI guide](../ai-assistant/ai-assistant-ui.md). 
 
 If Customer wants to opt-out of access to these Agentic capabilities and disable the trial access, please send a request to [cx-coworker-questions@adobe.com](mailto:cx-coworker-questions@adobe.com).
+
 ## Additional resources
 
 Read the following guides for more information on Agent Orchestrator and AI Assistant:
