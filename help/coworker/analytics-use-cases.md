@@ -1,17 +1,25 @@
 ---
-title: Validate data with Coworker when upgrading from Adobe Analytics to Customer Journey Analytics
-description: Learn how Analytics admins use the CX Enterprise Coworker data validation skill to compare Adobe Analytics and Customer Journey Analytics data during the upgrade.
-hide: true
+title: Perform Customer Journey Analytics Data Analysis with Coworker
+description: Learn how to perform Customer Journey Analytics data analysis with Coworker.
+hold: true
 ---
 # Perform Customer Journey Analytics data analysis with Coworker
 
-Adobe CX Enterprise Coworker Chat can perform deep data analysis that was previously possible only in Analysis Workspace. Coworker chat accesses data from your Customer Journey Analytics data views and allows you to perform advanced data analysis with simple prompts and exploration.
+>[!AVAILABILITY]
+>
+>The functionality described in this article is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
 
-Before you begin your analysis in Coworker, first log in using your CX Enterprise account, then make sure the Customer Journey Analytics MCP server is connected.
+Adobe CX Enterprise Coworker Chat can perform advanced data analysis that was previously possible only in Analysis Workspace. Coworker chat accesses data from your Customer Journey Analytics data views, allowing you to explore that data and get answers to natural-language prompts.
 
-## Log in to Coworker
+Before you begin your analysis, access Coworker chat by logging in to your CX Enterprise account, then make sure the Customer Journey Analytics MCP server is connected.
 
-1. 
+## Access Coworker Chat
+
+1. Go to https://coworker.experience.adobe.io/chat/.
+
+1. Log in to [Adobe CX Enterprise](https://experience.adobe.com) using your Adobe ID credentials.
+
+1. Then what?
 
 ## Connect the Customer Journey Analytics MCP server
 
@@ -27,13 +35,31 @@ Before you begin your analysis in Coworker, first log in using your CX Enterpris
 
 ## Connect to the right data view
 
-I did this. Do users need to? 
+<!--I did this. Do users need to?-->
+
+A data view is a container in Customer Journey Analytics that determines how data is interpreted.
+
+You might have access to various data views in Customer Journey Analytics, each containing different dimensions and metrics that Coworker can use when analyzing data.
+
+Tell Coworker the types of questions you want answered, and ask it which data views you have access to that would be best to provide that information.
+
+**You:**
+> I'm interested in learning where customers drop off in the customer journey. Which data views in Customer Journey Analytics do I have access to that would be able to answer this question for me?
+
+**Coworker Chat response:**
+> You have access to three data views. The `Customer lifecycle` data view contains the following dimensions and metrics, which would be best for answering your question. 
+
+**You:**
+> Great, let's use that data view.
+
+**Coworker Chat response:**
+> Okay, I'll use the `Customer lifecycle` data view to answer future questions in this chat session. 
 
 ## Use case: Find where customers drop off
 
-Any marketing manager, merchandiser, or growth lead wants to understand where customers abandon the path to purchase, why they did, and what can be done to drive higher conversion rates. 
+You can ask Coworker Chat to use your data to analyze any business question.
 
-With Coworker Chat, you can simply ask.
+For example, as a marketing manager, merchandiser, or growth lead, you might want to understand where customers abandon the path to purchase, why they did, and what can be done to drive higher conversion rates. 
 
 >[!NOTE]
 >
@@ -105,6 +131,39 @@ Notice that Coworker Chat chooses the right visualization, sequences the touchpo
 **Coworker Chat response:**
 
 >![The MCP icon highlighted in the Coworker left rail](images/data-validation-aa-cja/coworker-funnel-response2.png)
+>
+>There's a custom **Marketing Channel** dimension. Let me pull the funnel by that, then calculate the per-channel conversion rates and identify where each channel leaks.
+>
+>**The verdict: the leak is not channel-specific**
+>
+>This is a really revealing finding. Here's the per-channel funnel breakdown:
+>
+>| Channel | Sessions | To product view | To cart add | To purchase | Overall conversion | Revenue/session |
+>| --- | --- | --- | --- | --- | --- | --- |
+>| Paid search | 43,958 | 45.1% | 54.6% | 16.6% | 4.09% | $499.58 |
+>| Organic search | 31,492 | 44.9% | 54.9% | 16.9% | 4.17% | $494.76 |
+>| Direct | 25,661 | 43.6% | 55.4% | 15.8% | 3.82% | $497.29 |
+>| Email | 17,586 | 45.3% | 55.4% | 16.2% | 4.07% | $501.13 |
+>| Paid social | 12,684 | 45.4% | 55.7% | 16.0% | 4.03% | $512.17 |
+>| Display | 6,511 | 45.3% | 55.7% | 16.2% | 4.09% | $501.45 |
+>
+>**Key takeaways:**
+>
+>1. The cart-to-purchase drop-off is uniformly bad across all channels (83-84%). This means the problem isn't about traffic quality — every channel delivers similarly engaged visitors. The leak is in your checkout experience itself, not your marketing.
+>1. No channel is significantly better or worse at converting. Overall conversion rates cluster tightly between 3.8% and 4.2%, and revenue per session is nearly identical ($495-$512).
+>1. Where the volume impact matters most: paid search loses the most people in absolute terms (9,015 cart abandonments), followed by organic search (6,449 lost). These are the biggest dollar-value opportunities because they drive the most traffic.
+>
+>**What this tells you strategically**
+>
+>The marketing channels are doing their job — they're all getting people interested and adding to cart at similar rates. The problem is downstream of marketing: your checkout and payment flow is where the money is leaking.
+>
+>**Recommended next investigations:**
+>
+>1. Break down cart abandonment by device type — is mobile checkout broken or frustrating?
+>1. Look at which products get abandoned most — is there a pricing or shipping surprise at checkout?
+>1. Check if the "holiday_flash_sale" campaign had better checkout conversion — urgency-driven campaigns might overcome checkout friction
+>
+>**Which angle would you like to explore next?**
 
 #### 3. Keep investigating
 
@@ -114,8 +173,47 @@ Notice that Coworker Chat chooses the right visualization, sequences the touchpo
 **Coworker Chat response:**
 
 >![The MCP icon highlighted in the Coworker left rail](images/data-validation-aa-cja/coworker-funnel-response3.png)
-
-
+>
+>**Found it: mobile checkout is broken**
+>
+>The funnel is identical across devices until checkout — then mobile falls off a cliff:
+>
+>| Device | Sessions | To product view | To cart add | To purchase | Overall conversion |
+>| --- | --- | --- | --- | --- | --- |
+>| Desktop | 70,172 | 44.9% | 54.8% | 23.2% | 5.70% |
+>| Tablet | 14,149 | 44.7% | 55.6% | 14.3% | 3.56% |
+>| Mobile | 53,449 | 44.9% | 55.3% | 8.1% | 2.02% |
+>
+>**The smoking gun**
+>
+>| Metric | Desktop | Mobile | Gap |
+>| --- | --- | --- | --- |
+>| Cart to purchase rate | 23.2% | 8.1% | 15 percentage points |
+>| Mobile is | — | 2.8x worse | — |
+>| Abandoned carts | 13,274 | 12,178 | Nearly the same absolute volume |
+>
+>The browsing and add-to-cart experience is fine on mobile (identical ~45% browse rate, ~55% add-to-cart rate). People are equally interested and engaged. But something in the mobile checkout flow is killing conversions.
+>
+>**The revenue opportunity**
+>
+>If mobile checkout converted at the same rate as desktop, you'd gain ~1,991 additional purchases — a 35% increase in total purchase volume from fixing one experience.
+>
+>**What's likely happening**
+>
+>The data pattern (equal engagement, catastrophic checkout drop) is a classic signal for:
+>
+>* Payment form friction on small screens (autofill issues, form layout)
+>* Unexpected costs revealed at checkout (shipping, tax) causing sticker shock
+>* Guest checkout not available or a login wall on mobile
+>* Page load or timeout issues during payment processing on mobile
+>
+>**Recommended next steps:**
+>
+>1. Break down mobile cart abandonment by product category — is it worse for high-price items (suggesting mobile payment trust issues)?
+>1. Look at which marketing channels drive the most mobile traffic — are you spending paid media dollars to send people into a broken mobile funnel?
+>1. Check if there's a page or site-section signal — can we see which checkout pages mobile users hit last before abandoning?
+>
+>**Which would you like to explore, or is this enough evidence to take to your UX and checkout team?**
 
 #### 4. Turn it into a decision
 
@@ -125,23 +223,18 @@ Notice that Coworker Chat chooses the right visualization, sequences the touchpo
 **Customer Journey Analytics:**
 > Based on what the data shows, here's where I'd focus:
 >
-> - **Fix the mobile checkout before spending more on paid social.** The traffic is converting into carts, so the ad spend is working. The revenue is being lost at mobile checkout, which is where the fix belongs.
-> - **Start with payment and form friction.** These are the most common reasons high-intent mobile shoppers abandon a cart. Offering mobile wallet options and shortening the form are usually the fastest wins.
-> - **Re-check after the fix.** Once checkout changes ship, watch whether mobile paid-social completion moves toward the desktop rate of 44%.
+> * **Fix the mobile checkout — it's not a channel problem.** Every channel is converting people into the cart at a similar, healthy rate, so the ad spend is working across the board. The revenue is being lost specifically in the mobile checkout flow, which is where the fix belongs.
+> * **Start with payment and form friction.** These are the most common reasons high-intent mobile shoppers abandon a cart. Offering mobile wallet options and shortening the form are usually the fastest wins.
+> * **Re-check after the fix.** Once checkout changes ship, watch whether mobile's cart-to-purchase rate moves toward the desktop rate of 23.2%.
 >
 > Want me to save this as a project so you can track it, or set an alert if mobile cart-to-purchase drops below a threshold?
 
 ### What just happened
 
-In four plain-language questions, someone with no Analysis Workspace training just:
+In four plain-language questions, Coworker helped us:
 
-- built a multi-step conversion funnel,
-- identified the drop-off that actually threatened revenue,
-- broke it down by marketing channel,
-- isolated the cause to a specific device experience, and
-- walked away with a prioritized action plan.
-
-No fallout configuration. No dragging touchpoints into slots. No waiting on an analyst's queue. The person asked the questions they already had in their head, and the AI did the analytical work — including the judgment calls about which numbers mattered and why.
-
-That's the shift: the questions stay with the business owner, and the expertise comes to them.
+* Build a multi-step conversion funnel and flag cart-to-purchase as the biggest leak
+* Rule out marketing channel as the cause — every channel leaked at nearly the same rate
+* Isolate the real problem to mobile checkout, and quantify the fix at a 35% lift in purchases
+* Walk away with a specific fix to prioritize: mobile payment and form friction. This is benchmarked against desktop's 23.2% conversion rate
 
