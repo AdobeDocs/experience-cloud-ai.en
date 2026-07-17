@@ -46,3 +46,4 @@ role: Admin,User,Developer,Leader
 - Coworker {#coworker}
   - {hide-from-toc} [Coworker Chat in Playground](./coworker/playground-coworker-chat.md)
   - {hide-from-toc} [Validate AA to CJA migration data](./coworker/data-validation-aa-cja.md)
+  - {hide-from-toc} [Analyze conversion drop-off](./coworker/analytics-use-cases.md)
